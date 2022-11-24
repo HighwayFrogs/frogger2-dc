@@ -539,7 +539,7 @@ ifeq ($(COMPILER),SHC)
 	for %%x in ($(C_DEFS) $(EXTRA_DEFS)) do echo %%x, >> "$(OBJDIR)\shc.sub"
 	echo __SHC__ -include= >> "$(OBJDIR)\shc.sub"
 	for %%x in ($(PROJECT_INCLUDE) $(SYSTEM_INCLUDE)) do echo %%x, >> "$(OBJDIR)\shc.sub"
-	echo $(DEF_INCLUDE) >> "$(OBJDIR)\shc.sub"
+	echo "$(DEF_INCLUDE)" >> "$(OBJDIR)\shc.sub"
 ifeq ($(OPT_LINK),TRUE)
 	$(CC) $< -ob="$(OBJDIR)\$*.obj" -sub="$(OBJDIR)\shc.sub"
 else
@@ -583,7 +583,7 @@ ifeq ($(COMPILER),SHC)
 	for %%x in ($(C_DEFS) $(EXTRA_DEFS)) do echo %%x, >> "$(OBJDIR)\shc.sub"
 	echo __SHC__ -include= >> "$(OBJDIR)\shc.sub"
 	for %%x in ($(PROJECT_INCLUDE) $(SYSTEM_INCLUDE)) do echo %%x, >> "$(OBJDIR)\shc.sub"
-	echo $(DEF_INCLUDE) >> "$(OBJDIR)\shc.sub"
+	echo "$(DEF_INCLUDE)" >> "$(OBJDIR)\shc.sub"
 ifeq ($(OPT_LINK),TRUE)
 	$(CPP) $< -ob="$(OBJDIR)\$*.obj" -sub="$(OBJDIR)\shc.sub"
 else
@@ -704,7 +704,7 @@ ifeq ($(COMPILER),SHC)
 ifeq ($(OUTPUT),LIB)
 	echo $* >nul:
 else
-	echo input $(LIBDIR)\$* >> "$(OUTDIR)\lnk.sub"
+	echo input ..\..\KATANA\lib\$* >> "$(OUTDIR)\lnk.sub"
 endif
 endif
 ifeq ($(COMPILER),GNU)
@@ -751,9 +751,9 @@ ifdef LINK_LIST
 endif
 	for %%x in ($(LINK_FLAGS)) do echo %%x >> "$(OUTDIR)\lnk.sub"
 ifdef PROJECT_LIBS
-	for %%x in ($(PROJECT_LIBS)) do echo library %%x >> "$(OUTDIR)\lnk.sub"
+	for %%x in ($(PROJECT_LIBS)) do echo library ..\..\KATANA\Lib\%%x >> "$(OUTDIR)\lnk.sub"
 endif
-	for %%x in ($(SYSTEM_LIBS) $(DEF_LIBS)) do echo library $(LIBDIR)\%%x.lib >> "$(OUTDIR)\lnk.sub"
+	for %%x in ($(SYSTEM_LIBS) $(DEF_LIBS)) do echo library ..\..\KATANA\Lib\%%x.lib >> "$(OUTDIR)\lnk.sub"
 	echo output $(OUTDIR)\$(PROJECT).elf >> "$(OUTDIR)\lnk.sub"
 	echo exit >> "$(OUTDIR)\lnk.sub"
 ifeq ($(OPT_LINK),TRUE)
