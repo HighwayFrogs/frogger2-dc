@@ -1,0 +1,26 @@
+TODO
+----
+
+1.Shutdown looping sound effects (i.e. at end of Boulder Canyon)
+2.Swampy not being drawn properly
+3.Ants nest (reset after dying)
+4.actor->shadow (null pointer)
+5.End mode (i.e. update code)
+6.Lcd on vms (i.e. conform to standards).
+7.Using A0->A4 vms (including selecting vms)
+8.Tidy Music
+9.Light beam (on title screen)
+10.Tray open
+11.Soft reset in title mode.
+12.Select vms.
+13.Connect controllers in multiplayer.
+14.Remove controllers in multiplayer.
+15.New controllers in multiplay (i.e. on title screen)
+16.Sound bug - title screen when hopping around
+17.Ambient sounds - don't play
+18.Logos should be looped (i.e. after demo mode)
+19.Text size on selecting levels over run(in another langage)
+20.Proper lp.bin file with product code.
+21.US specifics (i.e. warning,loading screen).
+22.View Artwork
+23.

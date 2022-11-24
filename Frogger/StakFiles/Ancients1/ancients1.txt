@@ -1,0 +1,9 @@
+ancients1.col
+ancients1.sce
+ancients1.bff
+entity-1-0.dat
+script-1-0.fev
+sfxanim10.sam
+ancients1.pil
+ancients.tit
+

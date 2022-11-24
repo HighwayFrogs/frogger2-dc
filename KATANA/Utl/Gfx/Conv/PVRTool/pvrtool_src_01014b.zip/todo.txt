@@ -1,0 +1,29 @@
+
+To Do
+-----
+
+	nothing outstanding.
+
+Possible New Features
+---------------------
+
+	* Add a brute force 'convert to palettised' option
+	* Add an option for non-tiling mipmap generation
+	* Add bump PVR import/export ?
+	* Add SmallVQ ?
+	* Determine file format from header instead of extension?
+	* CMD: batch loading palettised?
+	* GUI: Recent file list
+	* GUI: MDI
+	* GUI: Autoload alpha prefix
+	* GUI: App configuration dialog? [what to configure? :) ]
+	* GUI: Mip map editing + VQ mm edit ?
+	* GUI: Paste
+	* GUI: Explorer-style pvr browser
+	* GUI: shell extension: pvr property sheet?
+	* GUI: quickview extension?
+
+	* Add a 'compensate colour for dreamcast' option - change 255 white to 192 white etc.
+
+	* New import file formats
+		- GIF?

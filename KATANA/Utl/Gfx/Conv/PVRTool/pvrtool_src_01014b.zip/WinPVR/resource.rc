@@ -1,0 +1,587 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_APPICON             ICON    DISCARDABLE     "res\\appicon.ico"
+IDI_BROWSEICON          ICON    DISCARDABLE     "res\\browseicon.ico"
+IDI_PVRFILE             ICON    DISCARDABLE     "res\\pvrfile.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open\tCtrl+O",               ID_FILE_OPEN
+        MENUITEM "&Save As...\tCtrl+S",         ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&PVR Browser...\tCtrl+B",     ID_FILE_BROWSE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        POPUP "Copy"
+        BEGIN
+            MENUITEM "&Image\tCtrl+C",              ID_EDIT_COPY_IMAGE
+            MENUITEM "&Alpha",                      ID_EDIT_COPY_ALPHA
+            MENUITEM SEPARATOR
+            MENUITEM "&VQ Image\tCtrl+Shift+C",     ID_EDIT_COPY_VQFIMAGE
+            MENUITEM "V&Q Alpha",                   ID_EDIT_COPY_VQFALPHA
+            MENUITEM SEPARATOR
+            MENUITEM "&Reference Image",            ID_EDIT_COPY_REFERENCEIMAGE
+
+            MENUITEM "Reference Alpha",             ID_EDIT_COPY_REFERENCEALPHA
+
+        END
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Zoom In\tNum +",             ID_VIEW_ZOOMIN
+        MENUITEM "Zoom &Out\tNum -",            ID_VIEW_ZOOMOUT
+        MENUITEM "Zoom 100%\tNum *",            ID_VIEW_ZOOMNORMAL
+        MENUITEM SEPARATOR
+        POPUP "&Mipmaps"
+        BEGIN
+            MENUITEM "&Image Mipmaps",              ID_VIEW_MIPMAP_IMAGE
+            MENUITEM "&VQ Mipmaps",                 ID_VIEW_MIPMAP_VQIMAGE
+            MENUITEM "&Reference Mipmaps",          ID_VIEW_MIPMAP_REFIMAGE
+            MENUITEM SEPARATOR
+            MENUITEM "&Stretch Mipmaps",            ID_VIEW_STRETCHMIPMAPS
+        END
+        POPUP "&Tiles"
+        BEGIN
+            MENUITEM "&Image",                      ID_VIEW_TILES_IMAGE
+            MENUITEM "&VQ Image",                   ID_VIEW_TILES_VQ
+            MENUITEM SEPARATOR
+            MENUITEM "&Mirror-Tiled",               ID_VIEW_TILES_MIRROR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Log",                        ID_VIEW_LOG
+        MENUITEM "P&roperties\tAlt+Enter",      ID_FILE_PROPERTIES
+    END
+    POPUP "V&Q"
+    BEGIN
+        MENUITEM "Generate &VQ\tF5",            ID_TOOLS_GENERATEVQF
+        MENUITEM "Delete VQ Version",           ID_TOOLS_DELETEVQ
+        MENUITEM SEPARATOR
+        MENUITEM "&Export VQ...\tCtrl+E",       ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        POPUP "VQ &Analysis"
+        BEGIN
+            MENUITEM "Difference",                  ID_VQ_COMPRESSIONANALYSIS_DIFFERENCE
+
+            MENUITEM "Difference x4",               ID_VQ_COMPRESSIONANALYSIS_DIFFERENCEX4
+
+            MENUITEM "&Codebook Indices",           ID_VQ_COMPRESSIONANALYSIS_CODEBOOKINDICES
+
+            MENUITEM SEPARATOR
+            MENUITEM "Delete Reference Image",      ID_VQ_COMPRESSIONANALYSIS_DELETEREFERENCEIMAGE
+
+        END
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Import Alpha Channel...",    ID_FILE_IMPORTALPHA
+        MENUITEM "&Delete Alpha",               ID_TOOLS_DELETEALPHA
+        MENUITEM "&Reverse Alpha",              ID_TOOLS_REVERSEALPHA
+        MENUITEM SEPARATOR
+        MENUITEM "&Set Global Index...\tCtrl+G", ID_TOOLS_SETGLOBALINDEX
+        MENUITEM SEPARATOR
+        MENUITEM "&Delete Mipmaps",             ID_TOOLS_DELETEMIPMAPS
+        MENUITEM "&Regenerate Mipmaps",         ID_TOOLS_REGENERATEMIPMAPS
+        MENUITEM SEPARATOR
+        MENUITEM "Mipmap Page to Mipmaps",      ID_TOOLS_PAGETOMIPMAP
+        MENUITEM "&Mipmaps To Mipmap Page",     ID_TOOLS_MIPMAPSTOPAGE
+        MENUITEM SEPARATOR
+        MENUITEM "Enlarge image to power of 2.", ID_TOOLS_ENLARGETOPOW2
+        MENUITEM "Make S&quare",                ID_TOOLS_MAKESQUARE
+        MENUITEM "Flip &Vertically",            ID_TOOLS_VFLIP
+        MENUITEM "Flip &Horizontally",          ID_TOOLS_HFLIP
+        MENUITEM "S&cale Half",                 ID_TOOLS_SCALEHALF
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS DISCARDABLE 
+BEGIN
+    "B",            ID_FILE_BROWSE,         VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY_IMAGE,     VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY_VQFIMAGE,  VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "E",            ID_FILE_EXPORT,         VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_TOOLS_SETGLOBALINDEX, VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE_AS,        VIRTKEY, CONTROL, NOINVERT
+    VK_ADD,         ID_VIEW_ZOOMIN,         VIRTKEY, NOINVERT
+    VK_F5,          ID_TOOLS_GENERATEVQF,   VIRTKEY, NOINVERT
+    VK_F5,          ID_BROWSE_REFRESH,      VIRTKEY, NOINVERT
+    VK_MULTIPLY,    ID_VIEW_ZOOMNORMAL,     VIRTKEY, NOINVERT
+    VK_RETURN,      ID_FILE_PROPERTIES,     VIRTKEY, ALT, NOINVERT
+    VK_SUBTRACT,    ID_VIEW_ZOOMOUT,        VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 261, 98
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,204,7,50,14
+    ICON            IDI_APPICON,IDC_STATIC,5,5,21,20
+    LTEXT           "PVR Tool",IDC_STATIC,50,10,32,8
+    LTEXT           "<copyright>",IDC_COPYRIGHT,50,44,204,8
+    LTEXT           "Written by David Harvey",IDC_STATIC,50,59,78,8
+    LTEXT           "<version>",IDC_VERSION,50,20,204,8
+    PUSHBUTTON      "EDTS@soe.sega.co.uk",IDC_MAIL,50,68,84,10
+    LTEXT           "<vq version>",IDC_VQVERSION,112,30,145,8
+    LTEXT           "VQ Library Version:",IDC_STATIC,50,30,61,8
+    LTEXT           "code. paintlib is copyright (c) 1996-1998 Ulrich von Zadow.",
+                    IDC_STATIC,60,88,190,10
+    PUSHBUTTON      "paintlib",IDC_PAINTLIBURL,36,87,23,11
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,84,261,1
+    LTEXT           "Contains",IDC_STATIC,5,88,28,8
+END
+
+IDD_VQFSETTINGS DIALOG DISCARDABLE  0, 0, 207, 166
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "VQ Compressor Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Colour",IDC_STATIC,5,5,130,55
+    LTEXT           "&Format:",IDC_STATIC,15,22,24,8
+    COMBOBOX        IDC_COLOURFORMAT,41,20,54,82,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Weighting:",IDC_STATIC,15,40,35,8
+    CONTROL         "N&one",IDC_COLOURMETRIC_RGBA,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,55,40,33,10
+    CONTROL         "E&ye",IDC_COLOURMETRIC_EYE,"Button",BS_AUTORADIOBUTTON,
+                    95,40,28,10
+    GROUPBOX        "Dither",IDC_STATIC,5,70,130,35
+    LTEXT           "None",IDC_STATIC,15,86,18,8
+    CONTROL         "Slider1",IDC_DITHER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,35,82,75,15
+    LTEXT           "Full",IDC_STATIC,115,86,12,8
+    GROUPBOX        "Other Options",IDC_STATIC,5,115,195,45
+    CONTROL         "&Mipmaps",IDC_MIPMAP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,130,44,10
+    CONTROL         "&Tolerate greater inaccuracy in high frequency changes",
+                    IDC_HIGHFREQTOL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,
+                    145,188,10
+    DEFPUSHBUTTON   "OK",IDOK,145,5,53,14
+    PUSHBUTTON      "Cancel",IDCANCEL,145,23,53,14
+END
+
+IDD_OUTPUTSETTINGS DIALOG DISCARDABLE  0, 0, 202, 130
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PVR Save Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Colour",IDC_STATIC,5,5,130,55
+    LTEXT           "&Format:",IDC_STATIC,20,22,24,8
+    COMBOBOX        IDC_COLOURFORMAT,50,20,74,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Palette:",IDC_STATIC,20,42,25,8
+    COMBOBOX        IDC_PALETTEDEPTH,50,40,74,50,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "&Options",IDC_STATIC,5,65,130,60
+    CONTROL         "&Mipmaps",IDC_MIPMAPS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,81,44,10
+    CONTROL         "&Twiddle",IDC_TWIDDLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,95,41,10
+    CONTROL         "&Pad End of File",IDC_PAD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,110,64,10
+    DEFPUSHBUTTON   "OK",IDOK,145,5,53,14
+    PUSHBUTTON      "Cancel",IDCANCEL,145,23,53,14
+END
+
+IDD_SETGLOBALINDEX DIALOG DISCARDABLE  0, 0, 186, 76
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Global Index"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Global Index:",IDC_STATIC,15,13,42,8
+    EDITTEXT        IDC_GLOBALINDEX,61,10,36,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "&Don't save global index",IDC_DISABLEGLOBALINDEX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,30,89,10
+    DEFPUSHBUTTON   "OK",IDOK,72,55,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,55,50,14
+END
+
+IDD_PVRFILEINFO DIALOG DISCARDABLE  0, 0, 172, 161
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "PVR File Information"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,60,140,50,14
+    ICON            IDI_PVRFILE,IDC_STATIC,7,7,20,20
+    CONTROL         "",IDC_FILENAME,"Static",SS_SIMPLE | SS_NOPREFIX | 
+                    WS_GROUP,40,15,120,8
+    EDITTEXT        IDC_FILESIZE,40,25,125,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    GROUPBOX        "Image Information",IDC_STATIC,5,40,160,95
+    LTEXT           "&Global Index:",IDC_STATIC,13,55,42,8
+    EDITTEXT        IDC_GLOBALINDEX,60,55,100,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "Image &Size:",IDC_STATIC,13,70,38,8
+    EDITTEXT        IDC_IMAGESIZE,60,70,100,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "Texture &Format:",IDC_STATIC,13,85,50,8
+    EDITTEXT        IDC_KAMUIFORMAT,13,95,147,24,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    LTEXT           "",IDC_CATEGORY_DESC,13,120,147,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        VERTGUIDE, 50
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_VQFSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_OUTPUTSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        VERTGUIDE, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_SETGLOBALINDEX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_PVRFILEINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        VERTGUIDE, 15
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE_AS
+    BUTTON      ID_FILE_EXPORT
+    BUTTON      ID_FILE_BROWSE
+    SEPARATOR
+    BUTTON      ID_EDIT_COPY
+    SEPARATOR
+    BUTTON      ID_TOOLS_GENERATEVQF
+    BUTTON      ID_VQ_COMPRESSIONANALYSIS
+    SEPARATOR
+    BUTTON      ID_VIEW_TILES
+    BUTTON      ID_VIEW_ZOOMNORMAL
+    BUTTON      ID_VIEW_MIPMAP
+END
+
+IDR_BROWSETOOLBAR TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_BROWSE_SWITCHWINDOW
+    SEPARATOR
+    BUTTON      ID_BROWSE_REFRESH
+    BUTTON      ID_BROWSE_PROPERTIES
+    SEPARATOR
+    BUTTON      ID_BROWSE_EXPLORER
+    SEPARATOR
+    BUTTON      ID_BROWSE_UPONELEVEL
+    BUTTON      ID_BROWSE_NEWFOLDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP  DISCARDABLE     "res\\toolbar.bmp"
+IDR_BROWSETOOLBAR       BITMAP  DISCARDABLE     "res\\browsetoolbar.bmp"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,1,14
+ PRODUCTVERSION 0,0,1,14
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Sega Europe\0"
+            VALUE "FileDescription", "WinPVR\0"
+            VALUE "FileVersion", "0.1.14 BETA\0"
+            VALUE "InternalName", "WinPVR\0"
+            VALUE "LegalCopyright", "Copyright © 1999\0"
+            VALUE "LegalTrademarks", "Contains paintlib code. paintlib is copyright (c) 1996-1998 Ulrich von Zadow\0"
+            VALUE "OriginalFilename", "WinPVR.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "PVR Texture Tool\0"
+            VALUE "ProductVersion", "0.1.14 BETA\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x809, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_PAN                 CURSOR  DISCARDABLE     "res\\pan.cur"
+IDC_POINT               CURSOR  DISCARDABLE     "res\\point.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Creates a new, empty image.\nNew"
+    ID_FILE_OPEN            "Open a new image file.\nOpen"
+    ID_FILE_SAVE_AS         "Saves the currently loaded image file.\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_EXIT            "Exits the program.\nExit"
+    ID_HELP_ABOUT           "Displays program and version information.\nAbout"
+    ID_FILE_PROPERTIES      "Displays the properties of the current file.\nProperties"
+    ID_TOOLS_GENERATEVQF    "Generates a VQ compressed file from the image.\nGenerate VQ"
+    ID_FILE_IMPORTALPHA     "Load another image for use as the alpha channel in this image.\nImport Alpha"
+    ID_VIEW_ZOOMIN          "Enlarge the image.\nZoom In"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_ZOOMOUT         "Shrink the image.\nZoom Out"
+    ID_VIEW_ZOOMNORMAL      "View the image at normal size.\nZoom 100%"
+    ID_EDIT_COPY_IMAGE      "Copies the image to the clipboard.\nCopy Image"
+    ID_EDIT_COPY_ALPHA      "Copies the alpha channel to the clipboard.\nCopy Alpha"
+    ID_EDIT_COPY_VQFIMAGE   "Copies the VQ image to the clipboard.\nCopy VQ Image"
+    ID_EDIT_COPY_VQFALPHA   "Copies the VQ Alpha to the clipboard.\nVQ Alpha"
+    ID_TOOLS_DELETEVQ       "Deletes the currently generated VQ version of the image.\nDelete VQ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_MIPMAPSLIDER        "Select the mip map level to display.\nMip Map"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY            "Copies an image to the clipboard.\nCopy"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_SAVEAS          "Saves the currently loaded image file.\nSave As"
+    ID_VIEW_STRETCHMIPMAPS  "Stretches the mipmaps to the same width as the normal resolution image.\nStretch Mipmaps"
+    ID_TOOLS_DELETEALPHA    "Deletes the alpha channel from the image.\nDelete Alpha"
+    ID_FILE_EXPORT          "Export the current VQ compressed image file.\nExport VQ"
+    ID_VIEW_MIPMAP_IMAGE    "Displays the left-hand image with mipmaps.\nMipmap Image"
+    ID_VIEW_MIPMAP_VQIMAGE  "Displays the right-hand image with mipmaps.\nMipmap VQ Image"
+    ID_VIEW_STRETCHMIPMAP   "Stretches each mipmap to the original image size.\nStretch Mipmap"
+    ID_TOOLS_SETGLOBALINDEX "Changes the global index for saving .pvr textures.\nSet Global Index"
+    ID_TOOLS_DELETEMIPMAPS  "Deletes the mipmaps from the current image.\nDelete Mipmaps"
+    ID_TOOLS_REGENERATEMIPMAPS 
+                            "Creates mip maps for the current image using simple 2x2 resampling.\nRegenerate Mipmaps"
+    ID_TOOLS_REVERSEALPHA   "Reverse alpha so 0xFF is transparent.\nReverse Alpha"
+    ID_FILE_BROWSE          "Browses .PVR files.\nPVR Browser"
+    ID_BROWSE_UPONELEVEL    "Goes up one level.\nUp One Level"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BROWSE_NEWFOLDER     "Browses in a new folder.\nSelect Folder"
+    ID_BROWSE_SWITCHWINDOW  "Switches back to the PVR tool window.\nSwitch Window"
+    ID_BROWSE_REFRESH       "Refreshes the current view.\nRefresh"
+    ID_BROWSE_DESKTOP       "Browses on the desktop.\nDesktop"
+    ID_BROWSE_DOCUMENTS     "Browses in the documents folder.\nDocuments"
+    IDC_BROWSEPATH          "Type the path of where you want to browse.\nPath"
+    ID_BROWSE_PROPERTIES    "Displays the properties of the currently selected PVR file.\nProperties"
+    ID_BROWSE_OPEN          "Opens the current file in this program.\nOpen"
+    ID_VIEW_FULLSCREEN      "Displays the image as full-screen tiles.\nTiles"
+    ID_VIEW_TILES_VQ        "Displays the VQ image as full-screen tiles.\nTile VQ Image"
+    ID_VIEW_TILES_IMAGE     "Displays the image as full-screen tiles.\nTile Image"
+    ID_VIEW_TILES           "Displays one of the images as full-screen tiles.\nTiles"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TILES_MIRROR    "Displays the full-screen tiles as mirrored.\nMirror Tiles"
+    ID_VQ_COMPRESSIONANALYSIS_DIFFERENCEX4 
+                            "Displays the difference between the original image and the VQ compressed image, scaled by 4\nDifference x4"
+    ID_VQ_COMPRESSIONANALYSIS_CODEBOOKINDICES 
+                            "Displays random coloured indices for the codebook indices used in the VQ image.\nCodebook Indices"
+    ID_EDIT_COPY_REFERENCEIMAGE 
+                            "Copies the reference image to the clipboard.\nCopy Reference Image"
+    ID_EDIT_COPY_REFERENCEALPHA 
+                            "Copies the reference image's alpha channel to the clipboard.\nCopy Reference Alpha"
+    ID_VIEW_MIPMAP          "Mipmap display options.\nMipmap Options"
+    ID_VIEW_MIPMAP_REFIMAGE "Displays mipmaps for the reference image.\nReference Mipmaps"
+    ID_VQ_COMPRESSIONANALYSIS_DIFFERENCE 
+                            "Displays the difference between the original image and the VQ compressed image.\nDifference"
+    ID_VQ_COMPRESSIONANALYSIS_DELETEREFERENCEIMAGE 
+                            "Deletes the VQ compression reference image.\nDelete Reference Image"
+    ID_VQ_COMPRESSIONANALYSIS 
+                            "Provides methods for analysing the VQ compressed.\nVQ Analysis"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BROWSE_EXPLORER      "Opens the current folder in Explorer.\nExplore"
+    ID_TOOLS_ENLARGETOPOW2  "Enlarges the image so that its dimensions are a power of 2.\nEnlarge To Power of 2"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_VFLIP          "Flips the image (and all mipmaps) vertically.\nFlip Vertical"
+    ID_TOOLS_HFLIP          "Flips the image (and all mipmaps) horizontally.\nFlip Horizontal"
+    ID_TOOLS_SCALEHALF      "Shrinks the image by a factor of 2.\nScale Half"
+    ID_VIEW_LOG             "Displays the log window.\nShow Log"
+    ID_TOOLS_MAKESQUARE     "Makes the image square (width and height the same).\nMake Square"
+    ID_TOOLS_PAGETOMIPMAP   "Converts vertically-stacked mipmaps into a mipmapped image.\nPage To Mipmaps"
+    ID_TOOLS_MIPMAPSTOPAGE  "Converts a mipmapped image into a page of vertically-stacked mipmaps.\nMipmap To Page"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

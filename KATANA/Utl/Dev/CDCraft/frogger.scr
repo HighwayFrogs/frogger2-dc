@@ -1,0 +1,1173 @@
+Gd "frogger.cim"
+RecordingDate 09/10/2000 15:01:25:00:00
+RecordArea SINGLE
+FileNameType	ISO9660L2
+SystemArea "F:\Frogger\cd\track01\Ip0000.bin"
+Track MODE1
+Volume
+	PrimaryVolume
+	SystemIdentifier            "SEGA SEGAKATANA"
+	VolumeIdentifier            "SAMPLE_GAME_TITLE"
+	VolumeSetIdentifier         "SAMPLE_GAME_TITLE"
+	PublisherIdentifier         "SEGA ENTERPRISES,LTD."
+	CopyrightFileIdentifier     "COPYRIGH.TXT"
+	AbstractFileIdentifier      "ABSTRACT.TXT"
+	BibliographicFileIdentifier "BIBLIOGR.TXT"
+	EndPrimaryVolume
+EndVolume
+	File ABSTRACT.TXT
+		FileSource "F:\Frogger\cd\track01\ABSTRACT.txt"
+		EndFileSource
+	EndFile
+	File BIBLIOGR.TXT
+		FileSource "F:\Frogger\cd\track01\BIBLIOGR.txt"
+		EndFileSource
+	EndFile
+	File COPYRIGH.TXT
+		FileSource "F:\Frogger\cd\track01\COPYRIGH.txt"
+		EndFileSource
+	EndFile
+	File EUROPEWARN.DA
+		FileSource "F:\Frogger\cd\track01\EuropeWarn.da"
+		EndFileSource
+	EndFile
+	File IP.BIN
+		FileSource "F:\Frogger\cd\track01\IP.BIN"
+		EndFileSource
+	EndFile
+	File IP0000.BIN
+		FileSource "F:\Frogger\cd\track01\IP0000.BIN"
+		EndFileSource
+	EndFile
+EndTrack
+Track CDDA
+	FileSource "F:\Frogger\cd\track01\EuropeWarn.da"
+	EndFileSource
+EndTrack
+EndRecordArea
+
+RecordArea HIGH
+FileNameType	ISO9660L2
+SystemArea "F:\Frogger\cd\track01\Ip.bin"
+Track MODE1
+Volume
+	PrimaryVolume
+	SystemIdentifier            "SEGA SEGAKATANA"
+	VolumeIdentifier            "SAMPLE_GAME_TITLE"
+	VolumeSetIdentifier         "SAMPLE_GAME_TITLE"
+	PublisherIdentifier         "SEGA ENTERPRISES,LTD."
+	EndPrimaryVolume
+EndVolume
+EndTrack
+Track CDDA
+	FileSource "F:\Frogger\cd\track04\EuropeWarn.da"
+	EndFileSource
+EndTrack
+Track MODE1
+	Directory TRACK03
+		File AFROG.PSI
+			FileSource "F:\Frogger\cd\track03\afrog.psi"
+			EndFileSource
+		EndFile
+		File TRACK07.STR
+			FileSource "F:\Frogger\cd\track03\track07.str"
+			EndFileSource
+		EndFile
+		File TRACK02.STR
+			FileSource "F:\Frogger\cd\track03\track02.str"
+			EndFileSource
+		EndFile
+		File AUDIO64.DRV
+			FileSource "F:\Frogger\cd\track03\audio64.drv"
+			EndFileSource
+		EndFile
+		File BACKDROP.PSI
+			FileSource "F:\Frogger\cd\track03\backdrop.psi"
+			EndFileSource
+		EndFile
+		File BIGFROG.PSI
+			FileSource "F:\Frogger\cd\track03\bigfrog.psi"
+			EndFileSource
+		EndFile
+		File TRACK03.STR
+			FileSource "F:\Frogger\cd\track03\track03.str"
+			EndFileSource
+		EndFile
+		File FEMFROG.PSI
+			FileSource "F:\Frogger\cd\track03\femfrog.psi"
+			EndFileSource
+		EndFile
+		File FROGGER.PSI
+			FileSource "F:\Frogger\cd\track03\frogger.psi"
+			EndFileSource
+		EndFile
+		File TRACK04.STR
+			FileSource "F:\Frogger\cd\track03\track04.str"
+			EndFileSource
+		EndFile
+		File GHPLNTS.PSI
+			FileSource "F:\Frogger\cd\track03\ghplnts.psi"
+			EndFileSource
+		EndFile
+		File TRACK05.STR
+			FileSource "F:\Frogger\cd\track03\track05.str"
+			EndFileSource
+		EndFile
+		File HLF.PSI
+			FileSource "F:\Frogger\cd\track03\hlf.psi"
+			EndFileSource
+		EndFile
+		File HOPPER.PSI
+			FileSource "F:\Frogger\cd\track03\hopper.psi"
+			EndFileSource
+		EndFile
+		File LILLI.PSI
+			FileSource "F:\Frogger\cd\track03\lilli.psi"
+			EndFileSource
+		EndFile
+		File PATHFALL.PSI
+			FileSource "F:\Frogger\cd\track03\pathfall.psi"
+			EndFileSource
+		EndFile
+		File ROCKFALL.PSI
+			FileSource "F:\Frogger\cd\track03\rockfall.psi"
+			EndFileSource
+		EndFile
+		File RU.PSI
+			FileSource "F:\Frogger\cd\track03\ru.psi"
+			EndFileSource
+		EndFile
+		File TRACK06.STR
+			FileSource "F:\Frogger\cd\track03\track06.str"
+			EndFileSource
+		EndFile
+		File TRACK01.STR
+			FileSource "F:\Frogger\cd\track03\track01.str"
+			EndFileSource
+		EndFile
+		File TRACK08.STR
+			FileSource "F:\Frogger\cd\track03\track08.str"
+			EndFileSource
+		EndFile
+		File TAD.PSI
+			FileSource "F:\Frogger\cd\track03\tad.psi"
+			EndFileSource
+		EndFile
+		File TANK.PSI
+			FileSource "F:\Frogger\cd\track03\tank.psi"
+			EndFileSource
+		EndFile
+		File TOAD.PSI
+			FileSource "F:\Frogger\cd\track03\toad.psi"
+			EndFileSource
+		EndFile
+		File TRACK09.STR
+			FileSource "F:\Frogger\cd\track03\track09.str"
+			EndFileSource
+		EndFile
+		File TWEE.PSI
+			FileSource "F:\Frogger\cd\track03\twee.psi"
+			EndFileSource
+		EndFile
+		File XXA_SPTL.PSI
+			FileSource "F:\Frogger\cd\track03\xxa_sptl.psi"
+			EndFileSource
+		EndFile
+		File XXA_SPTR.PSI
+			FileSource "F:\Frogger\cd\track03\xxa_sptr.psi"
+			EndFileSource
+		EndFile
+		File MANATEE.DRV
+			FileSource "F:\Frogger\cd\track03\manatee.drv"
+			EndFileSource
+		EndFile
+		File LANGUAGE.TXT
+			FileSource "F:\Frogger\cd\track03\language.txt"
+			EndFileSource
+		EndFile
+		File FROGLET.PSI
+			FileSource "F:\Frogger\cd\track03\froglet.psi"
+			EndFileSource
+		EndFile
+		File FROGLET01.PSI
+			FileSource "F:\Frogger\cd\track03\froglet01.psi"
+			EndFileSource
+		EndFile
+		File FROGLET02.PSI
+			FileSource "F:\Frogger\cd\track03\froglet02.psi"
+			EndFileSource
+		EndFile
+		File FROGLET03.PSI
+			FileSource "F:\Frogger\cd\track03\froglet03.psi"
+			EndFileSource
+		EndFile
+		File FROGLET04.PSI
+			FileSource "F:\Frogger\cd\track03\froglet04.psi"
+			EndFileSource
+		EndFile
+		File FROGLET05.PSI
+			FileSource "F:\Frogger\cd\track03\froglet05.psi"
+			EndFileSource
+		EndFile
+		File BOULDER.PSI
+			FileSource "F:\Frogger\cd\track03\boulder.psi"
+			EndFileSource
+		EndFile
+		File CUBE.PSI
+			FileSource "F:\Frogger\cd\track03\cube.psi"
+			EndFileSource
+		EndFile
+		File LIONA.PSI
+			FileSource "F:\Frogger\cd\track03\liona.psi"
+			EndFileSource
+		EndFile
+		File NOTHING.PSI
+			FileSource "F:\Frogger\cd\track03\nothing.psi"
+			EndFileSource
+		EndFile
+		File SCORPION.PSI
+			FileSource "F:\Frogger\cd\track03\scorpion.psi"
+			EndFileSource
+		EndFile
+		File SPHERE.PSI
+			FileSource "F:\Frogger\cd\track03\sphere.psi"
+			EndFileSource
+		EndFile
+		File MHOPPER.PSI
+			FileSource "F:\Frogger\cd\track03\mhopper.psi"
+			EndFileSource
+		EndFile
+		File MFROGGER.PSI
+			FileSource "F:\Frogger\cd\track03\mfrogger.psi"
+			EndFileSource
+		EndFile
+		File MLILLI.PSI
+			FileSource "F:\Frogger\cd\track03\mlilli.psi"
+			EndFileSource
+		EndFile
+		File MSWAMPY.PSI
+			FileSource "F:\Frogger\cd\track03\mswampy.psi"
+			EndFileSource
+		EndFile
+		File TRACK10.STR
+			FileSource "F:\Frogger\cd\track03\track10.str"
+			EndFileSource
+		EndFile
+		File MIDIDA.DRV
+			FileSource "F:\Frogger\cd\track03\midida.drv"
+			EndFileSource
+		EndFile
+		File STRSFX.KAT
+			FileSource "F:\Frogger\cd\track03\strsfx.kat"
+			EndFileSource
+		EndFile
+		File RUBBLEA.PSI
+			FileSource "F:\Frogger\cd\track03\rubblea.psi"
+			EndFileSource
+		EndFile
+		File CUBE01.PSI
+			FileSource "F:\Frogger\cd\track03\cube01.psi"
+			EndFileSource
+		EndFile
+		File CUBE3.PSI
+			FileSource "F:\Frogger\cd\track03\cube3.psi"
+			EndFileSource
+		EndFile
+		File CUBE1.PSI
+			FileSource "F:\Frogger\cd\track03\cube1.psi"
+			EndFileSource
+		EndFile
+		File CUBE2.PSI
+			FileSource "F:\Frogger\cd\track03\cube2.psi"
+			EndFileSource
+		EndFile
+		File CUBE0.PSI
+			FileSource "F:\Frogger\cd\track03\cube0.psi"
+			EndFileSource
+		EndFile
+		File TRACK11.STR
+			FileSource "F:\Frogger\cd\track03\track11.str"
+			EndFileSource
+		EndFile
+		File CUBE4.PSI
+			FileSource "F:\Frogger\cd\track03\cube4.psi"
+			EndFileSource
+		EndFile
+		File CUBE5.PSI
+			FileSource "F:\Frogger\cd\track03\cube5.psi"
+			EndFileSource
+		EndFile
+		File CUBE7.PSI
+			FileSource "F:\Frogger\cd\track03\cube7.psi"
+			EndFileSource
+		EndFile
+		File VSSVER.SCC
+			FileSource "F:\Frogger\cd\track03\vssver.scc"
+			EndFileSource
+		EndFile
+		Directory INCBIN
+			File ACOSTAB.BIN
+				FileSource "F:\Frogger\cd\track03\incbin\acostab.bin"
+				EndFileSource
+			EndFile
+			File SQRTABLE.BIN
+				FileSource "F:\Frogger\cd\track03\incbin\Sqrtable.bin"
+				EndFileSource
+			EndFile
+		EndDirectory
+		Directory BACKDROPS
+			File LOADING.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\loading.bmp"
+				EndFileSource
+			EndFile
+			File LOADING.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\loading.pvr"
+				EndFileSource
+			EndFile
+			File FR2LEGAL.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\fr2legal.bmp"
+				EndFileSource
+			EndFile
+			File LOADINGSMALL.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\loadingsmall.bmp"
+				EndFileSource
+			EndFile
+			File LOADING.BAK
+				FileSource "F:\Frogger\cd\track03\backdrops\loading.bak"
+				EndFileSource
+			EndFile
+			File LOADINGEU.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\loadingeu.bmp"
+				EndFileSource
+			EndFile
+			File PSPBRWSE.JBF
+				FileSource "F:\Frogger\cd\track03\backdrops\pspbrwse.jbf"
+				EndFileSource
+			EndFile
+			File LOADINGUS.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\loadingus.bmp"
+				EndFileSource
+			EndFile
+			File FR2LEGAL.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\fr2legal.pvr"
+				EndFileSource
+			EndFile
+			File LOADINGEU.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\loadingeu.pvr"
+				EndFileSource
+			EndFile
+			File LOADINGUS.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\loadingus.pvr"
+				EndFileSource
+			EndFile
+			File SOFDEC.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\sofdec.bmp"
+				EndFileSource
+			EndFile
+			File SOFDEC.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\sofdec.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK21.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork21.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK20.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork20.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK19.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork19.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK18.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork18.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK17.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork17.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK16.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork16.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK15.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork15.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK14.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork14.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK13.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork13.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK12.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork12.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK11.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork11.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK10.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork10.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK09.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork09.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK08.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork08.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK07.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork07.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK06.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork06.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK05.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork05.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK04.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork04.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK03.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork03.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK02.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork02.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK01.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork01.pvr"
+				EndFileSource
+			EndFile
+			File ARTWORK00.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork00.pvr"
+				EndFileSource
+			EndFile
+			File TEAMPHOTO.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\teamphoto.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK08.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork08.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK01.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork01.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK02.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork02.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK03.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork03.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK04.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork04.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK05.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork05.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK06.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork06.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK07.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork07.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK00.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork00.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK09.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork09.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK10.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork10.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK11.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork11.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK12.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork12.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK13.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork13.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK14.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork14.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK15.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork15.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK16.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork16.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK17.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork17.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK18.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork18.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK19.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork19.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK20.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork20.bmp"
+				EndFileSource
+			EndFile
+			File ARTWORK00.BAK
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork00.bak"
+				EndFileSource
+			EndFile
+			File ARTWORK01.BAK
+				FileSource "F:\Frogger\cd\track03\backdrops\artwork01.bak"
+				EndFileSource
+			EndFile
+			File FR2LEGAL.BAK
+				FileSource "F:\Frogger\cd\track03\backdrops\fr2legal.bak"
+				EndFileSource
+			EndFile
+			File LOADINGUS.BAK
+				FileSource "F:\Frogger\cd\track03\backdrops\loadingus.bak"
+				EndFileSource
+			EndFile
+			File FR2LEGALEU.BMP
+				FileSource "F:\Frogger\cd\track03\backdrops\fr2legalEU.bmp"
+				EndFileSource
+			EndFile
+			File FR2LEGALEU.PVR
+				FileSource "F:\Frogger\cd\track03\backdrops\fr2legalEU.pvr"
+				EndFileSource
+			EndFile
+			File LOADINGEU.BAK
+				FileSource "F:\Frogger\cd\track03\backdrops\loadingeu.bak"
+				EndFileSource
+			EndFile
+		EndDirectory
+		Directory DEMOS
+			File RECORD-0-0.KEY  ;<--- to be replaced.
+				FileSource "F:\Frogger\cd\track03\demos\record-0-0.key"
+				EndFileSource
+			EndFile
+			File RECORD-1-0.KEY  ;<--- to be replaced.
+				FileSource "F:\Frogger\cd\track03\demos\record-1-0.key"
+				EndFileSource
+			EndFile
+			File RECORD-6-1.KEY  ;<--- to be replaced.
+				FileSource "F:\Frogger\cd\track03\demos\record-6-1.key"
+				EndFileSource
+			EndFile
+		EndDirectory
+		Directory FONTS
+			File FONT.PVR
+				FileSource "F:\Frogger\cd\track03\Fonts\font.pvr"
+				EndFileSource
+			EndFile
+			File FONT12.FON
+				FileSource "F:\Frogger\cd\track03\Fonts\font12.fon"
+				EndFileSource
+			EndFile
+			File FONT16.FON
+				FileSource "F:\Frogger\cd\track03\Fonts\font16.fon"
+				EndFileSource
+			EndFile
+			File FONT18.FON
+				FileSource "F:\Frogger\cd\track03\Fonts\font18.fon"
+				EndFileSource
+			EndFile
+			File FONT32.FON
+				FileSource "F:\Frogger\cd\track03\Fonts\font32.fon"
+				EndFileSource
+			EndFile
+			File FONTL.FON
+				FileSource "F:\Frogger\cd\track03\Fonts\fontl.fon"
+				EndFileSource
+			EndFile
+			File FONTS.FON
+				FileSource "F:\Frogger\cd\track03\Fonts\fonts.fon"
+				EndFileSource
+			EndFile
+			File FONT.BAK
+				FileSource "F:\Frogger\cd\track03\Fonts\font.bak"
+				EndFileSource
+			EndFile
+			File SMALLFONT.PVR
+				FileSource "F:\Frogger\cd\track03\Fonts\smallfont.pvr"
+				EndFileSource
+			EndFile
+			File SMALLFONT.BAK
+				FileSource "F:\Frogger\cd\track03\Fonts\smallfont.bak"
+				EndFileSource
+			EndFile
+		EndDirectory
+		Directory SFX
+			File WART.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\wart.kat"
+				EndFileSource
+			EndFile
+			File TREEBY.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\treeby.kat"
+				EndFileSource
+			EndFile
+			File TAD.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\tad.kat"
+				EndFileSource
+			EndFile
+			File SWAMPY.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\swampy.kat"
+				EndFileSource
+			EndFile
+			File SUB.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\sub.kat"
+				EndFileSource
+			EndFile
+			File SUPERRETRO.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\superretro.kat"
+				EndFileSource
+			EndFile
+			File SPACE.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\space.kat"
+				EndFileSource
+			EndFile
+			File ROOBIE.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\roobie.kat"
+				EndFileSource
+			EndFile
+			File MULTI.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\multi.kat"
+				EndFileSource
+			EndFile
+			File LILLIE.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\lillie.kat"
+				EndFileSource
+			EndFile
+			File LAB.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\lab.kat"
+				EndFileSource
+			EndFile
+			File HALLOWEEN.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\halloween.kat"
+				EndFileSource
+			EndFile
+			File GARDEN.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\garden.kat"
+				EndFileSource
+			EndFile
+			File FRONTEND.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\FRONTEND.kat"
+				EndFileSource
+			EndFile
+			File FROGGER.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\frogger.kat"
+				EndFileSource
+			EndFile
+			File ANCIENTS.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\ancients.kat"
+				EndFileSource
+			EndFile
+			File ANCIENTS.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\ancients.txt"
+				EndFileSource
+			EndFile
+			File FROGGER.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\frogger.txt"
+				EndFileSource
+			EndFile
+			File FRONTEND.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\frontend.txt"
+				EndFileSource
+			EndFile
+			File GARDEN.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\garden.txt"
+				EndFileSource
+			EndFile
+			File HALLOWEEN.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\halloween.txt"
+				EndFileSource
+			EndFile
+			File LAB.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\lab.txt"
+				EndFileSource
+			EndFile
+			File LILLIE.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\lillie.txt"
+				EndFileSource
+			EndFile
+			File MULTI.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\multi.txt"
+				EndFileSource
+			EndFile
+			File ROOBIE.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\roobie.txt"
+				EndFileSource
+			EndFile
+			File SPACE.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\space.txt"
+				EndFileSource
+			EndFile
+			File SUB.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\sub.txt"
+				EndFileSource
+			EndFile
+			File SUPERRETRO.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\superretro.txt"
+				EndFileSource
+			EndFile
+			File SWAMPY.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\swampy.txt"
+				EndFileSource
+			EndFile
+			File TAD.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\tad.txt"
+				EndFileSource
+			EndFile
+			File TANK.KAT
+				FileSource "F:\Frogger\cd\track03\sfx\tank.kat"
+				EndFileSource
+			EndFile
+			File TANK.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\tank.txt"
+				EndFileSource
+			EndFile
+			File TREEBY.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\treeby.txt"
+				EndFileSource
+			EndFile
+			File WART.TXT
+				FileSource "F:\Frogger\cd\track03\sfx\wart.txt"
+				EndFileSource
+			EndFile
+		EndDirectory
+		Directory TEXTURES
+			File ANCIENTS.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\ancients.spt"
+				EndFileSource
+			EndFile
+			File CITY.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\city.spt"
+				EndFileSource
+			EndFile
+			File GARDEN.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\garden.spt"
+				EndFileSource
+			EndFile
+			File GENERIC.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\generic.spt"
+				EndFileSource
+			EndFile
+			File HALLOWEEN.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\halloween.spt"
+				EndFileSource
+			EndFile
+			File HUB.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\hub.spt"
+				EndFileSource
+			EndFile
+			File LAB.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\lab.spt"
+				EndFileSource
+			EndFile
+			File LANGUAGE.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\language.spt"
+				EndFileSource
+			EndFile
+			File NEWBABY.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\Newbaby.spt"
+				EndFileSource
+			EndFile
+			File SPACE.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\space.spt"
+				EndFileSource
+			EndFile
+			File SUB.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\sub.spt"
+				EndFileSource
+			EndFile
+			File SUPER.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\super.spt"
+				EndFileSource
+			EndFile
+			File TITLES.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\titles.spt"
+				EndFileSource
+			EndFile
+			File FROGGER2.PVR
+				FileSource "F:\Frogger\cd\track03\Textures\Frogger2.pvr"
+				EndFileSource
+			EndFile
+			File GARIB.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\garib.spt"
+				EndFileSource
+			EndFile
+			File RETRO.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\retro.spt"
+				EndFileSource
+			EndFile
+			File NEWHUB.SPT
+				FileSource "F:\Frogger\cd\track03\Textures\newhub.spt"
+				EndFileSource
+			EndFile
+		EndDirectory
+		Directory STAKFILES
+			File ANCIENTS1.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\ancients1.stk"
+				EndFileSource
+			EndFile
+			File ANCIENTS2.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\ancients2.stk"
+				EndFileSource
+			EndFile
+			File ANCIENTS3.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\ancients3.stk"
+				EndFileSource
+			EndFile
+			File ANCIENTSMULTI.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\ancientsmulti.stk"
+				EndFileSource
+			EndFile
+			File CITYMULTI.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\citymulti.stk"
+				EndFileSource
+			EndFile
+			File FROGGER.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\frogger.stk"
+				EndFileSource
+			EndFile
+			File FRONTEND.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\frontend.stk"
+				EndFileSource
+			EndFile
+			File GARDEN1.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\garden1.stk"
+				EndFileSource
+			EndFile
+			File GENERIC.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\generic.stk"
+				EndFileSource
+			EndFile
+			File HALLOWEEN1.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\halloween1.stk"
+				EndFileSource
+			EndFile
+			File HALLOWEEN2.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\halloween2.stk"
+				EndFileSource
+			EndFile
+			File HALLOWEEN3.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\halloween3.stk"
+				EndFileSource
+			EndFile
+			File LAB1.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\lab1.stk"
+				EndFileSource
+			EndFile
+			File LAB2.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\lab2.stk"
+				EndFileSource
+			EndFile
+			File LAB3.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\lab3.stk"
+				EndFileSource
+			EndFile
+			File LABMULTI1.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\labmulti1.stk"
+				EndFileSource
+			EndFile
+			File LABMULTI2.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\labmulti2.stk"
+				EndFileSource
+			EndFile
+			File LABMULTI3.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\labmulti3.stk"
+				EndFileSource
+			EndFile
+			File LILLIE.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\lillie.stk"
+				EndFileSource
+			EndFile
+			File MFROGGER.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\mfrogger.stk"
+				EndFileSource
+			EndFile
+			File MLILLIE.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\mlillie.stk"
+				EndFileSource
+			EndFile
+			File MROOBIE.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\mroobie.stk"
+				EndFileSource
+			EndFile
+			File MSWAMPY.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\mswampy.stk"
+				EndFileSource
+			EndFile
+			File MTAD.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\mtad.stk"
+				EndFileSource
+			EndFile
+			File MTANK.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\mtank.stk"
+				EndFileSource
+			EndFile
+			File MTOAD.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\mtoad.stk"
+				EndFileSource
+			EndFile
+			File MTREEBY.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\mtreeby.stk"
+				EndFileSource
+			EndFile
+			File RETRO1.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\retro1.stk"
+				EndFileSource
+			EndFile
+			File RETRO10.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\retro10.stk"
+				EndFileSource
+			EndFile
+			File RETRO2.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\retro2.stk"
+				EndFileSource
+			EndFile
+			File RETRO3.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\retro3.stk"
+				EndFileSource
+			EndFile
+			File RETRO4.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\retro4.stk"
+				EndFileSource
+			EndFile
+			File RETRO5.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\retro5.stk"
+				EndFileSource
+			EndFile
+			File RETRO6.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\retro6.stk"
+				EndFileSource
+			EndFile
+			File RETRO7.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\retro7.stk"
+				EndFileSource
+			EndFile
+			File RETRO8.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\retro8.stk"
+				EndFileSource
+			EndFile
+			File RETRO9.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\retro9.stk"
+				EndFileSource
+			EndFile
+			File RETROMULTI1.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\retromulti1.stk"
+				EndFileSource
+			EndFile
+			File RETROMULTI2.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\retromulti2.stk"
+				EndFileSource
+			EndFile
+			File RETROMULTI3.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\retromulti3.stk"
+				EndFileSource
+			EndFile
+			File RETROMULTI4.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\retromulti4.stk"
+				EndFileSource
+			EndFile
+			File ROOBIE.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\roobie.stk"
+				EndFileSource
+			EndFile
+			File SPACE1.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\space1.stk"
+				EndFileSource
+			EndFile
+			File SPACE2.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\space2.stk"
+				EndFileSource
+			EndFile
+			File SPACE3.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\space3.stk"
+				EndFileSource
+			EndFile
+			File SUB1.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\sub1.stk"
+				EndFileSource
+			EndFile
+			File SUB2.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\sub2.stk"
+				EndFileSource
+			EndFile
+			File SUB3.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\sub3.stk"
+				EndFileSource
+			EndFile
+			File SUPER1.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\super1.stk"
+				EndFileSource
+			EndFile
+			File SWAMPY.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\swampy.stk"
+				EndFileSource
+			EndFile
+			File TAD.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\tad.stk"
+				EndFileSource
+			EndFile
+			File TANK.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\tank.stk"
+				EndFileSource
+			EndFile
+			File TOAD.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\toad.stk"
+				EndFileSource
+			EndFile
+			File TRAINING.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\training.stk"
+				EndFileSource
+			EndFile
+			File TREEBY.STK
+				FileSource "F:\Frogger\cd\track03\StakFiles\treeby.stk"
+				EndFileSource
+			EndFile
+		EndDirectory
+		Directory FMV
+			File 03S.SFD
+				FileSource "F:\Frogger\cd\track03\fmv\03s.sfd"
+				EndFileSource
+			EndFile
+			File 05S.SFD
+				FileSource "F:\Frogger\cd\track03\fmv\05s.sfd"
+				EndFileSource
+			EndFile
+			File 06S.SFD
+				FileSource "F:\Frogger\cd\track03\fmv\06s.sfd"
+				EndFileSource
+			EndFile
+			File 07S.SFD
+				FileSource "F:\Frogger\cd\track03\fmv\07s.sfd"
+				EndFileSource
+			EndFile
+			File 08S.SFD
+				FileSource "F:\Frogger\cd\track03\fmv\08s.sfd"
+				EndFileSource
+			EndFile
+			File 09S.SFD
+				FileSource "F:\Frogger\cd\track03\fmv\09s.sfd"
+				EndFileSource
+			EndFile
+			File 10S.SFD
+				FileSource "F:\Frogger\cd\track03\fmv\10s.sfd"
+				EndFileSource
+			EndFile
+			File 11S.SFD
+				FileSource "F:\Frogger\cd\track03\fmv\11s.sfd"
+				EndFileSource
+			EndFile
+			File 12S.SFD
+				FileSource "F:\Frogger\cd\track03\fmv\12s.sfd"
+				EndFileSource
+			EndFile
+			File 04S.SFD
+				FileSource "F:\Frogger\cd\track03\fmv\04s.sfd"
+				EndFileSource
+			EndFile
+			File 02S.SFD
+				FileSource "F:\Frogger\cd\track03\fmv\02s.sfd"
+				EndFileSource
+			EndFile
+			File BLITZS.SFD
+				FileSource "F:\Frogger\cd\track03\fmv\blitzs.sfd"
+				EndFileSource
+			EndFile
+			File ATARIS.SFD
+				FileSource "F:\Frogger\cd\track03\fmv\ataris.sfd"
+				EndFileSource
+			EndFile
+			File INTRO.SFD
+				FileSource "F:\Frogger\cd\track03\fmv\intro.sfd"
+				EndFileSource
+			EndFile
+			File HLOGO.SFD
+				FileSource "F:\Frogger\cd\track03\fmv\HLogo.sfd"
+				EndFileSource
+			EndFile
+		EndDirectory
+		Directory MUSIC
+			File TRACK07.ADX
+				FileSource "F:\Frogger\cd\track03\music\track07.adx"
+				EndFileSource
+			EndFile
+			File TRACK02.ADX
+				FileSource "F:\Frogger\cd\track03\music\track02.adx"
+				EndFileSource
+			EndFile
+			File TRACK03.ADX
+				FileSource "F:\Frogger\cd\track03\music\track03.adx"
+				EndFileSource
+			EndFile
+			File TRACK04.ADX
+				FileSource "F:\Frogger\cd\track03\music\track04.adx"
+				EndFileSource
+			EndFile
+			File TRACK05.ADX
+				FileSource "F:\Frogger\cd\track03\music\track05.adx"
+				EndFileSource
+			EndFile
+			File TRACK06.ADX
+				FileSource "F:\Frogger\cd\track03\music\track06.adx"
+				EndFileSource
+			EndFile
+			File TRACK01.ADX
+				FileSource "F:\Frogger\cd\track03\music\track01.adx"
+				EndFileSource
+			EndFile
+			File TRACK08.ADX
+				FileSource "F:\Frogger\cd\track03\music\track08.adx"
+				EndFileSource
+			EndFile
+			File TRACK09.ADX
+				FileSource "F:\Frogger\cd\track03\music\track09.adx"
+				EndFileSource
+			EndFile
+			File TRACK10.ADX
+				FileSource "F:\Frogger\cd\track03\music\track10.adx"
+				EndFileSource
+			EndFile
+			File TRACK11.ADX
+				FileSource "F:\Frogger\cd\track03\music\track11.adx"
+				EndFileSource
+			EndFile
+		EndDirectory
+	EndDirectory
+EndTrack
+EndRecordArea
+EndGd

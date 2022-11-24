@@ -1,0 +1,3 @@
+*.wav
+x:\teamspirit\psxversion\psxsound\sfx\generic\*.wav
+

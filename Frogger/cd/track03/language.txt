@@ -1,0 +1,525 @@
+LANG_NAME	Comments	English	Français	Deutsch	Italiano	US
+STR_START	Refers to controller button	Start	START	Start	START	Start
+STR_UP	Refers to controller button	Up	Haut	Hoch	Su	Up
+STR_LEFT	Refers to controller button	Left	Gauche	Links	Sinistra	Left
+STR_DOWN	Refers to controller button	Down	Bas	Runter	Giù	Down
+STR_RIGHT	Refers to controller button	Right	Droite	Rechts	Destra	Right
+STR_WORLD_GARDEN	Graphic zone name	Garden	Jardin	Garten	Giardino	Garden
+STR_WORLD_ANCIENT	Graphic zone name	Ancients	Antiquité	Altertum	Antichità 	Ancients
+STR_WORLD_SPACE	Graphic zone name	Space	Espace	Weltall	Spazio	Space
+STR_WORLD_CITY	Graphic zone name	City	Ville	City	Metropoli	City
+STR_WORLD_SUB	Graphic zone name	Subterranean	Souterrain	Unterwelt	Sotterranei	Subterranean
+STR_WORLD_LAB	Graphic zone name	Laboratory	Laboratoire	Labor	Laboratorio	Laboratory
+STR_WORLD_HALL	Graphic zone name	Halloween	Halloween	Halloween	Halloween	Halloween
+STR_WORLD_SWAMPY	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_WORLD_RETRO	Graphic zone name	Super Retro	Super rétro	Super-Retro	Super retro	Super Retro
+STR_LEVEL_UNNAMED	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_LEVEL_GARDEN1	Graphic zone name	The Garden	Le jardin	Garten	Il giardino	The Garden
+STR_LEVEL_GARDENMULTI	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_LEVEL_ANCIENT1	Level name	Boulder Canyon	Pierre qui roule	Felsentempel	Tempio maledetto	Boulder Canyon
+STR_LEVEL_ANCIENT2	Level name	Pyramid Climb	Sur la pyramide	Tal der Könige	Scala la piramide	Pyramid Climb
+STR_LEVEL_ANCIENT3	Level name	Grindstone	Meule	Mühlstein	Macine	Grindstone
+STR_LEVEL_ANCIENTMULTI	Multiplayer level name	Valley Rally	Rallye dans la vallée	Schlucht- Rallye	Valle dei templi	Valley Rally
+STR_LEVEL_SPACE1	Level name	Space Station	Station orbitale	Raumstation	Stazione cosmica	Space Station
+STR_LEVEL_SPACE2	Level name	Space Chase	Traque en orbite	Weltraumjagd	Corsa spaziale!	Space Chase
+STR_LEVEL_SPACE3	Level name	Spacesuckers	Cosmogobeurs	Raumröhren	Risucchio alieno 	Spacesuckers
+STR_LEVEL_SPACEMULTI	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_LEVEL_CITY1	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_LEVEL_CITY2	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_LEVEL_CITY3	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_LEVEL_CITYMULTI	Multiplayer level name	Dock Dash	Quaivalcade	Dockrennen	Inseguimento sul molo	Dock Dash
+STR_LEVEL_SUB1	Level name	The Gold Mine	La mine d'or	Goldmine	La miniera d'oro	The Gold Mine
+STR_LEVEL_SUB2	Level name	The Ant's Nest	La fourmilière	Ameisenstaat	Il formicaio	The Ant's Nest
+STR_LEVEL_SUB3	Level name	Lava Palaver	Flots de lave	Lava-Palaver	Lava assassina	Lava Palaver
+STR_LEVEL_SUBMULTI	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_LEVEL_LAB1	Level name	D15CO Lab	Labo D15CO	D15CO-Labor	Laboratorio D15CO	D15CO Lab
+STR_LEVEL_LAB2	Level name	Research Facility	Centre d'études	Versuchslabor	Area top secret	Research Facility
+STR_LEVEL_LAB3	Level name	Infernal Machine	Machine infernale	Höllenmaschine	Macchina infernale	Infernal Machine
+STR_LEVEL_LABMULTI1	Multiplayer level name	Trail Blazer	Ouvrir la voie	Pfadfinder	Apripista	Trail Blazer
+STR_LEVEL_LABMULTI2	Multiplayer level name	Cornered	Coincé	In der Falle	Messo all'angolo	Cornered
+STR_LEVEL_LABMULTI3	Multiplayer level name	Boxed In	Bloqué	Eingeklemmt	Accerchiato	Boxed In
+STR_LEVEL_HALL1	Level name	Graveyard Garden	Le cimetière	Friedhof	Il cimitero	Graveyard Garden
+STR_LEVEL_HALL2	Level name	Haunted House	La maison hantée	Spukschloss	La casa infestata 	Haunted House
+STR_LEVEL_HALLMULTI	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_LEVEL_SWAMPY1	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_LEVEL_SWAMPY2	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_LEVEL_SWAMPY3	Level name	Windup	Dernier petit tour	Hoch hinaus	Vortice finale	Windup
+STR_LEVEL_SWAMPY4	Level name	Swampy's Lair	Dans l'antre de Swampy	Swampys Versteck	La tana di Swampy	Swampy's Lair
+STR_LEVEL_RETRO1	Retro level name	Way Back When	Bon vieux temps	Anno dazumal	Come ai bei tempi	Way Back When
+STR_LEVEL_RETRO2	Retro level name	Toad Road	Rue du crapaud	Kröten-Highway	La via dei rospi	Toad Road
+STR_LEVEL_RETRO3	Retro level name	One Way	Contre-courant	Gegen den Strom	Senso unico	One Way
+STR_LEVEL_RETRO4	Retro level name	Round The Bend!	Zigzags zinzin !	Um die Kurve!	Dietro la curva!	Round The Bend!
+STR_LEVEL_RETRO5	Retro level name	Like Crocwork!	Ça roule !	Chrokologisch!	Croccorologio	Like Crocwork!
+STR_LEVEL_RETRO6	Retro level name	Frog Jam	Embouteillage	Stammschwemme	Terrore sul fiume	Frog Jam
+STR_LEVEL_RETRO7	Retro level name	Gridlock	Trafic chaotique	Verkehrschaos	Ingorgo	Gridlock
+STR_LEVEL_RETRO8	Retro level name	Driven Back?	A contresens	Massenansturm	Contro corrente	Driven Back?
+STR_LEVEL_RETRO9	Retro level name	Twister	Spirale	Twister	Filo da torcere	Twister
+STR_LEVEL_RETRO10	Retro level name	Blockade	Blocus	Blockade	Assedio urbano	Blockade
+STR_LEVEL_RETROMULTI1	Retro multiplayer level name	Way Back When	Bon vieux temps	Anno dazumal	Come ai vecchi tempi	Way Back When
+STR_LEVEL_RETROMULTI2	Retro multiplayer level name	Toad Road	Rue du crapaud	Kröten- Highway	Il sentiero dei rospi	Toad Road
+STR_LEVEL_RETROMULTI3	Retro multiplayer level name	Gridlock	Trafic chaotique	Verkehrs- chaos	Ingorgo	Gridlock
+STR_FRONTEND_STATUS	Key/Function pair * 3	Cursors select   Enter confirm   Esc cancel	Touches de déplacement du curseur sélectionner   Entrée confirmer   Echap annuler	Cursor Auswählen   Eingabe Bestätigen  Esc Abbrechen	Tasti cursore per selezionare  Invio per confermare  Esc per annullare	Cursors select   Enter confirm   Esc cancel
+STR_OPTIONS_MUSICVOLUME	Used when adjusting volume	Music Volume	Volume de la musique	Musiklautstärke	Volume musiche	Music Volume
+STR_OPTIONS_SFXVOLUME	Used when adjusting volume	Sound Effect Volume	Volume des effets sonores	Geräuschlautstärke	Volume effetti sonori	Sound Effect Volume
+STR_OPTIONS_PLAYTRACK	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_OPTIONS_PLAYSFX	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_OPTIONS_DESIGNVIEW	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_GAMEOVER	When game ends	Game Over	Fin de partie	Game Over 	Fine della partita	Game Over
+STR_RESTARTLEVEL	Select this option to restart level	Restart Level	Recommencer le niveau	Level neu starten	Ricomincia livello	Restart Level
+STR_QUIT	Select this option to quit level	Quit	Quitter	Beenden	Esci	Quit
+STR_QUIT_TO_WINDOWS	Guess what!	Quit to Windows	Retour Windows	Zurück zu Windows	Esci su Windows	Quit to Windows
+STR_RATING_BAD	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_RATING_OKAY	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_RATING_GOOD	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_RATING_FAB	DON’T TRANSLATE	BUGU	BUGU	BUGU	BUGU	BUGU
+STR_PRESSSTART	Press start button to continue	Press Start Button	Appuie sur la touche START	Start drücken	Premi START	Press Start Button
+STR_PRESSENTER	Press enter button to continue	Press Enter	Appuie sur la touche Entrée	Eingabe drücken	Premi Invio	Press Enter
+STR_ARCADEMODE	Name of the location where you play levels	Frogger's Arcade	L'arcade Frogger	Froggers Arcade	Frogger Arcade	Frogger's Arcade
+STR_STORYMODE	Name of the location where you go to play the Story Mode of the game	Swampy's Revenge	La vengeance de Swampy	Swampys Rache	La vendetta di Swampy	Swampy's Revenge
+STR_MULTI_PLAYERWINS	%s = number of wins	%s wins!	%s l'emporte !	%s gewinnt!	%s vince!	%s wins!
+STR_MULTI_WINMATCH	%s = Name of player who won match	%s wins the match!	%s remporte le match !	%s gewinnt das Spiel!	%s vince la partita!	%s wins the match!
+STR_ENTERNAME	Asking you to enter your name	Enter your name	Entre ton nom	Gib deinen Namen ein	Digita il tuo nome	Enter your name
+STR_MULTI_RACEDESC	Instruction for multiplayer	Beat the other players to the finish line!	Franchis la ligne d'arrivée avant tes concurrents !	Erreiche die Ziellinie vor allen anderen!	Batti gli altri giocatori tagliando per primo il traguardo!	Beat the other players to the finish line!
+STR_MULTI_SNAKEDESC	Instruction for multiplayer	Collect the coins! Avoid the trails!	Ramasse les pièces ! Evite les chemins !	Sammle die Münzen ein! Meide die Wege!	Raccogli le monete! Evita i sentieri!	Collect the coins! Avoid the trails!
+STR_MULTI_COLLECTDESC	Instruction for multiplayer	Save the babies before the other players!	Sauve les bébés avant tout le monde !	Rette die Babys als Erster!	Salva i cuccioli prima degli altri giocatori.	Save the babies before the other players!
+STR_PLAYER	???????????	Player	Joueur	Spieler	Giocatore	Player
+STR_PLAYERS	???????????	Player	joueurs	Spieler	giocatori	Player
+STR_LEVELCOMPLETE	Displayed when level complteed	Level Complete!	Niveau terminé !	Level abgeschlossen!	Livello completato!	Level Complete!
+STR_YOUTOOKTIMEMIN	Time taken to complete level	Time - %d:%02d.%d0	Temps - %d:%02d	Zeit - %d:%02d	Tempo - %d:%02d	Time - %d:%02d.%d0
+STR_YOUTOOKTIMESEC	Seconds taken (note end 's')	You took %ds	Tu as mis %ds	Du hast %d Sek. gebraucht	Hai impiegato %d sec.	You took %ds
+STR_TRAINING1	Instruction at start of level	Rescue 5 baby frogs to complete the level!	Sauve 5 bébés grenouilles pour terminer le niveau !	Rette 5 Froschbabys um den Level abzuschließen!	Per completare il livello devi salvare i 5 ranocchi!	Rescue 5 baby frogs to complete the level!
+STR_TRAINING2	Provides information on how to control the Frog. Must be put to use shortly afterwards	Press @X to superhop over obstacles	Appuie sur @X pour franchir les obstacles d'un bond géant	Drücke @X um Hindernisse mit einem Supersprung zu überwinden	Premi @X per 'super-saltare' gli ostacoli.	Press @X to superhop over obstacles
+STR_TRAINING3	Provides information on how to control the Frog. Must be put to use shortly afterwards	Press @C to slurp up bonuses with your tongue	Appuie sur @C pour saisir les bonus avec ta langue 	Drücke @C um mit der Zunge Bonusse zu schnappen	Premi @C per risucchiare i bonus.	Press @C to slurp up bonuses with your tongue
+STR_TRAINING4	Provides information on how to control the Frog. Must be put to use shortly afterwards	Press @X - @X to double-jump over gaps	Appuie sur @X - @X pour faire des double-bonds au dessus du vide	Drücke @X - @X für einen Doppelsprung über eine Kluft	Premi @X - @X per saltare più lontano.	Press @X - @X to double-jump over gaps
+STR_TRAINING5	Provides information on how to control the Frog. Must be put to use shortly afterwards	You can also double-jump to reach high places	Le double-bond te sert aussi à atteindre les endroits élevés 	Mit einem Doppelsprung kannst du auch große Höhen erklimmen	Il doppio salto ti sarà utile anche per arrivare più in alto.	You can also double-jump to reach high places
+STR_TRAINING6	Provides information on how to control the Frog. Must be put to use shortly afterwards	Press @S to croak and find baby frogs	Appuie sur @S pour coasser et trouver les bébés grenouilles	Drücke @S um zu quaken und kleine Frösche aufzuspüren	Premi @S per gracidare e individuare i ranocchietti.	Press @S to croak and find baby frogs
+STR_TRAINING7	Provides information on how to control the Frog. Must be put to use shortly afterwards	Hop onto a switch to activate it	Appuie sur un bouton en sautant dessus	Hüpfe auf einen Schalter um ihn zu aktivieren	Salta sopra l'interruttore per attivarlo.	Hop onto a switch to activate it
+STR_TRAINING8	Provides information on how to control the Frog. Must be put to use shortly afterwards	Watch out for Frogger's enemies!	Prends garde aux ennemis de Frogger !	Hüte dich vor Froggers Feinden!	Attento ai nemici di Frogger!	Watch out for Frogger's enemies!
+STR_CONTINUE	???????????????	Continue	Continuer	Fortfahren	Continua	Continue
+STR_PRESS_X_TO_CONTINUE	Press a specific button to continue	Press @X to continue	Appuie sur @X pour continuer	Drücke @X um fortzufahren	Premi @X per continuare.	Press @X to continue
+STR_LEVEL_TRAINING	Level name	Training	Entraînement	Training	Addestramento	Training
+STR_OPTIONS_1	Select to access sound option	Sound Options	Options sonores	Soundoptionen	Opzioni sonoro	Sound Options
+STR_OPTIONS_2	Select to access Extras menu which various bonus features	Extras	Bonus	Extras	Extra	Extras
+STR_OPTIONS_3	Select to access Controls menu	Controls	Commandes	Steuerung	Controlli	Controls
+STR_EXTRAS_1	Set difficulty	Difficulty: %s	Type de jeu : %s	Schwierigkeitsgrad: %s	Grado di difficoltà: %s	Difficulty: %s
+STR_EXTRAS_2	Allows you to choose a video clip from the game to view	View Movie	Voir une séquence vidéo	Movie ansehen	Vedi filmato	View Movie
+STR_EXTRAS_3	Select to view credits	Credits	Crédits	Mitwirkende	Ringraziamenti	Credits
+STR_EXTRAS_4	Select to Reset you best times	Clear Best Times	Rétablir les records de temps	Bestzeiten neu einstellen	Ripristina i tempi migliori ai valori iniziali.	Clear Best Times
+STR_EXTRAS_5	Select to reset your progress in story mode	Clear Story Mode	Rétablir le mode Histoire	Story-Modus neu einstellen	Ricomicia da capo la modalità 'Storia' .	Clear Story Mode
+STR_EXTRAS_6	Toggles between on and off - makes you play with tiny frogs	Mini-frogs: %s	Grenouilles miniatures : %s	Mini-Frösche: %s	Mini-rane: %s	Mini-frogs: %s
+STR_EXTRAS_7	Allows you to view design artwork	View Artwork	Voir la galerie d'art	Galerie besuchen	Vedi galleria grafica	View Artwork
+STR_EXTRAS_8	Toggle between on and off - enables you to eat lots of bizarre things in the game - like bullrushes and lawnmowers	Feeding Frenzy: %s	Appétit d'ogre : %s	Fress-Flash: %s	Delirio bulimico: %s	Feeding Frenzy: %s
+STR_MULTIPLAYER	Title for the Multiplayer section of the game	Multiplayer	Multijoueurs	Multiplayer	Multigiocatore	Multiplayer
+STR_SELECT_NUM_PLAYERS	Here you are selecting number of players	 @X - Select number of players 	 @X - Sélectionner un nombre de joueurs	 @X - Wähle die Anzahl der Spieler aus	 @X - Seleziona il numero dei giocatori	 @X - Select number of players 
+STR_SELECT_LEVEL	Here you are selecting the level to play on	 @X - Select level 	 @X - Sélectionner un niveau	 @X - Wähle einen Level	 @X - Seleziona il livello	 @X - Select level 
+STR_SELECT_CHAR	This is the title to the Select Character section	select character	Choisir personnage	Charakter wählen	Che personaggio?	select character
+STR_X_SELECT_CHAR	Press specific button to select the character highlighted	 @X - Select character 	 @X - Sélectionner un personnage	 @X - Charakterauswahl	 @X - Seleziona il personaggio	 @X - Select character 
+STR_CHAPTER_1a	Chapter name - this is line 1	Baby Frog	Au secours des	Froschbaby-	Salva i	Baby Frog
+STR_CHAPTER_1b	this is line 2	Rescue	bébés grenouilles	Rettungsaktion	ranocchietti	Rescue
+STR_CHAPTER_2a	Chapter name - this is line 1	Separate Ways	Bifurcations	Getrennte Wege	Strade separate	Separate Ways
+STR_CHAPTER_2b	this is line 2					
+STR_CHAPTER_3a	Chapter name - this is line 1	Crocs Away!	Croc'au diable !	"Auf die Plätze,"	"Coccodrilli, fuori!"	Crocs Away!
+STR_CHAPTER_3b	this is line 2			"fertig, Frosch!"		
+STR_CHAPTER_4a	Chapter name - this is line 1	Big Bad Bugs	Gare aux	Fiese Viecher	Brutte bestiaccie	Big Bad Bugs
+STR_CHAPTER_4b	this is line 2		bestioles			
+STR_CHAPTER_5a	Chapter name - this is line 1	Toad Breaker	Décrapautisation	Kröten-Killer	L'ammazza anfibi	Toad Breaker
+STR_CHAPTER_5b	this is line 2					
+STR_CHAPTER_6a	Chapter name - this is line 1	Frogs In Space	Grenouilles	Weltraumfrösche	Rane nello spazio	Frogs In Space
+STR_CHAPTER_6b	this is line 2		en orbite			
+STR_CHAPTER_7a	Chapter name - this is line 1	Swampy's	La vengeance de 	Swampys	La vendetta 	Swampy's
+STR_CHAPTER_7b	this is line 2	Revenge	Swampy	Rache	di Swampy	Revenge
+STR_CHAPTER_8a	Chapter name - this is line 1	Trail Of Terror	Les sentiers	Pfad der	Tracce di terrore	Trail Of Terror
+STR_CHAPTER_8b	this is line 2		de la peur	Vergeltung		
+STR_CHAPTER_9a	Chapter name - this is line 1	Swampy's 	Dans l'antre de	Swampys 	Nella tana	Swampy's 
+STR_CHAPTER_9b	this is line 2	Lair	Swampy	Versteck	di Swampy	Lair
+STR_CHAPTER_10a	Chapter name - this is line 1	"The Good, the Tad"	"Le Bon, le Bambin"	Zwei glorreiche	"Il buono, il brutto"	"The Good, the Tad"
+STR_CHAPTER_10b	this is line 2	and the Ugly	et le Truand	Hal-Unken	e il ranocchio	and the Ugly
+STR_PAR	This is the record time for a level	Best	Moyenne	Rekord	Record	Best
+STR_SET_BY	The best time was Set By <name>	Set by	Auteur	Durch	Di	Set by
+STR_COINS	Number next to it says how many coins you collected	Coins	Pièces	Münzen	Monete	Coins
+STR_CHAPTER	Its Chapter <number>	Chapter %d	Chapitre %d	Kapitel %d	Capitolo %d	Chapter %d
+STR_GOT_ALL_COINS	If you collect all coins at the end of a level	All coins collected!	Pièces sont toutes réunies !	Alle Münzen eingesammelt!	Hai raccolto tutte le monete!	All coins collected!
+STR_MISSED_COINS	%d = the number of coins you missed	Coins missed: %d	Pièces manquées : %d	Verpasste Münzen: %d	Monete mancanti: %d	Coins missed: %d
+STR_NO_BONUS	If you didn't collect all of the coins you don't get a bonus at the end of the level	No bonus for you!	Tu n'as pas droit à un bonus !	Du kriegst keinen Bonus!	Non hai ottenuto il bonus!	No bonus for you!
+STR_COLLECTBABIES	Instruction - you need to collect the babies to win a level	Rescue the babies!	Réunis les bébés !	Sammle die Babys ein!	Raccogli i cuccioli!	Rescue the babies!
+STR_GO	Instruction to the players when a multiplayer level starts	Go!	Vas-y !	Los!	Partenza!	Go!
+STR_ROUND_NUM	You challenge each other a number of times in multiplayer - this is the round - %d = the round number	Round %d	Tour %d	Runde %d	Turno %d	Round %d
+STR_MULTI_DRAW	If two or more players tie in a multiplayer game	Round Draw	Egalité 	Unentschieden	Pareggio 	Round Draw
+STR_OUTOFTIME	"If you run out of time on a level (you don't die though, just miss a high score)"	Out of Time!	Temps écoulé !	Zeit abgelaufen!	Tempo scaduto!	Out of Time!
+STR_ENTER_NAME	You enter you name to the right on this	Enter name:    	Entre ton nom :    	Namen eingeben:    	Digita il nome:    	Enter name:    
+STR_NEW_BEST_TIME	If you get a new best time on a level	New best time!	Nouveau temps record !	Neue Bestzeit!	Nuovo miglior tempo!	New best time!
+STR_FMV_1	Name of a video clip - select this to play the video	Intro	Intro	Intro	Intro	Intro
+STR_FMV_2	Name of a video clip - select this to play the video	Victory!	Victoire !	Sieg!	Vittoria!	Victory!
+STR_OPENED_EXTRA_1	%d = one of STR_LEVEL_RETROX above - an extra level is openned	Opened '%s'!	Ouverture de %s!	%s offen!	Hai aperto %s!	Opened '%s'!
+STR_OPENED_EXTRA_10	Bonus that you earn - Treeby is another frog for multiplayer use	Wart available!	Wart est disponible !	Wart verfügbar!	Hai ottenuto Wart!	Wart available!
+STR_OPENED_EXTRA_11	Bonus that you earn - Wart is a toad for multiplayer use	Tank available!	Tank est disponible !	Tank verfügbar!	Hai ottenuto Tank!	Tank available!
+STR_OPENED_EXTRA_12	Bonus that you earn - Roobie is a kangeroo for multiplayer use	Roobie available!	Roobie est disponible !	Roobie verfügbar!	Hai ottenuto Roobie!	Roobie available!
+STR_OPENED_EXTRA_13	Bonus that you earn - Tank is a metalic frog for multiplayer use	Swampy available!	Swampy est disponible !	Swampy verfügbar!	Hai ottenuto Swampy! 	Swampy available!
+STR_OPENED_EXTRA_14	Bonuse that you earn. Lets you play with tiny versions of the characters	Mini-frogs available!	Mini-grenouilles disponibles !	Mini-Frösche verfügbar!	Hai ottenuto le mini-rane!	Mini-frogs available!
+STR_OPENED_EXTRA_15	Bonus that you earn. Look at artwork from the game	Artwork viewer available!	Accès à galerie d'art ouvert !	Galerie verfügbar!	Puoi vedere la galleria grafica!	Artwork viewer available!
+STR_OPENED_EXTRA_16	Bonus that you earn. Lets you use your tongue to eat a variety of things from the levels	Feeding frenzy available!	Appétit d'ogre disponible !	Fress-Flash verfügbar!	Hai ottenuto delirio bulimico!	Feeding frenzy available!
+STR_EXTRA_LIFE	Just eaten a butterfly and got an extra life	Extra Life!	Vie supplémentaire !	Extra Leben!	Vita extra!	Extra Life!
+STR_QUICK_HOP	Just eaten a butterfly and can now hop more quickly for a while	Quick Hop!	Bond rapide !	Schneller Hüpfer!	Salto veloce!	Quick Hop!
+STR_SLOW_HOP	Just eaten a butterfly but now hop more slowly than before for a while	Slow Hop!	Bond lent !	Langsamer Hüpfer!	Salto lento!	Slow Hop!
+STR_AUTO_HOP	Just eaten a butterfly and now will hop automatically if you hold a direction	Auto Hop!	Bond automatique !	Auto-Hüpfer!	Salto automatico!	Auto Hop!
+STR_INVULNERABILITY	Special cheat that makes you invulnerable to injury	Invulnerability!	Invulnérabilité !	Unverwundbarkeit!	Invulnerabilità!	Invulnerability!
+STR_ON	"Used when a cheat below is ""on"""	On	Oui	Ein	Attivato	On
+STR_OFF	"Used when a cheat below is ""off"""	Off	Non	Aus	Disattivato	Off
+STR_CHEAT_1	Cheat - open all levels if on	Level access	Accès à tous les niveaux	Zugang zu allen Levels	Accesso ai livelli	Level access
+STR_CHEAT_2	Cheat - infinitive lives if on	Infinite Lives	Vies illimitées	Unbegrenzte Leben	Vite infinite	Infinite Lives
+STR_CHEAT_3	Cheat - use all characters in the game	Character access	Accès personnages	Alle Charaktere	Accesso ai personaggi	Character access
+STR_CHEAT_4	"Cheat - open up all ""Extras"" - like art work viewer"	Extras access	Accès à tous les bonus	Zugang zu allen Extras	Accesso agli extra	Extras access
+STR_CHEAT_5	Cheat - frogger can't be hurt	Invulnerability	Invulnérabilité  	Unverwundbarkeit	Invulnerabilità	Invulnerability
+STR_CHEAT_6	Cheat - skip to the next level	Skip Level	Sauter un niveau	Level überspringen	Salta livello	Skip Level
+STR_CHEAT_7		Mad Garibs	Mad Garibs	Mad Garibs	Mad Garibs	Mad Garibs
+STR_TRIANGLE_BACK	Help text to say press button to go back to previous menu	Press @T to go back	Retour menu précédent : @T	Drücke @T um zurückzugehen	Premi @T per tornare indietro.	Press @T to go back
+STR_RETURN	Refers to the 'return' button	Return	Retour	Eingabe	Indietro	Return
+STR_RIGHT_CONTROL	refers to 'right control' button	Right Control	Ctrl droit	Steuerung rechts	Ctrl destro	Right Control
+STR_RIGHT_SHIFT	refers to 'right shift' button	Right Shift	Maj droit	Umschalt rechts	Maiusc destro	Right Shift
+STR_ESCAPE	refers to 'escape' button	Escape	Echap	Escape	Esc	Escape
+STR_ARE_YOU_SURE	"Question, followed by yes and no"	Are you sure?	Es-tu sûr(e) ?	Bist du sicher?	Sei sicuro?	Are you sure?
+STR_YES	Selectable choice to 'are you sure?'	Yes	Oui	Ja	Sì	Yes
+STR_NO_BONUS	Selectable choice to 'are you sure?'	No	Non	Nein	No	No
+STR_MCARD_CANCELSAVE		Cancel save	Annuler sauvegarde 	Speichern abbrechen	Cancella salvataggio.	Cancel save
+STR_MCARD_SELECTSAVE		Select save	Sélectionner sauvegarde	Speichern wählen 	Seleziona salvataggio.	Select save
+STR_MCARD_SAVEYN	Option you may select by pressing a button	Save progress to VM in Port %s Expansion Socket %s ?	Veux-tu sauvegarder ta progression sur le VM inséré dans le port d'extension %s du port de commande %s ?	Spielstand auf VM in Controller-Anschluss %s Erweiterungsslot %s speichern?	"Salvare i progressi su VM nell'apertura di controllo %s, presa di espansione %s?"	Save progress to VMU in Port %s Expansion Socket %s ?
+STR_MCARD_SAVEGAME	Option you may select by pressing a button	Save game	Sauvegarder la partie	Spiel speichern	Salva il gioco.	Save game
+STR_MCARD_NOSAVE	Option you may select by pressing a button	Continue without saving	Continuer sans sauvegarder	Fortfahren ohne zu speichern	Continua senza salvare.	Continue without saving
+STR_MCARD_FULL	Warning message	VM in Port %s Expansion Socket %s must have at least 7 free blocks.	Le VM dans le port d'extension %s du port de commande %s doit disposer d'au moins 7 blocs libres.	Das VM in Controller-Anschluss %s Erweiterungsslot %s muss mindestens 7 freie Blöcke besitzen.	"La VM nell'apertura di controllo %s, presa di espansione %s, deve avere almeno 7 blocchi  liberi."	VMU in Port %s Expansion Socket %s must have at least 7 free blocks.
+STR_MCARD_RETRYSAVE	Option you may select by pressing a button	Retry save	Retenter la sauvegarde	Speichern erneut versuchen	Ritenta il salvataggio. 	Retry save
+STR_MCARD_NOCARD	Warning message	No VM detected. Insert a VM with at least 7 free blocks into Port %s Expansion Socket %s	Aucun VM n'a été détecté. Insère un VM disposant d'au moins 7 blocs libres dans le port d'extension %s du port de commande %s.	Kein VM gefunden. Ein VM mit mindestens 7 freien Blöcken in Controller-Anschluss %s Erweiterungsslot %s einlegen.	"Nessuna VM presente. Inserire una VM con almeno 7 blocchi liberi nell'apertura di controllo %s, presa di espansione %s."	No VMU detected. Insert a VMU with at least 7 free blocks into Port %s Expansion Socket %s
+STR_MCARD_CHECK	Warning message	Accessing VM in Port %s Expansion Socket %s.  Do not remove VM or reset the console.	Lecture du VM inséré dans le port d'extension %s du port de commande %s. Ne retire pas le VM et ne redémarre pas ta console. 	Zugriff auf VM in Controller-Anschluss %s Erweiterungsslot %s. VM nicht entfernen und Konsole nicht neu starten.	"Accesso VM nell'apertura di controllo %s, presa di espansione %s. Non rimuovere la VM né riavviare la console."	Accessing VMU in Port %s Expansion Socket %s.  Do not remove VMU or reset the console.
+STR_MCARD_OVERWRITE	Option you may select by pressing a button	Overwrite existing Frogger 2 saved game?	Veux-tu écraser la sauvegarde existante de Frogger 2 ?	Soll das gespeicherte Frogger 2-Spiel überschrieben werden?	Sovrascrivere i salvataggi esistenti di Frogger 2?	Overwrite existing Frogger 2 saved game?
+STR_MCARD_PREVIOUS	Option you may select by pressing a button	Previous menu	Menu précédent	Vorheriges Menü	Menu precedente	Previous menu
+STR_MCARD_SAVING	Warning message	Saving Frogger 2. Please do not remove the VM or reset the console while saving	Sauvegarde de Frogger 2 en cours. Ne retire pas le VM et ne redémarre pas ta console pendant la sauvegarde.	Frogger 2 wird gespeichert. VM während des Speichervorgangs bitte nicht entfernen und Konsole nicht neu starten.	Salvataggio di Frogger 2 in corso. Non rimuovere la VM né riavviare la console.	Saving Frogger 2. Please do not remove the VMU or reset the console while saving
+STR_MCARD_AUTOSAVING	Warning message	Autosaving - please do not remove the VM or reset the console while saving	Sauvegarde automatique. Ne retire pas le VM et ne redémarre pas ta console pendant la sauvegarde.	Automatischer Speichervorgang - VM während dieses Vorgangs bitte nicht entfernen und Konsole nicht neu starten.	Autosalvataggio in corso. Non rimuovere la VM né riavviare la console.	Autosaving - please do not remove the VMU or reset the console while saving
+STR_MCARD_COMPLETE	Warning message	Save successful to Port %s Expansion Socket %s. Do not remove the VM at any time during the game	Sauvegarde réussie vers le port d'extension %s du port de commande %s. Ne retire le VM à aucun moment de la partie.	Speichervorgang in Controller-Anschluss %s Erweiterungsslot %s abgeschlossen. VM zu keinem Zeitpunkt während des Spiels entfernen.	"Salvataggio completato nell'apertura di controllo %s, presa di espansione %s. Non rimuovere la VM durante il gioco."	Save successful to Port %s Expansion Socket %s. Do not remove the VMU at any time during the game
+STR_MCARD_CONTINUE	Option you may select by pressing a button	Continue	Continuer	Fortfahren	Continua	Continue
+STR_MCARD_SAVEERROR	Warning message	Save error	Erreur de sauvegarde	Speicherfehler	Errore durante il salvataggio	Save error
+STR_MCARD_UNFORMAT	Option you may select by pressing a button	VM in Port %s Expansion Socket %s is unformatted.  Format it now?	Le VM inséré dans le port d'extension %s du port de commande %s n'est pas formaté. Veux-tu le formater maintenant ?	Das VM in Controller-Anschluss %s Erweiterungsslot %s ist nicht formatiert. Soll es jetzt formatiert werden?	"La VM nell'apertura di controllo %s, presa di espansione %s non è formattata. Formattare la VM?"	VMU in Port %s Expansion Socket %s is unformatted.  Format it now?
+STR_MCARD_FORMATCARD	Option you may select by pressing a button	Format VM	Formater VM	VM formatieren	Formattare la VM	Format VMU
+STR_MCARD_FORMATTING	Warning message	Formatting VM. Do not remove VM or reset console while formatting	Formatage du VM en cours. Ne retire pas le VM et ne redémarre pas ta console pendant le formatage.	VM wird formatiert. VM während dieses Vorgangs nicht entfernen und Konsole nicht neu starten.	Formattazione della VM in corso. Non rimuovere la VM né riavviare la console.	Formatting VMU. Do not remove VMU or reset console while formatting
+STR_MCARD_FORMATERROR	Warning message	Format error	Erreur de formatage	Fehler beim Formatieren	Errore di formattazione	Format error
+STR_MCARD_PROCEED_WITHOUT_SAVE	Option you may select by pressing a button	Proceed without ability to save progress	Poursuivre sans pouvoir sauvegarder la progression	Fortfahren ohne den Spielstand speichern zu können	Continua senza la possibilità di salvare i tuoi progressi.	Proceed without ability to save progress
+STR_MCARD_RECHECK	Option you may select by pressing a button	Recheck VM	Vérifier le VM à nouveau	VM erneut überprüfen	Ricontrollo della VM	Recheck VMU
+STR_MCARD_DONTFORMAT	Option you may select by pressing a button	Don't format VM	Ne pas formater le VM	VM nicht formatieren	Non formattare la VM.	Don't format VMU
+STR_MCARD_NEEDFORMAT	Warning message	To allow you to save your progress Frogger 2 requires a formatted VM in Port %s Expansion Socket %s	"Pour sauvegarder ta progression de Frogger 2, un VM formaté doit être inséré dans le port d'extension %s du port de commande %s."	"Um den Spielstand von Frogger 2 speichern zu können, wird ein formatiertes VM in Controller-Anschluss %s Erweiterungsslot %s benötigt."	"Per salvare i tuoi progressi Frogger 2 richiede una VM formattata nell'apertura di controllo %s, presa di espansione %s."	To allow you to save your progress Frogger 2 requires a formatted VMU in Port %s Expansion Socket %s
+STR_MCARD_LOADING	Warning message	Loading Frogger 2 saved game. Please do not remove the VM or reset the console while loading	Chargement d'une partie sauvegardée de Frogger 2 en cours. Ne retire pas le VM et ne redémarre pas ta console pendant le chargement. 	Gespeichertes Frogger 2-Spiel wird geladen. VM während dieses Vorgangs bitte nicht entfernen und Konsole nicht neu starten.	Caricamento di Frogger 2 in corso. Non rimuovere la VM né riavviare la console.	Loading Frogger 2 saved game. Please do not remove the VMU or reset the console while loading
+STR_MCARD_LOADCOMPLETE	Warning message	Load successful from Port %s Expansion Socket %s.	Chargement réussi à partir du port d'extension %s du port de commande %s.	Ladevorgang von Controller-Anschluss %s Erweiterungsslot %s abgeschlossen.	"Caricamento completato con successo dall'apertura di controllo %s, presa di espansione %s."	Load successful from Port %s Expansion Socket %s.
+STR_MCARD_LOADERROR	Warning message	Load error	Erreur de chargement	Ladefehler	Errore di caricamento	Load error
+STR_MCARD_NEEDS_ONE_BLOCK	Warning message	To save your Frogger 2 progress you must create a saved game on the VM in Port %s Expansion Socket %s	"Pour sauvegarder ta progression de Frogger 2, tu dois créer une partie sauvegardée sur le VM inséré dans le port d'extension %s du port de commande %s."	"Um den Spielstand von Frogger 2 speichern zu können, muss ein Speicherstand auf dem VM in Controller-Anschluss %s Erweiterungsslot %s erstellt werden."	"Per salvare i tuoi progressi devi creare un salvataggio sulla VM nell'apertura di controllo %s, presa di espansione %s."	To save your Frogger 2 progress you must create a saved game on the VMU in Port %s Expansion Socket %s
+STR_MCARD_CREATE_SAVE	Option you may select by pressing a button	Create saved game	Créer une partie sauvegardée	Speicherstand erstellen	Crea salvataggio.	Create saved game
+STR_MCARD_CHANGED	Warning message	Warning: the VM in Port %s Expansion Socket %s has changed! Ensure the VM you wish to use is inserted.	Attention : le VM inséré dans le port d'extension %s du port de commande %s est différent ! Assure-toi que le VM que tu souhaites utiliser est inséré.	"Achtung: Das VM in Controller-Anschluss %s Erweiterungsslot %s wurde ausgetauscht! Vergewissern Sie sich, dass das gewünschte VM eingelegt ist."	"Attenzione: la VM nell'apertura di controllo %s, presa di espansione %s, è stata cambiata! Controllare che sia inserita la VM corretta."	Warning: the VMU in Port %s Expansion Socket %s has changed! Ensure the VMU you wish to use is inserted.
+STR_MCARD_CHECK_THIS_CARD	Option you may select by pressing a button	Use VM in Port %s Expansion Socket %s	Utiliser le VM inséré dans le port d'extension %s du port de commande %s	VM in Controller-Anschluss %s Erweiterungsslot %s benutzen	"Usare la VM nell'apertura di controllo %s, presa di espansione %s."	Use VMU in Port %s Expansion Socket %s
+STR_MCARD_CORRUPT	Warning message	The saved game on the VM in Port %s Expansion Socket %s is not valid.	La partie sauvegardée sur le VM inséré dans le port d'extension %s du port de commande %s n'est pas valide.	Das auf dem VM in Controller-Anschluss %s Erweiterungsslot %s gespeicherte Spiel ist nicht gültig.	"Il salvataggio sulla VM nell'apertura di controllo %s, presa di espansione %s non è valido."	The saved game on the VMU in Port %s Expansion Socket %s is not valid.
+STR_FORMAT_SUCCESSFUL	Warning message	Format successful	Formatage réussi	Formatieren abgeschlossen	Formattazione completata	Format successful
+STR_SELECTOPTION	Option you may select by pressing a button	Select option	Sélectionner une option	Option wählen	Seleziona opzione	Select option
+STR_X_SELECT_OPTION	Option you may select by pressing a button	 @X - Select 	 @X - Sélectionner	 @X - Auswählen	 @X - Seleziona	 @X - Select 
+STR_PAUSE_MODE	Pause screen title	Pause Mode	Pause	Pause 	Pausa	Pause Mode
+STR_TRAINING_COMPLETE	Displayed when you complete the training level	Training Completed!	Entraînement terminé !	Training abgeschlossen!	Addestramento completato!	Training Completed!
+STR_NEED_PADS	If you don't have enough controller to play with the number of players you have selected. With line below	Not enough	Manque d'unités	Zu wenige	Controller non	Not enough
+STR_NEED_PADS2	with line above	controllers!	de contrôle !	Controller!	sufficienti!	controllers!
+STR_RECORD	"The record time on a level. Followed by time, then name"	Record: %s  %d:%02d.%d0	Record : %s  %d:%02d	Rekord: %s  %d:%02d	Record: %s  %d:%02d	Record: %s  %d:%02d.%d0
+STR_MULTI_DESC_1	Instruction when you start a multiplayer level	Race to the finish line!	Franchis la ligne d'arrivée !	Um die Wette zur Ziellinie!	Corri fino al traguardo!	Race to the finish line!
+STR_MULTI_DESC_2	Instruction when you start a multiplayer level. Trails and dangerous blocks left behind the players as they move	Avoid the trails!	Evite les chemins !	Meide die Wege!	Evita i sentieri!	Avoid the trails!
+STR_MULTI_DESC_3	Instruction when you start a multiplayer level	Rescue the babies!	Sauve les bébés !	Rette die Babys!	Salva i cuccioli!	Rescue the babies!
+STR_MUS_VOL	Label	Music Volume	Volume de la musique	Musiklautstärke	Volume musiche	Music Volume
+STR_SFX_VOL	Label	Sound Volume	Volume effets sonores	Geräuschlautstärke	Volume sonoro	Sound Volume
+STR_SOUNDSTEREO	Label	Stereo	Stéréo	Stereo	Stereo	Stereo
+STR_SOUNDMONO	Label	Mono	Mono	Mono	Mono	Mono
+STR_LOADING	Displayed when game is loading	Loading	Chargement en cours	Ladevorgang ...	Caricamento...	Loading
+STR_SOUND_INSTR_1	Indicates you should use certain buttons to change the volume	Change volume	Pour régler le volume	Lautstärke ändern	Modifica il volume	Change volume
+STR_SOUND_INSTR_2	Indicates you should use certain buttons to change whether you are changing sound or music volume	Change selection	Pour sélectionner	Auswahl ändern	Modifica selezione	Change selection
+STR_WARNING_1	Warning message	This will clear all the best times to their starting values. Are you sure?	Les valeurs de départ des temps records vont être rétablies. Es-tu sûr(e) ?	Hiermit werden alle Bestzeiten auf ihren ursprünglichen Wert zurückgesetzt. Bist du sicher?	Questo riporterà tutti i tempi migliori ai loro valori di partenza. Sei sicuro?	This will clear all the best times to their starting values. Are you sure?
+STR_WARNING_2	Warning message	This will clear all your progress in Story Mode and clear all coins and awards. Are you sure?	Ceci annulera ta progression dans le mode Histoire et rétablira toutes les pièces et les récompenses. Es-tu sûr(e) ?	Hiermit wird der aktuelle Spielstand im Story-Modus einschließlich aller erhaltenen Münzen und Auszeichnungen gelöscht. Bist du sicher?	Questo cancellerà tutti i tuoi progressi nella modalità 'Storia' e ogni moneta e premio conquistati. Sei sicuro?	This will clear all your progress in Story Mode and clear all coins and awards. Are you sure?
+STR_CHAR_NAME_1	Character name	Frogger	Frogger	Frogger	Frogger	Frogger
+STR_CHAR_NAME_2	Character name	Lillie Frog	Lillie Frog	Lillie Frosch	Lillie Frog	Lillie Frog
+STR_CHAR_NAME_3	Character name	Tad	Tad	Tad	Tad	Tad
+STR_CHAR_NAME_4	Character name	Treeby	Treeby	Treeby	Treeby	Treeby
+STR_CHAR_NAME_5	Character name	Wart	Wart	Wart	Wart	Wart
+STR_CHAR_NAME_6	Character name	Tank	Tank	Tank	Tank	Tank
+STR_CHAR_NAME_7	Character name	Roobie	Roobie	Roobie	Roobie	Roobie
+STR_CHAR_NAME_8	Character name	Swampy	Swampy	Swampy	Swampy	Swampy
+STR_DIFFICULTY_1	Easy setting	Easy	facile	Leicht	facile	Easy
+STR_DIFFICULTY_2	Normal setting	Normal	normal	Mittel	normale	Normal
+STR_DIFFICULTY_3	Hard setting	Hard	difficile	Schwer	difficile	Hard
+STR_DEMO_MODE	Displayed during attract mode	DEMO PLAY	DÉMO 	DEMO	DEMO 	DEMO PLAY
+STR_OPTIONS		Options	Options	Optionen	Opzioni	Options
+STR_START_GAME		Start Game	Commencer une partie	Spiel starten	Inizia il gioco	Start Game
+STR_THE_END		The End	Fin	Ende	Fine	The End
+STR_CREDITS_1	CREDITS SECTION - START	Frogger 2	Frogger 2	Frogger 2	Frogger 2	Frogger 2
+STR_CREDITS_2		Designed and Developed by	Conçu et développé par	Design und Entwicklung	Ideato e sviluppato da	Designed and Developed by
+STR_CREDITS_3		Blitz Games	Blitz Games	Blitz Games	Blitz Games	Blitz Games
+STR_CREDITS_4		Founded by	Fondé par 	Gegründet von	Fondato da	Founded by
+STR_CREDITS_5		The Oliver Twins	les jumeaux Oliver	den Oliver-Zwillingen	i gemelli Oliver	The Oliver Twins
+STR_CREDITS_6		Technical Director	Directeur technique	Technische Leitung	Direttore tecnico	Technical Director
+STR_CREDITS_7		Andrew Oliver	Andrew Oliver	Andrew Oliver	Andrew Oliver	Andrew Oliver
+STR_CREDITS_8		Project Manager	Responsable du projet	Projektmanagement	Responsabile del progetto	Project Manager
+STR_CREDITS_9		Darren Wood	Darren Wood	Darren Wood	Darren Wood	Darren Wood
+STR_CREDITS_10		Programming	Programmation	Programmierung	Programmazione	Programming
+STR_CREDITS_10_DC		Martyn Ash	Martyn Ash	Martyn Ash	Martyn Ash	Martyn Ash
+STR_CREDITS_11		Byron Blay	Byron Blay	Byron Blay	Byron Blay	Byron Blay
+STR_CREDITS_12		Steve Bond	Steve Bond	Steve Bond	Steve Bond	Steve Bond
+STR_CREDITS_13		Matt Cloy	Matt Cloy	Matt Cloy	Matt Cloy	Matt Cloy
+STR_CREDITS_14		Andrew Eder	Andrew Eder	Andrew Eder	Andrew Eder	Andrew Eder
+STR_CREDITS_15		James Healey	James Healey	James Healey	James Healey	James Healey
+STR_CREDITS_16		James Hubbard	James Hubbard	James Hubbard	James Hubbard	James Hubbard
+STR_CREDITS_17		Mike Movel	Mike Movel	Mike Movel	Mike Movel	Mike Movel
+STR_CREDITS_17_DC		Andy Slater	Andy Slater	Andy Slater	Andy Slater	Andy Slater
+STR_CREDITS_18		David Swift	David Swift	David Swift	David Swift	David Swift
+STR_CREDITS_19		Design	Conception	Design	Design	Design
+STR_CREDITS_20		Alex Rigby	Alex Rigby	Alex Rigby	Alex Rigby	Alex Rigby
+STR_CREDITS_21		Joff Scarcliffe	Joff Scarcliffe	Joff Scarcliffe	Joff Scarcliffe	Joff Scarcliffe
+STR_CREDITS_22			Conception et mise	Leveldesign	Design e	
+STR_CREDITS_23		Level Design and Editing	en forme des niveaux	und -bearbeitung	implementazione dei livelli	Level Design and Editing
+STR_CREDITS_24		Lauren Grindrod	Lauren Grindrod	Lauren Grindrod	Lauren Grindrod	Lauren Grindrod
+STR_CREDITS_25		Simon Little	Simon Little	Simon Little	Simon Little	Simon Little
+STR_CREDITS_26		Bruce Millar	Bruce Millar	Bruce Millar	Bruce Millar	Bruce Millar
+STR_CREDITS_27		Joff Scarcliffe	Joff Scarcliffe	Joff Scarcliffe	Joff Scarcliffe	Joff Scarcliffe
+STR_CREDITS_28			Concepteur artistique	Konzept Grafik		
+STR_CREDITS_29		Concept Art and Illustration	et illustrateur	und Animation	Grafica e illustrazione	Concept Art and Illustration
+STR_CREDITS_30		Richard Whale	Richard Whale	Richard Whale	Richard Whale	Richard Whale
+STR_CREDITS_31		Character Building	Mise en forme et	Bau der Figuren	Creazione e animazione 	Character Building
+STR_CREDITS_32		and Animation	animation des personnages	und Animationen	dei personaggi	and Animation
+STR_CREDITS_33		Sandro Da Cruz	Sandro Da Cruz	Sandro Da Cruz	Sandro Da Cruz	Sandro Da Cruz
+STR_CREDITS_34		Additional Animation	Animation complémentaire	Zusätzliche Animation	Animazione aggiuntiva	Additional Animation
+STR_CREDITS_35		Bruce Millar	Bruce Millar	Bruce Millar	Bruce Millar	Bruce Millar
+STR_CREDITS_36		Simon Little	Simon Little	Simon Little	Simon Little	Simon Little
+STR_CREDITS_37		Joff Scarcliffe	Joff Scarcliffe	Joff Scarcliffe	Joff Scarcliffe	Joff Scarcliffe
+STR_CREDITS_38		Textures	Textures	Texturen	Texture	Textures
+STR_CREDITS_39		Alex Rigby	Alex Rigby	Alex Rigby	Alex Rigby	Alex Rigby
+STR_CREDITS_40		Additional Textures	Textures complémentaires	Zusätzliche Texturen	Texture aggiuntive	Additional Textures
+STR_CREDITS_41		Bruce Millar	Bruce Millar	Bruce Millar	Bruce Millar	Bruce Millar
+STR_CREDITS_42		Lauren Grindrod	Lauren Grindrod	Lauren Grindrod	Lauren Grindrod	Lauren Grindrod
+STR_CREDITS_43		Richard Whale	Richard Whale	Richard Whale	Richard Whale	Richard Whale
+STR_CREDITS_44		Simon Little	Simon Little	Simon Little	Simon Little	Simon Little
+STR_CREDITS_45		Joff Scarcliffe	Joff Scarcliffe	Joff Scarcliffe	Joff Scarcliffe	Joff Scarcliffe
+STR_CREDITS_46		3D Modelling	Modélisation 3D	3D-Modelle	Modellazione 3D 	3D Modeling
+STR_CREDITS_47		Joff Scarcliffe	Joff Scarcliffe	Joff Scarcliffe	Joff Scarcliffe	Joff Scarcliffe
+STR_CREDITS_48		Bruce Millar	Bruce Millar	Bruce Millar	Bruce Millar	Bruce Millar
+STR_CREDITS_49		Simon Little	Simon Little	Simon Little	Simon Little	Simon Little
+STR_CREDITS_50		Music and Sound Effects	Musique et effets sonores	Musik und Soundeffekte	Musiche ed effetti sonori	Music and Sound Effects
+STR_CREDITS_51		Andy Morris	Andy Morris	Andy Morris	Andy Morris	Andy Morris
+STR_CREDITS_52		Video Sequences	Séquences vidéo	Videosequenzen	Sequenze video	Video Sequences
+STR_CREDITS_53		Atomic Arts	Atomic Arts	Atomic Arts	Atomic Arts	Atomic Arts
+STR_CREDITS_54		Video Producer	Producteur vidéo	Videoproduktion	Produttore video	Video Producer
+STR_CREDITS_55		Justin Cornish	Justin Cornish	Justin Cornish	Justin Cornish	Justin Cornish
+STR_CREDITS_56		Video Animation	Animation vidéo	Videoanimation	Animazione video	Video Animation
+STR_CREDITS_57		Modelling and Lighting	Modélisation et lumières	Modelle und Beleuchtung	Modellazione e luci	Modeling and Lighting
+STR_CREDITS_58		Greg Fisher	Greg Fisher	Greg Fisher	Greg Fisher	Greg Fisher
+STR_CREDITS_59		Adam Comiskey	Adam Comiskey	Adam Comiskey	Adam Comiskey	Adam Comiskey
+STR_CREDITS_60		Patrick Lyndon-Stanford	Patrick Lyndon-Stanford	Patrick Lyndon-Stanford	Patrick Lyndon-Stanford	Patrick Lyndon-Stanford
+STR_CREDITS_61		Video Modelling	Modélisation vidéo	Video-Modelle	Modellazione video	Video Modeling
+STR_CREDITS_62		Tony Neal	Tony Neal	Tony Neal	Tony Neal	Tony Neal
+STR_CREDITS_63		Robert Angol	Robert Angol	Robert Angol	Robert Angol	Robert Angol
+STR_CREDITS_64		Chris Surbagio	Chris Surbagio	Chris Surbagio	Chris Surbagio	Chris Surbagio
+STR_CREDITS_65		Voice Talent	Voix	Tonaufnahmen	Specialista effetti sonori	Voice Talent
+STR_CREDITS_66		Matinee	Matinee	Matinee	Matinee	Matinee
+STR_CREDITS_67		Voice Artist	Artiste vocal	Stimme	Attore effetti sonori	Voice Artist
+STR_CREDITS_68		Justin Fletcher	Justin Fletcher	Justin Fletcher	Justin Fletcher	Justin Fletcher
+STR_CREDITS_69		Voice Engineer	Ingénieur des voix	Tontechnik	Ingegnere effetti sonori	Voice Engineer
+STR_CREDITS_70		Chris Renshaw	Chris Renshaw	Chris Renshaw	Chris Renshaw	Chris Renshaw
+STR_CREDITS_71		Special thanks to	Remerciements particuliers	Besonderen Dank an	Un ringraziamento speciale a:	Special thanks to
+STR_CREDITS_72		Richard Hackett	Richard Hackett	Richard Hackett	Richard Hackett	Richard Hackett
+STR_CREDITS_73		Steve Thompson	Steve Thompson	Steve Thompson	Steve Thompson	Steve Thompson
+STR_CREDITS_74		Uncle John Whigham	Oncle John Whigham	Onkel John Whigham	Lo 'zio' John Whigham	Uncle John Whigham
+STR_CREDITS_75		Tom Gaulton	Tom Gaulton	Tom Gaulton	Tom Gaulton	Tom Gaulton
+STR_CREDITS_76		Andy Sidwell	Andy Sidwell	Andy Sidwell	Andy Sidwell	Andy Sidwell
+STR_CREDITS_77		Scott Davidson	Scott Davidson	Scott Davidson	Scott Davidson	Scott Davidson
+STR_CREDITS_78		Nigel Davies	Nigel Davies	Nigel Davies	Nigel Davies	Nigel Davies
+STR_CREDITS_79		Susie Thorburn	Susie Thorburn	Susie Thorburn	Susie Thorburn	Susie Thorburn
+STR_CREDITS_80		Roland Smythe	Roland Smythe	Roland Smythe	Roland Smythe	Roland Smythe
+STR_CREDITS_81		Alison Parker	Alison Parker	Alison Parker	Alison Parker	Alison Parker
+STR_CREDITS_82		Caroline Hart	Caroline Hart	Caroline Hart	Caroline Hart	Caroline Hart
+STR_CREDITS_83		Jackie Pinnock	Jackie Pinnock	Jackie Pinnock	Jackie Pinnock	Jackie Pinnock
+STR_CREDITS_84		Jacqui Lyons	Jacqui Lyons	Jacqui Lyons	Jacqui Lyons	Jacqui Lyons
+STR_CREDITS_85		Guy Herbert	Guy Herbert	Guy Herbert	Guy Herbert	Guy Herbert
+STR_CREDITS_86		..and all at Blitz Games!	…et chacun à Blitz Games !	... und alle bei Blitz Games	...e tutti alla Blitz Games!	..and all at Blitz Games!
+STR_CREDITS_87		For Hasbro	Pour Hasbro	Hasbro	Per Hasbro	For Hasbro
+STR_CREDITS_88		Interactive Europe	Interactive en Europe	Interactive Europa	Interactive Europa	Interactive Europe
+STR_CREDITS_89		Producer	Producteur	Produzent	Produttore	Producer
+STR_CREDITS_90		Kevin Mullard	Kevin Mullard	Kevin Mullard	Kevin Mullard	Kevin Mullard
+STR_CREDITS_91		Executive Producer	Producteur exécutif	Ausführender Produzent	Produttore esecutivo	Executive Producer
+STR_CREDITS_92		Chris Down	Chris Down	Chris Down	Chris Down	Chris Down
+STR_CREDITS_93		European Development	Directeur du développement	Leitung Entwicklung	Direttore	European Development
+STR_CREDITS_94		Director	en Europe	Europa	sviluppo Europa	Director
+STR_CREDITS_95		Sam Baker	Sam Baker	Sam Baker	Sam Baker	Sam Baker
+STR_CREDITS_96		Senior Product Manager	Responsable produit en chef	Leitender Produktmanager	Responsabile per il prodotto	Senior Product Manager
+STR_CREDITS_97		Harvey Eagle	Harvey Eagle	Harvey Eagle	Harvey Eagle	Harvey Eagle
+STR_CREDITS_98		Q.A. Manager	Direction assurance qualité	Leitung QS	Direttore controllo qualità	Q.A. Manager
+STR_CREDITS_99		Andrew Luckett	Andrew Luckett	Andrew Luckett	Andrew Luckett	Andrew Luckett
+STR_CREDITS_100		Q.A. Supervisor	Contrôle assurance qualité	Aufsicht QS	Capo controllo qualità	Q.A. Supervisor
+STR_CREDITS_101		Dan Luton	Dan Luton	Dan Luton	Dan Luton	Dan Luton
+STR_CREDITS_102		Lead Tester	Testeur principal	Testleitung	Collaudatore capo	Lead Tester
+STR_CREDITS_103		Lee Evans	Lee Evans	Lee Evans	Lee Evans	Lee Evans
+STR_CREDITS_104		Testers	Testeurs	Tester	Testato da:	Testers
+STR_CREDITS_105		Robert Ward	Robert Ward	Robert Ward	Robert Ward	Robert Ward
+STR_CREDITS_106		Andrew Spratt	Andrew Spratt	Andrew Spratt	Andrew Spratt	Andrew Spratt
+STR_CREDITS_107		Andrew Stainer	Andrew Stainer	Andrew Stainer	Andrew Stainer	Andrew Stainer
+STR_CREDITS_108		Nick Thorpe	Nick Thorpe	Nick Thorpe	Nick Thorpe	Nick Thorpe
+STR_CREDITS_109		Eric Manktelow	Eric Manktelow	Eric Manktelow	Eric Manktelow	Eric Manktelow
+STR_CREDITS_110		Phil Gilbert	Phil Gilbert	Phil Gilbert	Phil Gilbert	Phil Gilbert
+STR_CREDITS_111		Andrew Coward	Andrew Coward	Andrew Coward	Andrew Coward	Andrew Coward
+STR_CREDITS_112		Steven Powell-Waddell	Steven Powell-Waddell	Steven Powell-Waddell	Steven Powell-Waddell	Steven Powell-Waddell
+STR_CREDITS_113		Matt Nation	Matt Nation	Matt Nation	Matt Nation	Matt Nation
+STR_CREDITS_114		Kevin Wilcox	Kevin Wilcox	Kevin Wilcox	Kevin Wilcox	Kevin Wilcox
+STR_CREDITS_115		Hardware Compatibility	Laboratoire de tests de	Testleitung	Laboratorio controllo	Hardware Compatibility
+STR_CREDITS_116		Testing Lab	compatibilité du matériel	Hardware-Kompatibilität	compatibilità hardware	Testing Lab
+STR_CREDITS_117		Ian Palfrey	Ian Palfrey	Ian Palfrey	Ian Palfrey	Ian Palfrey
+STR_CREDITS_118		Alan Clark	Alan Clark	Alan Clark	Alan Clark	Alan Clark
+STR_CREDITS_119		Localisation	Chef de projet 	Projektleitung	Responsabile 	Localization
+STR_CREDITS_120		Project Manager	responsable de la localisation	Lokalisierung	localizzazione	Project Manager
+STR_CREDITS_121		Charlotte Virgoe	Charlotte Virgoe	Charlotte Virgoe	Charlotte Virgoe	Charlotte Virgoe
+STR_CREDITS_122		Art Director	Directeur artistique	Künstlerische Leitung	Direttore artistico	Art Director
+STR_CREDITS_123		Ken Tse	Ken Tse	Ken Tse	Ken Tse	Ken Tse
+STR_CREDITS_124		Manual Manager	Responsable du manuel	Leitung Handbuch	Responsabile del manuale	Manual Manager
+STR_CREDITS_125		Sam Hart	Sam Hart	Sam Hart	Sam Hart	Sam Hart
+STR_CREDITS_126		Documentation Writer	Documentation 	Dokumentation	Documentazione a cura di	Documentation Writer
+STR_CREDITS_127		Bill Martin	Bill Martin	Bill Martin	Bill Martin	Bill Martin
+STR_CREDITS_128		Strategic	Directeur 	Leitung	Direttore	Strategic
+STR_CREDITS_129		Marketing Director	marketing stratégique	Strategisches Marketing	strategie di marketing 	Marketing Director
+STR_CREDITS_130		Kate Webster	Kate Webster	Kate Webster	Kate Webster	Kate Webster
+STR_CREDITS_131		Commercial Director	Directeur commercial	Internationale	Direttore commerciale	Commercial Director
+STR_CREDITS_132		International	à l'international	Geschäftsführung	internazionale	International
+STR_CREDITS_133		Chris Noone	Chris Noone	Chris Noone	Chris Noone	Chris Noone
+STR_CREDITS_134		Special Thanks	Remerciements particuliers	Besonderen Dank an	Un ringraziamento speciale a:	Special Thanks
+STR_CREDITS_135		Kellie Rice 	Kellie Rice 	Kellie Rice 	Kellie Rice 	Kellie Rice 
+STR_CREDITS_136		Shahid Ahmad	Shahid Ahmad	Shahid Ahmad	Shahid Ahmad	Shahid Ahmad
+STR_CREDITS_137		Louise McTighe 	Louise McTighe 	Louise McTighe 	Louise McTighe 	Louise McTighe 
+STR_CREDITS_138		John Broomhall	John Broomhall	John Broomhall	John Broomhall	John Broomhall
+STR_CREDITS_139		For Hasbro	Pour Hasbro	Hasbro	Per Hasbro	For Hasbro
+STR_CREDITS_140		Interactive US	Interactive aux Etats-Unis	Interactive USA	Interactive USA	Interactive US
+STR_CREDITS_141		CEO	Directeur général	Vorsitzender	Direttore esecutivo	CEO
+STR_CREDITS_142		Tom Dusenberry	Tom Dusenberry	Tom Dusenberry	Tom Dusenberry	Tom Dusenberry
+STR_CREDITS_143		COO	Directeur opérationnel	Geschäftsführung	Direttore operativo	COO
+STR_CREDITS_144		Charlie McCarthy	Charlie McCarthy	Charlie McCarthy	Charlie McCarthy	Charlie McCarthy
+STR_CREDITS_145		Product Manager	Responsable produit	Produktmanagement	Responsabile per il prodotto	Product Manager
+STR_CREDITS_146		Matt Collins	Matt Collins	Matt Collins	Matt Collins	Matt Collins
+STR_CREDITS_147		Senior	Responsable 	Leitender	Responsabile senior	Senior
+STR_CREDITS_148		Product Manager	produit en chef	Produktmanager	per il prodotto	Product Manager
+STR_CREDITS_149		Mark Goodreau	Mark Goodreau	Mark Goodreau	Mark Goodreau	Mark Goodreau
+STR_CREDITS_150		Chief Creative Officer	Responsable de la création	Kreativleitung	Direttore creativo	Chief Creative Officer
+STR_CREDITS_151		John Sutyak	John Sutyak	John Sutyak	John Sutyak	John Sutyak
+STR_CREDITS_152		Senior V.P. Research	Vice-président en chef	Leitung Forschung	Direttore	Senior V.P. Research
+STR_CREDITS_153		and Development	de la recherche	und Entwicklung	ricerca e sviluppo	and Development
+STR_CREDITS_154		Tony Parks	Tony Parks	Tony Parks	Tony Parks	Tony Parks
+STR_CREDITS_155		V.P. of Technology	Vice-président technologie	VP Technologie	Vicepresidente tecnologie	V.P. of Technology
+STR_CREDITS_156		Rich Reily	Rich Reily	Rich Reily	Rich Reily	Rich Reily
+STR_CREDITS_157		V.P. External	Vice-président du 	VP Externe	Vicepresidente	V.P. External
+STR_CREDITS_158		Development	développement externe	Entwicklung	sviluppo esterno	Development
+STR_CREDITS_159		Dave Albert	Dave Albert	Dave Albert	Dave Albert	Dave Albert
+STR_CREDITS_160		V.P. of Studios	Vice-président des studios	Studioleitung	Responsabile studio	V.P. of Studios
+STR_CREDITS_161		Rod Nakamoto	Rod Nakamoto	Rod Nakamoto	Rod Nakamoto	Rod Nakamoto
+STR_CREDITS_162		V.P. of Development	Vice-président opérations	VP Entwicklungs-	Vicepresidente	V.P. of Development
+STR_CREDITS_163		Operations	de développement	Bereich	sviluppo operazioni	Operations
+STR_CREDITS_164		Rob Sears	Rob Sears	Rob Sears	Rob Sears	Rob Sears
+STR_CREDITS_165		Director of	Directeur 	Leitung	Direttore 	Director of
+STR_CREDITS_166		Quality Assurance	assurance qualité	Qualitätssicherung	controllo di qualità	Quality Assurance
+STR_CREDITS_167		Michael Craighead	Michael Craighead	Michael Craighead	Michael Craighead	Michael Craighead
+STR_CREDITS_168		Q.A. Certification	Responsable certification	Management 	Responsabile certificazione 	Q.A. Certification
+STR_CREDITS_169		Manager	assurance qualité	QS-Zertifikation	controllo qualità	Manager
+STR_CREDITS_170		Kurt Boutin	Kurt Boutin	Kurt Boutin	Kurt Boutin	Kurt Boutin
+STR_CREDITS_171		Q.A. Certification	Agent principal certification	Leitung	Capo certificazione 	Q.A. Certification
+STR_CREDITS_172		Lead	assurance qualité	QS-Zertifikation	controllo qualità	Lead
+STR_CREDITS_173		Bill Carroll	Bill Carroll	Bill Carroll	Bill Carroll	Bill Carroll
+STR_CREDITS_174		Q.A. Testing	Responsables tests		Responsabili collaudo	Q.A. Testing
+STR_CREDITS_175		Managers	assurance qualité	QS-Testleitung	controllo qualità 	Managers
+STR_CREDITS_176		Randy Lee	Randy Lee	Randy Lee	Randy Lee	Randy Lee
+STR_CREDITS_177		Bill Carroll	Bill Carroll	Bill Carroll	Bill Carroll	Bill Carroll
+STR_CREDITS_178		Testers	Testeurs	Tester	Testato da:	Testers
+STR_CREDITS_179		Mike Romatelli	Mike Romatelli	Mike Romatelli	Mike Romatelli	Mike Romatelli
+STR_CREDITS_180		Brian Sadacca	Brian Sadacca	Brian Sadacca	Brian Sadacca	Brian Sadacca
+STR_CREDITS_181		Eric Marmaldi	Eric Marmaldi	Eric Marmaldi	Eric Marmaldi	Eric Marmaldi
+STR_CREDITS_182		Tony Calabresi	Tony Calabresi	Tony Calabresi	Tony Calabresi	Tony Calabresi
+STR_CREDITS_183		General Manager	Directeur 	Allgemeines Management	Responsabile generale	General Manager
+STR_CREDITS_184		John Hurlbut	John Hurlbut	John Hurlbut	John Hurlbut	John Hurlbut
+STR_CREDITS_185		Director of Marketing	Directeur du marketing	Leitung Marketing	Direttore del marketing	Director of Marketing
+STR_CREDITS_186		Tom Nichols	Tom Nichols	Tom Nichols	Tom Nichols	Tom Nichols
+STR_CREDITS_187		Director of Marketing	Directeur du marketing	Leitung Marketing	Direttore del marketing	Director of Marketing
+STR_CREDITS_188		Petrina McPhee	Petrina McPhee	Petrina McPhee	Petrina McPhee	Petrina McPhee
+STR_CREDITS_189		Director of Marketing	Directeur du marketing	Leitung Marketing	Direttore del marketing	Director of Marketing
+STR_CREDITS_190		Ann Marie Bland	Ann Marie Bland	Ann Marie Bland	Ann Marie Bland	Ann Marie Bland
+STR_CREDITS_191		V.P. of Marketing	Vice-président du 	VP Marketing-	Vicepresidente	V.P. of Marketing
+STR_CREDITS_192		Services	service marketing	Organisation	servizi di marketing	Services
+STR_CREDITS_193		Gale Steiner	Gale Steiner	Gale Steiner	Gale Steiner	Gale Steiner
+STR_CREDITS_194		Chief Visual Officer	Directeur création visuelle	Leitung Design	Direttore grafico	Chief Visual Officer
+STR_CREDITS_195		Steve Webster	Steve Webster	Steve Webster	Steve Webster	Steve Webster
+STR_CREDITS_196		Manager of Creative	Responsable 	Leitung	Responsabile	Manager of Creative
+STR_CREDITS_197		Services	des services créatifs	Kreativabteilung	servizi creativi	Services
+STR_CREDITS_198		Steve Martin	Steve Martin	Steve Martin	Steve Martin	Steve Martin
+STR_CREDITS_199		Manager of	Responsable des 		Responsabile	Manager of
+STR_CREDITS_200		Editorial/Documentation	services éditoriaux	Leitung Redaktion 	dei servizi editoriali	Editorial/Documentation
+STR_CREDITS_201		Services	et de documentation	und Dokumentaion	e della documentazione	Services
+STR_CREDITS_202		Elizabeth Mackney	Elizabeth Mackney	Elizabeth Mackney	Elizabeth Mackney	Elizabeth Mackney
+STR_CREDITS_203		Marketing Services	Responsable du	Management Marketing-	Responsabile	Marketing Services
+STR_CREDITS_204		Manager	service marketing	Organisation	servizi del marketing	Manager
+STR_CREDITS_205		Kathryn Lynch	Kathryn Lynch	Kathryn Lynch	Kathryn Lynch	Kathryn Lynch
+STR_CREDITS_206		Senior Graphic Designer	Concepteur graphique en chef	Leitende Grafik-Designerin	Ideazione grafica	Senior Graphic Designer
+STR_CREDITS_207		Kristine Meier	Kristine Meier	Kristine Meier	Kristine Meier	Kristine Meier
+STR_CREDITS_208		Graphic Designer	Concepteur graphique	Grafik-Designer	Artista grafico	Graphic Designer
+STR_CREDITS_209		Paul Anselmi	Paul Anselmi	Paul Anselmi	Paul Anselmi	Paul Anselmi
+STR_CREDITS_210		Graphic Designer	Concepteur graphique	Grafik-Designer	Artista grafico	Graphic Designer
+STR_CREDITS_211		Morgan Tomaiolo	Morgan Tomaiolo	Morgan Tomaiolo	Morgan Tomaiolo	Morgan Tomaiolo
+STR_CREDITS_212		Documentation Writer	Documentation 	Dokumentation 	Documentazione	Documentation Writer
+STR_CREDITS_213		Mark Russell	Mark Russell	Mark Russell	Mark Russell	Mark Russell
+STR_CREDITS_214		Copywriter	Rédacteur publicitaire	Texter	Redattore	Copywriter
+STR_CREDITS_215		Paul Collin	Paul Collin	Paul Collin	Paul Collin	Paul Collin
+STR_CREDITS_216		Channel Marketing	Directeur du circuit 	Leitung	Direttore 	Channel Marketing
+STR_CREDITS_217		Director	de commercialisation	Channel-Marketing	canali di marketing	Director
+STR_CREDITS_218		Sarah McIlroy	Sarah McIlroy	Sarah McIlroy	Sarah McIlroy	Sarah McIlroy
+STR_CREDITS_219		V.P. of Public	Vice-président des	VP Public	Vicepresidente	V.P. of Public
+STR_CREDITS_220		Relations	relations publiques	Relations	pubbliche relazioni	Relations
+STR_CREDITS_221		Laura Tomasetti	Laura Tomasetti	Laura Tomasetti	Laura Tomasetti	Laura Tomasetti
+STR_CREDITS_222		Manager of Public	Responsable des 	Leitung 	Responsabile	Manager of Public
+STR_CREDITS_223		Relations	relations publiques	Public Relations	pubbliche relazioni	Relations
+STR_CREDITS_224		Jayson Hill	Jayson Hill	Jayson Hill	Jayson Hill	Jayson Hill
+STR_CREDITS_225		Manager of	Responsable 	Technische 	Responsabile	Manager of
+STR_CREDITS_226		Technical Services	des services techniques	Leitung	servizi tecnici	Technical Services
+STR_CREDITS_227		Tony Moreira	Tony Moreira	Tony Moreira	Tony Moreira	Tony Moreira
+STR_CREDITS_228		V.P. of Administration	Vice-président administration	VP Verwaltung	Vicepresidente	V.P. of Administration
+STR_CREDITS_229		and Operations	et opérations	und Betriebsleitung	amministrativo e operativo	and Operations
+STR_CREDITS_230		Bob Sadacca	Bob Sadacca	Bob Sadacca	Bob Sadacca	Bob Sadacca
+STR_CREDITS_231		Operations and	Responsable  		Responsabile	Operations and
+STR_CREDITS_232		Special Projects	des opérations	Sonderprojekt-	operazioni	Special Projects
+STR_CREDITS_233		Manager	et des projets spéciaux	und Betriebsleitung	e progetti speciali	Manager
+STR_CREDITS_234		Tracy Kureta	Tracy Kureta	Tracy Kureta	Tracy Kureta	Tracy Kureta
+STR_CREDITS_235		Legal and Finance	Organe juridique et financier	Recht und Finanzen	Esperto legale e finanziario	Legal and Finance
+STR_CREDITS_236		Jackie Daya	Jackie Daya	Jackie Daya	Jackie Daya	Jackie Daya
+STR_CREDITS_237		Deborah Stone	Deborah Stone	Deborah Stone	Deborah Stone	Deborah Stone
+STR_CREDITS_238		Rosalie Cravotta	Rosalie Cravotta	Rosalie Cravotta	Rosalie Cravotta	Rosalie Cravotta
+STR_CREDITS_239		Linda Ferros	Linda Ferros	Linda Ferros	Linda Ferros	Linda Ferros
+STR_CREDITS_240	CREDITS SECTION - END	___________________	___________________	___________________	___________________	___________________
+STR_LEGAL_1	COPYRIGHT INFO - START	"© 2000 Hasbro Interactive, Inc. "	"© 2000 Hasbro Interactive, Inc. "	"© 2000 Hasbro Interactive, Inc. "	"© 2000 Hasbro Interactive, Inc. "	"© 2000 Hasbro Interactive, Inc. "
+STR_LEGAL_2		All Rights Reserved	All Rights Reserved	Alle Rechte vorbehalten.	Tutti i diritti riservati.	All Rights Reserved
+STR_LEGAL_3		KONAMI and FROGGER are the 	KONAMI and FROGGER are the 	KONAMI und FROGGER sind 	KONAMI e FROGGER sono	KONAMI and FROGGER are the 
+STR_LEGAL_4		trademarks of KONAMI CO. LTD.	trademarks of KONAMI CO. LTD.	Warenzeichen von KONAMI CO. LTD.	marchi registrati di KONAMI CO. LTD.	trademarks of KONAMI CO. LTD.
+STR_LEGAL_5		© 1981 KONAMI.	© 1981 KONAMI.	© 1981 KONAMI.	© 1981 KONAMI.	© 1981 KONAMI.
+STR_LEGAL_6		All Rights Reserved	All Rights Reserved	Alle Rechte vorbehalten.	Tutti i diritti riservati.	All Rights Reserved
+STR_LEGAL_7		"Published by Hasbro Interactive, Inc."	"Published by Hasbro Interactive, Inc."	"Veröffentlicht von Hasbro Interactive, Inc."	"Pubblicato da Hasbro Interactive, Inc."	"Published by Hasbro Interactive, Inc."
+STR_LEGAL_8		Designed and Developed by Blitz Games.	Designed and Developed by Blitz Games.	Design und Entwicklung von Blitz Games.	Progettato e sviluppato da Blitz Games.	Designed and Developed by Blitz Games.
+STR_LEGAL_9	COPYRIGHT INFO - END	*	*	*	*	*
+STR_PCSETUP_VIDEO	Title for section containing info on your view cards	Video Device	Affichage	Grafikanzeigeger+E527t	Schede video	Video Device
+STR_PCSETUP_RESOLUTION	Title for section containing screen resolutions you may select	Screen Resolution	Résolution de l'écran	Bildschirmauflösung	Risoluzione dello schermo	Screen Resolution
+STR_PCSETUP_OK	Button title	OK	OK	OK	OK	OK
+STR_PCSETUP_CANCEL	Button title	Cancel	Annuler	Abbrechen	Cancella	Cancel
+STR_PCSETUP_CONTROLS	Button title	Controls	Commandes	Steuerung	Controlli	Controls
+STR_PCSETUP_WINDOWED	Check box title	Run Windowed	Exécuter en mode fenêtrage	Als Fenster anzeigen	Esegui in modalità finestra	Run Windowed
+STR_PCSETUP_SETUP	Button title	Setup	Configuration	Einstellungen	Impostazioni	Setup
+STR_PCSETUP_KEYBOARD	Button title	Keyboard	Clavier	Tastatur	Tastiera	Keyboard
+STR_PCSETUP_INSERTCD	Appears in a dialogue box	Please insert your Frogger2 CD!	Insère ton CD de Frogger2 !	Bitte Frogger 2-CD einlegen!	Inserire il CD-ROM di Frogger 2!	Please insert your Frogger2 CD!
+STR_PCSETUP_BADVIDEO	Error message: add bullet points with [Alt-0183 on num key pad] and new-lines with \n	"Frogger2 failed to start DirectX. You could try the following:\n\n· Run in full-screen mode (uncheck Run Windowed)\n· Select a lower video resolution\n· Use the software rendering mode\n\nIf these do not help, consult the accompanying documentation."	"Frogger2 n'a pas réussi à lancer DirectX. Les opérations suivantes peuvent régler le problème :\n\n· Exécuter le jeu en mode pleine page (désélectionne l'option d'exécution en mode fenêtrage)\n· Sélectionner une résolution inférieure\n· Utiliser le mode de rendement logiciel\n\nSi tes problèmes persistent, reporte-toi à la documentation fournie."	"Frogger 2 konnte DirectX nicht starten. Es gibt folgende Möglichkeiten:\n\n· Im Modus Vollbildschirm anzeigen (Häkchen neben „Als Fenster anzeigen“ entfernen)\n· Eine niedrigere Grafikauflösung wählen\n· Den Modus Software Rendering benutzen\n\n Sollte dies nicht helfen, können weitere Hinweise in den beigefügten Materialien zu Rate gezogen werden."	"Frogger 2 non è riuscito a lanciare DirectX. Prova le seguenti soluzioni:\n\n· gioca in modalità a schermo intero (disattiva la modalita in finestra)\n· seleziona una risoluzione dello schermo più bassa\n· utilizza la modalità di rendering via software.\n\nSe ancora non dovesse funzionare, consulta la documentazione allegata."	"Frogger2 failed to start DirectX. You could try the following:\n\n· Run in full-screen mode (uncheck Run Windowed)\n· Select a lower video resolution\n· Use the software rendering mode\n\nIf these do not help, consult the accompanying documentation."
+STR_PCSETUP_PRESSKEY	Instruction	"Press your chosen key, or click 'Cancel' to go back"	Appuie sur la touche désirée ou clique sur « Annuler » pour revenir à l'écran précédent	Drücke die gewünschte Taste oder klicke auf „Abbrechen“ um zurückzugehen.	Premi il tasto scelto o clicca su 'Cancella' per tornare indietro.	"Press your chosen key, or click 'Cancel' to go back"
+STR_PCSETUP_DEFAULTKEYS	message box	Are you sure you want to reset the controls?	Es-tu sûr(e) de vouloir rétablir les commandes ?	Sollen die Steuerungsvorgaben wirklich wiederhergestellt werden?	Sei sicuro di voler ritornare ai controlli predefiniti?	Are you sure you want to reset the controls?
+STR_LEVEL_PCMULTI1		Rocket Race	Rocket Race	Rocket Race	Rocket Race	Rocket Race
+STR_LEVEL_PCMULTI2		Fossil Frenzy	Fossil Frenzy	Fossil Frenzy	Fossil Frenzy	Fossil Frenzy
+STR_LEVEL_PCMULTI3		Jumpin' Pumpkin	Jumpin' Pumpkin	Jumpin' Pumpkin	Jumpin' Pumpkin	Jumpin' Pumpkin
+STR_LEVEL_PCMULTI4		Storeroom Stampede	Storeroom Stampede	Storeroom Stampede	Storeroom Stampede	Storeroom Stampede
+STR_DC_PAD_NOT_PRESENT	Remove pad message.	"A controller was removed, or a VM Is being recognised."	Une manette a été retirée ou un VM est en cours d'accès.	Ein Controller wurde entfernt oder ein VM wird gelesen.	È stato rimosso un controller oppure una VM è in corso di rilevamento.	"A controller was removed, or a VMU Is being recognized."
+STR_DC_START_PAD_NOPAD	Startup pad message.	No valid controller connected to console.	Aucune manette valide n'est connectée à cette console.	Kein gültiger Controller ist an die Konsole angeschlossen.	Nessun controller valido connesso alla console.	No valid controller connected to console.
+STR_DC_TV_SETTING		TV Setting	Configuration de la Télévision	TV Einstellung	Impostazioni TV	TV Setting
+STR_DC_TV_TEST	test message	"Tests whether your TV supports 60Hz. A picture of Frogger will be displayed for 5 seconds. If the picture appears, your TV supports 60Hz. If nothing appears, your TV can only display at 50Hz."	"Pour tester si votre télévision soutient 60 Hz. Vous verrez une image de Frogger pendant 5 secondes. Si vous voyez l'image, votre télévision soutient 60Hz. Si vous ne voyez rien, votre télévision ne soutient que 50Hz."	"Testen Sie, ob Ihr TV 60Hz kompatibel ist. Wenn Sie in den nächsten 5 Sekunden ein Bild von Frogger erkennen können, dann ist Ihr TV 60Hz kompatibel. Erscheint kein Bild, dann ist Ihr TV nur auf 50Hz eingestellt."	Verificate se il vostro televisore supporta i 60Hz.Un'immagine di Frogger verrà mostrata per 5 secondi.Se l'immagine appare ciò significa che il vostro televisore supporta i 60Hz. L'immagine non appare nei televisori che supportano i 50Hz.	"Tests whether your TV supports 60Hz. A picture of Frogger will be displayed for 5 seconds. If the picture appears, your TV supports 60Hz. If nothing appears, your TV can only display at 50Hz."
+STR_DC_TV_50HZ		50 Hz display.\n Can be displayed on all PAL Televisions.	Affichage 50 Hz.\n Pour toutes les télévisions PAL.	50 Hz.\n Ist mit allen PAL Fernsehern kompatibel.	Immagine visualizzata a 50 Hz.\n Può essere mostrata su tutti i televisori PAL.	50 Hz display.\n Can be displayed on all PAL Televisions.
+STR_DC_TV_60HZ		60 Hz display.\n Requires a Television that supports 60 Hz.	Affichage 60 Hz.\n Il vous faut une télévision qui soutient 60 Hz.	"60 Hz.\n Benötigt einen Fernseher, der mit 60Hz kompatibel ist."	Immagine visualizzata a 60 Hz.\n Richiede un televisore che supporti i 60 Hz.	60 Hz display.\n Requires a Television that supports 60 Hz.
+STR_DC_TV_50HZ_SELECT		50Hz	50Hz	50Hz	50Hz	50Hz
+STR_DC_TV_60HZ_SELECT		60Hz	60Hz	60Hz	60Hz	60Hz
+STR_DC_TV_TEST_SELECT		Test	Test	Test	Test	Test

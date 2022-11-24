@@ -1,0 +1,10 @@
+halloween2.col
+halloween2.sce
+halloween2.bff
+entity-6-1.dat
+script-6-1.fev
+halloween2.pil
+halloween.tit
+sfxanim61.sam
+
+
