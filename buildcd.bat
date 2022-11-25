@@ -25,6 +25,8 @@ if not exist %CD_FILES% (
 :: Copy compiled game.
 copy %EXECUTABLE_LOCATION% .\ <nul
 copy "Frogger\cd\track01\IP.BIN" .\ <nul
+DEL %CD_FILES%\1ST_READ.BIN  >nul
+DEL %CD_FILES%\IP.BIN >nul
 
 :: Fix boot file.
 echo.
