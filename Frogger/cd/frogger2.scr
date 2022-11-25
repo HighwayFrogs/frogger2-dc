@@ -1,60 +1,57 @@
-;
-; Script created using GD-M Workshop
-;
-Gd "FROGGER1"
-  RecordArea SINGLE
+Gd "FROGGER2.CIM"
+RecordingDate 09/10/2000 15:01:25:00:00
+RecordArea SINGLE
     FileNameType ISO9660L2
-    SystemArea "F:\Frogger\cd\track01\Ip0000.bin"
+    SystemArea "M:\track01\Ip0000.bin"
     ;
     ; Track 1
     ;
     Track MODE1
       Volume
         PrimaryVolume
-          VolumeIdentifier            "FROGGER1"
+		  SystemIdentifier            "SEGA SEGAKATANA"
+		  VolumeIdentifier            "FROGGER2"
+		  VolumeSetIdentifier         "FROGGER2"
+		  PublisherIdentifier         "SEGA ENTERPRISES,LTD."
           CopyrightFileIdentifier     "COPYRIGH.TXT"
           AbstractFileIdentifier      "ABSTRACT.TXT"
           BibliographicFileIdentifier "BIBLIOGR.TXT"
-          VolumeCreationDate          27/08/2000 13:34.05.00.00
-          VolumeModificationDate      30/08/2000 16:59.45.00.00
-          VolumeExpirationDate        27/08/2009 13:34.05.00.00
-          VolumeEffectiveDate         27/08/2000 13:34.05.00.00
         EndPrimaryVolume
       EndVolume
       File ABSTRACT.TXT
         Location 3
         RecordingDate 02/05/2000 09:47.54.00.00
-        FileSource "F:\Frogger\cd\track01\ABSTRACT.txt"
+        FileSource "M:\track01\ABSTRACT.txt"
         EndFileSource
       EndFile
       File BIBLIOGR.TXT
         Location 0
         RecordingDate 02/05/2000 09:48.24.00.00
-        FileSource "F:\Frogger\cd\track01\BIBLIOGR.txt"
+        FileSource "M:\track01\BIBLIOGR.txt"
         EndFileSource
       EndFile
       File COPYRIGH.TXT
         Location 1
         RecordingDate 02/05/2000 09:48.48.00.00
-        FileSource "F:\Frogger\cd\track01\COPYRIGH.txt"
+        FileSource "M:\track01\COPYRIGH.txt"
         EndFileSource
       EndFile
       File EUROPEWARN.DA
         Location 2
         RecordingDate 17/06/1999 10:09.54.00.00
-        FileSource "F:\Frogger\cd\track01\EuropeWarn.da"
+        FileSource "M:\track01\EuropeWarn.da"
         EndFileSource
       EndFile
       File IP.BIN
         Location 5
-        RecordingDate 30/08/2000 16:58.46.00.00
-        FileSource "F:\Frogger\cd\track01\Ip.bin"
+        RecordingDate 15/09/2000 13:19.48.00.00
+        FileSource "M:\track01\Ip.bin"
         EndFileSource
       EndFile
       File IP0000.BIN
         Location 4
-        RecordingDate 30/08/2000 16:58.46.00.00
-        FileSource "F:\Frogger\cd\track01\Ip0000.bin"
+        RecordingDate 15/09/2000 13:19.48.00.00
+        FileSource "M:\track01\Ip0000.bin"
         EndFileSource
       EndFile
     EndTrack
@@ -62,7 +59,7 @@ Gd "FROGGER1"
     ; Track 2
     ;
     Track CDDA
-        FileSource "F:\Frogger\cd\track02\US_warn.da"
+        FileSource "M:\track02\EuropeWarn.da"
         EndFileSource
     EndTrack
   EndRecordArea
@@ -71,1037 +68,1042 @@ Gd "FROGGER1"
 ;
   RecordArea HIGH
     FileNameType ISO9660L2
-    SystemArea "F:\Frogger\cd\track01\Ip.bin"
+    SystemArea "M:\track01\Ip.bin"
     ;
     ; Track 3
     ;
     Track MODE1
       Volume
         PrimaryVolume
-          VolumeIdentifier            "FROGGER1"
-          VolumeCreationDate          27/08/2000 13:34.05.00.00
-          VolumeModificationDate      30/08/2000 16:59.45.00.00
-          VolumeExpirationDate        27/08/2009 13:34.05.00.00
-          VolumeEffectiveDate         27/08/2000 13:34.05.00.00
+		  SystemIdentifier            "SEGA SEGAKATANA"
+		  VolumeIdentifier            "FROGGER2"
+		  VolumeSetIdentifier         "FROGGER2"
+	  	  PublisherIdentifier         "SEGA ENTERPRISES,LTD."
         EndPrimaryVolume
       EndVolume
       File AUDIO64.DRV
         Location 0
         RecordingDate 18/05/2000 10:17.26.00.00
-        FileSource "F:\Frogger\cd\track03\audio64.drv"
+        FileSource "M:\track03\audio64.drv"
         EndFileSource
       EndFile
       File LANGUAGE.TXT
-        Location 175
-        RecordingDate 30/08/2000 16:36.36.00.00
-        FileSource "F:\Frogger\cd\track03\language.txt"
+        Location 176
+        RecordingDate 15/09/2000 16:04.58.00.00
+        FileSource "M:\track03\language.txt"
         EndFileSource
       EndFile
       Directory BACKDROPS
         File ARTWORK00.PVR
           Location 7
           RecordingDate 12/08/2000 14:15.58.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork00.pvr"
+          FileSource "M:\track03\backdrops\artwork00.pvr"
           EndFileSource
         EndFile
         File ARTWORK01.PVR
           Location 3
           RecordingDate 12/08/2000 14:19.14.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork01.pvr"
+          FileSource "M:\track03\backdrops\artwork01.pvr"
           EndFileSource
         EndFile
         File ARTWORK02.PVR
           Location 4
           RecordingDate 11/08/2000 15:36.58.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork02.pvr"
+          FileSource "M:\track03\backdrops\artwork02.pvr"
           EndFileSource
         EndFile
         File ARTWORK03.PVR
           Location 5
           RecordingDate 11/08/2000 15:37.10.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork03.pvr"
+          FileSource "M:\track03\backdrops\artwork03.pvr"
           EndFileSource
         EndFile
         File ARTWORK04.PVR
           Location 6
           RecordingDate 11/08/2000 15:37.20.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork04.pvr"
+          FileSource "M:\track03\backdrops\artwork04.pvr"
           EndFileSource
         EndFile
         File ARTWORK05.PVR
           Location 2
           RecordingDate 11/08/2000 15:37.30.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork05.pvr"
+          FileSource "M:\track03\backdrops\artwork05.pvr"
           EndFileSource
         EndFile
         File ARTWORK06.PVR
           Location 12
           RecordingDate 11/08/2000 15:37.42.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork06.pvr"
+          FileSource "M:\track03\backdrops\artwork06.pvr"
           EndFileSource
         EndFile
         File ARTWORK07.PVR
           Location 9
           RecordingDate 11/08/2000 15:39.08.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork07.pvr"
+          FileSource "M:\track03\backdrops\artwork07.pvr"
           EndFileSource
         EndFile
         File ARTWORK08.PVR
           Location 10
           RecordingDate 11/08/2000 15:39.20.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork08.pvr"
+          FileSource "M:\track03\backdrops\artwork08.pvr"
           EndFileSource
         EndFile
         File ARTWORK09.PVR
           Location 11
           RecordingDate 11/08/2000 15:39.30.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork09.pvr"
+          FileSource "M:\track03\backdrops\artwork09.pvr"
           EndFileSource
         EndFile
         File ARTWORK10.PVR
           Location 8
           RecordingDate 11/08/2000 15:39.48.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork10.pvr"
+          FileSource "M:\track03\backdrops\artwork10.pvr"
           EndFileSource
         EndFile
         File ARTWORK11.PVR
           Location 17
           RecordingDate 11/08/2000 15:40.00.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork11.pvr"
+          FileSource "M:\track03\backdrops\artwork11.pvr"
           EndFileSource
         EndFile
         File ARTWORK12.PVR
           Location 14
           RecordingDate 11/08/2000 15:40.10.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork12.pvr"
+          FileSource "M:\track03\backdrops\artwork12.pvr"
           EndFileSource
         EndFile
         File ARTWORK13.PVR
           Location 15
           RecordingDate 11/08/2000 15:40.28.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork13.pvr"
+          FileSource "M:\track03\backdrops\artwork13.pvr"
           EndFileSource
         EndFile
         File ARTWORK14.PVR
           Location 16
           RecordingDate 11/08/2000 15:50.08.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork14.pvr"
+          FileSource "M:\track03\backdrops\artwork14.pvr"
           EndFileSource
         EndFile
         File ARTWORK15.PVR
           Location 13
           RecordingDate 11/08/2000 15:50.20.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork15.pvr"
+          FileSource "M:\track03\backdrops\artwork15.pvr"
           EndFileSource
         EndFile
         File ARTWORK16.PVR
           Location 23
           RecordingDate 11/08/2000 15:50.36.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork16.pvr"
+          FileSource "M:\track03\backdrops\artwork16.pvr"
           EndFileSource
         EndFile
         File ARTWORK17.PVR
           Location 19
           RecordingDate 11/08/2000 15:50.50.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork17.pvr"
+          FileSource "M:\track03\backdrops\artwork17.pvr"
           EndFileSource
         EndFile
         File ARTWORK18.PVR
           Location 20
           RecordingDate 11/08/2000 15:51.26.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork18.pvr"
+          FileSource "M:\track03\backdrops\artwork18.pvr"
           EndFileSource
         EndFile
         File ARTWORK19.PVR
           Location 21
           RecordingDate 11/08/2000 15:51.40.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork19.pvr"
+          FileSource "M:\track03\backdrops\artwork19.pvr"
           EndFileSource
         EndFile
         File ARTWORK20.PVR
           Location 22
           RecordingDate 11/08/2000 15:51.56.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork20.pvr"
+          FileSource "M:\track03\backdrops\artwork20.pvr"
           EndFileSource
         EndFile
         File ARTWORK21.PVR
           Location 18
           RecordingDate 11/08/2000 16:07.46.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\artwork21.pvr"
+          FileSource "M:\track03\backdrops\artwork21.pvr"
           EndFileSource
         EndFile
         File FR2LEGAL.PVR
-          Location 28
+          Location 26
           RecordingDate 15/08/2000 21:31.36.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\fr2legal.pvr"
+          FileSource "M:\track03\backdrops\fr2legal.pvr"
+          EndFileSource
+        EndFile
+        File FR2LEGALEU.PVR
+          Location 172
+          RecordingDate 04/09/2000 14:40.58.00.00
+          FileSource "M:\track03\backdrops\fr2legalEU.pvr"
           EndFileSource
         EndFile
         File LOADING.PVR
           Location 25
           RecordingDate 11/08/2000 17:53.22.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\loading.pvr"
+          FileSource "M:\track03\backdrops\loading.pvr"
           EndFileSource
         EndFile
         File LOADINGEU.PVR
-          Location 26
-          RecordingDate 31/07/2000 17:08.46.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\loadingeu.pvr"
+          Location 175
+          RecordingDate 13/09/2000 11:02.26.00.00
+          FileSource "M:\track03\backdrops\loadingeu.pvr"
           EndFileSource
         EndFile
         File LOADINGUS.PVR
-          Location 27
-          RecordingDate 15/08/2000 21:31.50.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\loadingus.pvr"
+          Location 173
+          RecordingDate 08/09/2000 12:18.32.00.00
+          FileSource "M:\track03\backdrops\loadingus.pvr"
           EndFileSource
         EndFile
         File SOFDEC.PVR
           Location 24
           RecordingDate 07/08/2000 11:54.18.00.00
-          FileSource "F:\Frogger\cd\track03\backdrops\sofdec.pvr"
+          FileSource "M:\track03\backdrops\sofdec.pvr"
           EndFileSource
         EndFile
       EndDirectory
       Directory DEMOS
         File RECORD_0_0.KEY
-          Location 32
+          Location 30
           RecordingDate 28/06/2000 11:23.54.00.00
-          FileSource "F:\Frogger\cd\track03\demos\record-0-0.key"
+          FileSource "M:\track03\demos\record-0-0.key"
           EndFileSource
         EndFile
         File RECORD_1_0.KEY
-          Location 31
+          Location 29
           RecordingDate 28/06/2000 11:52.26.00.00
-          FileSource "F:\Frogger\cd\track03\demos\record-1-0.key"
+          FileSource "M:\track03\demos\record-1-0.key"
           EndFileSource
         EndFile
         File RECORD_6_1.KEY
-          Location 30
+          Location 28
           RecordingDate 03/05/2000 09:24.46.00.00
-          FileSource "F:\Frogger\cd\track03\demos\record-6-1.key"
+          FileSource "M:\track03\demos\record-6-1.key"
           EndFileSource
         EndFile
       EndDirectory
       Directory FMV
         File 02S.SFD
-          Location 39
+          Location 37
           RecordingDate 08/08/2000 18:55.28.00.00
-          FileSource "F:\Frogger\cd\track03\fmv\02s.sfd"
+          FileSource "M:\track03\fmv\02s.sfd"
           EndFileSource
         EndFile
         File 03S.SFD
-          Location 35
+          Location 33
           RecordingDate 08/08/2000 19:11.14.00.00
-          FileSource "F:\Frogger\cd\track03\fmv\03s.sfd"
+          FileSource "M:\track03\fmv\03s.sfd"
           EndFileSource
         EndFile
         File 04S.SFD
-          Location 36
+          Location 34
           RecordingDate 08/08/2000 20:16.06.00.00
-          FileSource "F:\Frogger\cd\track03\fmv\04s.sfd"
+          FileSource "M:\track03\fmv\04s.sfd"
           EndFileSource
         EndFile
         File 05S.SFD
-          Location 37
+          Location 35
           RecordingDate 08/08/2000 20:24.02.00.00
-          FileSource "F:\Frogger\cd\track03\fmv\05s.sfd"
+          FileSource "M:\track03\fmv\05s.sfd"
           EndFileSource
         EndFile
         File 06S.SFD
-          Location 38
+          Location 36
           RecordingDate 08/08/2000 20:33.58.00.00
-          FileSource "F:\Frogger\cd\track03\fmv\06s.sfd"
+          FileSource "M:\track03\fmv\06s.sfd"
           EndFileSource
         EndFile
         File 07S.SFD
-          Location 34
+          Location 32
           RecordingDate 08/08/2000 20:48.20.00.00
-          FileSource "F:\Frogger\cd\track03\fmv\07s.sfd"
+          FileSource "M:\track03\fmv\07s.sfd"
           EndFileSource
         EndFile
         File 08S.SFD
-          Location 45
+          Location 43
           RecordingDate 08/08/2000 21:06.50.00.00
-          FileSource "F:\Frogger\cd\track03\fmv\08s.sfd"
+          FileSource "M:\track03\fmv\08s.sfd"
           EndFileSource
         EndFile
         File 09S.SFD
-          Location 41
+          Location 39
           RecordingDate 08/08/2000 21:46.26.00.00
-          FileSource "F:\Frogger\cd\track03\fmv\09s.sfd"
+          FileSource "M:\track03\fmv\09s.sfd"
           EndFileSource
         EndFile
         File 10S.SFD
-          Location 42
+          Location 40
           RecordingDate 08/08/2000 21:56.26.00.00
-          FileSource "F:\Frogger\cd\track03\fmv\10s.sfd"
+          FileSource "M:\track03\fmv\10s.sfd"
           EndFileSource
         EndFile
         File 11S.SFD
-          Location 43
+          Location 41
           RecordingDate 08/08/2000 22:24.28.00.00
-          FileSource "F:\Frogger\cd\track03\fmv\11s.sfd"
+          FileSource "M:\track03\fmv\11s.sfd"
           EndFileSource
         EndFile
         File 12S.SFD
-          Location 44
+          Location 42
           RecordingDate 08/08/2000 22:53.22.00.00
-          FileSource "F:\Frogger\cd\track03\fmv\12s.sfd"
+          FileSource "M:\track03\fmv\12s.sfd"
           EndFileSource
         EndFile
         File ATARIS.SFD
-          Location 40
+          Location 38
           RecordingDate 25/07/2000 14:11.48.00.00
-          FileSource "F:\Frogger\cd\track03\fmv\ataris.sfd"
+          FileSource "M:\track03\fmv\ataris.sfd"
           EndFileSource
         EndFile
         File BLITZS.SFD
-          Location 48
+          Location 46
           RecordingDate 08/08/2000 14:53.38.00.00
-          FileSource "F:\Frogger\cd\track03\fmv\blitzs.sfd"
+          FileSource "M:\track03\fmv\blitzs.sfd"
           EndFileSource
         EndFile
         File HLOGO.SFD
-          Location 47
+          Location 45
           RecordingDate 10/08/2000 12:28.04.00.00
-          FileSource "F:\Frogger\cd\track03\fmv\HLogo.sfd"
+          FileSource "M:\track03\fmv\HLogo.sfd"
           EndFileSource
         EndFile
         File INTRO.SFD
-          Location 46
+          Location 44
           RecordingDate 15/08/2000 18:30.40.00.00
-          FileSource "F:\Frogger\cd\track03\fmv\intro.sfd"
+          FileSource "M:\track03\fmv\intro.sfd"
           EndFileSource
         EndFile
       EndDirectory
       Directory FONTS
         File FONT.PVR
-          Location 51
+          Location 49
           RecordingDate 26/07/2000 12:33.30.00.00
-          FileSource "F:\Frogger\cd\track03\Fonts\font.pvr"
+          FileSource "M:\track03\Fonts\font.pvr"
           EndFileSource
         EndFile
         File SMALLFONT.PVR
-          Location 50
+          Location 48
           RecordingDate 26/07/2000 12:33.42.00.00
-          FileSource "F:\Frogger\cd\track03\Fonts\smallfont.pvr"
+          FileSource "M:\track03\Fonts\smallfont.pvr"
           EndFileSource
         EndFile
       EndDirectory
       Directory INCBIN
         File ACOSTAB.BIN
-          Location 54
+          Location 52
           RecordingDate 03/03/2000 15:14.20.00.00
-          FileSource "F:\Frogger\cd\track03\incbin\acostab.bin"
+          FileSource "M:\track03\incbin\acostab.bin"
           EndFileSource
         EndFile
         File SQRTABLE.BIN
-          Location 53
+          Location 51
           RecordingDate 09/03/2000 11:28.00.00.00
-          FileSource "F:\Frogger\cd\track03\incbin\Sqrtable.bin"
+          FileSource "M:\track03\incbin\Sqrtable.bin"
           EndFileSource
         EndFile
       EndDirectory
       Directory MUSIC
         File TRACK01.ADX
-          Location 61
+          Location 59
           RecordingDate 09/08/2000 11:09.04.00.00
-          FileSource "F:\Frogger\cd\track03\music\track01.adx"
+          FileSource "M:\track03\music\track01.adx"
           EndFileSource
         EndFile
         File TRACK02.ADX
-          Location 57
+          Location 55
           RecordingDate 09/08/2000 11:10.02.00.00
-          FileSource "F:\Frogger\cd\track03\music\track02.adx"
+          FileSource "M:\track03\music\track02.adx"
           EndFileSource
         EndFile
         File TRACK03.ADX
-          Location 58
+          Location 56
           RecordingDate 09/08/2000 11:13.26.00.00
-          FileSource "F:\Frogger\cd\track03\music\track03.adx"
+          FileSource "M:\track03\music\track03.adx"
           EndFileSource
         EndFile
         File TRACK04.ADX
-          Location 59
+          Location 57
           RecordingDate 09/08/2000 11:14.26.00.00
-          FileSource "F:\Frogger\cd\track03\music\track04.adx"
+          FileSource "M:\track03\music\track04.adx"
           EndFileSource
         EndFile
         File TRACK05.ADX
-          Location 60
+          Location 58
           RecordingDate 09/08/2000 11:15.22.00.00
-          FileSource "F:\Frogger\cd\track03\music\track05.adx"
+          FileSource "M:\track03\music\track05.adx"
           EndFileSource
         EndFile
         File TRACK06.ADX
-          Location 56
+          Location 54
           RecordingDate 09/08/2000 11:16.12.00.00
-          FileSource "F:\Frogger\cd\track03\music\track06.adx"
+          FileSource "M:\track03\music\track06.adx"
           EndFileSource
         EndFile
         File TRACK07.ADX
-          Location 66
+          Location 64
           RecordingDate 09/08/2000 11:17.12.00.00
-          FileSource "F:\Frogger\cd\track03\music\track07.adx"
+          FileSource "M:\track03\music\track07.adx"
           EndFileSource
         EndFile
         File TRACK08.ADX
-          Location 63
+          Location 61
           RecordingDate 09/08/2000 11:08.08.00.00
-          FileSource "F:\Frogger\cd\track03\music\track08.adx"
+          FileSource "M:\track03\music\track08.adx"
           EndFileSource
         EndFile
         File TRACK09.ADX
-          Location 64
+          Location 62
           RecordingDate 09/08/2000 11:18.02.00.00
-          FileSource "F:\Frogger\cd\track03\music\track09.adx"
+          FileSource "M:\track03\music\track09.adx"
           EndFileSource
         EndFile
         File TRACK10.ADX
-          Location 65
+          Location 63
           RecordingDate 09/08/2000 11:18.22.00.00
-          FileSource "F:\Frogger\cd\track03\music\track10.adx"
+          FileSource "M:\track03\music\track10.adx"
           EndFileSource
         EndFile
         File TRACK11.ADX
-          Location 62
+          Location 60
           RecordingDate 09/08/2000 11:19.10.00.00
-          FileSource "F:\Frogger\cd\track03\music\track11.adx"
+          FileSource "M:\track03\music\track11.adx"
           EndFileSource
         EndFile
       EndDirectory
       Directory SFX
         File ANCIENTS.KAT
-          Location 79
+          Location 77
           RecordingDate 13/08/2000 14:21.52.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\ancients.kat"
+          FileSource "M:\track03\sfx\ancients.kat"
           EndFileSource
         EndFile
         File ANCIENTS.TXT
-          Location 69
+          Location 67
           RecordingDate 13/08/2000 14:21.52.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\ancients.txt"
+          FileSource "M:\track03\sfx\ancients.txt"
           EndFileSource
         EndFile
         File FROGGER.KAT
-          Location 70
+          Location 68
           RecordingDate 13/08/2000 12:10.04.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\frogger.kat"
+          FileSource "M:\track03\sfx\frogger.kat"
           EndFileSource
         EndFile
         File FROGGER.TXT
-          Location 71
+          Location 69
           RecordingDate 13/08/2000 12:10.04.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\frogger.txt"
+          FileSource "M:\track03\sfx\frogger.txt"
           EndFileSource
         EndFile
         File FRONTEND.KAT
-          Location 72
+          Location 70
           RecordingDate 12/08/2000 21:41.00.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\FRONTEND.kat"
+          FileSource "M:\track03\sfx\FRONTEND.kat"
           EndFileSource
         EndFile
         File FRONTEND.TXT
-          Location 73
+          Location 71
           RecordingDate 12/08/2000 21:41.00.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\frontend.txt"
+          FileSource "M:\track03\sfx\frontend.txt"
           EndFileSource
         EndFile
         File GARDEN.KAT
-          Location 74
+          Location 72
           RecordingDate 13/08/2000 12:29.34.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\garden.kat"
+          FileSource "M:\track03\sfx\garden.kat"
           EndFileSource
         EndFile
         File GARDEN.TXT
-          Location 75
+          Location 73
           RecordingDate 13/08/2000 12:29.34.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\garden.txt"
+          FileSource "M:\track03\sfx\garden.txt"
           EndFileSource
         EndFile
         File HALLOWEEN.KAT
-          Location 76
+          Location 74
           RecordingDate 13/08/2000 13:43.36.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\halloween.kat"
+          FileSource "M:\track03\sfx\halloween.kat"
           EndFileSource
         EndFile
         File HALLOWEEN.TXT
-          Location 77
+          Location 75
           RecordingDate 13/08/2000 13:43.36.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\halloween.txt"
+          FileSource "M:\track03\sfx\halloween.txt"
           EndFileSource
         EndFile
         File LAB.KAT
-          Location 78
+          Location 76
           RecordingDate 13/08/2000 12:30.34.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\lab.kat"
+          FileSource "M:\track03\sfx\lab.kat"
           EndFileSource
         EndFile
         File LAB.TXT
-          Location 68
+          Location 66
           RecordingDate 13/08/2000 12:30.34.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\lab.txt"
+          FileSource "M:\track03\sfx\lab.txt"
           EndFileSource
         EndFile
         File LILLIE.KAT
-          Location 91
+          Location 89
           RecordingDate 13/08/2000 12:31.08.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\lillie.kat"
+          FileSource "M:\track03\sfx\lillie.kat"
           EndFileSource
         EndFile
         File LILLIE.TXT
-          Location 81
+          Location 79
           RecordingDate 13/08/2000 12:31.08.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\lillie.txt"
+          FileSource "M:\track03\sfx\lillie.txt"
           EndFileSource
         EndFile
         File MULTI.KAT
-          Location 82
+          Location 80
           RecordingDate 13/08/2000 12:31.42.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\multi.kat"
+          FileSource "M:\track03\sfx\multi.kat"
           EndFileSource
         EndFile
         File MULTI.TXT
-          Location 83
+          Location 81
           RecordingDate 13/08/2000 12:31.42.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\multi.txt"
+          FileSource "M:\track03\sfx\multi.txt"
           EndFileSource
         EndFile
         File ROOBIE.KAT
-          Location 84
+          Location 82
           RecordingDate 13/08/2000 12:32.02.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\roobie.kat"
+          FileSource "M:\track03\sfx\roobie.kat"
           EndFileSource
         EndFile
         File ROOBIE.TXT
-          Location 85
+          Location 83
           RecordingDate 13/08/2000 12:32.02.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\roobie.txt"
+          FileSource "M:\track03\sfx\roobie.txt"
           EndFileSource
         EndFile
         File SPACE.KAT
-          Location 86
+          Location 84
           RecordingDate 13/08/2000 12:32.30.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\space.kat"
+          FileSource "M:\track03\sfx\space.kat"
           EndFileSource
         EndFile
         File SPACE.TXT
-          Location 87
+          Location 85
           RecordingDate 13/08/2000 12:32.30.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\space.txt"
+          FileSource "M:\track03\sfx\space.txt"
           EndFileSource
         EndFile
         File SUB.KAT
-          Location 88
+          Location 86
           RecordingDate 13/08/2000 12:32.50.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\sub.kat"
+          FileSource "M:\track03\sfx\sub.kat"
           EndFileSource
         EndFile
         File SUB.TXT
-          Location 89
+          Location 87
           RecordingDate 13/08/2000 12:32.50.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\sub.txt"
+          FileSource "M:\track03\sfx\sub.txt"
           EndFileSource
         EndFile
         File SUPERRETRO.KAT
-          Location 90
+          Location 88
           RecordingDate 13/08/2000 12:33.26.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\superretro.kat"
+          FileSource "M:\track03\sfx\superretro.kat"
           EndFileSource
         EndFile
         File SUPERRETRO.TXT
-          Location 80
+          Location 78
           RecordingDate 13/08/2000 12:33.26.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\superretro.txt"
+          FileSource "M:\track03\sfx\superretro.txt"
           EndFileSource
         EndFile
         File SWAMPY.KAT
-          Location 101
+          Location 99
           RecordingDate 13/08/2000 12:33.52.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\swampy.kat"
+          FileSource "M:\track03\sfx\swampy.kat"
           EndFileSource
         EndFile
         File SWAMPY.TXT
-          Location 93
+          Location 91
           RecordingDate 13/08/2000 12:33.52.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\swampy.txt"
+          FileSource "M:\track03\sfx\swampy.txt"
           EndFileSource
         EndFile
         File TAD.KAT
-          Location 94
+          Location 92
           RecordingDate 13/08/2000 12:34.22.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\tad.kat"
+          FileSource "M:\track03\sfx\tad.kat"
           EndFileSource
         EndFile
         File TAD.TXT
-          Location 95
+          Location 93
           RecordingDate 13/08/2000 12:34.22.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\tad.txt"
+          FileSource "M:\track03\sfx\tad.txt"
           EndFileSource
         EndFile
         File TANK.KAT
-          Location 96
+          Location 94
           RecordingDate 13/08/2000 12:34.36.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\tank.kat"
+          FileSource "M:\track03\sfx\tank.kat"
           EndFileSource
         EndFile
         File TANK.TXT
-          Location 97
+          Location 95
           RecordingDate 13/08/2000 12:34.36.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\tank.txt"
+          FileSource "M:\track03\sfx\tank.txt"
           EndFileSource
         EndFile
         File TREEBY.KAT
-          Location 98
+          Location 96
           RecordingDate 13/08/2000 12:34.52.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\treeby.kat"
+          FileSource "M:\track03\sfx\treeby.kat"
           EndFileSource
         EndFile
         File TREEBY.TXT
-          Location 99
+          Location 97
           RecordingDate 13/08/2000 12:34.52.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\treeby.txt"
+          FileSource "M:\track03\sfx\treeby.txt"
           EndFileSource
         EndFile
         File WART.KAT
-          Location 100
+          Location 98
           RecordingDate 13/08/2000 12:35.04.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\wart.kat"
+          FileSource "M:\track03\sfx\wart.kat"
           EndFileSource
         EndFile
         File WART.TXT
-          Location 92
+          Location 90
           RecordingDate 13/08/2000 12:35.04.00.00
-          FileSource "F:\Frogger\cd\track03\sfx\wart.txt"
+          FileSource "M:\track03\sfx\wart.txt"
           EndFileSource
         EndFile
       EndDirectory
       Directory STAKFILES
         File ANCIENTS1.STK
-          Location 114
+          Location 112
           RecordingDate 16/08/2000 17:52.52.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\ancients1.stk"
+          FileSource "M:\track03\StakFiles\ancients1.stk"
           EndFileSource
         EndFile
         File ANCIENTS2.STK
-          Location 104
+          Location 102
           RecordingDate 07/08/2000 15:17.22.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\ancients2.stk"
+          FileSource "M:\track03\StakFiles\ancients2.stk"
           EndFileSource
         EndFile
         File ANCIENTS3.STK
-          Location 105
+          Location 103
           RecordingDate 07/08/2000 15:17.28.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\ancients3.stk"
+          FileSource "M:\track03\StakFiles\ancients3.stk"
           EndFileSource
         EndFile
         File ANCIENTSMULTI.STK
-          Location 106
+          Location 104
           RecordingDate 11/07/2000 12:32.28.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\ancientsmulti.stk"
+          FileSource "M:\track03\StakFiles\ancientsmulti.stk"
           EndFileSource
         EndFile
         File CITYMULTI.STK
-          Location 107
+          Location 105
           RecordingDate 10/07/2000 10:15.16.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\citymulti.stk"
+          FileSource "M:\track03\StakFiles\citymulti.stk"
           EndFileSource
         EndFile
         File FROGGER.STK
-          Location 108
+          Location 106
           RecordingDate 07/08/2000 11:05.16.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\frogger.stk"
+          FileSource "M:\track03\StakFiles\frogger.stk"
           EndFileSource
         EndFile
         File FRONTEND.STK
-          Location 109
+          Location 107
           RecordingDate 18/08/2000 19:20.40.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\frontend.stk"
+          FileSource "M:\track03\StakFiles\frontend.stk"
           EndFileSource
         EndFile
         File GARDEN1.STK
-          Location 110
+          Location 108
           RecordingDate 04/08/2000 15:19.40.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\garden1.stk"
+          FileSource "M:\track03\StakFiles\garden1.stk"
           EndFileSource
         EndFile
         File GENERIC.STK
-          Location 111
+          Location 109
           RecordingDate 12/08/2000 12:12.44.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\generic.stk"
+          FileSource "M:\track03\StakFiles\generic.stk"
           EndFileSource
         EndFile
         File HALLOWEEN1.STK
-          Location 112
+          Location 110
           RecordingDate 04/08/2000 18:14.58.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\halloween1.stk"
+          FileSource "M:\track03\StakFiles\halloween1.stk"
           EndFileSource
         EndFile
         File HALLOWEEN2.STK
-          Location 113
+          Location 111
           RecordingDate 08/08/2000 12:40.28.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\halloween2.stk"
+          FileSource "M:\track03\StakFiles\halloween2.stk"
           EndFileSource
         EndFile
         File HALLOWEEN3.STK
-          Location 103
+          Location 101
           RecordingDate 03/08/2000 11:51.56.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\halloween3.stk"
+          FileSource "M:\track03\StakFiles\halloween3.stk"
           EndFileSource
         EndFile
         File LAB1.STK
-          Location 126
+          Location 124
           RecordingDate 04/08/2000 14:25.06.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\lab1.stk"
+          FileSource "M:\track03\StakFiles\lab1.stk"
           EndFileSource
         EndFile
         File LAB2.STK
-          Location 116
+          Location 114
           RecordingDate 16/08/2000 14:01.48.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\lab2.stk"
+          FileSource "M:\track03\StakFiles\lab2.stk"
           EndFileSource
         EndFile
         File LAB3.STK
-          Location 117
+          Location 115
           RecordingDate 02/08/2000 14:34.56.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\lab3.stk"
+          FileSource "M:\track03\StakFiles\lab3.stk"
           EndFileSource
         EndFile
         File LABMULTI1.STK
-          Location 118
+          Location 116
           RecordingDate 06/07/2000 17:27.32.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\labmulti1.stk"
+          FileSource "M:\track03\StakFiles\labmulti1.stk"
           EndFileSource
         EndFile
         File LABMULTI2.STK
-          Location 119
+          Location 117
           RecordingDate 06/07/2000 17:27.42.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\labmulti2.stk"
+          FileSource "M:\track03\StakFiles\labmulti2.stk"
           EndFileSource
         EndFile
         File LABMULTI3.STK
-          Location 120
+          Location 118
           RecordingDate 13/07/2000 16:50.02.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\labmulti3.stk"
+          FileSource "M:\track03\StakFiles\labmulti3.stk"
           EndFileSource
         EndFile
         File LILLIE.STK
-          Location 121
+          Location 119
           RecordingDate 05/07/2000 16:28.24.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\lillie.stk"
+          FileSource "M:\track03\StakFiles\lillie.stk"
           EndFileSource
         EndFile
         File MFROGGER.STK
-          Location 122
+          Location 120
           RecordingDate 23/06/2000 17:59.16.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\mfrogger.stk"
+          FileSource "M:\track03\StakFiles\mfrogger.stk"
           EndFileSource
         EndFile
         File MLILLIE.STK
-          Location 123
+          Location 121
           RecordingDate 23/06/2000 17:59.20.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\mlillie.stk"
+          FileSource "M:\track03\StakFiles\mlillie.stk"
           EndFileSource
         EndFile
         File MROOBIE.STK
-          Location 124
+          Location 122
           RecordingDate 26/06/2000 22:29.40.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\mroobie.stk"
+          FileSource "M:\track03\StakFiles\mroobie.stk"
           EndFileSource
         EndFile
         File MSWAMPY.STK
-          Location 125
+          Location 123
           RecordingDate 23/06/2000 17:59.26.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\mswampy.stk"
+          FileSource "M:\track03\StakFiles\mswampy.stk"
           EndFileSource
         EndFile
         File MTAD.STK
-          Location 115
+          Location 113
           RecordingDate 23/06/2000 17:59.30.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\mtad.stk"
+          FileSource "M:\track03\StakFiles\mtad.stk"
           EndFileSource
         EndFile
         File MTANK.STK
-          Location 138
+          Location 136
           RecordingDate 11/07/2000 15:29.46.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\mtank.stk"
+          FileSource "M:\track03\StakFiles\mtank.stk"
           EndFileSource
         EndFile
         File MTOAD.STK
-          Location 128
+          Location 126
           RecordingDate 23/06/2000 17:59.36.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\mtoad.stk"
+          FileSource "M:\track03\StakFiles\mtoad.stk"
           EndFileSource
         EndFile
         File MTREEBY.STK
-          Location 129
+          Location 127
           RecordingDate 23/06/2000 17:59.40.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\mtreeby.stk"
+          FileSource "M:\track03\StakFiles\mtreeby.stk"
           EndFileSource
         EndFile
         File RETRO1.STK
-          Location 130
+          Location 128
           RecordingDate 04/08/2000 18:29.16.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\retro1.stk"
+          FileSource "M:\track03\StakFiles\retro1.stk"
           EndFileSource
         EndFile
         File RETRO10.STK
-          Location 131
+          Location 129
           RecordingDate 10/07/2000 17:33.42.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\retro10.stk"
+          FileSource "M:\track03\StakFiles\retro10.stk"
           EndFileSource
         EndFile
         File RETRO2.STK
-          Location 132
+          Location 130
           RecordingDate 10/07/2000 17:33.02.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\retro2.stk"
+          FileSource "M:\track03\StakFiles\retro2.stk"
           EndFileSource
         EndFile
         File RETRO3.STK
-          Location 133
+          Location 131
           RecordingDate 10/07/2000 17:33.08.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\retro3.stk"
+          FileSource "M:\track03\StakFiles\retro3.stk"
           EndFileSource
         EndFile
         File RETRO4.STK
-          Location 134
+          Location 132
           RecordingDate 10/07/2000 17:33.12.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\retro4.stk"
+          FileSource "M:\track03\StakFiles\retro4.stk"
           EndFileSource
         EndFile
         File RETRO5.STK
-          Location 135
+          Location 133
           RecordingDate 10/07/2000 17:33.16.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\retro5.stk"
+          FileSource "M:\track03\StakFiles\retro5.stk"
           EndFileSource
         EndFile
         File RETRO6.STK
-          Location 136
+          Location 134
           RecordingDate 02/08/2000 12:40.16.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\retro6.stk"
+          FileSource "M:\track03\StakFiles\retro6.stk"
           EndFileSource
         EndFile
         File RETRO7.STK
-          Location 137
+          Location 135
           RecordingDate 02/08/2000 12:53.48.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\retro7.stk"
+          FileSource "M:\track03\StakFiles\retro7.stk"
           EndFileSource
         EndFile
         File RETRO8.STK
-          Location 127
+          Location 125
           RecordingDate 10/07/2000 17:33.32.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\retro8.stk"
+          FileSource "M:\track03\StakFiles\retro8.stk"
           EndFileSource
         EndFile
         File RETRO9.STK
-          Location 150
+          Location 148
           RecordingDate 10/07/2000 17:33.36.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\retro9.stk"
+          FileSource "M:\track03\StakFiles\retro9.stk"
           EndFileSource
         EndFile
         File RETROMULTI1.STK
-          Location 140
+          Location 138
           RecordingDate 05/07/2000 10:54.12.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\retromulti1.stk"
+          FileSource "M:\track03\StakFiles\retromulti1.stk"
           EndFileSource
         EndFile
         File RETROMULTI2.STK
-          Location 141
+          Location 139
           RecordingDate 05/07/2000 10:55.52.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\retromulti2.stk"
+          FileSource "M:\track03\StakFiles\retromulti2.stk"
           EndFileSource
         EndFile
         File RETROMULTI3.STK
-          Location 142
+          Location 140
           RecordingDate 29/06/2000 19:39.16.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\retromulti3.stk"
+          FileSource "M:\track03\StakFiles\retromulti3.stk"
           EndFileSource
         EndFile
         File RETROMULTI4.STK
-          Location 143
+          Location 141
           RecordingDate 30/06/2000 09:42.38.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\retromulti4.stk"
+          FileSource "M:\track03\StakFiles\retromulti4.stk"
           EndFileSource
         EndFile
         File ROOBIE.STK
-          Location 144
+          Location 142
           RecordingDate 24/07/2000 10:27.06.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\roobie.stk"
+          FileSource "M:\track03\StakFiles\roobie.stk"
           EndFileSource
         EndFile
         File SPACE1.STK
-          Location 145
+          Location 143
           RecordingDate 01/08/2000 16:09.30.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\space1.stk"
+          FileSource "M:\track03\StakFiles\space1.stk"
           EndFileSource
         EndFile
         File SPACE2.STK
-          Location 146
+          Location 144
           RecordingDate 04/08/2000 15:20.18.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\space2.stk"
+          FileSource "M:\track03\StakFiles\space2.stk"
           EndFileSource
         EndFile
         File SPACE3.STK
-          Location 147
+          Location 145
           RecordingDate 03/08/2000 12:44.10.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\space3.stk"
+          FileSource "M:\track03\StakFiles\space3.stk"
           EndFileSource
         EndFile
         File SUB1.STK
-          Location 148
+          Location 146
           RecordingDate 04/08/2000 11:56.48.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\sub1.stk"
+          FileSource "M:\track03\StakFiles\sub1.stk"
           EndFileSource
         EndFile
         File SUB2.STK
-          Location 149
+          Location 147
           RecordingDate 07/08/2000 15:25.20.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\sub2.stk"
+          FileSource "M:\track03\StakFiles\sub2.stk"
           EndFileSource
         EndFile
         File SUB3.STK
-          Location 139
+          Location 137
           RecordingDate 08/08/2000 15:25.36.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\sub3.stk"
+          FileSource "M:\track03\StakFiles\sub3.stk"
           EndFileSource
         EndFile
         File SUPER1.STK
-          Location 157
+          Location 155
           RecordingDate 16/06/2000 15:38.46.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\super1.stk"
+          FileSource "M:\track03\StakFiles\super1.stk"
           EndFileSource
         EndFile
         File SWAMPY.STK
-          Location 152
+          Location 150
           RecordingDate 18/07/2000 17:53.22.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\swampy.stk"
+          FileSource "M:\track03\StakFiles\swampy.stk"
           EndFileSource
         EndFile
         File TAD.STK
-          Location 153
+          Location 151
           RecordingDate 05/07/2000 16:27.56.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\tad.stk"
+          FileSource "M:\track03\StakFiles\tad.stk"
           EndFileSource
         EndFile
         File TANK.STK
-          Location 154
+          Location 152
           RecordingDate 12/07/2000 09:51.40.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\tank.stk"
+          FileSource "M:\track03\StakFiles\tank.stk"
           EndFileSource
         EndFile
         File TOAD.STK
-          Location 155
+          Location 153
           RecordingDate 06/07/2000 12:48.44.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\toad.stk"
+          FileSource "M:\track03\StakFiles\toad.stk"
           EndFileSource
         EndFile
         File TRAINING.STK
-          Location 156
+          Location 154
           RecordingDate 26/07/2000 15:39.20.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\training.stk"
+          FileSource "M:\track03\StakFiles\training.stk"
           EndFileSource
         EndFile
         File TREEBY.STK
-          Location 151
+          Location 149
           RecordingDate 05/07/2000 16:28.18.00.00
-          FileSource "F:\Frogger\cd\track03\StakFiles\treeby.stk"
+          FileSource "M:\track03\StakFiles\treeby.stk"
           EndFileSource
         EndFile
       EndDirectory
       Directory TEXTURES
         File ANCIENTS.SPT
-          Location 170
+          Location 166
           RecordingDate 27/07/2000 20:40.18.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\ancients.spt"
+          FileSource "M:\track03\Textures\ancients.spt"
           EndFileSource
         EndFile
         File CITY.SPT
-          Location 160
+          Location 158
           RecordingDate 27/07/2000 20:52.56.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\city.spt"
+          FileSource "M:\track03\Textures\city.spt"
           EndFileSource
         EndFile
         File FROGGER2.PVR
-          Location 161
+          Location 159
           RecordingDate 10/05/2000 16:08.06.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\Frogger2.pvr"
+          FileSource "M:\track03\Textures\Frogger2.pvr"
           EndFileSource
         EndFile
         File GARDEN.SPT
-          Location 162
+          Location 160
           RecordingDate 27/07/2000 20:40.38.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\garden.spt"
+          FileSource "M:\track03\Textures\garden.spt"
           EndFileSource
         EndFile
         File GARIB.SPT
-          Location 163
+          Location 161
           RecordingDate 11/05/2000 11:54.16.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\garib.spt"
+          FileSource "M:\track03\Textures\garib.spt"
           EndFileSource
         EndFile
         File GENERIC.SPT
-          Location 164
-          RecordingDate 19/08/2000 15:02.42.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\generic.spt"
+          Location 174
+          RecordingDate 08/09/2000 15:46.50.00.00
+          FileSource "M:\track03\Textures\generic.spt"
           EndFileSource
         EndFile
         File HALLOWEEN.SPT
-          Location 165
+          Location 162
           RecordingDate 02/08/2000 11:52.30.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\halloween.spt"
+          FileSource "M:\track03\Textures\halloween.spt"
           EndFileSource
         EndFile
         File HUB.SPT
-          Location 166
+          Location 171
           RecordingDate 15/08/2000 09:49.56.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\hub.spt"
+          FileSource "M:\track03\Textures\hub.spt"
           EndFileSource
         EndFile
         File LAB.SPT
-          Location 167
+          Location 163
           RecordingDate 27/07/2000 20:41.18.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\lab.spt"
+          FileSource "M:\track03\Textures\lab.spt"
           EndFileSource
         EndFile
         File LANGUAGE.SPT
-          Location 168
+          Location 164
           RecordingDate 26/05/2000 16:57.00.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\language.spt"
+          FileSource "M:\track03\Textures\language.spt"
           EndFileSource
         EndFile
         File NEWBABY.SPT
-          Location 169
+          Location 165
           RecordingDate 10/02/2000 18:16.52.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\Newbaby.spt"
+          FileSource "M:\track03\Textures\Newbaby.spt"
           EndFileSource
         EndFile
         File RETRO.SPT
-          Location 159
+          Location 157
           RecordingDate 05/07/2000 14:39.42.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\retro.spt"
+          FileSource "M:\track03\Textures\retro.spt"
           EndFileSource
         EndFile
         File SPACE.SPT
-          Location 174
+          Location 170
           RecordingDate 26/08/2000 18:06.30.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\space.spt"
+          FileSource "M:\track03\Textures\space.spt"
           EndFileSource
         EndFile
         File SUB.SPT
-          Location 172
+          Location 168
           RecordingDate 02/08/2000 10:45.24.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\sub.spt"
+          FileSource "M:\track03\Textures\sub.spt"
           EndFileSource
         EndFile
         File SUPER.SPT
-          Location 173
+          Location 169
           RecordingDate 02/08/2000 09:46.52.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\super.spt"
+          FileSource "M:\track03\Textures\super.spt"
           EndFileSource
         EndFile
         File TITLES.SPT
-          Location 171
+          Location 167
           RecordingDate 04/02/2000 11:27.38.00.00
-          FileSource "F:\Frogger\cd\track03\Textures\titles.spt"
+          FileSource "M:\track03\Textures\titles.spt"
           EndFileSource
         EndFile
       EndDirectory
@@ -1110,7 +1112,7 @@ Gd "FROGGER1"
     ; Track 4
     ;
     Track CDDA
-        FileSource "F:\Frogger\cd\track04\EuropeWarn.da"
+        FileSource "M:\track04\EuropeWarn.da"
         EndFileSource
     EndTrack
     ;
@@ -1119,14 +1121,14 @@ Gd "FROGGER1"
     Track MODE1
       File 1ST_READ.BIN
         Location 1
-        RecordingDate 27/08/2000 15:57.46.00.00
-        FileSource "F:\Frogger\cd\track05\1st_read.bin"
+        RecordingDate 05/10/2000 20:50.36.00.00
+        FileSource "M:\track05\1st_read.bin"
         EndFileSource
       EndFile
       File EUROPEWARN.DA
         Location 0
         RecordingDate 17/06/1999 10:09.54.00.00
-        FileSource "F:\Frogger\cd\track05\EuropeWarn.da"
+        FileSource "M:\track05\EuropeWarn.da"
         EndFileSource
       EndFile
     EndTrack
