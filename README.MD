@@ -2,7 +2,7 @@
 This is a backup of Frogger 2's official source code from October 10th, 2000.  
 
 This builds a perfect match for the retail PAL submission of Frogger 2: Swampys' Revenge. (Code: T-40603D-50, Version: V1.001)  
-
+TODO: Build retail NTSC?
 
 The PAL version of Swampy's Revenge was never released, but it was submitted to Sega of Europe for release review.  
 Because of that submission, we have enough information to prove this builds a perfect match for an unreleased PAL retail build.  
@@ -17,8 +17,10 @@ The retail version of the game was built on October 13th, 2000.
 The resulting output will be called Frogger2.elf.  
 It is automatically converted to a file named 1ST_READ.BIN.  
 You can find these files at `Frogger\C Application\exe\`.  
-**2)** Run `buildcd.bat`.  
-A CDI image which can be run in an emulator or burned to a CD is now at `OUTPUT\Frogger2.CDI`.  
+**2)** Run `buildcdi.bat` or `buildgdi.bat`.  
+A CD image will now be available in the `OUTPUT\` folder.  
+A CDI image is one which is built with modern tools and can be burned to a CD and played on a retail console or emulator.  
+A GDI image is the master disc image format. It can be played in emulators, and requires official GD-R discs in order to play on a retail console.  
 
 ## How to switch between PAL and NTSC?  
 **1)** Add or remove the line of text `#define	NTSC_VERSION` from `C Application\prefix_dc.h` as a way of choosing between PAL/EUR and NTSC/USA.  
