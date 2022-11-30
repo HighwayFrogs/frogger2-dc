@@ -1,0 +1,18 @@
+Dreamcast:
+
+FINAL_MASTER [Appears to be set for public releases]:
+ T- Locks 4 characters from usage until they get unlocked. (frogger.c)
+ F- Enables a cheat to unlock all levels (menus.c)
+ T- Closes off arcade mode if the training level hasn't been completed. (menus.c)
+ F- Enables a camera control mode. (cam.c) (Activates in frontend.c when TRIANGLE + SELECT are pressed)
+ F- Disables proper multiplayer select (options.c). Seems like all players will get input from controller 0.
+ 
+DEBUG:
+ T- Prints a message in main.c saying debug is enabled.
+ 
+PALMODE:
+ - Appears to be exclusively for changing screen positions of displaying things, due to the different screen resolution on PSX. Dreamcast outputs the same resolution on both PAL and NTSC so this should always be zero.
+
+NTSC_VERSION:
+ - Whether or not the 50Hz/60Hz option is displayed.
+ - Which loading screen gets displayed.
