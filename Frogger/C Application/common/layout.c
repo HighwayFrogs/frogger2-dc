@@ -737,6 +737,7 @@ void InitLevel(unsigned long worldID,unsigned long levelID)
 	FreeAllLists();
 	loadingLevel = NO;
 
+#ifndef NTSC_VERSION
 	// handle a soft reset during story fmv
 	if((player[0].worldNum != newWorldID)||(player[0].levelNum != newLevelID))
 	{
@@ -744,6 +745,7 @@ void InitLevel(unsigned long worldID,unsigned long levelID)
 		newLevelID = player[0].levelNum;
 		GTInit(&frogLogoTimer, FROG_LOGO_ACTIVE_SECS);
 	}
+#endif
 
 #ifdef PSX_VERSION
 	oldActor.psiData.object = NULL;
@@ -1269,8 +1271,10 @@ void FreeAllLists()
 	{
 		if((player[0].worldNum != WORLDID_FRONTEND) && (storySequence[gameState.storySequenceLevel].fmv != FMV_NONE))
 		{
+#ifndef NTSC_VERSION
 			// *ASL* 12/08/2000 - Force allow quit on video playback
 			fmvSoftReset = FMV_SOFTRESET_TOTITLE;
+#endif
 			StartVideoPlayback(storySequence[gameState.storySequenceLevel].fmv, 1);
 		}
 	}

@@ -419,8 +419,10 @@ void RunPauseMenu()
 	char	buffer[256];
 
 	// removed controller
+#ifndef NTSC_VERSION
 	if(!quittingLevel)
 	{
+#endif
 		if(controllerRemoved)
 		{
 			pauseFrameCount += max((pauseGameSpeed>>12),1);
@@ -543,7 +545,9 @@ void RunPauseMenu()
 				DisableTextOverlay(noText);
 			}
 		}
+#ifndef NTSC_VERSION
 	}
+#endif
 
 	pauseFrameCount += max((pauseGameSpeed>>12),1);
 	if((quittingLevel) && (pauseConfirmMode == 0))

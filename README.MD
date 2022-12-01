@@ -4,6 +4,13 @@ This is a backup of Frogger 2's official source code from October 10th, 2000.
 This builds a perfect match for the retail PAL submission of Frogger 2: Swampys' Revenge. (Code: T-40603D-50, Version: V1.001)  
 TODO: Build retail NTSC?
 
+NTSC:
+ - New LANGUAGE.TXT file.
+ - Added 0A.DAT padding.
+ - Folders have updated modification times.
+ - New IP.BIN and IP0000.BIN
+ - New Product ID: T40604N
+
 The PAL version of Swampy's Revenge was never released, but it was submitted to Sega of Europe for release review.  
 Because of that submission, we have enough information to prove this builds a perfect match for an unreleased PAL retail build.  
 

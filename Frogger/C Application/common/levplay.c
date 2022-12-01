@@ -223,9 +223,13 @@ void RunDemoMode()
 		oldDiffMode = gameState.difficulty;
 
 		gameState.mode = FRONTEND_MODE;
+#ifdef NTSC_VERSION
+		player[0].character = FROG_FROGGER;
+#else
 		player[0].character = FROG_FROGGER;
 		player[0].worldNum = WORLDID_FRONTEND;
 		player[0].levelNum = LEVELID_FRONTEND1;
+#endif
 		InitLevel(WORLDID_FRONTEND, LEVELID_FRONTEND1);
 		frameCount = 0; // why? who can say? (me! me!)
 #endif

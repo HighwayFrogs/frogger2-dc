@@ -204,7 +204,9 @@ void GameLoop(void)
 					FreeMultiplayer();
 					gameState.multi = SINGLEPLAYER;
 				}
+#ifndef NTSC_VERSION
 				resetToFrontend = TRUE;
+#endif
 			}
 			// *ASL* 10/08/2000 - Abort to BootROM on user quit within front end
 			else if (gameState.mode == FRONTEND_MODE)
@@ -2041,8 +2043,10 @@ void RunLevelComplete()
 
 					if((player[0].worldNum == storySequence[NUM_STORY_LEVELS - 1].worldNum) && (player[0].levelNum == storySequence[NUM_STORY_LEVELS - 1].levelNum))
 					{
+#ifndef NTSC_VERSION
 						// *ASL* 12/08/2000 - Force allow quit on video playback
 						fmvSoftReset = FMV_SOFTRESET_TOTITLE;
+#endif
 						StartVideoPlayback(FMV_VICTORY, 1);
 						gameState.storySequenceLevel = 0;
 						player[0].worldNum = WORLDID_FRONTEND;

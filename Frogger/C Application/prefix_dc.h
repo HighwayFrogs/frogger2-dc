@@ -16,7 +16,7 @@
 #define	FINAL_MASTER
 #define	GOLDCD 1
 #define	DEBUG
-//#define	NTSC_VERSION
+#define	NTSC_VERSION
 
 #define _KAMUI2_
 #define __SET4__
