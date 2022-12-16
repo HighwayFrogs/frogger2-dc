@@ -171,6 +171,7 @@ int ApExec(AP ap, int allowQuit)
 	ply = ap->ply;
 	fname = vidStream->strName;
 
+#ifndef NTSC_VERSION
 	// soft reset during video playback
 	if(checkForSoftReset())
 	{
@@ -218,6 +219,7 @@ int ApExec(AP ap, int allowQuit)
 */
 		}
 	}
+#endif
 
 	// should we allow user to quit this stream?
 	userQuit = 0;
@@ -294,7 +296,9 @@ int videoPlayStream(StrDataType *str, int palMode, int allowQuit)
 	int		ret;
 	AP		ap = &ap_obj;
 
+#ifndef NTSC_VERSION
 	fmvBookSoftReset = FALSE;
+#endif
 
 	vidStream = str;
 

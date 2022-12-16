@@ -67,7 +67,9 @@ void gameTextInit(char *fName, int numStrings, int numLang, int currLang)
 		strcpy(bufPtr, gameTextStr[loop]);
 		gameTextStr[loop] = bufPtr;
 		bufPtr += strlen(gameTextStr[loop])+1;
+#ifndef NTSC_VERSION
 		utilPrintf("[%d][%s]\n", loop, gameTextStr[loop]);
+#endif
 	}
 
 	FREE(gameTextBuffer);

@@ -76,15 +76,8 @@ KTBOOL bpAcSetup(AC_DRIVER_TYPE driverType, KTBOOL usePolling,
 		return (KTFALSE);
 	}
 
-	// load in audio64 driver using the normal file load
-	driverImage = (KTU32*) fileLoad ( driverName, &driverSize );
-	if(!driverImage)
-	{
-		return (KTFALSE);
-	}
-	_Align32Free(driverImage);
-
-/*	// Get the size of the driver
+#ifdef NTSC_VERSION
+	// Get the size of the driver
 	if (!a64FileGetSize(driverName, &driverSize))
 	{
 		// check acErrorGetLast()
@@ -106,7 +99,16 @@ KTBOOL bpAcSetup(AC_DRIVER_TYPE driverType, KTBOOL usePolling,
 		// check acErrorGetLast()
 		return (KTFALSE);
 	}
-*/
+#else
+	// load in audio64 driver using the normal file load
+	driverImage = (KTU32*) fileLoad ( driverName, &driverSize );
+	if(!driverImage)
+	{
+		return (KTFALSE);
+	}
+	_Align32Free(driverImage);
+#endif
+
 	// Install the driver (actual driver size)
 	if (!acSystemInit(driverType, driverImage, driverSize, usePolling))
 	{
@@ -114,9 +116,10 @@ KTBOOL bpAcSetup(AC_DRIVER_TYPE driverType, KTBOOL usePolling,
 		return (KTFALSE);
 	}
 
-/*	// free the temp buffer
+#ifdef NTSC_VERSION
+	// free the temp buffer
 	syFree(driverImage);
-*/
+#endif
 	return (KTTRUE);
 }
 

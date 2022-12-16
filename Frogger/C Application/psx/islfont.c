@@ -724,6 +724,7 @@ int fontFitToWidth(psFont *font, int width, char *text, char *buffer)
 	return lines;
 }
 
+#ifndef NTSC_VERSION
 /**************************************************************************
 	FUNCTION:	fontFitToWidth()
 	PURPOSE:	Wrap string to width into buffer
@@ -781,6 +782,7 @@ int fontFitToWidthScaled(psFont *font, int width, char *text, char *buffer)
 	
 	return lines;
 }
+#endif
 
 /**************************************************************************
 	FUNCTION:	fontPrintN()

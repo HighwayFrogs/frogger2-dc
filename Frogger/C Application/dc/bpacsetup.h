@@ -29,6 +29,7 @@
 
 #include <ac.h>
 #include <a64thunk.h>
+#include "..\prefix_dc.h"
 
 #ifdef __cplusplus
 extern "C" {

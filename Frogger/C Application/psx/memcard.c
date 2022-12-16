@@ -259,12 +259,31 @@ int FontInSpaceScaled(int x, int y, char *str, int w, int l, uchar r, uchar g, u
 	char	port[8],expans[8];
 	int		newX;
 
+#ifdef NTSC_VERSION
+	// set port to A,B,C, or D
+	port[0] = slotNumStr[0];
+	port[1] = 0;
+
+	// set expansion to 1,2,3, or 4
+	expans[0] = slotNumStr[1];
+	expans[1] = 0;
+
+	// special case for the french version
+	if(gameTextLang == LANG_F)
+		sprintf(memmessage,str,expans,port);
+	else
+		sprintf(memmessage,str,port,expans);
+	
+	numLines = fontFitToWidth(fontPtr, w, memmessage, buf);
+#else
 	if(!str)
 		return;
 
 	sprintf(memmessage,str);
 
 	numLines = fontFitToWidthScaled(fontPtr, w, memmessage, buf);
+#endif
+
 	if (numLines<l)
 		y += (l-numLines)*6;
 	bufPtr = buf;
