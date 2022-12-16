@@ -534,9 +534,11 @@ void main()
 	}
 	frameBufferFormat = KM_DSPBPP_RGB888;
 
+#ifndef NTSC_VERSION
 	// set our gdFs error callback
 	gdFsEntryErrFuncAll(gdFsErrorCallback, (void *)0);
-
+#endif
+	
 	// needs to be called before calling ADXT_Init
 	XAinit();
 	ADXT_Init();
@@ -675,6 +677,11 @@ void main()
 
 	// setup our vblank callback
 	vblChain = syChainAddHandler(SYD_CHAIN_EVENT_IML6_VBLANK, vblankCallback, 0x60, NULL);
+	
+#ifdef NTSC_VERSION
+	// set our gdFs error callback
+	gdFsEntryErrFuncAll(gdFsErrorCallback, (void *)0);
+#endif
 
 	// *ASL* 12/08/2000 - Init soft reset
 	initCheckForSoftReset();
@@ -703,7 +710,12 @@ void main()
 			kmBeginScene(&kmSystemConfig);
 			kmBeginPass(&vertexBufferDesc);
 
+#ifdef NTSC_VERSION
+			FontInSpace((320-fontExtentWScaled(fontSmall, GAMESTRING(STR_DC_START_PAD_NOPAD),4096)/2),240, GAMESTRING(STR_DC_START_PAD_NOPAD), 380,2, 255,255,255);
+			//FontInSpace(0,240, GAMESTRING(STR_DC_START_PAD_NOPAD), 380,2, 255,255,255, 4096, fontSmall, TRUE);
+#else
 			FontInSpaceScaled(0,240, GAMESTRING(STR_DC_START_PAD_NOPAD), 380,2, 255,255,255, 4096, fontSmall, TRUE);
+#endif
 
 			utilPrintf("header: %d\n",sizeof(SAVEGAME_HEADER));
 			utilPrintf("level: %d\n",sizeof(SAVEGAME_LEVELINFO));
@@ -721,6 +733,7 @@ void main()
 			kmRender(KM_RENDER_FLIP);
 			kmEndScene(&kmSystemConfig);
 
+#ifndef NTSC_VERSION
 			// check the drive status
 			dstat = gdFsGetDrvStat();
 			if(dstat == GDD_DRVSTAT_OPEN)
@@ -728,13 +741,16 @@ void main()
 				resetToBootROM();
 			}
 			gdFsReqDrvStat();
+#endif
 
 			if(globalAbortFlag == 1)
 				resetToBootROM();
 
 			numPadsDetected = checkForValidControllers();
 		}
+#ifndef NTSC_VERSION
 		acSystemDelay(5000000);
+#endif
 	}
 
 #ifndef	NTSC_VERSION
@@ -911,6 +927,9 @@ void main()
 				ScreenFade(255,0,20);
 				keepFade = YES;
 			}
+#ifdef NTSC_VERSION
+			// TODO: Maybe move the quit now flag checker here..
+#endif
 
 			kmEndPass(&vertexBufferDesc);
 					
@@ -919,6 +938,7 @@ void main()
 
 			if(saveInfo.saveStage != SAVEMENU_SAVE)
 			{
+#ifndef NTSC_VERSION
 				// check for soft reset
 				if(checkForSoftReset())
 				{
@@ -932,16 +952,19 @@ void main()
 					resetToBootROM();
 				}
 				gdFsReqDrvStat();
-
+#endif
 				if(globalAbortFlag == 1)
 					quitNow = TRUE;
+				
 			}
 		}
 		afterSaveFlag = 0;
 		FreeTiledBackdrop();
 		ShowLCDLogo();
 	}
+#ifndef NTSC_VERSION
 	acSystemDelay(50000000);
+#endif
 
 	if(quitNow)
 		resetToBootROM();
