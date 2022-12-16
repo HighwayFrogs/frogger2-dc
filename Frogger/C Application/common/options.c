@@ -2277,8 +2277,10 @@ void RunOptionsMenu(void)
 							audioError();
 						}
 #endif
+#ifndef NTSC_VERSION
 					// *ASL* 12/08/2000 - Force allow quit on video playback
 					fmvSoftReset = FMV_SOFTRESET_NONE;
+#endif
 					StartVideoPlayback(options.fmvNum + 3, 1);
 #ifdef PSX_VERSION
 					// *ASL* 16/08/2000 - Restore the ambient sounds
@@ -2567,8 +2569,10 @@ void BookStart()
 	gameState.mode = INGAME_MODE;
 	InitLevel(player[0].worldNum,player[0].levelNum);
 
+#ifndef NTSC_VERSION
 	if((player[0].worldNum == WORLDID_FRONTEND)&&(player[0].levelNum == LEVELID_FRONTEND1))
 		frameCount = 0;
+#endif
 
 //	actorAnimate(options.book,1,NO,NO,50,NO);
 
@@ -3125,8 +3129,10 @@ void RunArtViewer()
 		if(currentArt == MAX_ARTWORK)
 		{
 			gameState.mode = FRONTEND_MODE;
+#ifndef NTSC_VERSION
 			player[0].worldNum = WORLDID_FRONTEND;
 			player[0].levelNum = LEVELID_FRONTEND1;
+#endif
 			InitLevel(WORLDID_FRONTEND,LEVELID_FRONTEND1);
 
 			frameCount = 0;

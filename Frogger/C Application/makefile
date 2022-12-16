@@ -118,6 +118,6 @@ GFXLIB = KAMUI2
 OUTPUT = ELF
 
 DEBUG  = TRUE
-LIST   = FALSE
+LIST   = TRUE
 
 include $(KATANA_ROOT)\Sample\dc.inc
