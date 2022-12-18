@@ -42,7 +42,9 @@ extern long backTextY[4];
 extern long backWinsTextX[4];
 extern long backWinsTextY[4];
 
+#ifndef NTSC_VERSION
 extern int	resetToFrontend;
+#endif
 
 //----- [ FUNCTION PROTOTYPES ] ----------------------------------------------------------------//
 

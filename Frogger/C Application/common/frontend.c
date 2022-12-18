@@ -123,7 +123,9 @@ char	specialTextbuffer[256];
 TEXTOVERLAY *theEndText = NULL;
 TIMER theEndTimer;
 
+#ifndef NTSC_VERSION
 int	resetToFrontend = FALSE;
+#endif
 
 void RunTheEndMode()
 {

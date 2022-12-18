@@ -988,7 +988,9 @@ void main()
 		mapCount = 0;
 		psiActorCount = 0;
 		fmaActorCount = 0;
+#ifndef NTSC_VERSION
 		resetToFrontend = FALSE;
+#endif
 
 		// *ASL* 14/08/2000 - sprite counts
 		spriteRotNum = 0;
@@ -1446,17 +1448,33 @@ void showLegalFMV(int allowQuit)
 	FreeLegalBackdrop();
 
 	// play Hasbro FMV
+#ifdef NTSC_VERSION
+	if (StartVideoPlayback(FMV_ATARI_LOGO, allowQuit) == 1)
+		return;
+	
+	// play our FMV
+	
+	if (StartVideoPlayback(FMV_BLITZ_LOGO, allowQuit) == 1)
+		return;
+	
+	// play our intro
+	if (StartVideoPlayback(FMV_INTRO, 1) == 1 && allowQuit)
+		return;
+#else
 	fmvSoftReset = FMV_SOFTRESET_TOBOOTROM;
 	if (StartVideoPlayback(FMV_ATARI_LOGO, allowQuit) == 1)
 		return;
+	
 	// play our FMV
 	fmvSoftReset = FMV_SOFTRESET_TOBOOTROM;
 	if (StartVideoPlayback(FMV_BLITZ_LOGO, allowQuit) == 1)
 		return;
+	
 	// play our intro
 	fmvSoftReset = FMV_SOFTRESET_TOBOOTROM;
 	if (StartVideoPlayback(FMV_INTRO, 1) == 1 && allowQuit)
 		return;
+#endif
 
 	// show SoftDec screen
 	actFrameCount = 0;
