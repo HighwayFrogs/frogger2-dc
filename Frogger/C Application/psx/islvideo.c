@@ -17,8 +17,10 @@
 #include	"main.h"
 #include	"frogger.h"
 
+#ifndef NTSC_VERSION
 int	fmvSoftReset = FALSE;
 int	fmvBookSoftReset = FALSE;
+#endif
 
 extern int byteToDecibelLUT[256];
 extern long globalSoundVol;
@@ -53,6 +55,12 @@ AP_OBJ ap_obj = {
 	NULL,
 	0,
 };
+
+#ifdef NTSC_VERSION
+// It seems like there's a value in the initialized section here. It's not part of 'ap_obj', since it provably starts and ends before this value.
+// The code does not byte match the retail NTSC version of Frogger 2 if this is not here, so presumably there was some kind of unused initialized variable in the NTSC retail version.
+int	islVideoByteMatcher = 0;
+#endif
 
 /*	Callback function when an error occur in middleware	*/
 void ap_mw_err_func(void *obj, char *errmsg)

@@ -44,7 +44,11 @@ int vmuChosen = 0;
 
 extern SAVE_INFO saveInfo;
 extern int useMemCard;
+#ifdef NTSC_VERSION
+char memmessage[256];
+#else
 char memmessage[1024];
+#endif
 char slotNumStr[4];
 
 
@@ -254,7 +258,11 @@ int FontInSpace(int x, int y, char *str, int w, int l, uchar r, uchar g, uchar b
 
 int FontInSpaceScaled(int x, int y, char *str, int w, int l, uchar r, uchar g, uchar b, int scale,psFont *fontPtr, int centre)
 {
+#ifdef NTSC_VERSION
+	char	buf[200], *bufPtr;
+#else
 	char	buf[1024], *bufPtr;
+#endif
 	int		loop, numLines;
 	char	port[8],expans[8];
 	int		newX;

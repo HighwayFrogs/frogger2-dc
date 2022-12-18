@@ -202,9 +202,14 @@ void GameLoop(void)
 				drawGame = 1;
 				if(gameState.multi != SINGLEPLAYER)
 				{
+#ifdef NTSC_VERSION
+					gameState.multi = SINGLEPLAYER;
+#endif
 					DisableMultiHUD();
 					FreeMultiplayer();
+#ifndef NTSC_VERSION
 					gameState.multi = SINGLEPLAYER;
+#endif
 				}
 #ifndef NTSC_VERSION
 				resetToFrontend = TRUE;
@@ -1270,8 +1275,10 @@ void DoEndMulti()
 
 					gameState.mode = FRONTEND_MODE;
 					FreeMultiplayer( );
+#ifndef NTSC_VERSION
 					player[0].worldNum = WORLDID_FRONTEND;
 					player[0].levelNum = LEVELID_FRONTEND1;
+#endif
 					InitLevel(WORLDID_FRONTEND,LEVELID_FRONTEND1);
 
 					frameCount = 0;

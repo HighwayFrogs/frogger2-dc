@@ -483,7 +483,9 @@ int		hzSelect = 0;
 int		hzQuit = 0;
 int		hzMode = 0;
 UCHAR	hzR,hzG,hzB;
+#ifndef NTSC_VERSION
 char	hzMessage[32];
+#endif
 
 KTU32 digiNum,midiNum;
 
@@ -928,7 +930,11 @@ void main()
 				keepFade = YES;
 			}
 #ifdef NTSC_VERSION
-			// TODO: Maybe move the quit now flag checker here..
+			if(saveInfo.saveStage != SAVEMENU_SAVE)
+			{
+				if(globalAbortFlag == 1)
+					quitNow = TRUE;	
+			}
 #endif
 
 			kmEndPass(&vertexBufferDesc);
@@ -936,9 +942,9 @@ void main()
 			kmRender(KM_RENDER_FLIP);
 			kmEndScene(&kmSystemConfig);
 
+#ifndef NTSC_VERSION
 			if(saveInfo.saveStage != SAVEMENU_SAVE)
 			{
-#ifndef NTSC_VERSION
 				// check for soft reset
 				if(checkForSoftReset())
 				{
@@ -952,11 +958,11 @@ void main()
 					resetToBootROM();
 				}
 				gdFsReqDrvStat();
-#endif
+
 				if(globalAbortFlag == 1)
 					quitNow = TRUE;
-				
 			}
+#endif
 		}
 		afterSaveFlag = 0;
 		FreeTiledBackdrop();

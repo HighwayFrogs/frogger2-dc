@@ -1,25 +1,12 @@
+![Frogger 2 Logo](/_repo/Frogger2Logo.png)
 # Frogger 2: Swampy's Revenge (Dreamcast)  
 This is a backup of Frogger 2's official source code from October 10th, 2000.  
-
-This builds a perfect match for the retail PAL submission of Frogger 2: Swampys' Revenge. (Code: T-40603D-50, Version: V1.001)  
-TODO: Build retail NTSC?
-
-NTSC:
- - New LANGUAGE.TXT file.
- - Added 0A.DAT padding.
- - Folders have updated modification times.
- - New IP.BIN and IP0000.BIN
- - New Product ID: T40604N
-
-The PAL version of Swampy's Revenge was never released, but it was submitted to Sega of Europe for release review.  
-Because of that submission, we have enough information to prove this builds a perfect match for an unreleased PAL retail build.  
-
-
-The retail version of the game was built on October 13th, 2000.  
+It can build a perfect match for the NTSC and PAL retail versions of Frogger 2.  
+This was achieved by reverse engineering the NTSC version's changes.  
 
 **Developer:** Blitz Games  
 
-## How to compile and run?
+## How to compile and run?  
 **1)** Run `compile.bat`.  
 The resulting output will be called Frogger2.elf.  
 It is automatically converted to a file named 1ST_READ.BIN.  
@@ -33,5 +20,31 @@ A GDI image is the master disc image format. It can be played in emulators, and 
 **1)** Add or remove the line of text `#define	NTSC_VERSION` from `C Application\prefix_dc.h` as a way of choosing between PAL/EUR and NTSC/USA.  
 **2)** Run `clean.bat`  
 **3)** Run `compile.bat`  
+
+## Retail Build Information:  
+Both of the retail builds here 
+
+**Retail NTSC:**  
+Executable Date: September 10th, 2000 (V1.001)  
+Product ID: T40604N  
+SHA1 Hash (1ST_READ.BIN): `3dbddec07e78e0e8c5830bbbf60c9ecdb17e4a42`  
+Use [gditools](https://sourceforge.net/projects/dcisotools/) to work with this build, instead of `jc-gdrom-explorer`, which doesn't work for some reason.  
+This repository can build a perfect match for this build, and thus can be considered "NTSC master".  
+
+**Retail PAL:**  
+Executable Date: October 10th, 2000 (V1.001)  
+Product ID: T-40603D-50  
+SHA1 Hash (1ST_READ.BIN): `089e2f9d1c04e26e0fa947101c4db15fee9c43e2`  
+This build was never (officially) released, but it was submitted to Sega of Europe for approval.  
+However, this repository can build a perfect match for the build submitted to Sega, and thus can be considered as "PAL master".  
+
+
+**Other Executable:**  
+There is another executable with hash `bfee1b19ee7b28d19ff54e3fbedc1042dd54f51d` with a date of October 13th, 2000.  
+This executable appears to be a copy of the NTSC version which had the Dreamcast SDK tampered with to support a new display mode.  
+It is not known where it came from, but it does not appear legitimate.  
+This is because the changes appear to be done to the compiled binary, and not to source code.  
+As such, it is likely this executable was modified by a scene group, and is not supported by this repository.  
+
 
 Preserved by [Highway Frogs](https://highwayfrogs.net/)

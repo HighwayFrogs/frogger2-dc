@@ -13,6 +13,7 @@
 #define DCK_TEXTURE_H_INCLUDED
 
 #include "isltex.h"
+#include "..\prefix_dc.h"
 
 //----- [ DEFINES ] -----------------------------------------------------------------------------
 
@@ -35,7 +36,12 @@ extern void (*FreePtr)(void *);               // Default de-allocation is syFree
 #define Align32Byte(ADR)		(((long) ADR) + 0x1F) & 0xFFFFFFE0)
 
 #define	MAX_TEXTURE_LIST		500
+
+#ifdef NTSC_VERSION
+#define	MAX_MALLOC_LIST			2000
+#else
 #define	MAX_MALLOC_LIST			3000
+#endif
 
 //----- [ TYPEDEFS ] -----------------------------------------------------------------------------
 

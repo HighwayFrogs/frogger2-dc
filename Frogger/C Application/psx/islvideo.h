@@ -75,7 +75,9 @@ int videoPlayStream(StrDataType *str, int palMode, int allowQuit);
 
 void videoSetAudioChannel(int channel);
 
+#ifndef NTSC_VERSION
 extern int	fmvSoftReset;
 extern int	fmvBookSoftReset;
+#endif
 
 #endif // __ISLVIDEO_H__
