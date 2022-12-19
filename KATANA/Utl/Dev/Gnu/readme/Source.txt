@@ -1,3 +1,0 @@
-
-Source code for the Sega version of the GNU tools may be obtained by contacting
-Sega Developer Technical Support. Write to DTS@sega.com or call 415-701-4060.

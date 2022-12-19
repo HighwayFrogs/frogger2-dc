@@ -1,2 +1,0 @@
-extern	file_name_search
-extern	file_block_search
