@@ -2,8 +2,8 @@
 
 SET TOOL_FOLDER=Frogger\cd\tools
 SET EXECUTABLE_LOCATION="Frogger\C Application\exe\1ST_READ.BIN"
-SET CD_FILES=BUILD
 SET OUTPUT_FOLDER=OUTPUT
+SET CD_FILES=OUTPUT\CDI\Files
 SET TEMP_ISO_FILE=%OUTPUT_FOLDER%\TEMP.ISO
 
 :: Load region.
@@ -26,8 +26,8 @@ if not exist %EXECUTABLE_LOCATION% (
 )
 
 :: Cleanup output folder.
-del /S %OUTPUT_FOLDER%\CDI\%GAME_REGION_NAME%\* /Q
-if not exist %OUTPUT_FOLDER%\CDI\%GAME_REGION_NAME% md %OUTPUT_FOLDER%\CDI\%GAME_REGION_NAME%
+del /S "%OUTPUT_FOLDER%\CDI\%GAME_REGION_NAME%\*" /Q
+if not exist "%OUTPUT_FOLDER%\CDI\%GAME_REGION_NAME%" md "%OUTPUT_FOLDER%\CDI\%GAME_REGION_NAME%"
 
 :: Setup CD File Folder
 if not exist %CD_FILES% (
@@ -35,14 +35,14 @@ if not exist %CD_FILES% (
 )
 
 :: Copy compiled game.
-DEL %CD_FILES%\LANGUAGE.TXT  >nul
-DEL %CD_FILES%\BACKDROPS\LOADINGEU.PVR >nul
-copy %EXECUTABLE_LOCATION% .\ <nul
+IF EXIST "%CD_FILES%\1ST_READ.BIN" DEL "%CD_FILES%\1ST_READ.BIN"  >nul
+IF EXIST "%CD_FILES%\IP.BIN" DEL "%CD_FILES%\IP.BIN"  >nul
+IF EXIST "%CD_FILES%\LANGUAGE.TXT" DEL "%CD_FILES%\LANGUAGE.TXT"  >nul
+IF EXIST "%CD_FILES%\BACKDROPS\LOADINGEU.PVR" DEL "%CD_FILES%\BACKDROPS\LOADINGEU.PVR" >nul
+copy "%EXECUTABLE_LOCATION%" .\ <nul
 copy "Frogger\cd\%GAME_REGION_NAME%\IP.BIN" .\ <nul
-copy "Frogger\cd\%GAME_REGION_NAME%\LANGUAGE.TXT" %CD_FILES%\  >nul
-copy "Frogger\cd\%GAME_REGION_NAME%\LOADINGEU.PVR" %CD_FILES%\BACKDROPS\  >nul
-DEL %CD_FILES%\1ST_READ.BIN  >nul
-DEL %CD_FILES%\IP.BIN >nul
+copy "Frogger\cd\%GAME_REGION_NAME%\LANGUAGE.TXT" "%CD_FILES%\" >nul
+copy "Frogger\cd\%GAME_REGION_NAME%\LOADINGEU.PVR" "%CD_FILES%\BACKDROPS\" >nul
 
 :: Fix boot file.
 echo.
@@ -54,17 +54,16 @@ echo 0
 )|"%TOOL_FOLDER%\binhack32"
 
 :: Move the fixed files into the CD folder.
-move 1ST_READ.BIN %CD_FILES% >nul
-move IP.BIN %CD_FILES% >nul
+move 1ST_READ.BIN "%CD_FILES%" >nul
+move IP.BIN "%CD_FILES%" >nul
 
 echo.
 echo Creating ISO...
-%TOOL_FOLDER%\mkisofs -C 0,0 -G %CD_FILES%\IP.BIN -V FROGGER2 -joliet -rock -l -o %TEMP_ISO_FILE% BUILD
-PAUSE
+"%TOOL_FOLDER%\mkisofs" -C 0,0 -G "%CD_FILES%\IP.BIN" -V FROGGER2 -joliet -rock -l -o "%TEMP_ISO_FILE%" "%CD_FILES%"
 
 echo.
 echo Creating CDI from ISO...
-%TOOL_FOLDER%\cdi4dc %TEMP_ISO_FILE% %OUTPUT_FOLDER%\CDI\%GAME_REGION_NAME%\FROGGER2.cdi -d
+"%TOOL_FOLDER%\cdi4dc" "%TEMP_ISO_FILE%" "%OUTPUT_FOLDER%\CDI\%GAME_REGION_NAME%\FROGGER2.cdi" -d
 
 ::Delete files.
 DEL %TEMP_ISO_FILE%
