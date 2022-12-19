@@ -17,7 +17,7 @@ A CDI image is one which is built with modern tools and can be burned to a CD an
 A GDI image is the master disc image format. It can be played in emulators, and requires official GD-R discs in order to play on a retail console.  
 
 ## Retail Build Information:  
-Both of the retail builds here 
+Both of the retail builds are built to a perfect byte for byte match from this repository.  
 
 **Retail NTSC:**  
 Executable Date: September 10th, 2000 (V1.001)  
