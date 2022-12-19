@@ -6,6 +6,18 @@ SET CD_FILES=BUILD
 SET OUTPUT_FOLDER=OUTPUT
 SET TEMP_ISO_FILE=%OUTPUT_FOLDER%\TEMP.ISO
 
+:: Load region.
+if not exist "OUTPUT\last_compiled_region" (
+    echo The game region could not be identified. Try recompiling.
+    PAUSE
+    goto :EOF
+)
+
+set /p GAME_REGION=<OUTPUT\last_compiled_region
+if "%GAME_REGION%"=="A" set "GAME_REGION_NAME=NTSC"
+if "%GAME_REGION%"=="E" set "GAME_REGION_NAME=PAL"
+if "%GAME_REGION%"=="" goto error
+
 :: Verify game is compiled.
 if not exist %EXECUTABLE_LOCATION% (
     echo Frogger 2 must be compiled first.
@@ -14,8 +26,8 @@ if not exist %EXECUTABLE_LOCATION% (
 )
 
 :: Cleanup output folder.
-del /S %OUTPUT_FOLDER%\* /Q
-if not exist %OUTPUT_FOLDER% md %OUTPUT_FOLDER%
+del /S %OUTPUT_FOLDER%\CDI\%GAME_REGION_NAME%\* /Q
+if not exist %OUTPUT_FOLDER%\CDI\%GAME_REGION_NAME% md %OUTPUT_FOLDER%\CDI\%GAME_REGION_NAME%
 
 :: Setup CD File Folder
 if not exist %CD_FILES% (
@@ -23,8 +35,12 @@ if not exist %CD_FILES% (
 )
 
 :: Copy compiled game.
+DEL %CD_FILES%\LANGUAGE.TXT  >nul
+DEL %CD_FILES%\BACKDROPS\LOADINGEU.PVR >nul
 copy %EXECUTABLE_LOCATION% .\ <nul
-copy "Frogger\cd\track01\IP.BIN" .\ <nul
+copy "Frogger\cd\%GAME_REGION_NAME%\IP.BIN" .\ <nul
+copy "Frogger\cd\%GAME_REGION_NAME%\LANGUAGE.TXT" %CD_FILES%\  >nul
+copy "Frogger\cd\%GAME_REGION_NAME%\LOADINGEU.PVR" %CD_FILES%\BACKDROPS\  >nul
 DEL %CD_FILES%\1ST_READ.BIN  >nul
 DEL %CD_FILES%\IP.BIN >nul
 
@@ -43,11 +59,12 @@ move IP.BIN %CD_FILES% >nul
 
 echo.
 echo Creating ISO...
-%TOOL_FOLDER%\mkisofs -C 0,0 -G %CD_FILES%\IP.BIN -V FROGGER2 -joliet -rock -l -o %TEMP_ISO_FILE% BUILD >nul
+%TOOL_FOLDER%\mkisofs -C 0,0 -G %CD_FILES%\IP.BIN -V FROGGER2 -joliet -rock -l -o %TEMP_ISO_FILE% BUILD
+PAUSE
 
 echo.
 echo Creating CDI from ISO...
-%TOOL_FOLDER%\cdi4dc %TEMP_ISO_FILE% %OUTPUT_FOLDER%\FROGGER2.cdi -d
+%TOOL_FOLDER%\cdi4dc %TEMP_ISO_FILE% %OUTPUT_FOLDER%\CDI\%GAME_REGION_NAME%\FROGGER2.cdi -d
 
 ::Delete files.
 DEL %TEMP_ISO_FILE%
@@ -68,9 +85,9 @@ md %CD_FILES%\MUSIC <nul
 md %CD_FILES%\SFX <nul
 md %CD_FILES%\STAKFILES <nul
 md %CD_FILES%\TEXTURES <nul
-REM copy "Frogger\cd\track01\EuropeWarn.da" "%CD_FILES%\EUROPEWARN.DA"
+:: copy "Frogger\cd\track01\EuropeWarn.da" "%CD_FILES%\EUROPEWARN.DA"
 copy "Frogger\cd\track03\audio64.drv" "%CD_FILES%\AUDIO64.DRV" <nul
-copy "Frogger\cd\track03\language.txt" "%CD_FILES%\LANGUAGE.TXT" <nul
+:: copy "Frogger\cd\track03\language.txt" "%CD_FILES%\LANGUAGE.TXT" <nul
 copy "Frogger\cd\track03\backdrops\artwork00.pvr" "%CD_FILES%\BACKDROPS\ARTWORK00.PVR" <nul
 copy "Frogger\cd\track03\backdrops\artwork01.pvr" "%CD_FILES%\BACKDROPS\ARTWORK01.PVR" <nul
 copy "Frogger\cd\track03\backdrops\artwork02.pvr" "%CD_FILES%\BACKDROPS\ARTWORK02.PVR" <nul
@@ -96,7 +113,7 @@ copy "Frogger\cd\track03\backdrops\artwork21.pvr" "%CD_FILES%\BACKDROPS\ARTWORK2
 copy "Frogger\cd\track03\backdrops\fr2legal.pvr" "%CD_FILES%\BACKDROPS\FR2LEGAL.PVR" <nul
 copy "Frogger\cd\track03\backdrops\fr2legalEU.pvr" "%CD_FILES%\BACKDROPS\FR2LEGALEU.PVR" <nul
 copy "Frogger\cd\track03\backdrops\loading.pvr" "%CD_FILES%\BACKDROPS\LOADING.PVR" <nul
-copy "Frogger\cd\track03\backdrops\loadingeu.pvr" "%CD_FILES%\BACKDROPS\LOADINGEU.PVR" <nul
+:: copy "Frogger\cd\track03\backdrops\loadingeu.pvr" "%CD_FILES%\BACKDROPS\LOADINGEU.PVR" <nul
 copy "Frogger\cd\track03\backdrops\loadingus.pvr" "%CD_FILES%\BACKDROPS\LOADINGUS.PVR" <nul
 copy "Frogger\cd\track03\backdrops\sofdec.pvr" "%CD_FILES%\BACKDROPS\SOFDEC.PVR" <nul
 copy "Frogger\cd\track03\demos\record-0-0.key" "%CD_FILES%\DEMOS\RECORD-0-0.KEY" <nul
@@ -240,3 +257,8 @@ copy "Frogger\cd\track03\Textures\titles.spt" "%CD_FILES%\TEXTURES\TITLES.SPT" <
 
 echo CD files directory has been setup.
 exit /b
+
+:error
+echo Failed to get region name.
+PAUSE
+goto :EOF

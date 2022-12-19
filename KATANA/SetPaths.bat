@@ -24,7 +24,7 @@ ver | find "Windows"
 if errorlevel 1 goto error_notcompatibleshell
 
 rem Add Gnu Make and Hitachi compiler tools to the current path.
-SET PATH=%PATH%;%KATANA_ROOT%\Utl\Dev\Make;%KATANA_ROOT%\Utl\Dev\Hitachi
+SET PATH=%PATH%;%KATANA_ROOT%\Utl\Dev\Make;%KATANA_ROOT%\Utl\Dev\Hitachi;%KATANA_ROOT%\Tools
 
 rem Verify the existence of Gnu Make.
 

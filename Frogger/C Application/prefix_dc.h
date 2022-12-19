@@ -16,7 +16,7 @@
 #define	FINAL_MASTER
 #define	GOLDCD 1
 #define	DEBUG
-#define	NTSC_VERSION
+%REGION_PLACEHOLDER% // This gets replaced by compile.bat to choose the region (PAL vs NTSC).
 
 #define _KAMUI2_
 #define __SET4__

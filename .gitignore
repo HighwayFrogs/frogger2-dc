@@ -2,4 +2,5 @@ Frogger/C Application/exe/
 Frogger/C Application/obj/
 OUTPUT
 BUILD
-Frogger/cd/track05/1ST_READ.BIN
+Frogger/cd/NTSC/1ST_READ.BIN
+Frogger/cd/PAL/1ST_READ.BIN
