@@ -16,11 +16,6 @@ A CD image will now be available in the `OUTPUT\` folder.
 A CDI image is one which is built with modern tools and can be burned to a CD and played on a retail console or emulator.  
 A GDI image is the master disc image format. It can be played in emulators, and requires official GD-R discs in order to play on a retail console.  
 
-## How to switch between PAL and NTSC?  
-**1)** Add or remove the line of text `#define	NTSC_VERSION` from `C Application\prefix_dc.h` as a way of choosing between PAL/EUR and NTSC/USA.  
-**2)** Run `clean.bat`  
-**3)** Run `compile.bat`  
-
 ## Retail Build Information:  
 Both of the retail builds here 
 
