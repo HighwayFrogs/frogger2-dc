@@ -44,8 +44,7 @@ echo Setting up Dreamcast SDK
 CALL %KATANA_ROOT%\SetPaths.bat
 
 :: Chooses the game region.
-replace_line "Frogger\C Application\prefix_dc.h" "Frogger\C Application\prefix_dc.h" "//#define\tNTSC_VERSION" "%%REGION_PLACEHOLDER%%"
-replace_line "Frogger\C Application\prefix_dc.h" "Frogger\C Application\prefix_dc.h" "#define\tNTSC_VERSION" "%%REGION_PLACEHOLDER%%"
+CALL :remove_region_from_code
 if "%GAME_REGION%"=="E" replace_line "Frogger\C Application\prefix_dc.h" "Frogger\C Application\prefix_dc.h" ""%%REGION_PLACEHOLDER%%"" "//#define\tNTSC_VERSION"
 if "%GAME_REGION%"=="A" replace_line "Frogger\C Application\prefix_dc.h" "Frogger\C Application\prefix_dc.h" ""%%REGION_PLACEHOLDER%%"" "#define\tNTSC_VERSION"
 
@@ -54,8 +53,10 @@ echo Compiling Frogger 2 to ELF file.
 cd Frogger\C Application\
 gmake
 if NOT ERRORLEVEL 0 (
+    cd ..\..\
+	CALL :remove_region_from_code
     echo Compilation Failure.
-	PAUSE
+    PAUSE
     exit /b 1
 )
 
@@ -66,5 +67,13 @@ elf2bin -s 8C010000 Frogger2.elf 1ST_READ.BIN
 certutil -hashfile 1ST_READ.BIN SHA1
 cd ..\..\..\
 
+CALL :remove_region_from_code
+
 echo Success
 PAUSE
+goto :EOF
+
+:remove_region_from_code
+replace_line "Frogger\C Application\prefix_dc.h" "Frogger\C Application\prefix_dc.h" "//#define\tNTSC_VERSION" "%%REGION_PLACEHOLDER%%"
+replace_line "Frogger\C Application\prefix_dc.h" "Frogger\C Application\prefix_dc.h" "#define\tNTSC_VERSION" "%%REGION_PLACEHOLDER%%"
+exit /b
