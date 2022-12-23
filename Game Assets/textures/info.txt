@@ -1,0 +1,28 @@
+Perfect DC Retail Matches:
+ ancients.spt
+ city.spt
+ garden.spt
+ halloween.spt
+ lab.spt
+ super.spt
+ generic.spt (Matches after using -w128 argument.)
+ hub.spt (Works with -w256 after removing 'swamtrol.bmp', and renaming 'swamtrolold.bmp' to 'swamtrol.bmp'.)
+
+TODO:
+ - Make space/sub.spt match.
+ 
+Unused Files in Textures\ on Retail:
+ - Frogger2.pvr
+ - retro.spt
+ - Newbaby.spt
+ - titles.spt
+ - language.spt
+ - garib.spt (Shared with PSX retail)
+
+Non-Matching:
+ space.spt (Doesn't match the backup (or retail) space.spt file.) AHOVER is encoded differently.
+ sub.spt (Doesn't match the backup (or retail) sub.spt file.) JRAIL3 is encoded differently (like AHOVER for space)
+ 
+These two nonmatches are odd. The AHOVER image is shared between multiple SPT files.
+As such, we can see that the exact same ahover.bmp just outputs different bytes when in space.spt compared to generic.spt.
+I suspect there may be some kind of memory corruption bug, or some other bug, since the files match perfectly outside of a small snippet of the image file.

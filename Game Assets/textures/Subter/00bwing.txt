@@ -1,0 +1,5 @@
+2
+00bwing.bmp
+-1
+01bwing.bmp
+"

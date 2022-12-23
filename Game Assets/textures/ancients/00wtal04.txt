@@ -1,0 +1,11 @@
+4
+00wtal04.bmp
+8
+01wtal04.bmp
+"
+02wtal04.bmp
+"
+03wtal04.bmp
+"
+
+

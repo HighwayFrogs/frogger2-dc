@@ -1,0 +1,6 @@
+2
+white01.bmp
+10
+white02.bmp
+"
+

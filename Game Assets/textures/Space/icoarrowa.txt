@@ -1,0 +1,13 @@
+6
+icoarrowa.bmp
+5
+icoarrow.bmp
+"
+icoarrowc.bmp
+"
+icoarrowd.bmp
+"
+icoarrowc.bmp
+"
+icoarrow.bmp
+"
