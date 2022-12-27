@@ -1,0 +1,100 @@
+; ------------------------------------------------------------------------------------
+; Header...
+; ------------------------------------------------------------------------------------
+
+BankFileName    roobie.kat
+
+; ------------------------------------------------------------------------------------
+; Assets...
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\roobie\frogannoyed.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\roobie\frogbelch1.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\roobie\frogbored.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\roobie\frogcroak.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\roobie\frogdeath.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\roobie\frogdrown2.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\roobie\frogletsgo.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\roobie\frogokay.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\roobie\frogslide.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\roobie\tongue.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+

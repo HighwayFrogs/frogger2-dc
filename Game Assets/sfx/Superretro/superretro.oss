@@ -1,0 +1,343 @@
+; ------------------------------------------------------------------------------------
+; Header...
+; ------------------------------------------------------------------------------------
+
+BankFileName    superretro.kat
+
+; ------------------------------------------------------------------------------------
+; Assets...
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\alarm.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\babycry.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\babyhappy.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\babyhop.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\babyreply.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\babysad.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\burnbum.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\carhorn1.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\carhorn2.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\clocktick.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\crock.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\doublehop.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\electrocute.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\frogchop.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\frogcrush.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\frogdrown1.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\frogexplode.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\frogfall.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\frogmowed.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\frog_gib.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\getbabyfrog.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\hop2.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\hopongrass.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\lorryhorn.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\lp_river.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\lp_traffic1.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\lp_traffic2.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\pickupcoin.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\powerup.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\puptick.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\racecar.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\racehorn.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\racehorngo.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\snakehiss.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\snakerattle.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\splash.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Superretro\teleport.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+

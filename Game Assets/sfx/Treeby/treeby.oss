@@ -1,0 +1,100 @@
+; ------------------------------------------------------------------------------------
+; Header...
+; ------------------------------------------------------------------------------------
+
+BankFileName    treeby.kat
+
+; ------------------------------------------------------------------------------------
+; Assets...
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Treeby\frogannoyed.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Treeby\frogbelch1.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Treeby\frogbored.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Treeby\frogcroak.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Treeby\frogdeath.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Treeby\frogdrown2.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Treeby\frogletsgo.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Treeby\frogokay.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Treeby\frogslide.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Treeby\tongue.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+

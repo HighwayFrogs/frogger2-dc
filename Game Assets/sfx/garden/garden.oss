@@ -1,0 +1,289 @@
+; ------------------------------------------------------------------------------------
+; Header...
+; ------------------------------------------------------------------------------------
+
+BankFileName    garden.kat
+
+; ------------------------------------------------------------------------------------
+; Assets...
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\alarm.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\babycry.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\babyhappy.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\babyhop.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\babyreply.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\babysad.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\burnbum.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\clocktick.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\crock.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\doublehop.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\electrocute.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\frog_gib.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\frogchop.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\frogcrush.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\frogdrown1.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\frogexplode.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\frogfall.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\frogmowed.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\getbabyfrog.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\hop2.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\hopongrass.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\lp_area1.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\lp_mowrs.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\lp_wwheel.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\pickupcoin.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\powerup.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\puptick.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\racehorn.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\racehorngo.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\splash.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\garden\teleport.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+

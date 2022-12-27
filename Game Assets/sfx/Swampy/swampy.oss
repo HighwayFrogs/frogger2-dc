@@ -1,0 +1,100 @@
+; ------------------------------------------------------------------------------------
+; Header...
+; ------------------------------------------------------------------------------------
+
+BankFileName    swampy.kat
+
+; ------------------------------------------------------------------------------------
+; Assets...
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Swampy\frogannoyed.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Swampy\frogbelch1.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Swampy\frogbored.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Swampy\frogcroak.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Swampy\frogdeath.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Swampy\frogdrown2.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Swampy\frogletsgo.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Swampy\frogokay.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Swampy\frogslide.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\Swampy\tongue.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+

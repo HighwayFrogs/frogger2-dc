@@ -1,0 +1,541 @@
+; ------------------------------------------------------------------------------------
+; Header...
+; ------------------------------------------------------------------------------------
+
+BankFileName    lab.kat
+
+; ------------------------------------------------------------------------------------
+; Assets...
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\alarm.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\babycry.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\babyhappy.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\babyhop.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\babyreply.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\babysad.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\burnbum.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\clocktick.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\doublehop.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\elec.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\electrocute.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\espark5.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\fdoor1.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\fdoor2.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\frogchop.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\frogcrush.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\frogdrown1.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\frogexplode.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\frogfall.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\frogmowed.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\frog_gib.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\getbabyfrog.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\hop2.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\hopongrass.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_arc2.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_conv.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_fly.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_heli1.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_heli2.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_heli3.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_hum.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_lift.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_mach1.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_mach2.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_mach4.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_mkyscm1.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_mkyscm4.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_mummy.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_mummy2.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_pistlng.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_pline.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_run1.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_run2.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_run3.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_sludge.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_static2.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\lp_whirring.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         1
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\opendr.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\pickupcoin.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\powerup.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\pthump1.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\puptick.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\racehorn.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\racehorngo.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\shieldout.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\spy.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\teleport.wav
+SampleRate                   11050
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\tilesexpl2.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
+WaveFile                     sfx\lab\button1.wav
+SampleRate                   11025
+RandomPitchAmount            0
+Adpcm                        1
+Loop                         0
+AssetEnd
+
+; ------------------------------------------------------------------------------------
+
