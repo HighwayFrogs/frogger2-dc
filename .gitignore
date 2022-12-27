@@ -4,3 +4,7 @@ OUTPUT
 Frogger/cd/NTSC/1ST_READ.BIN
 Frogger/cd/PAL/1ST_READ.BIN
 Game Assets/COOKED/
+KATANA/Tools/src/sfxmap/sfxmap.vcxproj.user
+KATANA/Tools/src/sfxmap/.vs/
+KATANA/Tools/src/sfxmap/Release/
+KATANA/Tools/src/sfxmap/Debug/

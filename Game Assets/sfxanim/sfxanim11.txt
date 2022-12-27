@@ -1,0 +1,127 @@
+67
+4
+lp_mkyscm2.wav
+end
+
+282
+4
+lp_mummy2.wav
+end
+
+
+761
+4
+lp_block1.wav
+end
+
+742
+4
+lp_block2.wav
+end
+
+644
+4
+lp_scorpiona.wav
+end
+
+639
+4
+lp_scorpiona.wav
+end
+
+310
+4
+lp_warthogs.wav
+end
+
+328
+4
+lp_warthogs.wav
+end
+
+349
+4
+lp_warthogs.wav
+end
+
+950
+4
+lp_jungle.wav
+end
+
+716
+4
+lp_water.wav
+end
+
+138
+4
+lp_scorpiona.wav
+end
+
+616
+4
+lp_scorpiona.wav
+end
+
+653
+4
+lp_scorpiona.wav
+end
+
+61
+4
+lp_rockfall5.wav
+end
+
+49
+4
+lp_rockfall4.wav
+end
+
+37
+4
+lp_rockfall3.wav
+end
+
+25
+4
+lp_rockfall2.wav
+end
+
+9
+4
+lp_rockfall1.wav
+end
+
+end
+// Leave this here please!
+
+/*
+Mappings from character animations to sound effects
+
+Types: 
+
+0 Player with full animation range
+1 Multiplayer character
+2 Enemy
+3 Character
+
+
+Format:
+
+object name
+type
+wave file name
+end
+
+NOTE:
+
+The exact number of sfx entries must follow an actor type or BAD THINGS WILL HAPPEN!
+Currently
+	players have 43 animations (see frogger.h for latest figure)
+	Multiplayer characters ARE NOT IMPLEMENTED!
+	Enemies must have four regardless of how many they actually have
+	Characters are NOT IMPLEMENTED!
+*/
+

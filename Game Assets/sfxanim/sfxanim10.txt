@@ -1,0 +1,89 @@
+boulder.obe
+3
+lp_boulder.wav
+end
+
+101
+4
+lp_lava.wav
+end
+
+480
+4
+lp_lava.wav
+end
+
+108
+4
+lp_water.wav
+end
+
+719
+4
+lp_scorpiona.wav
+end
+
+676
+4
+lp_jungle.wav
+end
+
+762
+4
+lp_mummy2.wav
+end
+
+138
+4
+lp_cswim.wav
+end
+
+31
+4
+lp_scorpiona.wav
+end
+
+31
+4
+lp_warthogs.wav
+end
+
+crock
+2
+crocsnap.wav
+0
+0
+0
+end
+
+end
+// Leave this here please!
+
+/*
+Mappings from character animations to sound effects
+
+Types: 
+
+0 Player with full animation range
+1 Multiplayer character
+2 Enemy
+3 Character
+
+
+Format:
+
+object name
+type
+wave file name
+end
+
+NOTE:
+
+The exact number of sfx entries must follow an actor type or BAD THINGS WILL HAPPEN!
+Currently
+	players have 43 animations (see frogger.h for latest figure)
+	Multiplayer characters ARE NOT IMPLEMENTED!
+	Enemies must have four regardless of how many they actually have
+	Characters are NOT IMPLEMENTED!
+*/
+

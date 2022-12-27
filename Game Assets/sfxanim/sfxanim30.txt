@@ -1,0 +1,77 @@
+105
+4
+lp_platform.wav
+end
+
+
+26
+4
+lp_dockamb.wav
+end
+
+140
+4
+lp_dockamb.wav
+end
+
+192
+4
+lp_dockamb.wav
+end
+
+410
+4
+lp_pigeon1.wav
+end
+
+158
+4
+lp_pigeon2.wav
+end
+
+81
+4
+lp_rats2.wav
+end
+
+122
+4
+lp_rats3.wav
+end
+
+449
+4
+lp_conv.wav
+end
+
+end
+// Leave this here please!
+
+/*
+Mappings from character animations to sound effects
+
+Types: 
+
+0 Player with full animation range
+1 Multiplayer character
+2 Enemy
+3 Character
+
+
+Format:
+
+object name
+type
+wave file name
+end
+
+NOTE:
+
+The exact number of sfx entries must follow an actor type or BAD THINGS WILL HAPPEN!
+Currently
+	players have 43 animations (see frogger.h for latest figure)
+	Multiplayer characters ARE NOT IMPLEMENTED!
+	Enemies must have four regardless of how many they actually have
+	Characters are NOT IMPLEMENTED!
+*/
+

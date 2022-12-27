@@ -1,0 +1,147 @@
+343
+4
+lp_sludge.wav
+end
+
+182
+4
+lp_rats1.wav
+end
+
+210
+4
+lp_rats1.wav
+end
+
+278
+4
+lp_cavewater.wav
+end
+
+298
+4
+lp_arc2.wav
+end
+
+298
+4
+lp_arc1.wav
+end
+
+343
+4
+lp_cart1.wav
+end
+
+298
+4
+lp_cart1.wav
+end
+
+484
+4
+lp_arc1.wav
+end
+
+555
+4
+lp_arc2.wav
+end
+
+94
+4
+lp_arc2.wav
+end
+
+535
+4
+lp_arc3.wav
+end
+
+59
+4
+lp_arc3.wav
+end
+
+80
+4
+lp_cart1.wav
+end
+
+80
+4
+lp_cart2.wav
+end
+
+117
+4
+lp_rats1.wav
+end
+
+119
+4
+lp_rats1.wav
+end
+
+59
+4
+lp_cavewind.wav
+end
+
+801
+4
+lp_cavewind.wav
+end
+
+978
+4
+lp_cavewind.wav
+end
+
+44
+4
+lp_spider.wav
+end
+
+28
+4
+lp_spider.wav
+end
+
+37
+4
+lp_spider.wav
+end
+
+
+end
+// Leave this here please!
+
+/*
+Mappings from character animations to sound effects
+
+Types: 
+
+0 Player with full animation range
+1 Multiplayer character
+2 Enemy
+3 Character
+4 Tile
+
+Format:
+
+object name
+type
+wave file name
+end
+
+NOTE:
+
+The exact number of sfx entries must follow an actor type or BAD THINGS WILL HAPPEN!
+Currently
+	players have 43 animations (see frogger.h for latest figure)
+	Multiplayer characters ARE NOT IMPLEMENTED!
+	Enemies must have four regardless of how many they actually have
+	Characters are NOT IMPLEMENTED!
+*/
+

@@ -65,11 +65,10 @@ TODO: Do they match?
 
 ### Sound Animation (.SAM)  
 Folder: `sfxanim\`  
-Source: ? `?`  
+Source: Aug 15 ISO `\FroggerProject\PSX\Code\Cd\Maps\` 
 These files map sound effects with character/actor actions, or even individual tiles.  
 They were created using the `sfxmap.exe` program found in the Aug 15 ISO\jimsbackup.zip  
-TODO: Finish setup.
-TODO: Do they match?
+TODO: It's unknown if they match since we can't extract STK files yet. Let's verify they match later.
 
 ## Textures (Images)
 ### Texture Bank (.SPT)

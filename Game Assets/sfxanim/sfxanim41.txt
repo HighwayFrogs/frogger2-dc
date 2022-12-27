@@ -1,0 +1,130 @@
+392
+4
+lp_cavewind.wav
+end
+
+506
+4
+lp_scuttle.wav
+end
+
+
+490
+4
+lp_scuttle.wav
+end
+
+
+251
+4
+lp_scuttle.wav
+end
+
+
+292
+4
+lp_scuttle.wav
+end
+
+
+167
+4
+lp_marching.wav
+end
+
+216
+4
+lp_marching.wav
+end
+
+74
+4
+lp_marching.wav
+end
+
+297
+4
+lp_drips.wav
+end
+
+304
+4
+lp_drips.wav
+end
+
+314
+4
+lp_drips.wav
+end
+
+314
+4
+lp_scuttle.wav
+end
+
+492
+4
+lp_flapping.wav
+end
+
+355
+4
+lp_flapping.wav
+end
+
+492
+4
+lp_marching.wav
+end
+
+355
+4
+lp_marching.wav
+end
+
+988
+4
+lp_cavewind.wav
+end
+
+988
+4
+lp_drips.wav
+end
+
+988
+4
+lp_marching.wav
+end
+
+end
+// Leave this here please!
+
+/*
+Mappings from character animations to sound effects
+
+Types: 
+
+0 Player with full animation range
+1 Multiplayer character
+2 Enemy
+3 Character
+
+
+Format:
+
+object name
+type
+wave file name
+end
+
+NOTE:
+
+The exact number of sfx entries must follow an actor type or BAD THINGS WILL HAPPEN!
+Currently
+	players have 43 animations (see frogger.h for latest figure)
+	Multiplayer characters ARE NOT IMPLEMENTED!
+	Enemies must have four regardless of how many they actually have
+	Characters are NOT IMPLEMENTED!
+*/
+
