@@ -1,52 +1,54 @@
-538
+26
 4
-lp_heli1.wav
+lp_pistlng.wav
 end
 
-538
+14
 4
-lp_heli2.wav
+lp_pline.wav
 end
 
-538
+350
 4
-lp_heli3.wav
+lp_mach1.wav
 end
 
-748
+430
 4
-lp_run1.wav
+lp_hum.wav
 end
 
-748
-4
-lp_run2.wav
-end
-
-748
-4
-lp_run3.wav
-end
-
-1025
-4
-lp_run3.wav
-end
-
-490
-4
-lp_fly.wav
-end
-
-1091
+481
 4
 lp_conv.wav
 end
 
-178
+174
 4
-lp_pline.wav
+lp_pistlng.wav
 end
+
+438
+4
+lp_run3.wav
+end
+
+
+361
+4
+lp_mach2.wav
+end
+
+361
+4
+lp_conv.wav
+end
+
+371
+4
+lp_mach4.wav
+end
+
 
 end
 // Leave this here please!

@@ -65,10 +65,11 @@ TODO: Do they match?
 
 ### Sound Animation (.SAM)  
 Folder: `sfxanim\`  
-Source: Aug 15 ISO `\FroggerProject\PSX\Code\Cd\Maps\` 
+Source: Aug 15 ISO `\FroggerProject\PSX\Code\Cd\Maps\`  
 These files map sound effects with character/actor actions, or even individual tiles.  
 They were created using the `sfxmap.exe` program found in the Aug 15 ISO\jimsbackup.zip  
-TODO: It's unknown if they match since we can't extract STK files yet. Let's verify they match later.
+The build of `sfxmap.exe` used here has been modified slightly to give control over the output directory.  
+The built files are a perfect match for the .SAM files found on the retail Dreamcast release.  
 
 ## Textures (Images)
 ### Texture Bank (.SPT)
@@ -121,13 +122,69 @@ The files included in this repository were pulled directly from the retail Dream
 ### Collision Data (.COL)
 Folder: `?`  
 Source: ? `?`  
-Collision data has still yet to be researched.  
-It seems to have been exported by a program called WorldConv.exe (Found in Aug 15 Backup\jimsbackup.zip), but it doesn't quite line up exactly.  
 TODO: Research  
 TODO: Check older prototypes to see if the format ever matches, and to see how the format changed over time.  
+TODO: Make sure our obe restorations include data from here.
+
+**Program:**  
+A program called `WorldConv.exe` was used to convert .ase level exports into .COL files.  
+Unfortunately, all of our backups of this tool are too early to match the file format exactly.  
+We have executables from 1998-12-07, 1999-04-06, 1999-05-24, 1999-09-08, and source code from 2000-02-21.  
+
+**File Format:**  
+```c
+struct COLFile {
+  int32 tileCount;
+  int32 startTileOffset[4]; // 1 start tile for each player.
+  int32 babyCount;
+  int32 babyTileIndices[babyCount];
+  GAMETILE tiles[tileCount];
+OPTIONAL: // This data may not be present.
+  CAM_BOX_LIST cam_boxes;
+}
+
+struct GAMETILE {
+  int32 tileIndices[4]; // north, south, east and west
+  uint32 state; // state of tile
+  SVECTOR centre;	// centre position
+  SVECTOR normal;	// face normal
+  SVECTOR dirVector[4]; // the 4 possible camera vectors for this tile
+}
+
+struct CAM_BOX_LIST {
+  int32 numPlanes;
+  CAM_PLANE planes[numPlanes];
+  int32 numBoxes;
+  CAM_BOX boxes[numBoxes];
+}
+
+struct CAM_PLANE {
+  FVECTOR	normal;
+  fixed k;
+  uint32 status;
+}
+
+struct CAM_BOX
+{
+  int32 numPlanes;
+  int32 planesStartIndex;
+}
+```
 
 ### Scenic Data (.SCE)
-TODO  
+Folder: `scenics`  
+Source: ? `?`  
+TODO: Research  
+TODO: Check older prototypes to see if the format ever matches, and to see how the format changed over time.  
+TODO: Make sure our obe restorations include data from here.
+
+**Program:**  
+A program called `ObjectConv.exe` was used to convert .ase level exports into .SCE (& .dll) files.  
+Unfortunately, all of our backups of this tool are too early to match the file format exactly.  
+We have executables from 1998-12-15, 1999-01-07, 1999-01-14, 1999-05-29, 1999-XX-XX, 1999-XX-XX, and no source code.  
+
+**File Format:**  
+```c
 
 ### Script (.ETC -> .FEV)
 Folder: `?`  
@@ -147,4 +204,20 @@ TODO
 Folder: `StakFiles`  
 StakFiles are containers, similar to .zip files, albeit much simpler. They just contain other game files.  
 In order to create .STK files, we use the Blitz program `flatstak.exe` with other already existing game files discussed above.   
-The StakFiles match the retail release if and only if all of the files which are put into the .STK file match fully.
+The StakFiles match the retail release if and only if all of the files which are put into the .STK file match fully.  
+
+**flatstak.exe Modification:**
+The flatstak.exe program in the state I found it in did not work properly. This is because it would get a space character in the file names.  
+For example, `FROGGER.PIL` would be hashed as `FROGGER.PIL `. It seems like the issue was known, because there was a '-s' flag to fix it.  
+Unfortunately, the fix didn't actually work. It appears that the fix is looking for the space character before the extension, ie it would fix `FROGGER .PIL` instead.  
+I fixed this by replacing the period character '.' with NULL, and the position it starts searching for the character to be the end of the string (NULL), it would immediately stop looking for the extension and start searching at the end of the string.  
+Changes:  
+ - Byte 0000D0B6/0040DCB6, 0xFF -> 0x00, (Changes an offset to the final character in a string to instead be an offset to the null terminator of the string.)  
+ - Byte 0000D0C8/0040DCC8, '.' -> '\00', 0x2E -> 0x00 (Changes the search to search for NULL instead of a period.)  
+
+**PSX Comparison:**  
+The PSX version is extremely similar, with the only differences to StakFiles in the following:  
+ - ancients1.stk (Differences: `ENTITY-1-0.DAT`)  
+ - frontend.stk (Differences: `ENTITY-8-0.DAT`)  
+ - generic.stk (Dreamcast adds `FROGLET01.PSI` to `FROGLET05.PSI`, and `SWAMPY.PSI`)  
+ - lab2.stk (Differences: `LAB3.COL`)  

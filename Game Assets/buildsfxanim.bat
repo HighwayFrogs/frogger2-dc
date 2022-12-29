@@ -23,7 +23,7 @@ CALL :build_sam sfxanim42
 ::CALL :build_sam sfxanim43
 CALL :build_sam sfxanim50
 CALL :build_sam sfxanim51
-::CALL :build_sam sfxanim52
+CALL :build_sam sfxanim52
 CALL :build_sam sfxanim53
 CALL :build_sam sfxanim54
 CALL :build_sam sfxanim55

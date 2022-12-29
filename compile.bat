@@ -51,8 +51,10 @@ if "%GAME_REGION%"=="A" replace_line "Frogger\C Application\prefix_dc.h" "Frogge
 :: Build.
 echo Compiling Frogger 2 to ELF file.
 cd Frogger\C Application\
+IF EXIST exe\Frogger2.elf DEL exe\Frogger2.elf
+IF EXIST exe\1ST_READ.BIN DEL exe\1ST_READ.BIN
 gmake
-if NOT ERRORLEVEL 0 (
+if NOT "%ERRORLEVEL%"=="0" (
     cd ..\..\
 	CALL :remove_region_from_code
     echo Compilation Failure.
