@@ -179,12 +179,25 @@ TODO: Check older prototypes to see if the format ever matches, and to see how t
 TODO: Make sure our obe restorations include data from here.
 
 **Program:**  
-A program called `ObjectConv.exe` was used to convert .ase level exports into .SCE (& .dll) files.  
+A program called `ObjectConv.exe`/'objConv.exe' was used to convert .ase level exports into .SCE (& .dll) files.  
 Unfortunately, all of our backups of this tool are too early to match the file format exactly.  
-We have executables from 1998-12-15, 1999-01-07, 1999-01-14, 1999-05-29, 1999-XX-XX, 1999-XX-XX, and no source code.  
+We have executables from 1998-12-15, 1999-01-07, 1999-01-14, 1999-05-29, and no source code.  
+The tool provided in this repository was first reverse engineered from the most recent build, and then updated to output the right file format.  
 
 **File Format:**  
 ```c
+struct SCE_FILE {
+  int32 scenicCount; // The number of scenics.
+  SCENIC scenics[scenicCount];
+}
+
+struct SCENIC {
+  int32 offsetToNextScenic; // Pointer to next scenic in bytes, from the start of the first scenic. -1 means end.
+  char name[16]; // The name of the .obe/.psi model.
+  SVECTOR pos; // The position to place the scenic at. [Sizes, 8 bytes (2 are padding)]
+  IQUATERNION rot; // The rotation to place the scenic with. [Size: 16 bytes]
+}
+```
 
 ### Script (.ETC -> .FEV)
 Folder: `?`  
