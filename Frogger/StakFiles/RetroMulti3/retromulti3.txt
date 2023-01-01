@@ -1,8 +1,0 @@
-sretromulti6.col
-sretromulti6.sce
-retromulti6.bff
-entity-7-15.dat
-script-7-15.fev
-super.pil
-retro.tit
-

@@ -1,4 +1,0 @@
-generic.pil
-generic.tit
-generic.bff
-

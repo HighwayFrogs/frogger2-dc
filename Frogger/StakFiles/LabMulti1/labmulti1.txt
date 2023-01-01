@@ -1,9 +1,0 @@
-labmulti1.col
-labmulti1.sce
-labmulti.bff
-entity-5-4.dat
-script-5-4.fev
-lab.tit
-sfxanim53.sam
-
-
