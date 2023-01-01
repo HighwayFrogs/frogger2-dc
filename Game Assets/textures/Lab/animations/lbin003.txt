@@ -1,0 +1,5 @@
+2
+lbin003.bmp
+10
+lbin004.bmp
+"

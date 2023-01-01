@@ -1,0 +1,15 @@
+7
+efect1.bmp
+5
+efect2.bmp
+"
+efect3.bmp
+"
+efect4.bmp
+"
+efect5.bmp
+"
+efect6.bmp
+"
+efect7.bmp
+"

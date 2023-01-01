@@ -1,0 +1,9 @@
+4
+snakhed1.bmp
+8
+snakhed2.bmp
+"
+snakhed3.bmp
+"
+snakhed2.bmp
+"

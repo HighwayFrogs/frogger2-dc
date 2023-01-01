@@ -1,8 +1,0 @@
-3
-00psy04.bmp
-3
-01psy04.bmp
-"
-02psy04.bmp
-"
-

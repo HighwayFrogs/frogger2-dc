@@ -1,0 +1,5 @@
+2
+icoarrowd.bmp
+15
+icoarrow.bmp
+"

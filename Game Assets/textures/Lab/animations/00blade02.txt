@@ -1,0 +1,7 @@
+3
+00blade02.bmp
+3
+01blade02.bmp
+"
+02blade02.bmp
+"

@@ -1,0 +1,11 @@
+5
+00lava04.bmp
+6
+01lava04.bmp
+"
+02lava04.bmp
+"
+03lava04.bmp
+"
+04lava04.bmp
+"

@@ -3,23 +3,33 @@
 :: Clear previous output.
 IF EXIST COOKED\textures DEL /S COOKED\textures\* /Q
 IF NOT EXIST COOKED\textures MD COOKED\textures
-IF EXIST COOKED\TIT DEL /S COOKED\TIT\* /Q
-IF NOT EXIST COOKED\TIT MD COOKED\TIT
-
-:: TODO: Add animtex.exe support once we find or recreate the binary.
+IF EXIST COOKED\texanims DEL /S COOKED\texanims\* /Q
+IF NOT EXIST COOKED\texanims MD COOKED\texanims
 
 :: Build .SPT files.
 ECHO Building .SPT files...
-CALL :build_spt 64 ancients ancients.spt ancients.tit
+CALL :build_spt 64 ancients ancients.spt
 CALL :build_spt 64 City city.spt
-CALL :build_spt 64 garden garden.spt garden.tit
-CALL :build_spt 64 Halloween halloween.spt halloween.tit
-CALL :build_spt 256 Hub hub.spt hub.tit
-CALL :build_spt 64 Lab lab.spt lab.tit
-CALL :build_spt 64 Space space.spt space.tit
-CALL :build_spt 64 Subter sub.spt sub.tit
-CALL :build_spt 80 Super super.spt retro.tit
-CALL :build_spt 128 system generic.spt generic.tit
+CALL :build_spt 64 garden garden.spt
+CALL :build_spt 64 Halloween halloween.spt
+CALL :build_spt 256 Hub hub.spt
+CALL :build_spt 64 Lab lab.spt
+CALL :build_spt 64 Space space.spt
+CALL :build_spt 64 Subter sub.spt
+CALL :build_spt 80 Super super.spt
+CALL :build_spt 128 system generic.spt
+
+:: Build TIT files.
+ECHO Building .TIT files...
+CALL :build_tit ancients ANCIENTS.TIT "00tfin04.txt" "00wtal04.txt"
+CALL :build_tit garden GARDEN.TIT "00bwing.txt" "00moa02.txt" "00roll02.txt" "00tfin04.txt"
+CALL :build_tit Halloween HALLOWEEN.TIT "aniswamp00.txt" "aniswamp03.txt" "aniswamp04.txt" "Fire0000.txt" "Flame1.txt" "gst01.txt" "halpanel3.txt" "tubarrow.txt" "tubarrow2.txt"
+CALL :build_tit Hub HUB.TIT "eyes01.txt" "eyes02.txt" "eyes03.txt"
+CALL :build_tit Lab LAB.TIT "00blade02.txt" "00nois04.txt" "bfrog01.txt" "lairfl4.txt" "lbin003.txt" "mastb007.txt" "pipe8.txt" "pipe9.txt" "plas201.txt" "white01.txt"
+CALL :build_tit Super RETRO.TIT "00flas04.txt" "00turt04.txt" "efect1.txt" "snakhed1.txt" "snaktal1.txt" "test6a.txt"
+CALL :build_tit Space SPACE.TIT "00blade02.txt" "00nois04.txt" "00psy04.txt" "eyes03.txt" "icoarrowd.txt" "plas201.txt"
+CALL :build_tit Subter SUB.TIT "00ants04.txt" "00bwing.txt" "00gold04.txt" "00lava04.txt" "00rail04.txt" "00raila04.txt" "Wat0.txt"
+CALL :build_tit system GENERIC.TIT "00babyic.txt" "rgarib01.txt" "scoin0001.txt"
 
 :: Build PVR
 CALL :build_pvr frogger2 Frogger2.pvr 3 1555 COOKED\textures
@@ -43,13 +53,17 @@ IF NOT "%ERRORLEVEL%"=="0" PAUSE
 move %3 ..\..\COOKED\textures
 CD ..\..\
 
-:: Build .TIT
-IF NOT "%4"=="" (
-  ECHO Would build %4 right now, but can't because we don't have this program yet.
-::..\animtex.exe textures\%2 %4
-::move %4 COOKED\TIT
-)
+exit /b
 
+:build_tit
+SET "TEXTURE_FOLDERNAME=%1"
+SET "TIT_NAME=%2"
+for /f "tokens=2,* delims= " %%a in ("%*") do set TXT_INPUT_FILES=%%b
+ECHO Building texture animation file '%TIT_NAME%'...
+CD textures\%TEXTURE_FOLDERNAME%\animations
+..\..\..\..\KATANA\Tools\animtex2022.exe "..\..\..\COOKED\texanims\%TIT_NAME%" %TXT_INPUT_FILES%
+IF NOT "%ERRORLEVEL%"=="0" PAUSE
+CD ..\..\..\
 exit /b
 
 :build_pvr

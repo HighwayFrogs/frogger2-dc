@@ -1,0 +1,5 @@
+2
+rgarib01.bmp
+10
+rgarib02.bmp
+"

@@ -1,0 +1,5 @@
+2
+tubarrow2.bmp
+8
+tubarrow.bmp
+"

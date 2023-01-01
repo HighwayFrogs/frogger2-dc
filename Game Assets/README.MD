@@ -64,12 +64,38 @@ TODO: Create Setup
 TODO: Do they match?  
 
 ### Sound Animation (.SAM)  
-Folder: `sfxanim\`  
+Folder: `sfxanim`  
 Source: Aug 15 ISO `\FroggerProject\PSX\Code\Cd\Maps\`  
 These files map sound effects with character/actor actions, or even individual tiles.  
 They were created using the `sfxmap.exe` program found in the Aug 15 ISO\jimsbackup.zip  
 The build of `sfxmap.exe` used here has been modified slightly to give control over the output directory.  
 The built files are a perfect match for the .SAM files found on the retail Dreamcast release.  
+
+**File Format:**  
+This file format is best expressed as pseudocode instead of a struct.
+```cs
+while (!reader.HasReachedEOF()) {
+  uint32 identifier = reader.ReadUInt32(); // Could be either an actor uid or a tile ID, based on whether the EntryType is TILE or something else.
+  EntryType = (EntryType) reader.ReadUInt32();
+  
+  List<uint32> hashes = new List<uint32>(); // Hashes are of the .wav file name, minus the extension. They can be set to zero by putting a "0" in the spot of the file name in the source file.
+  uint32 num = reader.PeekUInt32(); // There's always a minimum value of one, which is why the loop is structured this way.
+  do {
+    _ = reader.ReadUInt32(); // Skip the number.
+    hashes.add(num);
+    num = reader.PeekUInt32();
+  } while (num < EntryType.MAX_ENTRY);
+}
+
+enum EntryType {
+  PLAYER, // 0 Player with full animation range
+  MULTIPLAYER_CHARACTER, // 1 Multiplayer character
+  ENEMY, // 2 Enemy
+  SCENIC, // 3 Scenic
+  TILE, // 4 Tile based
+  MAX_ENTRY // End of list.
+}
+```
 
 ## Textures (Images)
 ### Texture Bank (.SPT)
@@ -81,6 +107,7 @@ Source code is available for this program, but it is for a slightly older versio
 The files built here besides `space.spt` and `sub.spt` match retail perfectly.
 However, there are a few files which are completely unused on Dreamcast, and those are not currently buildable.  
 TODO: Get those two files to match retail, and possibly extract the others, so we can build them.  
+TODO: Detail file format.  
 
 ### Dreamcast Image (.PVR)
 Folder: `backdrops\*.bmp`  
@@ -88,18 +115,34 @@ Source: Dreamcast Backup `F:\Frogger\cd\track03\backdrops\`
 PVR files are a standard format utilized by many Dreamcast games, with tools present in the Dreamcast SDK.  
 The only non-matching file is the unused `Frogger2.pvr` file.  
 
-### Texture Anim Bank (.TIT)  
+### Texture Anim Bank (.TIT, Texture Interpolation)  
 Folder: `textures\*\*.txt`  
-Source: Dreamcast Backup `C:\Frogger\doschop\`  
+Source: Extracted from retail Dreamcast NTSC  
 These files have information on texture animations.  
-These files are built from .txt files in the texture folders by a program called `animtex.exe`.    
-Unfortunately, the original program was not found in any of the backups.
+These files are built from .txt files in the texture folders by a program called `animtex.exe`.  
+Unfortunately, the original program was not found in any of the backups.  
 However, a recreation has been created/included to take the place of the original.  
-TODO: Create setup  
-TODO: Do they match
+The files created by this setup perfectly match the retail files.  
+
+**File Format:**  
+struct TITFile {
+  uint32 numAnimations;
+  ANIMATION animations[numAnimations];
+}
+
+struct ANIMATION {
+  uint32 numFrames;
+  uint32 fileNameCrc; // Upper-case, without extension. Eg: '00wtal04.txt' -> '00WTAL04'
+}
+
+struct ANIMATION_FRAME {
+  uint32 imageNameCrc; // Upper-case, without extension. Eg: '00wtal04.bmp' -> '00WTAL04'
+  int32 waitTime; // TODO: What units is this in? When '"' is supplied in the text file it seems to mean copy the last wait time.
+}
+```
 
 ### Game Icon (saveicon.h)  
-Folder: `textures\*\*.txt`  
+File: `textures\frogicon16.bmp`  
 Source: Dreamcast Backup `C:\Frogger\doschop\frogicon16.bmp`  
 The game's save icon is saved as `frogicon16.bmp`.  
 Using a Blitz proprietary tool called 'dc_iconchop.exe', we can convert this file into saveicon.h, a file which gets compiled as part of the game.  
@@ -111,6 +154,8 @@ TODO: Do they match?
 
 ## Level Data
 ### Entity Data (.DAT)
+Folder: `entities`  
+Source: Extracted from retail Dreamcast build.  
 Contains entity data such as TODO.  
 These files were created/edited in a level editor created inside of the Frogger 2 PC version.  
 Most likely one of the PC prototype builds can be used to edit these files.  
@@ -118,10 +163,13 @@ Unfortunately, due to prototypes containing other early assets like early level 
 In the future, there are plans to build a debug build of the final PC version, including the level editor.  
 Alternatively, [FrogLord](https://github.com/Kneesnap/FrogLord) will eventually support editing these files too.  
 The files included in this repository were pulled directly from the retail Dreamcast version, and as such match perfectly.  
+TODO: Research.  
+TODO: Come up with a usable setup.  
+TODO: Detail file format.  
 
 ### Collision Data (.COL)
-Folder: `?`  
-Source: ? `?`  
+Folder: `collision`  
+Source: Extracted from retail Dreamcast build.  
 TODO: Research  
 TODO: Check older prototypes to see if the format ever matches, and to see how the format changed over time.  
 TODO: Make sure our obe restorations include data from here.
@@ -173,7 +221,7 @@ struct CAM_BOX
 
 ### Scenic Data (.SCE)
 Folder: `scenics`  
-Source: ? `?`  
+Source: Extracted from retail Dreamcast build.  
 TODO: Research  
 TODO: Check older prototypes to see if the format ever matches, and to see how the format changed over time.  
 TODO: Make sure our obe restorations include data from here.
@@ -200,11 +248,12 @@ struct SCENIC {
 ```
 
 ### Script (.ETC -> .FEV)
-Folder: `?`  
-Source: ? `?`  
+Folder: `scripts`  
+Source: Extracted from retail Dreamcast, and decompiled with `scripty`.  
 .FEV files are scripts compiled from .ETC files by a program called `etc`.
 Unfortunately, this program has not yet been found, and the only uncompiled script backup is from May 22, 2000 on the May 22 backup ISO.  
 TODO: Figure this one out later.  
+TODO: Maybe document file format?  
 
 ## 3D Models
 ### .BFF (?)
@@ -215,6 +264,7 @@ TODO
 
 ## Stak Files (.STK)
 Folder: `StakFiles`  
+Source: Extracted from retail Dreamcast build.  
 StakFiles are containers, similar to .zip files, albeit much simpler. They just contain other game files.  
 In order to create .STK files, we use the Blitz program `flatstak.exe` with other already existing game files discussed above.   
 The StakFiles match the retail release if and only if all of the files which are put into the .STK file match fully.  
@@ -222,7 +272,7 @@ The StakFiles match the retail release if and only if all of the files which are
 **flatstak.exe Modification:**
 The flatstak.exe program in the state I found it in did not work properly. This is because it would get a space character in the file names.  
 For example, `FROGGER.PIL` would be hashed as `FROGGER.PIL `. It seems like the issue was known, because there was a '-s' flag to fix it.  
-Unfortunately, the fix didn't actually work. It appears that the fix is looking for the space character before the extension, ie it would fix `FROGGER .PIL` instead.  
+Unfortunately, the fix is looking for the space character before the extension, ie it would fix `FROGGER .PIL` instead.  
 I fixed this by replacing the period character '.' with NULL, and the position it starts searching for the character to be the end of the string (NULL), it would immediately stop looking for the extension and start searching at the end of the string.  
 Changes:  
  - Byte 0000D0B6/0040DCB6, 0xFF -> 0x00, (Changes an offset to the final character in a string to instead be an offset to the null terminator of the string.)  

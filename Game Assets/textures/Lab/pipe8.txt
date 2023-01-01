@@ -1,6 +1,0 @@
-2
-pipe8.bmp
-15
-pipe9.bmp
-"
-
