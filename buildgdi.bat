@@ -1,3 +1,5 @@
+@ECHO OFF
+
 if not exist OUTPUT md OUTPUT
 if not exist OUTPUT\CIM md OUTPUT\CIM
 if not exist OUTPUT\GDI md OUTPUT\GDI
@@ -20,7 +22,7 @@ if not exist "Frogger\C Application\exe\1ST_READ.BIN" (
     goto :EOF
 )
 
-:: Copy ELF to PAL folder.
+:: Copy ELF to region folder.
 copy "Frogger\C Application\exe\1ST_READ.BIN" Frogger\cd\%GAME_REGION_NAME%\
 
 subst M: Frogger\cd\
