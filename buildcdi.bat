@@ -1,7 +1,7 @@
 @ECHO off
 
 SET TOOL_FOLDER=Frogger\cd\tools
-SET EXECUTABLE_LOCATION="Frogger\C Application\exe\1ST_READ.BIN"
+SET EXECUTABLE_LOCATION=Frogger\C Application\exe\1ST_READ.BIN
 SET OUTPUT_FOLDER=OUTPUT
 SET CD_FILES=OUTPUT\CDI\Files
 SET TEMP_ISO_FILE=%OUTPUT_FOLDER%\TEMP.ISO
@@ -19,7 +19,7 @@ if "%GAME_REGION%"=="E" set "GAME_REGION_NAME=PAL"
 if "%GAME_REGION%"=="" goto error
 
 :: Verify game is compiled.
-if not exist %EXECUTABLE_LOCATION% (
+if not exist "%EXECUTABLE_LOCATION%" (
     echo Frogger 2 must be compiled first.
     PAUSE
     goto :EOF
