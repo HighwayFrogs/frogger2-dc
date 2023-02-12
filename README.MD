@@ -35,7 +35,7 @@ However, this repository can build a perfect match for the build submitted to Se
 
 
 **Other Executable:**  
-There is another executable with hash `bfee1b19ee7b28d19ff54e3fbedc1042dd54f51d` with a date of October 13th, 2000.  
+There is another executable with SHA1 hash `bfee1b19ee7b28d19ff54e3fbedc1042dd54f51d` with a date of October 13th, 2000.  
 This executable appears to be a copy of the NTSC version which had the Dreamcast SDK tampered with to support a new display mode.  
 It is not known where it came from, but it does not appear legitimate.  
 This is because the changes appear to be done to the compiled binary, and not to source code.  
