@@ -60,8 +60,12 @@ So, we can't get a perfect match of the retail data consistently because this da
 Because the files match perfectly if this defect is ignored, this is as close as we can reasonably get to perfect matches.  
 
 ### Music (.ADX)  
-TODO: Create Setup  
-TODO: Do they match?  
+Folder: `music`  
+Source: Dreamcast Backup `F:\Frogger\music`  
+Music is converted from the `.wav` format to the `.adx` format by a Dreamcast SDK program called `adxencd.exe`.  
+Something interesting to note is that the retail Dreamcast version (and by extension the backup this repository is based on) uses outdated versions of the game music.  
+Meaning, the retail Dreamcast version contains pre-release music.  
+The converted adx files match the retail version files perfectly, assuming the original audio files are used.  
 
 ### Sound Animation (.SAM)  
 Folder: `sfxanim`  

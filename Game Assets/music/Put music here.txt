@@ -1,0 +1,6 @@
+The music is too large to fit in the repository (278MB), and has been excluded from the git repository (.gitignore'd).
+If you got the repository from the official complete release (aka if you see the music files in this folder) then this shouldn't apply to you.
+
+However, for those who have cloned the git repository, these files are not included.
+They are found on the 'Dreamcast Backup' set of 3 CDs under the path `F:\Frogger\music\`.
+Copy the .wav files from that folder to this one. (But not the .adx files)
