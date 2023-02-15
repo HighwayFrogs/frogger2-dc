@@ -153,8 +153,12 @@ Using a Blitz proprietary tool called 'dc_iconchop.exe', we can convert this fil
 It matches the retail versions perfectly.  
 
 ## FMV (Video, .SFD)
-TODO: Create setup  
-TODO: Do they match?  
+Folder: `fmv`  
+Source: Dreamcast `F:\Frogger\cd\track03\fmv`  
+Unfortunately, the FMV setup is not as straightforward as we'd like.  
+The tool which converts `.avi` files to `.SFD` files has a GUI and does not appear that it can be run without that GUI.  
+The correct .SFD files have been included in their built form because there is no good way around this.  
+Please visit [this document](fmv/README.MD) for an explanation on how to create SFD files.  
 
 ## Level Data
 ### Entity Data (.DAT)
