@@ -1,0 +1,20 @@
+on FrogOnPlatform(MAIN_PLAYER, 1) TRIGGER_START 
+  PlaySound("splash.wav", ACTOR_NONE)
+
+on FrogOnPlatform(MAIN_PLAYER, 2) TRIGGER_START 
+  PlaySound("crock.wav", ACTOR_NONE)
+
+ResetToggle(0)
+
+on FrogOnPath(MAIN_PLAYER, 103) TRIGGER_START {
+  TeleportPlayer(MAIN_PLAYER, 104, 0.5)
+  SetToggle(0)
+}
+
+on FrogOnPath(MAIN_PLAYER, 110) TRIGGER_START 
+  ResetToggle(0)
+
+on AND(NOT(IsFlagSet(0)), FrogOnPath(MAIN_PLAYER, 104)) TRIGGER_START 
+  TeleportPlayer(MAIN_PLAYER, 106, 0.5)
+
+SetTileState(107, TILE_BARRED)

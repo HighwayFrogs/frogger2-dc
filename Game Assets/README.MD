@@ -230,8 +230,6 @@ struct CAM_BOX
 ### Scenic Data (.SCE)
 Folder: `scenics`  
 Source: Extracted from retail Dreamcast build.  
-TODO: Research  
-TODO: Check older prototypes to see if the format ever matches, and to see how the format changed over time.  
 TODO: Make sure our obe restorations include data from here.
 
 **Program:**  
@@ -239,6 +237,7 @@ A program called `ObjectConv.exe`/'objConv.exe' was used to convert .ase level e
 Unfortunately, all of our backups of this tool are too early to match the file format exactly.  
 We have executables from 1998-12-15, 1999-01-07, 1999-01-14, 1999-05-29, and no source code.  
 The tool provided in this repository was first reverse engineered from the most recent build, and then updated to output the right file format.  
+We do not yet have a way to edit these files.  
 
 **File Format:**  
 ```c
@@ -257,11 +256,11 @@ struct SCENIC {
 
 ### Script (.ETC -> .FEV)
 Folder: `scripts`  
-Source: Extracted from retail Dreamcast, and decompiled with `scripty`.  
-.FEV files are scripts compiled from .ETC files by a program called `etc`.
+Source: Extracted from retail Dreamcast, decompiled with [../SDK/Tools/scripty/](scripty).  
+.FEV files are scripts compiled from .ETC files by a program called `etc`.  
 Unfortunately, this program has not yet been found, and the only uncompiled script backup is from May 22, 2000 on the May 22 backup ISO.  
-TODO: Figure this one out later.  
-TODO: Maybe document file format?  
+So, I created a program called "scripty" which acts as both a compiler and a decompiler for these scripts.  
+Documentation is available [../SDK/Tools/scripty/README.MD](here).  
 
 ## 3D Models
 ### .BFF (?)

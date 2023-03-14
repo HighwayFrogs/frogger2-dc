@@ -1,0 +1,155 @@
+#define ENEMY_6 6
+#define ENEMY_11 11
+#define PLATFORM_12 12
+#define PLATFORM_13 13
+#define PLATFORM_14 14
+
+on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_START 
+  SetStartTilePlayer(ENEMY_6)
+
+SetCounter(1, 0)
+
+on FrogOnPath(MAIN_PLAYER, 1) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  IncCounter(1)
+}
+
+on FrogOnPath(MAIN_PLAYER, 2) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  IncCounter(1)
+}
+
+on FrogOnPath(MAIN_PLAYER, 3) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  IncCounter(1)
+}
+
+on FrogOnPath(MAIN_PLAYER, 4) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  IncCounter(1)
+}
+
+on FrogOnPath(MAIN_PLAYER, 5) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  IncCounter(1)
+}
+
+on RandomWait(6, 12) TRIGGER_START 
+  PlaySound("racecar.wav", ACTOR_NONE)
+
+on RandomWait(5, 13) TRIGGER_START 
+  PlaySound("carhorn1.wav", ACTOR_NONE)
+
+on RandomWait(7, 15) TRIGGER_START 
+  PlaySound("lorryhorn.wav", ACTOR_NONE)
+
+SetPlatform(10, ACTOR_DRAW)
+SetEnemy(ENEMY_11, ACTOR_NODRAW)
+SetEnemyFlag(ENEMY_11, ENEMYFLAG_NODAMAGE)
+
+on Wait(3) TRIGGER_START {
+  SetPlatform(10, ACTOR_DRAW)
+  SetEnemy(ENEMY_11, ACTOR_NODRAW)
+  SetEnemyFlag(ENEMY_11, ENEMYFLAG_NODAMAGE)
+  
+  on Wait(1.5) TRIGGER_ONCE {
+    SetPlatform(10, ACTOR_NODRAW)
+    SetEnemy(ENEMY_11, ACTOR_DRAW)
+    ResetEnemyFlag(ENEMY_11, ENEMYFLAG_NODAMAGE)
+  }
+}
+
+SetPlatform(PLATFORM_12, ACTOR_DRAW)
+SetPlatform(PLATFORM_13, ACTOR_NODRAW)
+SetPlatform(PLATFORM_14, ACTOR_NODRAW)
+ResetToggle(0)
+
+on Wait(2.2) TRIGGER_START {
+  SetPlatform(PLATFORM_12, ACTOR_DRAW)
+  SetPlatform(PLATFORM_13, ACTOR_NODRAW)
+  SetPlatform(PLATFORM_14, ACTOR_NODRAW)
+  
+  on Wait(0.5) TRIGGER_ONCE {
+    SetPlatform(PLATFORM_12, ACTOR_NODRAW)
+    SetPlatform(PLATFORM_13, ACTOR_DRAW)
+    SetPlatform(PLATFORM_14, ACTOR_NODRAW)
+  }
+  
+  on Wait(0.79999) TRIGGER_ONCE {
+    SetPlatform(PLATFORM_12, ACTOR_NODRAW)
+    SetPlatform(PLATFORM_13, ACTOR_NODRAW)
+    SetPlatform(PLATFORM_14, ACTOR_DRAW)
+  }
+  
+  on Wait(1.1) TRIGGER_ONCE {
+    SetPlatform(PLATFORM_12, ACTOR_NODRAW)
+    SetPlatform(PLATFORM_13, ACTOR_NODRAW)
+    SetPlatform(PLATFORM_14, ACTOR_NODRAW)
+    SetToggle(0)
+  }
+  
+  on Wait(1.6) TRIGGER_ONCE {
+    SetPlatform(PLATFORM_12, ACTOR_NODRAW)
+    SetPlatform(PLATFORM_13, ACTOR_NODRAW)
+    SetPlatform(PLATFORM_14, ACTOR_DRAW)
+    ResetToggle(0)
+  }
+  
+  on Wait(1.9) TRIGGER_ONCE {
+    SetPlatform(PLATFORM_12, ACTOR_NODRAW)
+    SetPlatform(PLATFORM_13, ACTOR_DRAW)
+    SetPlatform(PLATFORM_14, ACTOR_NODRAW)
+  }
+}
+
+on AND(IsFlagSet(0), OR(FrogOnPlatform(MAIN_PLAYER, PLATFORM_12), OR(FrogOnPlatform(MAIN_PLAYER, PLATFORM_13), FrogOnPlatform(MAIN_PLAYER, PLATFORM_14)))) TRIGGER_START {
+  Debug("frog dead from death")
+  KillFrog(MAIN_PLAYER, 3)
+  AnimatePlayer(MAIN_PLAYER, 34, ANIMATION_NONE, 0.25)
+}
+
+on CounterEquals(1, 0) TRIGGER_ONCE {
+  SetEnemy(20, ACTOR_NODRAW)
+  SetEnemyFlag(20, ENEMYFLAG_NODAMAGE)
+  SetPlatform(20, ACTOR_VISIBLE)
+  SetEnemy(22, ACTOR_NODRAW)
+  SetEnemyFlag(22, ENEMYFLAG_NODAMAGE)
+  SetPlatform(21, ACTOR_VISIBLE)
+  SetEnemy(30, ACTOR_INVISIBLE)
+  SetEnemy(23, ACTOR_NODRAW)
+  SetEnemyFlag(23, ENEMYFLAG_NODAMAGE)
+  SetEnemy(24, ACTOR_NODRAW)
+  SetEnemyFlag(24, ENEMYFLAG_NODAMAGE)
+}
+
+on CounterEquals(1, 2) TRIGGER_ONCE {
+  Debug("baby 2")
+  SetEnemy(20, ACTOR_DRAW)
+  ResetEnemyFlag(20, ENEMYFLAG_NODAMAGE)
+  SetPlatform(20, ACTOR_INVISIBLE)
+}
+
+on CounterEquals(1, 3) TRIGGER_ONCE {
+  Debug("baby 3")
+  PlaySound("snakerattle.wav", ACTOR_NONE)
+  ScaleEnemySpeed(21, 0.5)
+  ScalePlatformSpeed(22, 0.7)
+  SetPlatform(21, ACTOR_INVISIBLE)
+  SetEnemy(30, ACTOR_VISIBLE)
+  SetEnemy(23, ACTOR_DRAW)
+  ResetEnemyFlag(23, ENEMYFLAG_NODAMAGE)
+  
+  on RandomWait(5, 10) TRIGGER_START 
+    PlaySound("snakerattle.wav", ACTOR_NONE)
+}
+
+on CounterEquals(1, 4) TRIGGER_ONCE {
+  Debug("baby 4")
+  ScaleEnemySpeed(19, 0.5)
+  ScalePlatformSpeed(19, 0.7)
+  ScalePlatformSpeed(22, 0.7)
+  SetEnemy(22, ACTOR_DRAW)
+  ResetEnemyFlag(22, ENEMYFLAG_NODAMAGE)
+  SetEnemy(24, ACTOR_DRAW)
+  ResetEnemyFlag(24, ENEMYFLAG_NODAMAGE)
+}

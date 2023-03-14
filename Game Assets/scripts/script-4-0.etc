@@ -1,0 +1,65 @@
+#define PLATFORM_1 1
+#define ENEMY_1 1
+
+on FrogOnPath(MAIN_PLAYER, 300) TRIGGER_START 
+  NoFog()
+
+on FrogOnPath(MAIN_PLAYER, 301) TRIGGER_START 
+  Fog(0, 0, 0, 0, 120)
+
+on FrogOnPath(MAIN_PLAYER, 104) TRIGGER_START 
+  Fog(0, 0, 0, 40, 120)
+
+on FrogOnPath(MAIN_PLAYER, 105) TRIGGER_START 
+  NoFog()
+
+on FrogOnPath(MAIN_PLAYER, 302) TRIGGER_START 
+  Fog(0, 0, 0, 40, 120)
+
+SetTileState(101, TILE_BARRED)
+SetEnemy(3, ACTOR_VISIBLE)
+
+on FrogOnPath(MAIN_PLAYER, 102) TRIGGER_ONCE {
+  PlaySound("plunger.wav", ACTOR_NONE)
+  Animate(2, 1, ANIMATION_NONE, 0.2)
+  Animate(3, 1, ANIMATION_NONE, 0.15)
+  SetTileState(101, TILE_NORMAL)
+  SfxOnPlaceholder(101, 14, 300, 2, 1, 15)
+  SfxOnPlaceholder(100, 9, 150, 2, 1, 6)
+  PlaySound("explosion.wav", ACTOR_NONE)
+  
+  on Wait(1.5) TRIGGER_ONCE 
+    SetEnemy(3, ACTOR_INVISIBLE)
+}
+
+on PlatformAtPathNode(PLATFORM_1, 1) TRIGGER_START {
+  SetPlatform(PLATFORM_1, ACTOR_STOP)
+  SetEnemy(ENEMY_1, ACTOR_STOP)
+}
+
+SetToggle(0)
+
+on NOT(FrogIsDead(MAIN_PLAYER)) TRIGGER_START {
+  MovePlatform(PLATFORM_1, 1)
+  SetPlatform(PLATFORM_1, ACTOR_STOP)
+  MoveEnemy(ENEMY_1, 1)
+  SetEnemy(ENEMY_1, ACTOR_STOP)
+  StopSound("lp_ridecart.wav")
+  SetToggle(0)
+}
+
+on AND(IsFlagSet(0), FrogOnPlatform(MAIN_PLAYER, PLATFORM_1)) TRIGGER_START {
+  SetPlatform(PLATFORM_1, ACTOR_MOVE)
+  SetEnemy(ENEMY_1, ACTOR_MOVE)
+  PlaySound("lp_ridecart.wav", ACTOR_NONE)
+  ResetToggle(0)
+}
+
+on PlatformAtPathNode(PLATFORM_1, 85) TRIGGER_START {
+  SetPlatform(PLATFORM_1, ACTOR_STOP)
+  SetEnemy(ENEMY_1, ACTOR_STOP)
+  StopSound("lp_ridecart.wav")
+}
+
+on FrogOnPath(MAIN_PLAYER, 103) TRIGGER_ONCE 
+  SetStartTilePlayer(103)

@@ -1,0 +1,16 @@
+SetEnemy(1, ACTOR_DRAW)
+SetEnemy(2, ACTOR_NODRAW)
+
+on Wait(2) TRIGGER_START {
+  SetEnemy(1, ACTOR_NODRAW)
+  SetEnemy(2, ACTOR_DRAW)
+}
+
+on Wait(1) TRIGGER_ONCE {
+  on Wait(2) TRIGGER_START {
+    SetEnemy(1, ACTOR_DRAW)
+    SetEnemy(2, ACTOR_NODRAW)
+  }
+}
+
+Fog(0, 0, 0, 40, 100)

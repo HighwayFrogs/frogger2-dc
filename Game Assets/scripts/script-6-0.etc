@@ -1,0 +1,230 @@
+#define ENEMY_50 50
+#define ENEMY_4 4
+#define ENEMY_5 5
+#define ENEMY_10 10
+#define ENEMY_11 11
+#define ENEMY_12 12
+
+on FrogOnPath(MAIN_PLAYER, 300) TRIGGER_START 
+  Fog(0, 0, 0, 0, 100)
+
+on FrogOnPath(MAIN_PLAYER, 301) TRIGGER_START 
+  NoFog()
+
+on FrogOnPath(MAIN_PLAYER, 304) TRIGGER_START 
+  Fog(0, 0, 0, 0, 100)
+
+on FrogOnPath(MAIN_PLAYER, 305) TRIGGER_START 
+  NoFog()
+
+on FrogOnPath(MAIN_PLAYER, 306) TRIGGER_START 
+  Fog(0, 0, 0, 0, 80)
+
+on FrogOnPath(MAIN_PLAYER, 302) TRIGGER_START 
+  Fog(0, 0, 0, 0, 90)
+
+on RandomWait(4, 10) TRIGGER_START 
+  PlaySound("batcall.wav", ACTOR_NONE)
+
+ResetToggle(5)
+SetEnemy(ENEMY_50, ACTOR_NODRAW)
+SetEnemyFlag(ENEMY_50, ENEMYFLAG_NODAMAGE)
+MoveEnemy(ENEMY_50, 0)
+
+on AND(NOT(IsFlagSet(5)), FrogOnPath(MAIN_PLAYER, 117)) TRIGGER_START {
+  SetEnemy(ENEMY_50, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_50, ACTOR_DRAW)
+  ResetEnemyFlag(ENEMY_50, ENEMYFLAG_NODAMAGE)
+  SetEnemy(ENEMY_50, ACTOR_MOVE)
+  SFXOnEnemy(ENEMY_50, 9, 120, 1, 1, 15)
+  PlaySound("gghost.wav", ACTOR_NONE)
+  SetToggle(5)
+}
+
+on OR(FrogOnPath(MAIN_PLAYER, 118), FrogOnPath(MAIN_PLAYER, 130)) TRIGGER_START {
+  if IsFlagSet(5) {
+    SFXOnEnemy(ENEMY_50, 9, 120, 1, 1, 15)
+    PlaySound("gghost.wav", ACTOR_NONE)
+  }
+  
+  SetEnemy(ENEMY_50, ACTOR_NODRAW)
+  SetEnemyFlag(ENEMY_50, ENEMYFLAG_NODAMAGE)
+  MoveEnemy(ENEMY_50, 0)
+  SetEnemy(ENEMY_50, ACTOR_STOP)
+  ResetToggle(5)
+}
+
+on FrogOnPath(MAIN_PLAYER, 120) TRIGGER_ONCE 
+  SetStartTilePlayer(120)
+
+on FrogOnPath(MAIN_PLAYER, 121) TRIGGER_ONCE 
+  SetStartTilePlayer(121)
+
+on FrogOnPath(MAIN_PLAYER, 122) TRIGGER_ONCE 
+  SetStartTilePlayer(122)
+
+on FrogOnPath(MAIN_PLAYER, 123) TRIGGER_ONCE 
+  SetStartTilePlayer(123)
+
+on FrogOnPlatform(MAIN_PLAYER, 30) TRIGGER_START 
+  PlaySound("splodge2.wav", ACTOR_NONE)
+
+on FrogOnPlatform(MAIN_PLAYER, 31) TRIGGER_START 
+  PlaySound("splodge2.wav", ACTOR_NONE)
+
+on FrogOnPlatform(MAIN_PLAYER, 32) TRIGGER_START 
+  PlaySound("splodge2.wav", ACTOR_NONE)
+
+on FrogOnPlatform(MAIN_PLAYER, 33) TRIGGER_START 
+  PlaySound("splodge2.wav", ACTOR_NONE)
+
+on FrogOnPlatform(MAIN_PLAYER, 34) TRIGGER_START 
+  PlaySound("splodge2.wav", ACTOR_NONE)
+
+on FrogOnPlatform(MAIN_PLAYER, 35) TRIGGER_START 
+  PlaySound("splodge2.wav", ACTOR_NONE)
+
+on FrogOnPlatform(MAIN_PLAYER, 36) TRIGGER_START 
+  PlaySound("splodge2.wav", ACTOR_NONE)
+
+on FrogOnPlatform(MAIN_PLAYER, 37) TRIGGER_START 
+  PlaySound("splodge2.wav", ACTOR_NONE)
+
+on FrogOnPlatform(MAIN_PLAYER, 38) TRIGGER_START 
+  PlaySound("splodge2.wav", ACTOR_NONE)
+
+on FrogOnPlatform(MAIN_PLAYER, 39) TRIGGER_START 
+  PlaySound("splodge2.wav", ACTOR_NONE)
+
+on FrogOnPlatform(MAIN_PLAYER, 40) TRIGGER_START 
+  PlaySound("splodge2.wav", ACTOR_NONE)
+
+SetEnemy(ENEMY_4, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_4, 0)
+SetEnemy(ENEMY_5, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_5, 0)
+ResetToggle(3)
+
+on AND(NOT(IsFlagSet(3)), FrogOnPath(MAIN_PLAYER, 107)) TRIGGER_START {
+  SetEnemy(ENEMY_4, ACTOR_MOVE)
+  SetEnemy(ENEMY_4, ACTOR_VISIBLE)
+  SFXOnEnemy(ENEMY_4, 9, 120, 1, 1, 15)
+  PlaySound("gghost.wav", ACTOR_NONE)
+}
+
+on AND(NOT(IsFlagSet(3)), FrogOnPath(MAIN_PLAYER, 112)) TRIGGER_START {
+  SetEnemy(ENEMY_5, ACTOR_MOVE)
+  SetEnemy(ENEMY_5, ACTOR_VISIBLE)
+  SFXOnEnemy(ENEMY_5, 9, 120, 1, 1, 15)
+  PlaySound("gghost.wav", ACTOR_NONE)
+}
+
+on FrogIsDead(MAIN_PLAYER) TRIGGER_START {
+  SetEnemy(ENEMY_4, ACTOR_INVISIBLE)
+  MoveEnemy(ENEMY_4, 0)
+  SFXOnEnemy(ENEMY_4, 9, 120, 1, 1, 15)
+  SetEnemy(ENEMY_5, ACTOR_INVISIBLE)
+  MoveEnemy(ENEMY_5, 0)
+  SFXOnEnemy(ENEMY_5, 9, 120, 1, 1, 15)
+  SetEnemy(ENEMY_50, ACTOR_INVISIBLE)
+  MoveEnemy(ENEMY_50, 0)
+  SFXOnEnemy(ENEMY_50, 9, 120, 1, 1, 15)
+  ResetToggle(5)
+}
+
+on FrogOnPath(MAIN_PLAYER, 103) TRIGGER_ONCE {
+  SetToggle(3)
+  SetEnemy(ENEMY_4, ACTOR_INVISIBLE)
+  SetEnemy(ENEMY_5, ACTOR_INVISIBLE)
+  SFXOnEnemy(ENEMY_4, 9, 120, 1, 1, 15)
+  SFXOnEnemy(ENEMY_5, 9, 120, 1, 1, 15)
+  PlaySound("gghost.wav", ACTOR_NONE)
+}
+
+SetTileState(106, TILE_BARRED)
+SetTileState(107, TILE_BARRED)
+SetTileState(108, TILE_BARRED)
+SetEnemy(20, ACTOR_VISIBLE)
+SetEnemy(21, ACTOR_VISIBLE)
+ResetToggle(0)
+ResetToggle(4)
+
+on FrogOnPath(MAIN_PLAYER, 100) TRIGGER_ONCE 
+  SetToggle(0)
+
+on FrogOnPath(MAIN_PLAYER, 101) TRIGGER_ONCE 
+  SetToggle(4)
+
+on AND(IsFlagSet(0), IsFlagSet(4)) TRIGGER_ONCE {
+  SFXOnEnemy(20, 9, 120, 1, 1, 15)
+  SFXOnEnemy(21, 9, 120, 1, 1, 15)
+  PlaySound("gghost.wav", ACTOR_NONE)
+  PlaySound("gghost.wav", ACTOR_NONE)
+  SetEnemy(20, ACTOR_INVISIBLE)
+  SetEnemy(21, ACTOR_INVISIBLE)
+  Animate(1, 1, ANIMATION_NONE, 0.2)
+  SetTileState(106, TILE_NORMAL)
+  PlaySound("mgate2.wav", ACTOR_NONE)
+}
+
+ResetToggle(1)
+
+on FrogOnPath(MAIN_PLAYER, 102) TRIGGER_ONCE 
+  SetToggle(1)
+
+on AND(IsFlagSet(1), FrogOnPath(MAIN_PLAYER, 104)) TRIGGER_ONCE {
+  Animate(2, 1, ANIMATION_NONE, 0.2)
+  SetTileState(107, TILE_NORMAL)
+  PlaySound("mgate2.wav", ACTOR_NONE)
+}
+
+ResetToggle(2)
+
+on FrogOnPath(MAIN_PLAYER, 103) TRIGGER_ONCE 
+  SetToggle(2)
+
+on AND(IsFlagSet(2), FrogOnPath(MAIN_PLAYER, 105)) TRIGGER_ONCE {
+  Animate(3, 1, ANIMATION_NONE, 0.2)
+  SetTileState(108, TILE_NORMAL)
+  PlaySound("mgate2.wav", ACTOR_NONE)
+}
+
+SetEnemy(ENEMY_10, ACTOR_STOP)
+SetEnemy(ENEMY_11, ACTOR_STOP)
+SetEnemy(ENEMY_12, ACTOR_STOP)
+SetEnemy(ENEMY_10, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_11, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_12, ACTOR_INVISIBLE)
+
+on FrogOnPath(MAIN_PLAYER, 109) TRIGGER_START {
+  SetEnemy(ENEMY_10, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_10, ACTOR_MOVE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 110) TRIGGER_START {
+  SetEnemy(ENEMY_11, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_11, ACTOR_MOVE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 111) TRIGGER_START {
+  SetEnemy(ENEMY_12, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_12, ACTOR_MOVE)
+}
+
+on EnemyAtPathNode(ENEMY_10, 8) TRIGGER_START 
+  PlaySound("batcall.wav", 10)
+
+on EnemyAtPathNode(ENEMY_11, 5) TRIGGER_START 
+  PlaySound("batcall.wav", 11)
+
+on EnemyAtPathNode(ENEMY_12, 4) TRIGGER_START 
+  PlaySound("batcall.wav", 12)
+
+on FrogOnPath(MAIN_PLAYER, 113) TRIGGER_START 
+  SetEnemy(ENEMY_10, ACTOR_INVISIBLE)
+
+on FrogOnPath(MAIN_PLAYER, 114) TRIGGER_START 
+  SetEnemy(ENEMY_11, ACTOR_INVISIBLE)
+
+on FrogOnPath(MAIN_PLAYER, 115) TRIGGER_START 
+  SetEnemy(ENEMY_12, ACTOR_INVISIBLE)

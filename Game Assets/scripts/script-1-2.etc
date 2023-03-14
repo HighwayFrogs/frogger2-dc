@@ -1,0 +1,104 @@
+#define ENEMY_10 10
+#define ENEMY_11 11
+
+on EnemyAtPathNode(2, 0) TRIGGER_START 
+  Animate(1, 0, ANIMATION_NONE, 0.2)
+
+on EnemyAtPathNode(3, 0) TRIGGER_START 
+  Animate(1, 0, ANIMATION_NONE, 0.2)
+
+on EnemyAtPathNode(4, 0) TRIGGER_START 
+  Animate(1, 0, ANIMATION_NONE, 0.2)
+
+on EnemyAtPathNode(5, 0) TRIGGER_START 
+  Animate(1, 0, ANIMATION_NONE, 0.2)
+
+on EnemyAtPathNode(6, 0) TRIGGER_START 
+  Animate(1, 0, ANIMATION_NONE, 0.2)
+
+on EnemyAtPathNode(7, 0) TRIGGER_START 
+  Animate(1, 0, ANIMATION_NONE, 0.2)
+
+on FrogOnPath(MAIN_PLAYER, 100) TRIGGER_ONCE 
+  SetStartTilePlayer(100)
+
+SetEnemy(ENEMY_10, ACTOR_STOP)
+SetEnemy(ENEMY_11, ACTOR_STOP)
+SetEnemy(12, ACTOR_STOP)
+SetTileState(115, TILE_BARRED)
+SetTileState(116, TILE_BARRED)
+SetTileState(117, TILE_BARRED)
+ResetToggle(0)
+ResetToggle(1)
+ResetToggle(2)
+
+on FrogOnPath(MAIN_PLAYER, 118) TRIGGER_ONCE 
+  SetToggle(0)
+
+on FrogOnPath(MAIN_PLAYER, 119) TRIGGER_ONCE 
+  SetToggle(1)
+
+on FrogOnPath(MAIN_PLAYER, 120) TRIGGER_ONCE 
+  SetToggle(2)
+
+on AND(FrogOnPath(MAIN_PLAYER, 121), AND(IsFlagSet(2), AND(IsFlagSet(0), IsFlagSet(1)))) TRIGGER_ONCE {
+  SetEnemy(ENEMY_10, ACTOR_MOVE)
+  ShakeCamera(6, 0.1)
+}
+
+on EnemyAtPathNode(ENEMY_10, 1) TRIGGER_ONCE 
+  SetEnemy(ENEMY_11, ACTOR_MOVE)
+
+on EnemyAtPathNode(ENEMY_11, 4) TRIGGER_ONCE {
+  SetEnemy(12, ACTOR_MOVE)
+  
+  on Wait(0.5) TRIGGER_ONCE 
+    SetTileState(115, TILE_NORMAL)
+  
+  on Wait(1.5) TRIGGER_ONCE 
+    SetTileState(116, TILE_NORMAL)
+  
+  on Wait(2.5) TRIGGER_ONCE 
+    SetTileState(117, TILE_NORMAL)
+}
+
+on EnemyAtPathNode(ENEMY_10, 5) TRIGGER_ONCE 
+  SetEnemy(ENEMY_10, ACTOR_INVISIBLE)
+
+on EnemyAtPathNode(ENEMY_11, 0) TRIGGER_ONCE 
+  SetEnemy(ENEMY_11, ACTOR_INVISIBLE)
+
+on EnemyAtPathNode(12, 5) TRIGGER_ONCE 
+  SetEnemy(12, ACTOR_INVISIBLE)
+
+Fog(0, 0, 0, 40, 110)
+
+on FrogOnPath(MAIN_PLAYER, 110) TRIGGER_START 
+  Fog(0, 0, 0, 40, 100)
+
+on FrogOnPath(MAIN_PLAYER, 111) TRIGGER_START 
+  Fog(0, 0, 0, 40, 120)
+
+on FrogOnPath(MAIN_PLAYER, 105) TRIGGER_START 
+  Fog(0, 0, 0, 40, 100)
+
+on FrogOnPath(MAIN_PLAYER, 106) TRIGGER_START 
+  NoFog()
+
+on FrogOnPath(MAIN_PLAYER, 107) TRIGGER_START 
+  Fog(0, 0, 0, 40, 100)
+
+on FrogOnPath(MAIN_PLAYER, 100) TRIGGER_START 
+  NoFog()
+
+on FrogOnPlatform(MAIN_PLAYER, 20) TRIGGER_START 
+  PlaySound("crock01.wav", ACTOR_NONE)
+
+on FrogOnPlatform(MAIN_PLAYER, 21) TRIGGER_START 
+  PlaySound("crock02.wav", ACTOR_NONE)
+
+on FrogOnPath(MAIN_PLAYER, 101) TRIGGER_START 
+  TeleportPlayer(MAIN_PLAYER, 102, 0.2)
+
+on FrogOnPath(MAIN_PLAYER, 103) TRIGGER_START 
+  TeleportPlayer(MAIN_PLAYER, 104, 0.2)

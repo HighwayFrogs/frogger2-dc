@@ -1,0 +1,77 @@
+#define ENEMY_6 6
+
+on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_START 
+  SetStartTilePlayer(ENEMY_6)
+
+SetCounter(1, 0)
+
+on AND(FrogOnPath(MAIN_PLAYER, 1), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 2), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 3), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 4), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 5), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on RandomWait(6, 12) TRIGGER_START 
+  PlaySound("racecar.wav", ACTOR_NONE)
+
+on RandomWait(5, 13) TRIGGER_START 
+  PlaySound("carhorn1.wav", ACTOR_NONE)
+
+on RandomWait(7, 15) TRIGGER_START 
+  PlaySound("lorryhorn.wav", ACTOR_NONE)
+
+on CounterEquals(1, 0) TRIGGER_ONCE {
+  SetPlatform(20, ACTOR_VISIBLE)
+  SetPlatform(21, ACTOR_VISIBLE)
+  SetPlatform(22, ACTOR_VISIBLE)
+}
+
+on CounterEquals(1, 2) TRIGGER_ONCE 
+  SetPlatform(20, ACTOR_INVISIBLE)
+
+on CounterEquals(1, 3) TRIGGER_ONCE {
+  SetPlatform(21, ACTOR_INVISIBLE)
+  ScaleEnemySpeed(23, 0.7)
+  ScaleEnemySpeed(24, 0.7)
+  ScaleEnemySpeed(25, 0.7)
+  ScaleEnemySpeed(26, 0.7)
+  ScaleEnemySpeed(27, 0.7)
+  ScaleEnemySpeed(28, 0.7)
+  ScaleEnemySpeed(29, 0.7)
+  ScaleEnemySpeed(30, 0.7)
+  ScaleEnemySpeed(31, 0.7)
+  ScaleEnemySpeed(32, 0.7)
+  ScaleEnemySpeed(33, 0.7)
+}
+
+on CounterEquals(1, 4) TRIGGER_ONCE 
+  SetPlatform(22, ACTOR_INVISIBLE)

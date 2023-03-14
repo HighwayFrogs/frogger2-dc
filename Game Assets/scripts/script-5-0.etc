@@ -1,0 +1,13 @@
+Fog(0, 0, 0, 0, 200)
+SetPlatform(1, ACTOR_STOP)
+SetPlatform(2, ACTOR_STOP)
+
+on FrogOnPlatform(MAIN_PLAYER, 100) TRIGGER_ONCE {
+  SetPlatform(2, ACTOR_MOVE)
+  PlaySound("button1.wav", ACTOR_NONE)
+}
+
+on FrogOnPlatform(MAIN_PLAYER, 101) TRIGGER_ONCE {
+  SetPlatform(1, ACTOR_MOVE)
+  PlaySound("button1.wav", ACTOR_NONE)
+}

@@ -1,0 +1,233 @@
+#define ENEMY_7 7
+#define ENEMY_6 6
+#define ENEMY_8 8
+#define ENEMY_20 20
+
+Fog(0, 0, 0, 0, 100)
+
+on FrogOnPath(MAIN_PLAYER, 301) TRIGGER_START 
+  Fog(0, 0, 0, 0, 100)
+
+on FrogOnPath(MAIN_PLAYER, 302) TRIGGER_START 
+  NoFog()
+
+on FrogOnPath(MAIN_PLAYER, 303) TRIGGER_START 
+  Fog(0, 0, 0, 0, 100)
+
+on FrogOnPath(MAIN_PLAYER, 304) TRIGGER_START 
+  NoFog()
+
+on FrogOnPath(MAIN_PLAYER, 305) TRIGGER_START 
+  Fog(0, 0, 0, 0, 115)
+
+on FrogOnPath(MAIN_PLAYER, 306) TRIGGER_START 
+  Fog(0, 0, 0, 0, 100)
+
+on FrogOnPath(MAIN_PLAYER, 307) TRIGGER_START 
+  Fog(0, 0, 0, 0, 60)
+
+ResetToggle(1)
+ResetToggle(2)
+ResetToggle(3)
+ResetToggle(4)
+ResetToggle(5)
+ResetToggle(6)
+ResetToggle(12)
+
+on AND(NOT(FrogIsDead(MAIN_PLAYER)), NOT(IsFlagSet(1))) TRIGGER_START {
+  Animate(11, 0, ANIMATION_NONE, 1)
+  ResetToggle(12)
+  SetPlatform(1, ACTOR_VISIBLE)
+  SetPlatform(2, ACTOR_VISIBLE)
+  SetPlatform(3, ACTOR_VISIBLE)
+  SetPlatform(4, ACTOR_VISIBLE)
+  SetPlatform(5, ACTOR_VISIBLE)
+  ResetToggle(2)
+  ResetToggle(3)
+  ResetToggle(4)
+  ResetToggle(5)
+  ResetToggle(6)
+}
+
+on FrogOnPath(MAIN_PLAYER, 105) TRIGGER_ONCE 
+  SetToggle(1)
+
+on AND(NOT(IsFlagSet(2)), FrogOnPath(MAIN_PLAYER, 100)) TRIGGER_START {
+  Collapse(1, 0.1)
+  ShakeCamera(8, 0.2)
+  SfxOnPlaceholder(1, 9, 150, 3, 1, 4)
+  PlaySound("tilesexpl1.wav", ACTOR_NONE)
+  SetToggle(2)
+}
+
+on AND(NOT(IsFlagSet(3)), FrogOnPath(MAIN_PLAYER, 101)) TRIGGER_START {
+  Collapse(2, 0.1)
+  ShakeCamera(8, 0.2)
+  SfxOnPlaceholder(2, 9, 150, 3, 1, 4)
+  PlaySound("tilesexpl1.wav", ACTOR_NONE)
+  SetToggle(3)
+}
+
+on AND(NOT(IsFlagSet(4)), FrogOnPath(MAIN_PLAYER, 102)) TRIGGER_START {
+  Collapse(3, 0.1)
+  ShakeCamera(8, 0.2)
+  SfxOnPlaceholder(3, 9, 150, 3, 1, 4)
+  PlaySound("tilesexpl1.wav", ACTOR_NONE)
+  SetToggle(4)
+}
+
+on AND(NOT(IsFlagSet(5)), FrogOnPath(MAIN_PLAYER, 103)) TRIGGER_START {
+  Collapse(4, 0.1)
+  ShakeCamera(8, 0.2)
+  SfxOnPlaceholder(4, 9, 150, 3, 1, 4)
+  PlaySound("tilesexpl1.wav", ACTOR_NONE)
+  SetToggle(5)
+}
+
+on AND(NOT(IsFlagSet(6)), FrogOnPath(MAIN_PLAYER, 104)) TRIGGER_START {
+  Collapse(5, 0.1)
+  ShakeCamera(8, 0.2)
+  SfxOnPlaceholder(5, 9, 150, 3, 1, 4)
+  PlaySound("tilesexpl1.wav", ACTOR_NONE)
+  SetToggle(6)
+}
+
+SetTileState(106, TILE_BARRED)
+
+on AND(IsFlagSet(1), AND(NOT(IsFlagSet(12)), FrogOnPath(MAIN_PLAYER, 107))) TRIGGER_START {
+  Animate(11, 1, ANIMATION_NONE, 0.15)
+  SetTileState(106, TILE_NORMAL)
+  SetToggle(12)
+  PlaySound("bigdoor.wav", ACTOR_NONE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 121) TRIGGER_ONCE 
+  SetStartTilePlayer(121)
+
+on FrogOnPath(MAIN_PLAYER, 122) TRIGGER_ONCE 
+  SetStartTilePlayer(122)
+
+ResetToggle(0)
+ResetToggle(7)
+ResetToggle(8)
+ResetToggle(9)
+ResetToggle(10)
+ResetToggle(11)
+SetEnemy(ENEMY_7, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_7, 0)
+
+on AND(NOT(IsFlagSet(0)), AND(NOT(IsFlagSet(7)), FrogOnPath(MAIN_PLAYER, 108))) TRIGGER_START {
+  SFXOnEnemy(ENEMY_7, 9, 120, 1, 1, 15)
+  PlaySound("gghost.wav", ACTOR_NONE)
+  PlaySound("evillaugh.wav", ACTOR_NONE)
+  SetEnemy(ENEMY_7, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_7, ACTOR_MOVE)
+  SetToggle(7)
+}
+
+on FrogOnPath(MAIN_PLAYER, 109) TRIGGER_START {
+  SetEnemy(ENEMY_7, ACTOR_INVISIBLE)
+  MoveEnemy(ENEMY_7, 0)
+  MoveEnemy(ENEMY_6, 1)
+  ResetToggle(7)
+  
+  if NOT(IsFlagSet(0)) {
+    ResetToggle(8)
+    ResetToggle(9)
+    ResetToggle(10)
+    ResetToggle(11)
+  }
+}
+
+MoveEnemy(ENEMY_6, 1)
+SetPlatform(8, ACTOR_VISIBLE)
+SetEnemy(9, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_8, ACTOR_STOP)
+SetTileState(120, TILE_BARRED)
+SetTileState(123, TILE_BARRED)
+SetTileState(124, TILE_BARRED)
+
+on AND(EnemyAtPathNode(ENEMY_6, 1), AND(NOT(IsFlagSet(8)), FrogOnPath(MAIN_PLAYER, 110))) TRIGGER_START {
+  MoveEnemy(ENEMY_6, 2)
+  SfxOnPlaceholder(114, 9, 120, 1, 1, 15)
+  SfxOnPlaceholder(115, 9, 120, 1, 1, 15)
+  PlaySound("evillaugh.wav", ACTOR_NONE)
+  SetToggle(8)
+}
+
+on AND(EnemyAtPathNode(ENEMY_6, 2), AND(NOT(IsFlagSet(9)), FrogOnPath(MAIN_PLAYER, 111))) TRIGGER_START {
+  MoveEnemy(ENEMY_6, 3)
+  SfxOnPlaceholder(115, 9, 120, 1, 1, 15)
+  SfxOnPlaceholder(10, 9, 120, 1, 1, 15)
+  PlaySound("evillaugh.wav", ACTOR_NONE)
+  SetToggle(9)
+}
+
+on AND(EnemyAtPathNode(ENEMY_6, 3), AND(NOT(IsFlagSet(10)), FrogOnPath(MAIN_PLAYER, 112))) TRIGGER_START {
+  MoveEnemy(ENEMY_6, 4)
+  SfxOnPlaceholder(10, 9, 120, 1, 1, 15)
+  SfxOnPlaceholder(117, 9, 120, 1, 1, 15)
+  PlaySound("evillaugh.wav", ACTOR_NONE)
+  SetToggle(10)
+}
+
+on AND(EnemyAtPathNode(ENEMY_6, 4), AND(NOT(IsFlagSet(11)), FrogOnPath(MAIN_PLAYER, 113))) TRIGGER_START {
+  MoveEnemy(ENEMY_6, 5)
+  SfxOnPlaceholder(117, 9, 120, 1, 1, 15)
+  SfxOnPlaceholder(118, 9, 120, 1, 1, 15)
+  PlaySound("evillaugh.wav", ACTOR_NONE)
+  SetToggle(11)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 118), AND(NOT(IsFlagSet(0)), EnemyAtPathNode(ENEMY_6, 5))) TRIGGER_ONCE {
+  SetEnemy(ENEMY_7, ACTOR_INVISIBLE)
+  SFXOnEnemy(ENEMY_7, 9, 120, 1, 1, 15)
+  SetToggle(0)
+}
+
+on FrogIsDead(MAIN_PLAYER) TRIGGER_START {
+  MoveEnemy(ENEMY_6, 1)
+  MoveEnemy(ENEMY_7, 0)
+  SetEnemy(ENEMY_7, ACTOR_INVISIBLE)
+}
+
+on AND(IsFlagSet(0), FrogOnPath(MAIN_PLAYER, 109)) TRIGGER_ONCE {
+  SetEnemy(ENEMY_8, ACTOR_MOVE)
+  PlaySound("stonewalk.wav", ACTOR_NONE)
+  ShakeCamera(5, 0.1)
+  
+  on EnemyAtPathNode(ENEMY_8, 1) TRIGGER_ONCE 
+    SetTileState(120, TILE_NORMAL)
+  
+  on EnemyAtPathNode(ENEMY_8, 2) TRIGGER_ONCE 
+    SetTileState(123, TILE_NORMAL)
+  
+  on EnemyAtPathNode(ENEMY_8, 3) TRIGGER_ONCE 
+    SetTileState(124, TILE_NORMAL)
+  
+  on EnemyAtPathNode(ENEMY_8, 3) TRIGGER_ONCE {
+    SetEnemy(ENEMY_8, ACTOR_INVISIBLE)
+    SetEnemy(9, ACTOR_VISIBLE)
+  }
+}
+
+SetEnemy(ENEMY_20, ACTOR_INVISIBLE)
+
+on AND(IsFlagSet(7), RandomWait(0.5, 4)) TRIGGER_START {
+  PlaySound("lightning.wav", ACTOR_NONE)
+  SetEnemy(ENEMY_20, ACTOR_VISIBLE)
+  
+  on Wait(0.04999) TRIGGER_ONCE {
+    SetEnemy(ENEMY_20, ACTOR_INVISIBLE)
+    
+    on Wait(0.04999) TRIGGER_ONCE {
+      SetEnemy(ENEMY_20, ACTOR_VISIBLE)
+      
+      on Wait(0.04999) TRIGGER_ONCE 
+        SetEnemy(ENEMY_20, ACTOR_INVISIBLE)
+    }
+  }
+}
+
+on FrogOnPath(MAIN_PLAYER, 300) TRIGGER_ONCE 
+  SetStartTilePlayer(300)

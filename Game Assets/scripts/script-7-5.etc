@@ -1,0 +1,75 @@
+#define ENEMY_6 6
+
+on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_START 
+  SetStartTilePlayer(ENEMY_6)
+
+SetCounter(1, 0)
+
+on AND(FrogOnPath(MAIN_PLAYER, 1), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 2), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 3), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 4), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 5), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on RandomWait(3, 8) TRIGGER_START 
+  PlaySound("splash.wav", ACTOR_NONE)
+
+on CounterEquals(1, 0) TRIGGER_ONCE {
+  SetEnemy(20, ACTOR_NODRAW)
+  SetEnemy(21, ACTOR_NODRAW)
+  SetEnemy(22, ACTOR_NODRAW)
+  SetEnemy(23, ACTOR_NODRAW)
+  SetTileState(30, TILE_DEADLY)
+  SetTileState(31, TILE_DEADLY)
+  SetTileState(32, TILE_DEADLY)
+  SetTileState(33, TILE_DEADLY)
+}
+
+on CounterEquals(1, 1) TRIGGER_ONCE {
+  SetEnemy(20, ACTOR_DRAW)
+  SetTileState(30, TILE_BARRED)
+}
+
+on CounterEquals(1, 2) TRIGGER_ONCE {
+  SetEnemy(21, ACTOR_DRAW)
+  SetTileState(31, TILE_BARRED)
+}
+
+on CounterEquals(1, 3) TRIGGER_ONCE {
+  SetEnemy(22, ACTOR_DRAW)
+  SetTileState(32, TILE_BARRED)
+}
+
+on CounterEquals(1, 4) TRIGGER_ONCE {
+  SetEnemy(23, ACTOR_DRAW)
+  SetTileState(33, TILE_BARRED)
+}

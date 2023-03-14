@@ -1,0 +1,594 @@
+#define ENEMY_172 172
+#define ENEMY_173 173
+#define ENEMY_174 174
+#define ENEMY_175 175
+#define ENEMY_176 176
+#define ENEMY_177 177
+#define ENEMY_178 178
+#define ENEMY_179 179
+#define ENEMY_110 110
+#define PLATFORM_1 1
+#define PLATFORM_2 2
+#define PLATFORM_3 3
+#define PLATFORM_4 4
+#define PLATFORM_5 5
+#define PLATFORM_6 6
+
+CameoModeOff()
+
+on FrogOnPath(MAIN_PLAYER, 300) TRIGGER_START 
+  Fog(0, 0, 0, 0, 100)
+
+on FrogOnPath(MAIN_PLAYER, 301) TRIGGER_START 
+  NoFog()
+
+on FrogOnPath(MAIN_PLAYER, 115) TRIGGER_START 
+  Fog(0, 0, 0, 40, 120)
+
+ShakeCamera(0, 0)
+Animate(170, 0, ANIMATION_LOOP, 0.25)
+MoveEnemy(ENEMY_172, 0)
+SetEnemy(ENEMY_172, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_173, 0)
+SetEnemy(ENEMY_173, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_174, 0)
+SetEnemy(ENEMY_174, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_175, 0)
+SetEnemy(ENEMY_175, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_176, 0)
+SetEnemy(ENEMY_176, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_177, 0)
+SetEnemy(ENEMY_177, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_178, 0)
+SetEnemy(ENEMY_178, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_179, 0)
+SetEnemy(ENEMY_179, ACTOR_INVISIBLE)
+
+on FrogOnPath(MAIN_PLAYER, 104) TRIGGER_ONCE {
+  ShakeCamera(5, 0.5)
+  
+  on Wait(1) TRIGGER_ONCE 
+    ShakeCamera(10, 0.29999)
+}
+
+on FrogOnPath(MAIN_PLAYER, 109) TRIGGER_ONCE {
+  SetEnemy(ENEMY_172, ACTOR_VISIBLE)
+  ShakeCamera(8, 0.5)
+  PlaySound("rumble.wav", ACTOR_NONE)
+  
+  on Wait(1) TRIGGER_ONCE {
+    SetEnemy(ENEMY_174, ACTOR_VISIBLE)
+    PlaySound("fireball4.wav", ACTOR_NONE)
+  }
+  
+  on Wait(1.5) TRIGGER_ONCE 
+    SetEnemy(ENEMY_175, ACTOR_VISIBLE)
+}
+
+on EnemyAtPathNode(ENEMY_172, 1) TRIGGER_ONCE {
+  SetEnemy(ENEMY_172, ACTOR_INVISIBLE)
+  ShakeCamera(8, 0.29999)
+}
+
+on EnemyAtPathNode(ENEMY_174, 1) TRIGGER_ONCE {
+  SetEnemy(ENEMY_174, ACTOR_INVISIBLE)
+  ShakeCamera(12, 0.29999)
+}
+
+on EnemyAtPathNode(ENEMY_175, 1) TRIGGER_ONCE {
+  SetEnemy(ENEMY_175, ACTOR_INVISIBLE)
+  ShakeCamera(15, 0.29999)
+  PlaySound("pcollapse.wav", ACTOR_NONE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 122) TRIGGER_ONCE {
+  SetEnemy(ENEMY_179, ACTOR_VISIBLE)
+  ShakeCamera(8, 0.5)
+  PlaySound("rockfall.wav", ACTOR_NONE)
+}
+
+on EnemyAtPathNode(ENEMY_179, 1) TRIGGER_ONCE {
+  SetEnemy(ENEMY_179, ACTOR_INVISIBLE)
+  ShakeCamera(15, 0.29999)
+}
+
+ResetToggle(2)
+
+on FrogOnPath(MAIN_PLAYER, ENEMY_110) TRIGGER_ONCE {
+  Animate(170, 1, ANIMATION_NONE, 0.25)
+  SetToggle(2)
+}
+
+on FrogOnPath(MAIN_PLAYER, ENEMY_110) TRIGGER_ONCE 
+  on AND(IsFlagSet(2), RandomWait(1, 4)) TRIGGER_START 
+    ShakeCamera(8, 0.29999)
+
+on FrogOnPath(MAIN_PLAYER, 114) TRIGGER_ONCE {
+  ResetToggle(2)
+  ShakeCamera(10, 0.1)
+  PlaySound("pcollapse.wav", ACTOR_NONE)
+  PlaySound("lp_rumbles1.wav", ACTOR_NONE)
+  
+  on Wait(1) TRIGGER_START 
+    ShakeCamera(4, 0)
+}
+
+SetEnemy(180, ACTOR_INVISIBLE)
+SetEnemy(181, ACTOR_VISIBLE)
+SetEnemy(182, ACTOR_INVISIBLE)
+SetEnemy(183, ACTOR_VISIBLE)
+
+on FrogOnPath(MAIN_PLAYER, 115) TRIGGER_ONCE {
+  SetEnemy(ENEMY_173, ACTOR_VISIBLE)
+  PlaySound("lp_button1.wav", ACTOR_NONE)
+  ShakeCamera(10, 0.29999)
+  PlaySound("rumble.wav", ACTOR_NONE)
+  Animate(170, 2, ANIMATION_NONE, 0.25)
+  Animate(170, 3, ANIMATION_LOOP_AND_QUEUE, 0.25)
+  PlaySound("lp_fire.wav", ACTOR_NONE)
+  
+  on Wait(1) TRIGGER_START 
+    ShakeCamera(10, 0)
+  
+  on Wait(1.5) TRIGGER_START {
+    SetEnemy(180, ACTOR_INVISIBLE)
+    SetEnemy(181, ACTOR_VISIBLE)
+    SetEnemy(182, ACTOR_VISIBLE)
+    SetEnemy(183, ACTOR_INVISIBLE)
+    
+    on Wait(0.75) TRIGGER_ONCE {
+      SetEnemy(181, ACTOR_INVISIBLE)
+      SetEnemy(180, ACTOR_VISIBLE)
+      SetEnemy(183, ACTOR_VISIBLE)
+      SetEnemy(182, ACTOR_INVISIBLE)
+    }
+  }
+}
+
+on EnemyAtPathNode(ENEMY_173, 1) TRIGGER_ONCE 
+  SetEnemy(ENEMY_173, ACTOR_INVISIBLE)
+
+on FrogOnPath(MAIN_PLAYER, 121) TRIGGER_ONCE {
+  SetEnemy(ENEMY_176, ACTOR_VISIBLE)
+  PlaySound("rockfall.wav", ACTOR_NONE)
+  
+  on Wait(1) TRIGGER_ONCE {
+    SetEnemy(ENEMY_177, ACTOR_VISIBLE)
+    PlaySound("rumble.wav", ACTOR_NONE)
+  }
+  
+  on Wait(2) TRIGGER_ONCE {
+    SetEnemy(ENEMY_178, ACTOR_VISIBLE)
+    PlaySound("fireball4.wav", ACTOR_NONE)
+  }
+}
+
+on EnemyAtPathNode(ENEMY_176, 1) TRIGGER_ONCE {
+  SetEnemy(ENEMY_176, ACTOR_INVISIBLE)
+  PlaySound("pcollapse.wav", ACTOR_NONE)
+}
+
+on EnemyAtPathNode(ENEMY_177, 1) TRIGGER_ONCE 
+  SetEnemy(ENEMY_177, ACTOR_INVISIBLE)
+
+on EnemyAtPathNode(ENEMY_178, 1) TRIGGER_ONCE {
+  SetEnemy(ENEMY_178, ACTOR_INVISIBLE)
+  PlaySound("pcollapse.wav", ACTOR_NONE)
+}
+
+SetStartTilePlayer(99)
+SetPlatform(PLATFORM_1, ACTOR_STOP)
+
+on FrogOnPlatform(MAIN_PLAYER, PLATFORM_1) TRIGGER_ONCE {
+  CameoModeOn()
+  SetPlatform(PLATFORM_1, ACTOR_MOVE)
+  PlaySound("tube2.wav", ACTOR_NONE)
+}
+
+on AND(FrogOnPlatform(MAIN_PLAYER, PLATFORM_1), PlatformAtPathNode(PLATFORM_1, 1)) TRIGGER_START {
+  SpringP(MAIN_PLAYER, 104, 150, 0.5)
+  SetPlatform(PLATFORM_1, ACTOR_STOP)
+  PlaySound("tubespit.wav", ACTOR_NONE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 104) TRIGGER_ONCE {
+  CameoModeOff()
+  SetStartTilePlayer(104)
+}
+
+SetPlatform(PLATFORM_2, ACTOR_STOP)
+
+on FrogOnPlatform(MAIN_PLAYER, PLATFORM_2) TRIGGER_ONCE {
+  CameoModeOn()
+  SetPlatform(PLATFORM_2, ACTOR_MOVE)
+  PlaySound("tube2.wav", ACTOR_NONE)
+}
+
+on AND(FrogOnPlatform(MAIN_PLAYER, PLATFORM_2), PlatformAtPathNode(PLATFORM_2, 1)) TRIGGER_START {
+  SpringP(MAIN_PLAYER, 109, 150, 0.5)
+  SetPlatform(PLATFORM_2, ACTOR_STOP)
+  PlaySound("tubespit.wav", ACTOR_NONE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 109) TRIGGER_ONCE {
+  CameoModeOff()
+  SetStartTilePlayer(109)
+}
+
+SetPlatform(PLATFORM_3, ACTOR_STOP)
+
+on FrogOnPlatform(MAIN_PLAYER, PLATFORM_3) TRIGGER_ONCE {
+  CameoModeOn()
+  SetPlatform(PLATFORM_3, ACTOR_MOVE)
+  PlaySound("tube2.wav", ACTOR_NONE)
+}
+
+on AND(FrogOnPlatform(MAIN_PLAYER, PLATFORM_3), PlatformAtPathNode(PLATFORM_3, 1)) TRIGGER_START {
+  SpringP(MAIN_PLAYER, ENEMY_110, 150, 0.5)
+  SetPlatform(PLATFORM_3, ACTOR_STOP)
+  PlaySound("tubespit.wav", ACTOR_NONE)
+}
+
+on FrogOnPath(MAIN_PLAYER, ENEMY_110) TRIGGER_ONCE {
+  CameoModeOff()
+  SetStartTilePlayer(ENEMY_110)
+}
+
+on FrogOnPath(MAIN_PLAYER, 116) TRIGGER_ONCE 
+  SetStartTilePlayer(116)
+
+SetPlatform(PLATFORM_4, ACTOR_STOP)
+
+on FrogOnPlatform(MAIN_PLAYER, PLATFORM_4) TRIGGER_ONCE {
+  CameoModeOn()
+  SetPlatform(PLATFORM_4, ACTOR_MOVE)
+  PlaySound("tube2.wav", ACTOR_NONE)
+}
+
+on AND(FrogOnPlatform(MAIN_PLAYER, PLATFORM_4), PlatformAtPathNode(PLATFORM_4, 1)) TRIGGER_START {
+  SpringP(MAIN_PLAYER, 114, 150, 0.5)
+  SetPlatform(PLATFORM_4, ACTOR_STOP)
+  PlaySound("tubespit.wav", ACTOR_NONE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 114) TRIGGER_ONCE {
+  CameoModeOff()
+  SetStartTilePlayer(114)
+}
+
+SetPlatform(PLATFORM_5, ACTOR_STOP)
+
+on FrogOnPlatform(MAIN_PLAYER, PLATFORM_5) TRIGGER_ONCE {
+  CameoModeOn()
+  SetPlatform(PLATFORM_5, ACTOR_MOVE)
+  PlaySound("tube2.wav", ACTOR_NONE)
+}
+
+on AND(FrogOnPlatform(MAIN_PLAYER, PLATFORM_5), PlatformAtPathNode(PLATFORM_5, 1)) TRIGGER_START {
+  SpringP(MAIN_PLAYER, 160, 150, 0.5)
+  SetPlatform(PLATFORM_5, ACTOR_STOP)
+  PlaySound("tubespit.wav", ACTOR_NONE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 160) TRIGGER_START {
+  if NOT(FrogIsDead(MAIN_PLAYER)) {
+    CameoModeOff()
+    SetStartTilePlayer(160)
+  }
+  
+  if FrogIsDead(MAIN_PLAYER) {
+    MovePlatform(PLATFORM_5, 0)
+    SetPlatform(PLATFORM_5, ACTOR_STOP)
+    
+    on FrogOnPlatform(MAIN_PLAYER, PLATFORM_5) TRIGGER_ONCE {
+      CameoModeOn()
+      SetPlatform(PLATFORM_5, ACTOR_MOVE)
+      PlaySound("tube2.wav", ACTOR_NONE)
+    }
+  }
+}
+
+SetPlatform(PLATFORM_6, ACTOR_STOP)
+
+on FrogOnPlatform(MAIN_PLAYER, PLATFORM_6) TRIGGER_ONCE {
+  CameoModeOn()
+  SetPlatform(PLATFORM_6, ACTOR_MOVE)
+  PlaySound("tube2.wav", ACTOR_NONE)
+}
+
+on AND(FrogOnPlatform(MAIN_PLAYER, PLATFORM_6), PlatformAtPathNode(PLATFORM_6, 1)) TRIGGER_START 
+  PlaySound("tubespit.wav", ACTOR_NONE)
+
+on AND(FrogOnPlatform(MAIN_PLAYER, PLATFORM_6), PlatformAtPathNode(PLATFORM_6, 10)) TRIGGER_START {
+  SetPlatform(PLATFORM_6, ACTOR_STOP)
+  
+  on Wait(1) TRIGGER_ONCE {
+    EndLevel()
+    CameoModeOff()
+  }
+}
+
+SetEnemy(3, ACTOR_STOP)
+
+on Wait(0.5) TRIGGER_ONCE 
+  SetEnemy(3, ACTOR_MOVE)
+
+on Wait(3.75) TRIGGER_ONCE {
+  SetTileState(100, TILE_NORMAL)
+  
+  on Wait(3.5) TRIGGER_START 
+    SetTileState(100, TILE_NORMAL)
+}
+
+on Wait(2.5) TRIGGER_ONCE {
+  SetTileState(100, TILE_BARRED)
+  
+  on Wait(3.5) TRIGGER_START {
+    SetTileState(100, TILE_BARRED)
+    
+    on Wait(0.25) TRIGGER_ONCE 
+      PlaySound("pthump1.wav", 100)
+    
+    on Wait(1) TRIGGER_ONCE 
+      PlaySound("clunk.wav", 100)
+  }
+}
+
+SetTileState(101, TILE_NORMAL)
+
+on Wait(2.125) TRIGGER_ONCE {
+  SetTileState(101, TILE_BARRED)
+  
+  on Wait(2) TRIGGER_START {
+    SetTileState(101, TILE_BARRED)
+    
+    on Wait(0.125) TRIGGER_ONCE 
+      PlaySound("pthump2.wav", 101)
+    
+    on Wait(0.875) TRIGGER_ONCE 
+      PlaySound("prise1.wav", 101)
+  }
+}
+
+on Wait(1.125) TRIGGER_ONCE {
+  SetTileState(101, TILE_NORMAL)
+  
+  on Wait(2) TRIGGER_START 
+    SetTileState(101, TILE_NORMAL)
+}
+
+on Wait(3.125) TRIGGER_ONCE {
+  SetTileState(102, TILE_NORMAL)
+  
+  on Wait(2.5) TRIGGER_START 
+    SetTileState(102, TILE_NORMAL)
+}
+
+on Wait(2.125) TRIGGER_ONCE {
+  SetTileState(102, TILE_BARRED)
+  
+  on Wait(2.5) TRIGGER_START {
+    SetTileState(102, TILE_BARRED)
+    
+    on Wait(0.125) TRIGGER_ONCE 
+      PlaySound("pthump1.wav", 102)
+    
+    on Wait(0.875) TRIGGER_ONCE 
+      PlaySound("clunk.wav", 102)
+  }
+}
+
+SetTileState(103, TILE_NORMAL)
+
+on Wait(2.875) TRIGGER_ONCE {
+  SetTileState(103, TILE_BARRED)
+  
+  on Wait(2.5) TRIGGER_START {
+    SetTileState(103, TILE_BARRED)
+    
+    on Wait(0.125) TRIGGER_ONCE 
+      PlaySound("pthump2.wav", 103)
+    
+    on Wait(0.875) TRIGGER_ONCE 
+      PlaySound("prise1.wav", 103)
+  }
+}
+
+on Wait(1.375) TRIGGER_ONCE {
+  SetTileState(103, TILE_NORMAL)
+  
+  on Wait(2.5) TRIGGER_START 
+    SetTileState(103, TILE_NORMAL)
+}
+
+on Wait(3.25) TRIGGER_ONCE {
+  SetTileState(105, TILE_NORMAL)
+  
+  on Wait(3) TRIGGER_START 
+    SetTileState(105, TILE_NORMAL)
+}
+
+on Wait(2) TRIGGER_ONCE {
+  SetTileState(105, TILE_BARRED)
+  
+  on Wait(3) TRIGGER_START {
+    SetTileState(105, TILE_BARRED)
+    
+    on Wait(0.25) TRIGGER_ONCE 
+      PlaySound("pthump1.wav", 105)
+    
+    on Wait(1) TRIGGER_ONCE 
+      PlaySound("clunk.wav", 105)
+  }
+}
+
+SetTileState(106, TILE_NORMAL)
+
+on Wait(3.5) TRIGGER_ONCE {
+  SetTileState(106, TILE_BARRED)
+  
+  on Wait(3) TRIGGER_START {
+    SetTileState(106, TILE_BARRED)
+    
+    on Wait(0.25) TRIGGER_ONCE 
+      PlaySound("pthump2.wav", 106)
+    
+    on Wait(1) TRIGGER_ONCE 
+      PlaySound("prise1.wav", 106)
+  }
+}
+
+on Wait(1.75) TRIGGER_ONCE {
+  SetTileState(106, TILE_NORMAL)
+  
+  on Wait(3) TRIGGER_START 
+    SetTileState(106, TILE_NORMAL)
+}
+
+on Wait(2.125) TRIGGER_ONCE {
+  SetTileState(107, TILE_NORMAL)
+  
+  on Wait(2) TRIGGER_START 
+    SetTileState(107, TILE_NORMAL)
+}
+
+on Wait(1.125) TRIGGER_ONCE {
+  SetTileState(107, TILE_BARRED)
+  
+  on Wait(2) TRIGGER_START {
+    SetTileState(107, TILE_BARRED)
+    
+    on Wait(0.125) TRIGGER_ONCE 
+      PlaySound("pthump1.wav", 107)
+    
+    on Wait(0.875) TRIGGER_ONCE 
+      PlaySound("clunk.wav", 107)
+  }
+}
+
+SetTileState(108, TILE_NORMAL)
+
+on Wait(2.875) TRIGGER_ONCE {
+  SetTileState(108, TILE_BARRED)
+  
+  on Wait(2.5) TRIGGER_START {
+    SetTileState(108, TILE_BARRED)
+    
+    on Wait(0.125) TRIGGER_ONCE 
+      PlaySound("pthump2.wav", 108)
+    
+    on Wait(0.875) TRIGGER_ONCE 
+      PlaySound("prise1.wav", 108)
+  }
+}
+
+on Wait(3.75) TRIGGER_ONCE {
+  SetTileState(108, TILE_NORMAL)
+  
+  on Wait(2.5) TRIGGER_START 
+    SetTileState(108, TILE_NORMAL)
+}
+
+SetTileState(117, TILE_NORMAL)
+
+on Wait(6.2) TRIGGER_ONCE {
+  SetTileState(117, TILE_BARRED)
+  
+  on Wait(5) TRIGGER_START {
+    SetTileState(117, TILE_BARRED)
+    
+    on Wait(0.29999) TRIGGER_ONCE 
+      PlaySound("pthump2.wav", 117)
+    
+    on Wait(1.3) TRIGGER_ONCE 
+      PlaySound("prise1.wav", 117)
+  }
+}
+
+on Wait(2.8) TRIGGER_ONCE {
+  SetTileState(117, TILE_NORMAL)
+  
+  on Wait(5) TRIGGER_START 
+    SetTileState(117, TILE_NORMAL)
+}
+
+ResetToggle(0)
+
+on FrogOnPath(MAIN_PLAYER, 118) TRIGGER_START 
+  SetToggle(0)
+
+on FrogIsDead(MAIN_PLAYER) TRIGGER_START 
+  ResetToggle(0)
+
+on Wait(2.25) TRIGGER_ONCE {
+  SetTileState(118, TILE_NORMAL)
+  
+  on AND(Wait(2), NOT(IsFlagSet(0))) TRIGGER_START 
+    SetTileState(118, TILE_NORMAL)
+}
+
+on Wait(1.25) TRIGGER_ONCE {
+  SetTileState(118, TILE_BARRED)
+  
+  on AND(Wait(2), NOT(IsFlagSet(0))) TRIGGER_START {
+    SetTileState(118, TILE_BARRED)
+    
+    on Wait(0.25) TRIGGER_ONCE 
+      PlaySound("pthump1.wav", 118)
+    
+    on Wait(0.75) TRIGGER_ONCE 
+      PlaySound("clunk.wav", 118)
+  }
+}
+
+SetTileState(118, TILE_BARRED)
+
+on Wait(2.125) TRIGGER_ONCE {
+  SetTileState(118, TILE_NORMAL)
+  
+  on AND(Wait(2), IsFlagSet(0)) TRIGGER_START 
+    SetTileState(118, TILE_NORMAL)
+}
+
+on Wait(1.375) TRIGGER_ONCE {
+  SetTileState(118, TILE_BARRED)
+  
+  on AND(Wait(2), IsFlagSet(0)) TRIGGER_START {
+    SetTileState(118, TILE_BARRED)
+    
+    on Wait(0.125) TRIGGER_ONCE 
+      PlaySound("pthump1.wav", 118)
+    
+    on Wait(0.625) TRIGGER_ONCE 
+      PlaySound("clunk.wav", 118)
+  }
+}
+
+SetEnemy(10, ACTOR_STOP)
+
+on Wait(3) TRIGGER_ONCE 
+  SetEnemy(10, ACTOR_MOVE)
+
+SetTileState(123, TILE_BARRED)
+SetEnemy(190, ACTOR_VISIBLE)
+Animate(190, 0, ANIMATION_NONE, 0.25)
+
+on FrogOnPlatform(MAIN_PLAYER, 191) TRIGGER_ONCE {
+  PlaySound("tube2.wav", ACTOR_NONE)
+  
+  on Wait(0.5) TRIGGER_ONCE 
+    Animate(190, 1, ANIMATION_NONE, 0.25)
+  
+  on Wait(1) TRIGGER_ONCE {
+    SetEnemy(190, ACTOR_INVISIBLE)
+    SetTileState(123, TILE_NORMAL)
+  }
+}
+
+on FrogOnPath(MAIN_PLAYER, 120) TRIGGER_ONCE {
+  StopSound("lp_button1.wav")
+  StopSound("lp_fire.wav")
+  StopSound("lp_rumbles.wav")
+  EndLevel()
+  CameoModeOff()
+}

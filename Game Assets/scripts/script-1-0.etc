@@ -1,0 +1,207 @@
+#define ENEMY_5 5
+#define ENEMY_7 7
+
+on FrogOnPath(MAIN_PLAYER, 300) TRIGGER_START 
+  Fog(0, 0, 0, 40, 100)
+
+on FrogOnPath(MAIN_PLAYER, 301) TRIGGER_START 
+  Fog(0, 0, 0, 40, 120)
+
+on FrogOnPath(MAIN_PLAYER, 302) TRIGGER_START 
+  NoFog()
+
+on FrogOnPath(MAIN_PLAYER, 303) TRIGGER_START 
+  Fog(0, 0, 0, 40, 120)
+
+on FrogOnPath(MAIN_PLAYER, 304) TRIGGER_START 
+  NoFog()
+
+on FrogOnPath(MAIN_PLAYER, 305) TRIGGER_START 
+  Fog(0, 0, 0, 40, 85)
+
+on FrogOnPath(MAIN_PLAYER, 306) TRIGGER_START 
+  Fog(0, 0, 0, 40, 90)
+
+on FrogOnPath(MAIN_PLAYER, 307) TRIGGER_START 
+  Fog(0, 0, 0, 40, 95)
+
+on FrogOnPath(MAIN_PLAYER, 105) TRIGGER_START 
+  Fog(0, 0, 0, 40, 100)
+
+on FrogOnPath(MAIN_PLAYER, 101) TRIGGER_START 
+  Fog(0, 0, 0, 40, 120)
+
+on EnemyAtPathNode(16, 1) TRIGGER_START {
+  SFXOnEnemy(16, 9, 120, 1, 1, 2)
+  PlaySound("canball.wav", 16)
+}
+
+on EnemyAtPathNode(200, 1) TRIGGER_START {
+  SFXOnEnemy(200, 9, 120, 1, 1, 2)
+  PlaySound("canball.wav", 200)
+}
+
+on FrogOnPlatform(MAIN_PLAYER, 50) TRIGGER_START 
+  PlaySound("crock01.wav", ACTOR_NONE)
+
+on FrogOnPlatform(MAIN_PLAYER, 51) TRIGGER_START 
+  PlaySound("crock02.wav", ACTOR_NONE)
+
+SetEnemy(30, ACTOR_VISIBLE)
+SetEnemy(30, ACTOR_STOP)
+SetTileState(123, TILE_BARRED)
+SetTileState(124, TILE_BARRED)
+SetTileState(125, TILE_BARRED)
+ResetToggle(5)
+ResetToggle(6)
+
+on FrogOnPath(MAIN_PLAYER, 120) TRIGGER_ONCE 
+  SetToggle(5)
+
+on FrogOnPath(MAIN_PLAYER, 121) TRIGGER_ONCE 
+  SetToggle(6)
+
+on AND(FrogOnPath(MAIN_PLAYER, 122), AND(IsFlagSet(6), IsFlagSet(5))) TRIGGER_ONCE {
+  SetEnemy(30, ACTOR_MOVE)
+  PlaySound("stonewalk.wav", ACTOR_NONE)
+  ShakeCamera(8, 0.1)
+  SfxOnPlaceholder(123, 9, 80, 1, 0, 2)
+  SfxOnPlaceholder(124, 9, 100, 1, 0, 3)
+  SfxOnPlaceholder(125, 9, 100, 1, 0, 4)
+  
+  on Wait(0.2) TRIGGER_ONCE 
+    SetTileState(123, TILE_NORMAL)
+  
+  on Wait(1.2) TRIGGER_ONCE 
+    SetTileState(124, TILE_NORMAL)
+  
+  on Wait(2.2) TRIGGER_ONCE 
+    SetTileState(125, TILE_NORMAL)
+  
+  on Wait(5) TRIGGER_ONCE 
+    SetEnemy(30, ACTOR_INVISIBLE)
+}
+
+ResetToggle(7)
+
+on FrogOnPath(MAIN_PLAYER, 160) TRIGGER_ONCE 
+  SetToggle(7)
+
+on AND(FrogOnPlatform(MAIN_PLAYER, 4), IsFlagSet(7)) TRIGGER_ONCE {
+  SetPlatform(3, ACTOR_MOVE)
+  SetPlatform(4, ACTOR_MOVE)
+  PlaySound("switchA.wav", ACTOR_NONE)
+  PlaySound("stonewalk.wav", ACTOR_NONE)
+  SfxOnPNoClip(102, 9, 400, 1, 0, 3)
+}
+
+ResetToggle(0)
+SetTileState(100, TILE_NORMAL)
+ResetToggle(3)
+SetEnemy(200, ACTOR_VISIBLE)
+
+on AND(NOT(FrogIsDead(MAIN_PLAYER)), NOT(IsFlagSet(3))) TRIGGER_START {
+  StopSound("lp_boulder.wav")
+  ResetToggle(1)
+  SetEnemy(8, ACTOR_INVISIBLE)
+  ResetToggle(2)
+  SetEnemy(10, ACTOR_INVISIBLE)
+  MoveEnemy(ENEMY_5, 0)
+  MoveEnemy(ENEMY_7, 2)
+  SetEnemy(ENEMY_5, ACTOR_INVISIBLE)
+  SetEnemy(ENEMY_7, ACTOR_INVISIBLE)
+  ShakeCamera(0, 0)
+  
+  if IsFlagSet(0) {
+    on Wait(1) TRIGGER_ONCE {
+      SetEnemy(ENEMY_5, ACTOR_VISIBLE)
+      SetEnemy(ENEMY_7, ACTOR_VISIBLE)
+      PlaySound("lp_boulder.wav", ACTOR_NONE)
+      ShakeCamera(10, 0)
+    }
+  }
+}
+
+on EnemyAtPathNode(ENEMY_5, 42) TRIGGER_START {
+  SetEnemy(ENEMY_5, ACTOR_INVISIBLE)
+  SetEnemy(ENEMY_7, ACTOR_INVISIBLE)
+  ShakeCamera(30, 0.4)
+  StopSound("lp_boulder.wav")
+}
+
+on AND(FrogOnPlatform(MAIN_PLAYER, 9), NOT(IsFlagSet(0))) TRIGGER_ONCE {
+  SetPlatform(9, ACTOR_MOVE)
+  SetPlatform(6, ACTOR_MOVE)
+  SetEnemy(ENEMY_5, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_7, ACTOR_VISIBLE)
+  SetEnemy(200, ACTOR_INVISIBLE)
+  SetTileState(100, TILE_BARRED)
+  PlaySound("lp_boulder.wav", ACTOR_NONE)
+  ShakeCamera(10, 0)
+  SetToggle(0)
+}
+
+Animate(8, 0, ANIMATION_NONE, 0.25)
+
+on FrogOnPlatform(MAIN_PLAYER, 3) TRIGGER_START {
+  if AND(IsFlagSet(0), NOT(IsFlagSet(1))) {
+    SetToggle(1)
+    SetEnemy(8, ACTOR_VISIBLE)
+    Animate(8, 1, ANIMATION_NONE, 0.25)
+    PlaySound("Rockfall.wav", ACTOR_NONE)
+    SfxOnPlaceholder(8, 14, 400, 2.5, 0, 2)
+    SfxOnPlaceholder(8, 9, 300, 2.2, 0, 2)
+  }
+}
+
+Animate(10, 0, ANIMATION_NONE, 0.25)
+
+on FrogOnPath(MAIN_PLAYER, 105) TRIGGER_START {
+  if AND(IsFlagSet(0), NOT(IsFlagSet(2))) {
+    SetToggle(2)
+    SetEnemy(10, ACTOR_VISIBLE)
+    Animate(10, 1, ANIMATION_NONE, 0.4)
+    PlaySound("Rockfall.wav", ACTOR_NONE)
+    SfxOnPlaceholder(106, 14, 300, 1, 0, 3)
+    SfxOnPlaceholder(106, 9, 200, 1, 0, 3)
+  }
+}
+
+ResetToggle(4)
+
+on FrogOnPlatform(MAIN_PLAYER, 18) TRIGGER_START {
+  Collapse(18, 0.5)
+  SetToggle(4)
+  PlaySound("Tilesexpl2.wav", ACTOR_NONE)
+}
+
+on FrogOnPlatform(MAIN_PLAYER, 19) TRIGGER_START {
+  Collapse(19, 0.5)
+  PlaySound("Tilesexpl2.wav", ACTOR_NONE)
+}
+
+on FrogOnPlatform(MAIN_PLAYER, 20) TRIGGER_START {
+  Collapse(20, 0.5)
+  PlaySound("Tilesexpl2.wav", ACTOR_NONE)
+}
+
+on FrogOnPlatform(MAIN_PLAYER, 21) TRIGGER_START {
+  Collapse(21, 0.5)
+  PlaySound("Tilesexpl2.wav", ACTOR_NONE)
+}
+
+on FrogOnPlatform(MAIN_PLAYER, 22) TRIGGER_START {
+  Collapse(22, 0.5)
+  PlaySound("Tilesexpl2.wav", ACTOR_NONE)
+}
+
+on AND(IsFlagSet(4), FrogIsDead(MAIN_PLAYER)) TRIGGER_START {
+  SetPlatform(18, ACTOR_VISIBLE)
+  SetPlatform(19, ACTOR_VISIBLE)
+  SetPlatform(20, ACTOR_VISIBLE)
+  SetPlatform(21, ACTOR_VISIBLE)
+  SetPlatform(22, ACTOR_VISIBLE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 109) TRIGGER_ONCE 
+  SetToggle(3)

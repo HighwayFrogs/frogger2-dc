@@ -1,0 +1,13 @@
+NoFog()
+
+on FrogOnPath(MAIN_PLAYER, 300) TRIGGER_START 
+  Fog(0, 0, 0, 0, 120)
+
+on FrogOnPath(MAIN_PLAYER, 301) TRIGGER_START 
+  NoFog()
+
+on FrogOnPath(MAIN_PLAYER, 303) TRIGGER_START 
+  Fog(0, 0, 0, 0, 250)
+
+on FrogOnPath(MAIN_PLAYER, 304) TRIGGER_START 
+  Fog(0, 0, 0, 0, 250)

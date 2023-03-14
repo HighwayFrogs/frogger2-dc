@@ -1,0 +1,184 @@
+#define ENEMY_100 100
+
+on FrogOnPath(MAIN_PLAYER, 300) TRIGGER_START 
+  NoFog()
+
+on FrogOnPath(MAIN_PLAYER, 301) TRIGGER_START 
+  Fog(0, 0, 0, 0, 120)
+
+SetStartTilePlayer(ENEMY_100)
+
+on OR(FrogOnPath(MAIN_PLAYER, 111), OR(FrogOnPath(MAIN_PLAYER, 112), OR(FrogOnPath(MAIN_PLAYER, 113), FrogOnPath(MAIN_PLAYER, 114)))) TRIGGER_START 
+  SetStartTilePlayer(ENEMY_100)
+
+on FrogOnPath(MAIN_PLAYER, 105) TRIGGER_START 
+  SetStartTilePlayer(105)
+
+on FrogOnPath(MAIN_PLAYER, 106) TRIGGER_START 
+  SetStartTilePlayer(106)
+
+on FrogOnPath(MAIN_PLAYER, 107) TRIGGER_START 
+  SetStartTilePlayer(107)
+
+on FrogOnPath(MAIN_PLAYER, 108) TRIGGER_START 
+  SetStartTilePlayer(108)
+
+SetTileState(101, TILE_BARRED)
+SetTileState(115, TILE_BARRED)
+SetTileState(118, TILE_BARRED)
+SetTileState(119, TILE_BARRED)
+SetPlatform(20, ACTOR_VISIBLE)
+SetPlatform(21, ACTOR_INVISIBLE)
+SetPlatform(22, ACTOR_VISIBLE)
+SetPlatform(23, ACTOR_INVISIBLE)
+SetPlatform(25, ACTOR_VISIBLE)
+SetPlatform(24, ACTOR_INVISIBLE)
+SetPlatform(26, ACTOR_VISIBLE)
+SetPlatform(27, ACTOR_INVISIBLE)
+Animate(28, 0, ANIMATION_NONE, 0.25)
+Animate(29, 0, ANIMATION_NONE, 0.25)
+Animate(3, 0, ANIMATION_NONE, 0.25)
+SetEnemy(28, ACTOR_VISIBLE)
+SetEnemy(29, ACTOR_VISIBLE)
+SetEnemy(3, ACTOR_VISIBLE)
+SetPlatform(30, ACTOR_STOP)
+ResetToggle(3)
+ResetToggle(4)
+ResetToggle(5)
+ResetToggle(6)
+ResetToggle(7)
+
+on FrogOnPath(MAIN_PLAYER, 105) TRIGGER_START 
+  SetToggle(3)
+
+on FrogOnPath(MAIN_PLAYER, 111) TRIGGER_START 
+  ResetToggle(3)
+
+on FrogOnPath(MAIN_PLAYER, 101) TRIGGER_START 
+  on Wait(2) TRIGGER_ONCE 
+    ResetToggle(3)
+
+on AND(NOT(IsFlagSet(4)), FrogOnPlatform(MAIN_PLAYER, 20)) TRIGGER_START {
+  SetPlatform(20, ACTOR_INVISIBLE)
+  SetPlatform(21, ACTOR_VISIBLE)
+  PlaySound("button.wav", ACTOR_NONE)
+  Animate(28, 1, ANIMATION_NONE, 0.25)
+  PlaySound("shieldout.wav", ACTOR_NONE)
+  SetToggle(4)
+  SetTileState(118, TILE_NORMAL)
+  
+  on Wait(1) TRIGGER_ONCE 
+    SetEnemy(28, ACTOR_INVISIBLE)
+}
+
+on AND(NOT(IsFlagSet(5)), FrogOnPlatform(MAIN_PLAYER, 22)) TRIGGER_START {
+  SetPlatform(22, ACTOR_INVISIBLE)
+  SetPlatform(23, ACTOR_VISIBLE)
+  PlaySound("button.wav", ACTOR_NONE)
+  Animate(29, 1, ANIMATION_NONE, 0.25)
+  PlaySound("shieldout.wav", ACTOR_NONE)
+  SetToggle(5)
+  SetTileState(119, TILE_NORMAL)
+  
+  on Wait(1) TRIGGER_ONCE 
+    SetEnemy(29, ACTOR_INVISIBLE)
+}
+
+on AND(NOT(IsFlagSet(6)), FrogOnPlatform(MAIN_PLAYER, 25)) TRIGGER_START {
+  SetPlatform(25, ACTOR_INVISIBLE)
+  SetPlatform(24, ACTOR_VISIBLE)
+  PlaySound("button.wav", ACTOR_NONE)
+  SetPlatform(30, ACTOR_MOVE)
+  PlaySound("gangway.wav", ACTOR_NONE)
+  SetToggle(6)
+}
+
+on AND(NOT(IsFlagSet(7)), FrogOnPlatform(MAIN_PLAYER, 26)) TRIGGER_START {
+  SetPlatform(26, ACTOR_INVISIBLE)
+  SetPlatform(27, ACTOR_VISIBLE)
+  PlaySound("button.wav", ACTOR_NONE)
+  Animate(3, 1, ANIMATION_NONE, 0.25)
+  PlaySound("shieldout.wav", ACTOR_NONE)
+  SetToggle(7)
+  SetTileState(101, TILE_NORMAL)
+  SetTileState(115, TILE_JOIN)
+  
+  on Wait(1) TRIGGER_ONCE 
+    SetEnemy(3, ACTOR_INVISIBLE)
+}
+
+on AND(NOT(FrogIsDead(MAIN_PLAYER)), IsFlagSet(3)) TRIGGER_START {
+  SetTileState(101, TILE_BARRED)
+  SetTileState(115, TILE_BARRED)
+  SetTileState(118, TILE_BARRED)
+  SetTileState(119, TILE_BARRED)
+  SetPlatform(20, ACTOR_VISIBLE)
+  SetPlatform(21, ACTOR_INVISIBLE)
+  SetPlatform(22, ACTOR_VISIBLE)
+  SetPlatform(23, ACTOR_INVISIBLE)
+  SetPlatform(25, ACTOR_VISIBLE)
+  SetPlatform(24, ACTOR_INVISIBLE)
+  SetPlatform(26, ACTOR_VISIBLE)
+  SetPlatform(27, ACTOR_INVISIBLE)
+  Animate(28, 0, ANIMATION_NONE, 0.25)
+  Animate(29, 0, ANIMATION_NONE, 0.25)
+  Animate(3, 0, ANIMATION_NONE, 0.25)
+  SetEnemy(28, ACTOR_VISIBLE)
+  SetEnemy(29, ACTOR_VISIBLE)
+  SetEnemy(3, ACTOR_VISIBLE)
+  ResetToggle(4)
+  ResetToggle(5)
+  ResetToggle(6)
+  ResetToggle(7)
+}
+
+on OR(NOT(IsFlagSet(3)), AND(FrogIsDead(MAIN_PLAYER), IsFlagSet(3))) TRIGGER_START {
+  if IsFlagSet(4) 
+    Animate(28, 0, ANIMATION_NONE, 0.25)
+  
+  if IsFlagSet(5) 
+    Animate(29, 0, ANIMATION_NONE, 0.25)
+  
+  if IsFlagSet(6) {
+    MovePlatform(30, 0)
+    SetPlatform(30, ACTOR_STOP)
+  }
+  
+  if IsFlagSet(7) 
+    Animate(3, 0, ANIMATION_NONE, 0.25)
+}
+
+on OR(FrogOnPath(MAIN_PLAYER, 101), OR(FrogOnPath(MAIN_PLAYER, 102), OR(FrogOnPath(MAIN_PLAYER, 103), FrogOnPath(MAIN_PLAYER, 104)))) TRIGGER_START {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_100, 1)
+  SetStartTilePlayer(ENEMY_100)
+}
+
+SetTileState(109, TILE_BARRED)
+SetTileState(110, TILE_BARRED)
+SetEnemy(17, ACTOR_INVISIBLE)
+SetTileState(116, TILE_NORMAL)
+SetTileState(117, TILE_JOIN)
+ResetToggle(0)
+ResetToggle(1)
+
+on FrogOnPath(MAIN_PLAYER, 101) TRIGGER_ONCE 
+  SetToggle(0)
+
+on FrogOnPath(MAIN_PLAYER, 102) TRIGGER_ONCE 
+  SetToggle(1)
+
+on AND(FrogOnPath(MAIN_PLAYER, ENEMY_100), AND(IsFlagSet(0), IsFlagSet(1))) TRIGGER_ONCE {
+  SetTileState(109, TILE_NORMAL)
+  SetTileState(110, TILE_JOIN)
+  
+  on Wait(0.5) TRIGGER_ONCE {
+    Animate(4, 1, ANIMATION_NONE, 0.25)
+    PlaySound("shieldout.wav", ACTOR_NONE)
+    SetEnemy(17, ACTOR_VISIBLE)
+    SetTileState(116, TILE_BARRED)
+    SetTileState(117, TILE_BARRED)
+  }
+  
+  on Wait(1.25) TRIGGER_ONCE 
+    SetEnemy(4, ACTOR_INVISIBLE)
+}

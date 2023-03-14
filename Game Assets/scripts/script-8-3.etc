@@ -1,0 +1,88 @@
+SetEnemy(20, ACTOR_INVISIBLE)
+SetEnemy(21, ACTOR_INVISIBLE)
+SetEnemy(22, ACTOR_INVISIBLE)
+SetEnemy(23, ACTOR_INVISIBLE)
+SetEnemy(24, ACTOR_INVISIBLE)
+SetEnemy(25, ACTOR_INVISIBLE)
+SetEnemy(26, ACTOR_INVISIBLE)
+SetEnemy(27, ACTOR_INVISIBLE)
+
+on FrogOnPath(MAIN_PLAYER, 1) TRIGGER_START 
+  Hint(0)
+
+on FrogOnPath(MAIN_PLAYER, 1) TRIGGER_ONCE {
+  PlaySound("select.wav", ACTOR_NONE)
+  SetEnemy(20, ACTOR_VISIBLE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 2) TRIGGER_START 
+  Hint(1)
+
+on FrogOnPath(MAIN_PLAYER, 2) TRIGGER_ONCE {
+  PlaySound("select.wav", ACTOR_NONE)
+  SetEnemy(21, ACTOR_VISIBLE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 3) TRIGGER_START 
+  Hint(2)
+
+on FrogOnPath(MAIN_PLAYER, 3) TRIGGER_ONCE {
+  PlaySound("select.wav", ACTOR_NONE)
+  SetEnemy(22, ACTOR_VISIBLE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 4) TRIGGER_START 
+  Hint(3)
+
+on FrogOnPath(MAIN_PLAYER, 4) TRIGGER_ONCE {
+  PlaySound("select.wav", ACTOR_NONE)
+  SetEnemy(23, ACTOR_VISIBLE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 5) TRIGGER_START 
+  Hint(4)
+
+on FrogOnPath(MAIN_PLAYER, 5) TRIGGER_ONCE {
+  PlaySound("select.wav", ACTOR_NONE)
+  SetEnemy(24, ACTOR_VISIBLE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 6) TRIGGER_START 
+  Hint(5)
+
+on FrogOnPath(MAIN_PLAYER, 6) TRIGGER_ONCE {
+  PlaySound("select.wav", ACTOR_NONE)
+  SetEnemy(25, ACTOR_VISIBLE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 7) TRIGGER_START 
+  Hint(6)
+
+on FrogOnPath(MAIN_PLAYER, 7) TRIGGER_ONCE {
+  PlaySound("select.wav", ACTOR_NONE)
+  SetEnemy(26, ACTOR_VISIBLE)
+}
+
+on FrogOnPath(MAIN_PLAYER, 8) TRIGGER_START 
+  Hint(7)
+
+on FrogOnPath(MAIN_PLAYER, 8) TRIGGER_ONCE {
+  PlaySound("select.wav", ACTOR_NONE)
+  SetEnemy(27, ACTOR_VISIBLE)
+}
+
+SetPlatform(10, ACTOR_STOP)
+SetPlatform(11, ACTOR_STOP)
+
+on FrogOnPlatform(MAIN_PLAYER, 9) TRIGGER_ONCE {
+  SetPlatform(11, ACTOR_MOVE)
+  
+  on Wait(5) TRIGGER_ONCE 
+    SetPlatform(10, ACTOR_MOVE)
+}
+
+on FrogOnPlatform(MAIN_PLAYER, 9) TRIGGER_START 
+  PlaySound("switch.wav", ACTOR_NONE)
+
+on OR(FrogOnPlatform(MAIN_PLAYER, 10), FrogOnPlatform(MAIN_PLAYER, 11)) TRIGGER_START 
+  PlaySound("splash.wav", ACTOR_NONE)

@@ -1,0 +1,107 @@
+#define ENEMY_6 6
+#define ENEMY_38 38
+
+on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_START 
+  SetStartTilePlayer(ENEMY_6)
+
+SetCounter(1, 0)
+
+on AND(FrogOnPath(MAIN_PLAYER, 1), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 2), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 3), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 4), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 5), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+SetTileState(200, TILE_BARRED)
+
+on RandomWait(6, 12) TRIGGER_START 
+  PlaySound("racecar.wav", ACTOR_NONE)
+
+on RandomWait(5, 13) TRIGGER_START 
+  PlaySound("carhorn1.wav", ACTOR_NONE)
+
+on RandomWait(7, 15) TRIGGER_START 
+  PlaySound("lorryhorn.wav", ACTOR_NONE)
+
+on CounterEquals(1, 0) TRIGGER_ONCE {
+  SetEnemy(20, ACTOR_NODRAW)
+  SetEnemyFlag(20, ENEMYFLAG_NODAMAGE)
+  SetEnemy(24, ACTOR_NODRAW)
+  SetEnemyFlag(24, ENEMYFLAG_NODAMAGE)
+  SetEnemy(27, ACTOR_NODRAW)
+  SetEnemyFlag(27, ENEMYFLAG_NODAMAGE)
+  SetEnemy(28, ACTOR_NODRAW)
+  SetEnemyFlag(28, ENEMYFLAG_NODAMAGE)
+  SetEnemy(29, ACTOR_NODRAW)
+  SetEnemyFlag(29, ENEMYFLAG_NODAMAGE)
+  SetEnemy(ENEMY_38, ACTOR_NODRAW)
+  SetEnemyFlag(ENEMY_38, ENEMYFLAG_NODAMAGE)
+}
+
+on CounterEquals(1, 1) TRIGGER_ONCE {
+  SetEnemy(24, ACTOR_DRAW)
+  ResetEnemyFlag(24, ENEMYFLAG_NODAMAGE)
+}
+
+on CounterEquals(1, 2) TRIGGER_ONCE {
+  SetEnemy(27, ACTOR_DRAW)
+  ResetEnemyFlag(27, ENEMYFLAG_NODAMAGE)
+  SetEnemy(28, ACTOR_DRAW)
+  ResetEnemyFlag(28, ENEMYFLAG_NODAMAGE)
+  SetEnemy(29, ACTOR_DRAW)
+  ResetEnemyFlag(29, ENEMYFLAG_NODAMAGE)
+}
+
+on CounterEquals(1, 3) TRIGGER_ONCE {
+  ScaleEnemySpeed(21, 0.5)
+  ScaleEnemySpeed(22, 0.5)
+  ScaleEnemySpeed(23, 0.5)
+  ScaleEnemySpeed(25, 0.5)
+  ScaleEnemySpeed(26, 0.5)
+  ScaleEnemySpeed(30, 0.5)
+  ScaleEnemySpeed(31, 0.5)
+  ScaleEnemySpeed(32, 0.5)
+  ScaleEnemySpeed(33, 0.5)
+  ScaleEnemySpeed(34, 0.5)
+  ScaleEnemySpeed(35, 0.5)
+  ScaleEnemySpeed(36, 0.5)
+  ScaleEnemySpeed(37, 0.5)
+  ScaleEnemySpeed(ENEMY_38, 0.5)
+  ScaleEnemySpeed(39, 0.5)
+}
+
+on CounterEquals(1, 4) TRIGGER_ONCE {
+  SetEnemy(20, ACTOR_DRAW)
+  ResetEnemyFlag(20, ENEMYFLAG_NODAMAGE)
+  SetEnemy(ENEMY_38, ACTOR_DRAW)
+  ResetEnemyFlag(ENEMY_38, ENEMYFLAG_NODAMAGE)
+}

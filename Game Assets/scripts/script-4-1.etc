@@ -1,0 +1,16 @@
+on FrogOnPath(MAIN_PLAYER, 300) TRIGGER_START 
+  NoFog()
+
+on FrogOnPath(MAIN_PLAYER, 301) TRIGGER_START 
+  Fog(0, 0, 0, 0, 110)
+
+SetTileState(105, TILE_BARRED)
+
+on FrogOnPlatform(MAIN_PLAYER, 1) TRIGGER_START 
+  PlaySound("squidge.wav", ACTOR_NONE)
+
+on FrogOnPath(MAIN_PLAYER, 100) TRIGGER_START 
+  TeleportPlayer(MAIN_PLAYER, 101, 0.2)
+
+on FrogOnPath(MAIN_PLAYER, 102) TRIGGER_START 
+  TeleportPlayer(MAIN_PLAYER, 103, 0.2)

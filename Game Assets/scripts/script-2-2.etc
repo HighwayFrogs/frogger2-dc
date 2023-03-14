@@ -1,0 +1,674 @@
+#define PLATFORM_1 1
+#define PLATFORM_61 61
+#define PLATFORM_2 2
+#define PLATFORM_3 3
+#define PLATFORM_60 60
+#define ENEMY_4 4
+#define ENEMY_5 5
+#define ENEMY_6 6
+#define ENEMY_7 7
+#define ENEMY_8 8
+#define ENEMY_10 10
+#define ENEMY_11 11
+#define ENEMY_12 12
+#define ENEMY_13 13
+#define ENEMY_19 19
+#define ENEMY_20 20
+#define ENEMY_21 21
+#define ENEMY_22 22
+#define ENEMY_23 23
+#define ENEMY_24 24
+#define ENEMY_32 32
+#define ENEMY_33 33
+#define ENEMY_25 25
+#define ENEMY_27 27
+#define ENEMY_28 28
+#define ENEMY_30 30
+#define ENEMY_35 35
+#define ENEMY_36 36
+#define ENEMY_37 37
+#define ENEMY_38 38
+#define ENEMY_15 15
+#define ENEMY_17 17
+#define ENEMY_18 18
+#define ENEMY_16 16
+
+CameoModeOff()
+StopSound("lp_shipeng.wav")
+Fog(0, 0, 0, 40, 200)
+MovePlatform(PLATFORM_1, 1)
+SetPlatform(PLATFORM_1, ACTOR_STOP)
+MovePlatform(PLATFORM_61, 1)
+SetPlatform(PLATFORM_61, ACTOR_STOP)
+MovePlatform(PLATFORM_2, 13)
+SetPlatform(PLATFORM_2, ACTOR_STOP)
+SetPlatform(PLATFORM_2, ACTOR_NODRAW)
+MovePlatform(PLATFORM_3, 0)
+SetPlatform(PLATFORM_3, ACTOR_STOP)
+MovePlatform(PLATFORM_60, 0)
+SetPlatform(PLATFORM_60, ACTOR_STOP)
+SetPlatform(PLATFORM_60, ACTOR_DRAW)
+ResetToggle(0)
+ResetToggle(1)
+
+on FrogIsDead(MAIN_PLAYER) TRIGGER_START 
+  SetToggle(0)
+
+on AND(IsFlagSet(0), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_START {
+  StopSound("lp_shipeng.wav")
+  MovePlatform(PLATFORM_1, 1)
+  SetPlatform(PLATFORM_1, ACTOR_STOP)
+  MovePlatform(PLATFORM_61, 1)
+  SetPlatform(PLATFORM_61, ACTOR_STOP)
+  MovePlatform(PLATFORM_2, 13)
+  SetPlatform(PLATFORM_2, ACTOR_STOP)
+  SetPlatform(PLATFORM_2, ACTOR_NODRAW)
+  MovePlatform(PLATFORM_3, 0)
+  SetPlatform(PLATFORM_3, ACTOR_STOP)
+  MovePlatform(PLATFORM_60, 0)
+  SetPlatform(PLATFORM_60, ACTOR_STOP)
+  SetPlatform(PLATFORM_60, ACTOR_DRAW)
+  ResetToggle(0)
+  ResetToggle(1)
+}
+
+on AND(NOT(IsFlagSet(0)), AND(NOT(IsFlagSet(1)), FrogOnPlatform(MAIN_PLAYER, PLATFORM_61))) TRIGGER_START {
+  SetPlatform(PLATFORM_3, ACTOR_MOVE)
+  PlaySound("gangway.wav", ACTOR_NONE)
+  SetPlatform(PLATFORM_60, ACTOR_MOVE)
+  PlaySound("shipswoop.wav", ACTOR_NONE)
+  CameoModeOn()
+  
+  on PlatformAtPathNode(PLATFORM_60, 18) TRIGGER_ONCE {
+    SetPlatform(PLATFORM_2, ACTOR_MOVE)
+    SetPlatform(PLATFORM_2, ACTOR_DRAW)
+    SetPlatform(PLATFORM_60, ACTOR_NODRAW)
+  }
+  
+  on PlatformAtPathNode(PLATFORM_60, 19) TRIGGER_ONCE {
+    CameoModeOff()
+    SetToggle(1)
+    SetPlatform(PLATFORM_1, ACTOR_MOVE)
+    SetPlatform(PLATFORM_61, ACTOR_MOVE)
+    PlaySound("startship.wav", ACTOR_NONE)
+    SetPlatform(PLATFORM_60, ACTOR_NODRAW)
+    MovePlatform(PLATFORM_60, 0)
+    SetPlatform(PLATFORM_60, ACTOR_STOP)
+    
+    on Wait(4) TRIGGER_ONCE 
+      PlaySound("lp_shipeng.wav", ACTOR_NONE)
+  }
+  
+  on PlatformAtPathNode(PLATFORM_3, 2) TRIGGER_ONCE 
+    SetPlatform(PLATFORM_3, ACTOR_STOP)
+}
+
+SetEnemy(ENEMY_4, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_5, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_6, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_7, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_8, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_10, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_11, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_12, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_13, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_4, 0)
+MoveEnemy(ENEMY_5, 0)
+MoveEnemy(ENEMY_6, 0)
+MoveEnemy(ENEMY_7, 0)
+MoveEnemy(ENEMY_8, 0)
+SetEnemy(ENEMY_4, ACTOR_STOP)
+SetEnemy(ENEMY_5, ACTOR_STOP)
+SetEnemy(ENEMY_6, ACTOR_STOP)
+SetEnemy(ENEMY_7, ACTOR_STOP)
+SetEnemy(ENEMY_8, ACTOR_STOP)
+SetEnemy(ENEMY_19, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_20, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_21, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_22, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_23, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_24, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_32, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_33, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_19, 0)
+MoveEnemy(ENEMY_20, 0)
+MoveEnemy(ENEMY_21, 0)
+MoveEnemy(ENEMY_22, 0)
+MoveEnemy(ENEMY_23, 0)
+MoveEnemy(ENEMY_24, 0)
+MoveEnemy(ENEMY_32, 0)
+MoveEnemy(ENEMY_33, 0)
+SetEnemy(ENEMY_19, ACTOR_STOP)
+SetEnemy(ENEMY_20, ACTOR_STOP)
+SetEnemy(ENEMY_21, ACTOR_STOP)
+SetEnemy(ENEMY_22, ACTOR_STOP)
+SetEnemy(ENEMY_23, ACTOR_STOP)
+SetEnemy(ENEMY_24, ACTOR_STOP)
+SetEnemy(ENEMY_32, ACTOR_STOP)
+SetEnemy(ENEMY_33, ACTOR_STOP)
+SetEnemy(ENEMY_25, ACTOR_INVISIBLE)
+SetEnemy(26, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_27, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_28, ACTOR_INVISIBLE)
+SetEnemy(29, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_30, ACTOR_INVISIBLE)
+SetEnemy(31, ACTOR_INVISIBLE)
+SetEnemy(34, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_35, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_36, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_37, ACTOR_INVISIBLE)
+SetEnemy(ENEMY_38, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_25, 0)
+MoveEnemy(26, 0)
+MoveEnemy(ENEMY_27, 0)
+MoveEnemy(ENEMY_28, 0)
+MoveEnemy(29, 0)
+MoveEnemy(ENEMY_30, 0)
+MoveEnemy(31, 0)
+MoveEnemy(34, 0)
+MoveEnemy(ENEMY_35, 0)
+MoveEnemy(ENEMY_36, 0)
+MoveEnemy(ENEMY_37, 0)
+MoveEnemy(ENEMY_38, 0)
+SetEnemy(ENEMY_25, ACTOR_STOP)
+SetEnemy(26, ACTOR_STOP)
+SetEnemy(ENEMY_27, ACTOR_STOP)
+SetEnemy(ENEMY_28, ACTOR_STOP)
+SetEnemy(29, ACTOR_STOP)
+SetEnemy(ENEMY_30, ACTOR_STOP)
+SetEnemy(31, ACTOR_STOP)
+SetEnemy(34, ACTOR_STOP)
+SetEnemy(ENEMY_35, ACTOR_STOP)
+SetEnemy(ENEMY_36, ACTOR_STOP)
+SetEnemy(ENEMY_37, ACTOR_STOP)
+SetEnemy(ENEMY_38, ACTOR_STOP)
+SetCounter(0, 0)
+Debug("Set lap counter to 0")
+
+on AND(NOT(FrogIsDead(MAIN_PLAYER)), PlatformAtPathNode(PLATFORM_1, 167)) TRIGGER_START {
+  IncCounter(0)
+  Debug("Increment lap counter")
+}
+
+on PlatformAtPathNode(PLATFORM_2, 16) TRIGGER_START {
+  SetEnemy(ENEMY_4, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_4, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+  
+  on Wait(1.5) TRIGGER_ONCE {
+    SFXOnEnemy(ENEMY_4, 9, 120, 1, 1, 15)
+    PlaySound("tilesexpl1.wav", ACTOR_NONE)
+    ShakeCamera(8, 0.5)
+    SetEnemy(ENEMY_4, ACTOR_INVISIBLE)
+    MoveEnemy(ENEMY_4, 0)
+    SetEnemy(ENEMY_4, ACTOR_STOP)
+  }
+}
+
+on PlatformAtPathNode(PLATFORM_2, 26) TRIGGER_START {
+  SetEnemy(ENEMY_5, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_5, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+  
+  on Wait(1.5) TRIGGER_ONCE {
+    SFXOnEnemy(ENEMY_5, 9, 120, 1, 1, 15)
+    PlaySound("tilesexpl1.wav", ACTOR_NONE)
+    ShakeCamera(8, 0.5)
+    SetEnemy(ENEMY_5, ACTOR_INVISIBLE)
+    MoveEnemy(ENEMY_5, 0)
+    SetEnemy(ENEMY_5, ACTOR_STOP)
+  }
+  
+  if NOT(CounterEquals(0, 0)) {
+    SetEnemy(ENEMY_19, ACTOR_VISIBLE)
+    SetEnemy(ENEMY_19, ACTOR_MOVE)
+    PlaySound("pop.wav", ACTOR_NONE)
+    
+    on Wait(1.5) TRIGGER_ONCE {
+      SFXOnEnemy(ENEMY_19, 9, 120, 1, 1, 15)
+      PlaySound("tilesexpl1.wav", ACTOR_NONE)
+      SetEnemy(ENEMY_19, ACTOR_INVISIBLE)
+      MoveEnemy(ENEMY_19, 0)
+      SetEnemy(ENEMY_19, ACTOR_STOP)
+    }
+  }
+}
+
+on PlatformAtPathNode(PLATFORM_2, 39) TRIGGER_START {
+  SetEnemy(ENEMY_6, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_6, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+  
+  on Wait(1.5) TRIGGER_ONCE {
+    SFXOnEnemy(ENEMY_6, 9, 120, 1, 1, 15)
+    PlaySound("tilesexpl1.wav", ACTOR_NONE)
+    ShakeCamera(8, 0.5)
+    SetEnemy(ENEMY_6, ACTOR_INVISIBLE)
+    MoveEnemy(ENEMY_6, 0)
+    SetEnemy(ENEMY_6, ACTOR_STOP)
+  }
+  
+  if NOT(CounterEquals(0, 0)) {
+    SetEnemy(ENEMY_20, ACTOR_VISIBLE)
+    SetEnemy(ENEMY_20, ACTOR_MOVE)
+    PlaySound("pop.wav", ACTOR_NONE)
+    
+    on Wait(1.5) TRIGGER_ONCE {
+      SFXOnEnemy(ENEMY_20, 9, 120, 1, 1, 15)
+      PlaySound("tilesexpl1.wav", ACTOR_NONE)
+      SetEnemy(ENEMY_20, ACTOR_INVISIBLE)
+      MoveEnemy(ENEMY_20, 0)
+      SetEnemy(ENEMY_20, ACTOR_STOP)
+    }
+  }
+}
+
+on PlatformAtPathNode(PLATFORM_2, 49) TRIGGER_START {
+  SetEnemy(ENEMY_7, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_7, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+  
+  on Wait(1.5) TRIGGER_ONCE {
+    SFXOnEnemy(ENEMY_7, 9, 120, 1, 1, 15)
+    PlaySound("tilesexpl1.wav", ACTOR_NONE)
+    ShakeCamera(8, 0.5)
+    SetEnemy(ENEMY_7, ACTOR_INVISIBLE)
+    MoveEnemy(ENEMY_7, 0)
+    SetEnemy(ENEMY_7, ACTOR_STOP)
+  }
+}
+
+on PlatformAtPathNode(PLATFORM_2, 63) TRIGGER_START {
+  SetEnemy(ENEMY_8, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_8, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+  
+  on Wait(1.5) TRIGGER_ONCE {
+    SFXOnEnemy(ENEMY_8, 9, 120, 1, 1, 15)
+    PlaySound("tilesexpl1.wav", ACTOR_NONE)
+    ShakeCamera(8, 0.5)
+    SetEnemy(ENEMY_8, ACTOR_INVISIBLE)
+    MoveEnemy(ENEMY_8, 0)
+    SetEnemy(ENEMY_8, ACTOR_STOP)
+  }
+  
+  if NOT(CounterEquals(0, 0)) {
+    SetEnemy(ENEMY_21, ACTOR_VISIBLE)
+    SetEnemy(ENEMY_21, ACTOR_MOVE)
+    PlaySound("pop.wav", ACTOR_NONE)
+    
+    on Wait(1.5) TRIGGER_ONCE {
+      SFXOnEnemy(ENEMY_21, 9, 120, 1, 1, 15)
+      PlaySound("tilesexpl1.wav", ACTOR_NONE)
+      SetEnemy(ENEMY_21, ACTOR_INVISIBLE)
+      MoveEnemy(ENEMY_21, 0)
+      SetEnemy(ENEMY_21, ACTOR_STOP)
+    }
+  }
+}
+
+on AND(PlatformAtPathNode(PLATFORM_2, 33), NOT(CounterEquals(0, 0))) TRIGGER_START {
+  SetEnemy(ENEMY_22, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_22, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+  
+  on Wait(1.5) TRIGGER_ONCE {
+    SFXOnEnemy(ENEMY_22, 9, 120, 1, 1, 15)
+    PlaySound("tilesexpl1.wav", ACTOR_NONE)
+    ShakeCamera(8, 0.5)
+    SetEnemy(ENEMY_22, ACTOR_INVISIBLE)
+    MoveEnemy(ENEMY_22, 0)
+    SetEnemy(ENEMY_22, ACTOR_STOP)
+  }
+}
+
+on AND(PlatformAtPathNode(PLATFORM_2, 55), NOT(CounterEquals(0, 0))) TRIGGER_START {
+  SetEnemy(ENEMY_23, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_23, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+  
+  on Wait(1.5) TRIGGER_ONCE {
+    SFXOnEnemy(ENEMY_23, 9, 120, 1, 1, 15)
+    PlaySound("tilesexpl1.wav", ACTOR_NONE)
+    ShakeCamera(8, 0.5)
+    SetEnemy(ENEMY_23, ACTOR_INVISIBLE)
+    MoveEnemy(ENEMY_23, 0)
+    SetEnemy(ENEMY_23, ACTOR_STOP)
+  }
+}
+
+on AND(PlatformAtPathNode(PLATFORM_2, 74), NOT(CounterEquals(0, 0))) TRIGGER_START {
+  SetEnemy(ENEMY_24, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_24, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+  
+  on Wait(1.5) TRIGGER_ONCE {
+    SFXOnEnemy(ENEMY_24, 9, 120, 1, 1, 15)
+    PlaySound("tilesexpl1.wav", ACTOR_NONE)
+    ShakeCamera(8, 0.5)
+    SetEnemy(ENEMY_24, ACTOR_INVISIBLE)
+    MoveEnemy(ENEMY_24, 0)
+    SetEnemy(ENEMY_24, ACTOR_STOP)
+  }
+}
+
+on AND(PlatformAtPathNode(PLATFORM_2, 21), AND(NOT(CounterEquals(0, 0)), NOT(CounterEquals(0, 1)))) TRIGGER_START {
+  SetEnemy(ENEMY_25, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_25, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+  
+  on Wait(1.5) TRIGGER_ONCE {
+    SFXOnEnemy(ENEMY_25, 9, 120, 1, 1, 15)
+    PlaySound("tilesexpl1.wav", ACTOR_NONE)
+    ShakeCamera(8, 0.5)
+    SetEnemy(ENEMY_25, ACTOR_INVISIBLE)
+    MoveEnemy(ENEMY_25, 0)
+    SetEnemy(ENEMY_25, ACTOR_STOP)
+  }
+}
+
+on AND(PlatformAtPathNode(PLATFORM_2, 40), AND(NOT(CounterEquals(0, 0)), NOT(CounterEquals(0, 1)))) TRIGGER_START {
+  SetEnemy(ENEMY_27, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_27, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+  
+  on Wait(1.5) TRIGGER_ONCE {
+    SFXOnEnemy(ENEMY_27, 9, 120, 1, 1, 15)
+    PlaySound("tilesexpl1.wav", ACTOR_NONE)
+    ShakeCamera(8, 0.5)
+    SetEnemy(ENEMY_27, ACTOR_INVISIBLE)
+    MoveEnemy(ENEMY_27, 0)
+    SetEnemy(ENEMY_27, ACTOR_STOP)
+  }
+}
+
+on AND(PlatformAtPathNode(PLATFORM_2, 50), AND(NOT(CounterEquals(0, 0)), NOT(CounterEquals(0, 1)))) TRIGGER_START {
+  SetEnemy(ENEMY_28, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_28, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+  
+  on Wait(1.5) TRIGGER_ONCE {
+    SFXOnEnemy(ENEMY_28, 9, 120, 1, 1, 15)
+    PlaySound("tilesexpl1.wav", ACTOR_NONE)
+    ShakeCamera(8, 0.5)
+    SetEnemy(ENEMY_28, ACTOR_INVISIBLE)
+    MoveEnemy(ENEMY_28, 0)
+    SetEnemy(ENEMY_28, ACTOR_STOP)
+  }
+}
+
+on AND(PlatformAtPathNode(PLATFORM_2, 65), AND(NOT(CounterEquals(0, 0)), NOT(CounterEquals(0, 1)))) TRIGGER_START {
+  SetEnemy(ENEMY_30, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_30, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+  
+  on Wait(1.5) TRIGGER_ONCE {
+    SFXOnEnemy(ENEMY_30, 9, 120, 1, 1, 15)
+    PlaySound("tilesexpl1.wav", ACTOR_NONE)
+    ShakeCamera(8, 0.5)
+    SetEnemy(ENEMY_30, ACTOR_INVISIBLE)
+    MoveEnemy(ENEMY_30, 0)
+    SetEnemy(ENEMY_30, ACTOR_STOP)
+  }
+}
+
+SetEnemy(ENEMY_15, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_15, 0)
+SetEnemy(ENEMY_15, ACTOR_STOP)
+
+on PlatformAtPathNode(PLATFORM_2, 124) TRIGGER_START {
+  SetEnemy(ENEMY_15, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_15, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+}
+
+on PlatformAtPathNode(PLATFORM_1, 125) TRIGGER_START {
+  SetEnemy(ENEMY_15, ACTOR_INVISIBLE)
+  SetEnemy(ENEMY_10, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_10, ACTOR_MOVE)
+  PlaySound("missile.wav", ACTOR_NONE)
+  MoveEnemy(ENEMY_15, 0)
+  SetEnemy(ENEMY_15, ACTOR_STOP)
+}
+
+on EnemyAtPathNode(ENEMY_10, 6) TRIGGER_START 
+  PlaySound("missile2.wav", ACTOR_NONE)
+
+on EnemyAtPathNode(ENEMY_10, 18) TRIGGER_START {
+  SFXOnEnemy(ENEMY_10, 9, 120, 1, 1, 15)
+  PlaySound("tilesexpl1.wav", ACTOR_NONE)
+  ShakeCamera(8, 0.5)
+  SetEnemy(ENEMY_10, ACTOR_INVISIBLE)
+  MoveEnemy(ENEMY_10, 0)
+  SetEnemy(ENEMY_10, ACTOR_STOP)
+}
+
+SetEnemy(ENEMY_17, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_17, 0)
+SetEnemy(ENEMY_17, ACTOR_STOP)
+
+on PlatformAtPathNode(PLATFORM_2, 151) TRIGGER_START {
+  SetEnemy(ENEMY_17, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_17, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+}
+
+on PlatformAtPathNode(PLATFORM_1, 152) TRIGGER_START {
+  SetEnemy(ENEMY_17, ACTOR_INVISIBLE)
+  SetEnemy(ENEMY_12, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_12, ACTOR_MOVE)
+  PlaySound("missile.wav", ACTOR_NONE)
+  MoveEnemy(ENEMY_17, 0)
+  SetEnemy(ENEMY_17, ACTOR_STOP)
+}
+
+on EnemyAtPathNode(ENEMY_12, 6) TRIGGER_START 
+  PlaySound("missile2.wav", ACTOR_NONE)
+
+on EnemyAtPathNode(ENEMY_12, 18) TRIGGER_START {
+  SFXOnEnemy(ENEMY_12, 9, 120, 1, 1, 15)
+  PlaySound("tilesexpl1.wav", ACTOR_NONE)
+  ShakeCamera(8, 0.5)
+  SetEnemy(ENEMY_12, ACTOR_INVISIBLE)
+  MoveEnemy(ENEMY_12, 0)
+  SetEnemy(ENEMY_12, ACTOR_STOP)
+}
+
+SetEnemy(ENEMY_18, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_18, 0)
+SetEnemy(ENEMY_18, ACTOR_STOP)
+
+on PlatformAtPathNode(PLATFORM_2, 164) TRIGGER_START {
+  SetEnemy(ENEMY_18, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_18, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+}
+
+on PlatformAtPathNode(PLATFORM_1, 165) TRIGGER_START {
+  SetEnemy(ENEMY_18, ACTOR_INVISIBLE)
+  SetEnemy(ENEMY_13, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_13, ACTOR_MOVE)
+  PlaySound("missile.wav", ACTOR_NONE)
+  MoveEnemy(ENEMY_18, 0)
+  SetEnemy(ENEMY_18, ACTOR_STOP)
+}
+
+on EnemyAtPathNode(ENEMY_13, 6) TRIGGER_START 
+  PlaySound("missile2.wav", ACTOR_NONE)
+
+on EnemyAtPathNode(ENEMY_13, 18) TRIGGER_START {
+  SFXOnEnemy(ENEMY_13, 9, 120, 1, 1, 15)
+  PlaySound("tilesexpl1.wav", ACTOR_NONE)
+  ShakeCamera(8, 0.5)
+  SetEnemy(ENEMY_13, ACTOR_INVISIBLE)
+  MoveEnemy(ENEMY_13, 0)
+  SetEnemy(ENEMY_13, ACTOR_STOP)
+}
+
+SetEnemy(ENEMY_32, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_32, 0)
+SetEnemy(ENEMY_32, ACTOR_STOP)
+
+on AND(NOT(CounterEquals(0, 0)), PlatformAtPathNode(PLATFORM_2, 147)) TRIGGER_START {
+  SetEnemy(ENEMY_32, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_32, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+}
+
+on AND(NOT(CounterEquals(0, 0)), PlatformAtPathNode(PLATFORM_1, 148)) TRIGGER_START {
+  SetEnemy(ENEMY_32, ACTOR_INVISIBLE)
+  SetEnemy(ENEMY_33, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_33, ACTOR_MOVE)
+  PlaySound("missile.wav", ACTOR_NONE)
+  MoveEnemy(ENEMY_32, 0)
+  SetEnemy(ENEMY_32, ACTOR_STOP)
+}
+
+on EnemyAtPathNode(ENEMY_33, 6) TRIGGER_START 
+  PlaySound("missile2.wav", ACTOR_NONE)
+
+on EnemyAtPathNode(ENEMY_33, 18) TRIGGER_START {
+  SFXOnEnemy(ENEMY_33, 9, 120, 1, 1, 15)
+  PlaySound("tilesexpl1.wav", ACTOR_NONE)
+  ShakeCamera(8, 0.5)
+  SetEnemy(ENEMY_33, ACTOR_INVISIBLE)
+  MoveEnemy(ENEMY_33, 0)
+  SetEnemy(ENEMY_33, ACTOR_STOP)
+}
+
+SetEnemy(ENEMY_35, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_35, 0)
+SetEnemy(ENEMY_35, ACTOR_STOP)
+
+on AND(NOT(CounterEquals(0, 0)), AND(NOT(CounterEquals(0, 1)), PlatformAtPathNode(PLATFORM_2, 120))) TRIGGER_START {
+  SetEnemy(ENEMY_35, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_35, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+}
+
+on AND(NOT(CounterEquals(0, 0)), AND(NOT(CounterEquals(0, 1)), PlatformAtPathNode(PLATFORM_1, 122))) TRIGGER_START {
+  SetEnemy(ENEMY_35, ACTOR_INVISIBLE)
+  SetEnemy(ENEMY_36, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_36, ACTOR_MOVE)
+  PlaySound("missile.wav", ACTOR_NONE)
+  MoveEnemy(ENEMY_35, 0)
+  SetEnemy(ENEMY_35, ACTOR_STOP)
+}
+
+on EnemyAtPathNode(ENEMY_36, 6) TRIGGER_START 
+  PlaySound("missile2.wav", ACTOR_NONE)
+
+on EnemyAtPathNode(ENEMY_36, 18) TRIGGER_START {
+  SFXOnEnemy(ENEMY_36, 9, 120, 1, 1, 15)
+  PlaySound("tilesexpl1.wav", ACTOR_NONE)
+  ShakeCamera(8, 0.5)
+  SetEnemy(ENEMY_36, ACTOR_INVISIBLE)
+  MoveEnemy(ENEMY_36, 0)
+  SetEnemy(ENEMY_36, ACTOR_STOP)
+}
+
+SetEnemy(ENEMY_16, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_16, 0)
+SetEnemy(ENEMY_16, ACTOR_STOP)
+ResetToggle(2)
+
+on AND(NOT(IsFlagSet(2)), PlatformAtPathNode(PLATFORM_2, 137)) TRIGGER_START {
+  SetEnemy(ENEMY_16, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_16, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+}
+
+on AND(NOT(IsFlagSet(2)), PlatformAtPathNode(PLATFORM_1, 138)) TRIGGER_START {
+  SetEnemy(ENEMY_16, ACTOR_INVISIBLE)
+  SetEnemy(ENEMY_11, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_11, ACTOR_MOVE)
+  PlaySound("missile.wav", ACTOR_NONE)
+  MoveEnemy(ENEMY_16, 0)
+  SetEnemy(ENEMY_16, ACTOR_STOP)
+}
+
+on EnemyAtPathNode(ENEMY_11, 6) TRIGGER_START 
+  PlaySound("missile2.wav", ACTOR_NONE)
+
+on EnemyAtPathNode(ENEMY_11, 18) TRIGGER_START {
+  SFXOnEnemy(ENEMY_11, 9, 120, 1, 1, 15)
+  PlaySound("tilesexpl1.wav", ACTOR_NONE)
+  ShakeCamera(8, 0.5)
+  SetEnemy(ENEMY_11, ACTOR_INVISIBLE)
+  MoveEnemy(ENEMY_11, 0)
+  SetEnemy(ENEMY_11, ACTOR_STOP)
+  SetToggle(2)
+}
+
+SetEnemy(ENEMY_37, ACTOR_INVISIBLE)
+MoveEnemy(ENEMY_37, 0)
+SetEnemy(ENEMY_37, ACTOR_STOP)
+
+on AND(IsFlagSet(2), PlatformAtPathNode(PLATFORM_2, 139)) TRIGGER_START {
+  SetEnemy(ENEMY_37, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_37, ACTOR_MOVE)
+  PlaySound("pop.wav", ACTOR_NONE)
+}
+
+on AND(IsFlagSet(2), PlatformAtPathNode(PLATFORM_1, 140)) TRIGGER_START {
+  SetEnemy(ENEMY_37, ACTOR_INVISIBLE)
+  SetEnemy(ENEMY_38, ACTOR_VISIBLE)
+  SetEnemy(ENEMY_38, ACTOR_MOVE)
+  PlaySound("missile.wav", ACTOR_NONE)
+  MoveEnemy(ENEMY_37, 0)
+  SetEnemy(ENEMY_37, ACTOR_STOP)
+}
+
+on EnemyAtPathNode(ENEMY_38, 6) TRIGGER_START 
+  PlaySound("missile2.wav", ACTOR_NONE)
+
+on EnemyAtPathNode(ENEMY_38, 18) TRIGGER_START {
+  SFXOnEnemy(ENEMY_38, 9, 120, 1, 1, 15)
+  PlaySound("tilesexpl1.wav", ACTOR_NONE)
+  ShakeCamera(8, 0.5)
+  SetEnemy(ENEMY_38, ACTOR_INVISIBLE)
+  MoveEnemy(ENEMY_38, 0)
+  SetEnemy(ENEMY_38, ACTOR_STOP)
+  ResetToggle(2)
+}
+
+SetEnemy(50, ACTOR_INVISIBLE)
+SetEnemy(51, ACTOR_INVISIBLE)
+SetEnemy(52, ACTOR_INVISIBLE)
+SetEnemy(53, ACTOR_INVISIBLE)
+SetEnemy(54, ACTOR_INVISIBLE)
+SetEnemy(50, ACTOR_STOP)
+SetEnemy(51, ACTOR_STOP)
+SetEnemy(52, ACTOR_STOP)
+SetEnemy(53, ACTOR_STOP)
+SetEnemy(54, ACTOR_STOP)
+
+on PlatformAtPathNode(PLATFORM_2, 77) TRIGGER_ONCE {
+  SetEnemy(50, ACTOR_VISIBLE)
+  SetEnemy(50, ACTOR_MOVE)
+  PlaySound("babypop.wav", ACTOR_NONE)
+}
+
+on AND(CounterEquals(0, 1), PlatformAtPathNode(PLATFORM_2, 19)) TRIGGER_ONCE {
+  SetEnemy(51, ACTOR_VISIBLE)
+  SetEnemy(51, ACTOR_MOVE)
+  PlaySound("babypop.wav", ACTOR_NONE)
+}
+
+on AND(CounterEquals(0, 1), PlatformAtPathNode(PLATFORM_2, 122)) TRIGGER_ONCE {
+  SetEnemy(52, ACTOR_VISIBLE)
+  SetEnemy(52, ACTOR_MOVE)
+  PlaySound("babypop.wav", ACTOR_NONE)
+}
+
+on AND(CounterEquals(0, 1), PlatformAtPathNode(PLATFORM_2, 164)) TRIGGER_ONCE {
+  SetEnemy(53, ACTOR_VISIBLE)
+  SetEnemy(53, ACTOR_MOVE)
+  PlaySound("babypop.wav", ACTOR_NONE)
+}
+
+on AND(CounterEquals(0, 2), PlatformAtPathNode(PLATFORM_2, 3)) TRIGGER_ONCE {
+  SetEnemy(54, ACTOR_VISIBLE)
+  SetEnemy(54, ACTOR_MOVE)
+  PlaySound("babypop.wav", ACTOR_NONE)
+}

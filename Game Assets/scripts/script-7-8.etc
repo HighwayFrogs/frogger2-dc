@@ -1,0 +1,86 @@
+#define ENEMY_6 6
+#define ENEMY_22 22
+
+on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_START 
+  SetStartTilePlayer(ENEMY_6)
+
+SetCounter(1, 0)
+
+on AND(FrogOnPath(MAIN_PLAYER, 1), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 2), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 3), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 4), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 5), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on RandomWait(3, 8) TRIGGER_START 
+  PlaySound("splash.wav", ACTOR_NONE)
+
+on RandomWait(5, 10) TRIGGER_START 
+  PlaySound("crock.wav", ACTOR_NONE)
+
+on CounterEquals(1, 0) TRIGGER_ONCE {
+  SetPlatform(20, ACTOR_VISIBLE)
+  SetPlatform(21, ACTOR_DRAW)
+  SetEnemy(ENEMY_22, ACTOR_NODRAW)
+  SetEnemyFlag(ENEMY_22, ENEMYFLAG_NODAMAGE)
+}
+
+on CounterEquals(1, 1) TRIGGER_ONCE 
+  SetPlatform(20, ACTOR_INVISIBLE)
+
+on CounterEquals(1, 2) TRIGGER_ONCE {
+  Debug("baby 2")
+  
+  on Wait(3) TRIGGER_START {
+    SetPlatform(21, ACTOR_DRAW)
+    SetEnemy(ENEMY_22, ACTOR_NODRAW)
+    SetEnemyFlag(ENEMY_22, ENEMYFLAG_NODAMAGE)
+    
+    on Wait(1.5) TRIGGER_ONCE {
+      SetPlatform(21, ACTOR_NODRAW)
+      SetEnemy(ENEMY_22, ACTOR_DRAW)
+      ResetEnemyFlag(ENEMY_22, ENEMYFLAG_NODAMAGE)
+    }
+  }
+}
+
+on CounterEquals(1, 3) TRIGGER_ONCE 
+  Debug("baby 3")
+
+on CounterEquals(1, 4) TRIGGER_ONCE {
+  Debug("baby 4")
+  ScalePlatformSpeed(27, 0.5)
+  ScalePlatformSpeed(29, 0.5)
+  ScalePlatformSpeed(31, 0.5)
+  ScalePlatformSpeed(32, 0.5)
+  ScalePlatformSpeed(33, 0.5)
+}

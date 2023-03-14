@@ -1,0 +1,117 @@
+on FrogOnPath(MAIN_PLAYER, 105) TRIGGER_START 
+  Fog(0, 0, 0, 0, 70)
+
+on EnemyAtPathNode(20, 0) TRIGGER_START {
+  on Wait(2.5) TRIGGER_ONCE {
+    Animate(21, 1, ANIMATION_NONE, 0.35)
+    PlaySound("opendr.wav", 21)
+    Animate(21, 0, ANIMATION_LOOP_AND_QUEUE, 1)
+  }
+}
+
+on EnemyAtPathNode(20, 4) TRIGGER_START {
+  Animate(22, 1, ANIMATION_NONE, 0.35)
+  PlaySound("opendr.wav", 22)
+  Animate(22, 0, ANIMATION_LOOP_AND_QUEUE, 1)
+}
+
+on EnemyAtPathNode(26, 0) TRIGGER_START {
+  on Wait(2.5) TRIGGER_ONCE {
+    Animate(27, 1, ANIMATION_NONE, 0.35)
+    PlaySound("opendr.wav", 27)
+    Animate(27, 0, ANIMATION_LOOP_AND_QUEUE, 1)
+  }
+}
+
+on EnemyAtPathNode(26, 7) TRIGGER_START {
+  Animate(28, 1, ANIMATION_NONE, 0.35)
+  PlaySound("opendr.wav", 28)
+  Animate(28, 0, ANIMATION_LOOP_AND_QUEUE, 1)
+}
+
+on EnemyAtPathNode(32, 0) TRIGGER_START {
+  on Wait(2.5) TRIGGER_ONCE {
+    Animate(33, 1, ANIMATION_NONE, 0.35)
+    PlaySound("opendr.wav", 33)
+    Animate(33, 0, ANIMATION_LOOP_AND_QUEUE, 1)
+  }
+}
+
+on EnemyAtPathNode(32, 5) TRIGGER_START {
+  Animate(34, 1, ANIMATION_NONE, 0.35)
+  PlaySound("opendr.wav", 34)
+  Animate(34, 0, ANIMATION_LOOP_AND_QUEUE, 1)
+}
+
+on EnemyAtPathNode(35, 13) TRIGGER_START {
+  Animate(36, 1, ANIMATION_NONE, 0.35)
+  PlaySound("opendr.wav", 36)
+  Animate(36, 0, ANIMATION_LOOP_AND_QUEUE, 1)
+}
+
+on EnemyAtPathNode(35, 13) TRIGGER_START {
+  Animate(37, 1, ANIMATION_NONE, 0.35)
+  PlaySound("opendr.wav", 37)
+  Animate(37, 0, ANIMATION_LOOP_AND_QUEUE, 1)
+}
+
+on EnemyAtPathNode(38, 5) TRIGGER_START {
+  Animate(39, 1, ANIMATION_NONE, 0.35)
+  PlaySound("opendr.wav", 39)
+  Animate(39, 0, ANIMATION_LOOP_AND_QUEUE, 1)
+}
+
+on EnemyAtPathNode(38, 5) TRIGGER_START {
+  Animate(40, 1, ANIMATION_NONE, 0.35)
+  PlaySound("opendr.wav", 40)
+  Animate(40, 0, ANIMATION_LOOP_AND_QUEUE, 1)
+}
+
+on EnemyAtPathNode(41, 8) TRIGGER_START {
+  Animate(42, 1, ANIMATION_NONE, 0.35)
+  PlaySound("opendr.wav", 42)
+  Animate(42, 0, ANIMATION_LOOP_AND_QUEUE, 1)
+}
+
+on EnemyAtPathNode(41, 7) TRIGGER_START {
+  Animate(43, 1, ANIMATION_NONE, 0.35)
+  PlaySound("opendr.wav", 43)
+  Animate(43, 0, ANIMATION_LOOP_AND_QUEUE, 1)
+}
+
+SetPlatform(50, ACTOR_STOP)
+
+on Wait(1.25) TRIGGER_ONCE 
+  SetPlatform(50, ACTOR_MOVE)
+
+SetPlatform(10, ACTOR_STOP)
+SetPlatform(11, ACTOR_STOP)
+SetPlatform(12, ACTOR_STOP)
+SetPlatform(13, ACTOR_STOP)
+
+on Wait(0.5) TRIGGER_ONCE 
+  SetPlatform(13, ACTOR_MOVE)
+
+on Wait(1) TRIGGER_ONCE 
+  SetPlatform(12, ACTOR_MOVE)
+
+on Wait(1.5) TRIGGER_ONCE 
+  SetPlatform(11, ACTOR_MOVE)
+
+on Wait(2) TRIGGER_ONCE 
+  SetPlatform(10, ACTOR_MOVE)
+
+SetPlatform(16, ACTOR_STOP)
+SetPlatform(15, ACTOR_STOP)
+
+on Wait(1) TRIGGER_ONCE 
+  SetPlatform(15, ACTOR_MOVE)
+
+on Wait(2) TRIGGER_ONCE 
+  SetPlatform(16, ACTOR_MOVE)
+
+on FrogOnPath(MAIN_PLAYER, 100) TRIGGER_ONCE 
+  SetStartTilePlayer(100)
+
+on FrogOnPath(MAIN_PLAYER, 104) TRIGGER_ONCE 
+  SetStartTilePlayer(104)

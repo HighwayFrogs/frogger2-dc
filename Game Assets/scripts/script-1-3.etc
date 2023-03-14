@@ -1,0 +1,93 @@
+on FrogOnPath(MAIN_PLAYER, 103) TRIGGER_START 
+  Fog(0, 0, 0, 0, 100)
+
+on FrogOnPath(MAIN_PLAYER, 102) TRIGGER_START 
+  NoFog()
+
+SetEnemy(1, ACTOR_STOP)
+SetEnemy(2, ACTOR_STOP)
+SetEnemy(3, ACTOR_STOP)
+SetEnemy(4, ACTOR_STOP)
+SetEnemy(20, ACTOR_STOP)
+SetEnemy(21, ACTOR_STOP)
+SetEnemy(22, ACTOR_STOP)
+SetEnemy(23, ACTOR_STOP)
+SetEnemy(40, ACTOR_STOP)
+SetTileState(103, TILE_BARRED)
+ResetToggle(0)
+ResetToggle(1)
+ResetToggle(2)
+
+on FrogOnPath(MAIN_PLAYER, 100) TRIGGER_ONCE 
+  SetToggle(0)
+
+on FrogOnPath(MAIN_PLAYER, 101) TRIGGER_ONCE 
+  SetToggle(1)
+
+on FrogOnPath(MAIN_PLAYER, 102) TRIGGER_ONCE 
+  SetToggle(2)
+
+on AND(IsFlagSet(0), AND(IsFlagSet(1), IsFlagSet(2))) TRIGGER_ONCE {
+  SetTileState(103, TILE_NORMAL)
+  SetEnemy(40, ACTOR_MOVE)
+}
+
+on AND(IsFlagSet(0), AND(IsFlagSet(1), IsFlagSet(2))) TRIGGER_ONCE {
+  on Wait(0.25) TRIGGER_ONCE {
+    SetEnemy(1, ACTOR_MOVE)
+    SetEnemy(20, ACTOR_MOVE)
+    
+    on Wait(2) TRIGGER_START 
+      PlaySound("scrapes1.wav", 20)
+  }
+}
+
+on AND(IsFlagSet(0), AND(IsFlagSet(1), IsFlagSet(2))) TRIGGER_ONCE {
+  on Wait(0.5) TRIGGER_ONCE {
+    SetEnemy(2, ACTOR_MOVE)
+    SetEnemy(21, ACTOR_MOVE)
+    
+    on Wait(2) TRIGGER_START 
+      PlaySound("scrapes2.wav", 21)
+  }
+}
+
+on AND(IsFlagSet(0), AND(IsFlagSet(1), IsFlagSet(2))) TRIGGER_ONCE {
+  on Wait(0.75) TRIGGER_ONCE {
+    SetEnemy(3, ACTOR_MOVE)
+    SetEnemy(22, ACTOR_MOVE)
+    
+    on Wait(2) TRIGGER_START 
+      PlaySound("scrapes1.wav", 22)
+  }
+}
+
+on AND(IsFlagSet(0), AND(IsFlagSet(1), IsFlagSet(2))) TRIGGER_ONCE {
+  on Wait(1) TRIGGER_ONCE {
+    SetEnemy(4, ACTOR_MOVE)
+    SetEnemy(23, ACTOR_MOVE)
+    
+    on Wait(2) TRIGGER_START 
+      PlaySound("scrapes2.wav", 23)
+  }
+}
+
+on Wait(0.75) TRIGGER_ONCE 
+  on Wait(2.5) TRIGGER_START 
+    PlaySound("wdspike1.wav", 11)
+
+on Wait(2) TRIGGER_ONCE 
+  on Wait(5) TRIGGER_START 
+    PlaySound("wdspike2.wav", 12)
+
+on Wait(0.75) TRIGGER_ONCE 
+  on Wait(3.5) TRIGGER_START 
+    PlaySound("wdspike1.wav", 13)
+
+on Wait(1) TRIGGER_ONCE {
+  on Wait(4) TRIGGER_START 
+    PlaySound("wdspike1.wav", 15)
+  
+  on Wait(2) TRIGGER_START 
+    PlaySound("wdspike2.wav", 15)
+}

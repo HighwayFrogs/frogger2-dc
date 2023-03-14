@@ -1,0 +1,255 @@
+#define PLATFORM_6 6
+#define ENEMY_1 1
+#define ENEMY_2 2
+#define ENEMY_3 3
+#define ENEMY_4 4
+#define PLATFORM_8 8
+#define ENEMY_13 13
+#define ENEMY_14 14
+#define PLATFORM_10 10
+#define PLATFORM_12 12
+
+on FrogOnPath(MAIN_PLAYER, 300) TRIGGER_START 
+  Fog(0, 0, 0, 0, 95)
+
+on FrogOnPath(MAIN_PLAYER, 310) TRIGGER_START 
+  Fog(0, 0, 0, 0, 90)
+
+ResetToggle(1)
+
+on FrogOnPath(MAIN_PLAYER, 304) TRIGGER_START {
+  Fog(0, 0, 0, 0, 100)
+  ResetToggle(1)
+}
+
+on AND(NOT(IsFlagSet(1)), FrogOnPath(MAIN_PLAYER, 302)) TRIGGER_START {
+  Fog(0, 0, 0, 0, 105)
+  SetToggle(1)
+  
+  on Wait(0.5) TRIGGER_ONCE 
+    Fog(0, 0, 0, 0, 90)
+}
+
+on AND(IsFlagSet(1), FrogOnPath(MAIN_PLAYER, 302)) TRIGGER_START 
+  Fog(0, 0, 0, 0, 90)
+
+on FrogOnPath(MAIN_PLAYER, 303) TRIGGER_START 
+  Fog(0, 0, 0, 0, 80)
+
+on FrogOnPath(MAIN_PLAYER, 105) TRIGGER_START 
+  Fog(0, 0, 0, 0, 90)
+
+on FrogOnPath(MAIN_PLAYER, 106) TRIGGER_START 
+  Fog(0, 0, 0, 0, 100)
+
+on FrogOnPath(MAIN_PLAYER, 200) TRIGGER_START 
+  Fog(0, 0, 0, 0, 90)
+
+SetTileState(108, TILE_BARRED)
+SetEnemy(5, ACTOR_VISIBLE)
+Animate(5, 0, ANIMATION_NONE, 0.25)
+
+on FrogOnPath(MAIN_PLAYER, 100) TRIGGER_ONCE {
+  Animate(5, 1, ANIMATION_NONE, 0.25)
+  PlaySound("shieldout.wav", ACTOR_NONE)
+  
+  on Wait(0.5) TRIGGER_ONCE {
+    SetEnemy(5, ACTOR_INVISIBLE)
+    SetTileState(108, TILE_NORMAL)
+  }
+}
+
+SetPlatform(PLATFORM_6, ACTOR_STOP)
+
+on FrogOnPlatform(MAIN_PLAYER, PLATFORM_6) TRIGGER_ONCE {
+  CameoModeOn()
+  SetPlatform(PLATFORM_6, ACTOR_MOVE)
+  PlaySound("fdoor1.wav", ACTOR_NONE)
+  PlaySound("lp_lift.wav", ACTOR_NONE)
+}
+
+on PlatformAtPathNode(PLATFORM_6, 1) TRIGGER_ONCE {
+  CameoModeOff()
+  SetPlatform(PLATFORM_6, ACTOR_STOP)
+  PlaySound("fdoor2.wav", ACTOR_NONE)
+  StopSound("lp_lift.wav")
+}
+
+MoveEnemy(ENEMY_1, 124)
+MoveEnemy(ENEMY_2, 125)
+MoveEnemy(ENEMY_3, 126)
+MoveEnemy(ENEMY_4, 127)
+SetEnemy(ENEMY_1, ACTOR_STOP)
+SetEnemy(ENEMY_2, ACTOR_STOP)
+SetEnemy(ENEMY_3, ACTOR_STOP)
+SetEnemy(ENEMY_4, ACTOR_STOP)
+
+on FrogOnPath(MAIN_PLAYER, 104) TRIGGER_START {
+  SetStartTilePlayer(104)
+  
+  on FrogIsDead(MAIN_PLAYER) TRIGGER_START {
+    MoveEnemy(ENEMY_1, 124)
+    MoveEnemy(ENEMY_2, 125)
+    MoveEnemy(ENEMY_3, 126)
+    MoveEnemy(ENEMY_4, 127)
+    SetEnemy(ENEMY_1, ACTOR_STOP)
+    SetEnemy(ENEMY_2, ACTOR_STOP)
+    SetEnemy(ENEMY_3, ACTOR_STOP)
+    SetEnemy(ENEMY_4, ACTOR_STOP)
+    Debug("Frog dead in ape area")
+  }
+}
+
+on FrogOnPath(MAIN_PLAYER, 112) TRIGGER_START 
+  SetEnemy(ENEMY_1, ACTOR_MOVE)
+
+on FrogOnPath(MAIN_PLAYER, 114) TRIGGER_START 
+  SetEnemy(ENEMY_2, ACTOR_MOVE)
+
+on FrogOnPath(MAIN_PLAYER, 116) TRIGGER_START 
+  SetEnemy(ENEMY_3, ACTOR_MOVE)
+
+on OR(FrogOnPath(MAIN_PLAYER, 118), FrogOnPath(MAIN_PLAYER, 101)) TRIGGER_START {
+  SetEnemy(ENEMY_4, ACTOR_MOVE)
+  SetEnemy(ENEMY_3, ACTOR_STOP)
+}
+
+on FrogOnPath(MAIN_PLAYER, 113) TRIGGER_START 
+  SetEnemy(ENEMY_1, ACTOR_STOP)
+
+on FrogOnPath(MAIN_PLAYER, 115) TRIGGER_START 
+  SetEnemy(ENEMY_2, ACTOR_STOP)
+
+on FrogOnPath(MAIN_PLAYER, 117) TRIGGER_START 
+  SetEnemy(ENEMY_3, ACTOR_STOP)
+
+on FrogOnPath(MAIN_PLAYER, 130) TRIGGER_START 
+  SetEnemy(ENEMY_4, ACTOR_STOP)
+
+SetTileState(109, TILE_BARRED)
+ResetToggle(0)
+
+on FrogOnPath(MAIN_PLAYER, 101) TRIGGER_ONCE 
+  SetToggle(0)
+
+SetEnemy(7, ACTOR_VISIBLE)
+Animate(7, 0, ANIMATION_NONE, 0.25)
+
+on AND(FrogOnPath(MAIN_PLAYER, 116), IsFlagSet(0)) TRIGGER_ONCE {
+  Animate(7, 1, ANIMATION_NONE, 0.25)
+  PlaySound("shieldout.wav", ACTOR_NONE)
+  
+  on Wait(0.5) TRIGGER_ONCE {
+    SetEnemy(7, ACTOR_INVISIBLE)
+    SetTileState(109, TILE_NORMAL)
+  }
+}
+
+SetPlatform(PLATFORM_8, ACTOR_STOP)
+
+on FrogOnPlatform(MAIN_PLAYER, PLATFORM_8) TRIGGER_ONCE {
+  CameoModeOn()
+  SetEnemy(ENEMY_2, ACTOR_STOP)
+  SetPlatform(PLATFORM_8, ACTOR_MOVE)
+  PlaySound("fdoor1.wav", ACTOR_NONE)
+  PlaySound("lp_lift.wav", ACTOR_NONE)
+}
+
+on PlatformAtPathNode(PLATFORM_8, 1) TRIGGER_ONCE {
+  CameoModeOff()
+  SetPlatform(PLATFORM_8, ACTOR_STOP)
+  PlaySound("fdoor2.wav", ACTOR_NONE)
+  StopSound("lp_lift.wav")
+}
+
+MoveEnemy(ENEMY_13, 128)
+MoveEnemy(ENEMY_14, 129)
+SetEnemy(ENEMY_13, ACTOR_STOP)
+SetEnemy(ENEMY_14, ACTOR_STOP)
+
+on FrogOnPath(MAIN_PLAYER, 119) TRIGGER_START 
+  SetEnemy(ENEMY_13, ACTOR_MOVE)
+
+on FrogOnPath(MAIN_PLAYER, 121) TRIGGER_START 
+  SetEnemy(ENEMY_14, ACTOR_MOVE)
+
+on FrogIsDead(MAIN_PLAYER) TRIGGER_START {
+  MoveEnemy(ENEMY_13, 128)
+  SetEnemy(ENEMY_13, ACTOR_STOP)
+  MoveEnemy(ENEMY_14, 129)
+  SetEnemy(ENEMY_14, ACTOR_STOP)
+}
+
+on OR(FrogOnPlatform(MAIN_PLAYER, 120), OR(FrogOnPlatform(MAIN_PLAYER, 122), FrogOnPath(MAIN_PLAYER, 123))) TRIGGER_START {
+  SetEnemy(ENEMY_13, ACTOR_STOP)
+  SetEnemy(ENEMY_14, ACTOR_STOP)
+}
+
+on FrogOnPath(MAIN_PLAYER, 105) TRIGGER_START 
+  SetStartTilePlayer(105)
+
+SetTileState(110, TILE_BARRED)
+SetEnemy(9, ACTOR_VISIBLE)
+Animate(9, 0, ANIMATION_NONE, 0.25)
+
+on FrogOnPath(MAIN_PLAYER, 102) TRIGGER_ONCE {
+  Animate(9, 1, ANIMATION_NONE, 0.25)
+  PlaySound("shieldout.wav", ACTOR_NONE)
+  
+  on Wait(0.5) TRIGGER_ONCE {
+    SetEnemy(9, ACTOR_INVISIBLE)
+    SetTileState(110, TILE_NORMAL)
+  }
+}
+
+SetPlatform(PLATFORM_10, ACTOR_STOP)
+
+on FrogOnPlatform(MAIN_PLAYER, PLATFORM_10) TRIGGER_ONCE {
+  CameoModeOn()
+  SetPlatform(PLATFORM_10, ACTOR_MOVE)
+  PlaySound("fdoor1.wav", ACTOR_NONE)
+  PlaySound("lp_lift.wav", ACTOR_NONE)
+}
+
+on PlatformAtPathNode(PLATFORM_10, 1) TRIGGER_ONCE {
+  CameoModeOff()
+  SetPlatform(PLATFORM_10, ACTOR_STOP)
+  PlaySound("fdoor2.wav", ACTOR_NONE)
+  StopSound("lp_lift.wav")
+}
+
+on FrogOnPath(MAIN_PLAYER, 106) TRIGGER_START 
+  SetStartTilePlayer(106)
+
+SetTileState(111, TILE_BARRED)
+SetEnemy(11, ACTOR_VISIBLE)
+Animate(11, 0, ANIMATION_NONE, 0.25)
+
+on FrogOnPath(MAIN_PLAYER, 103) TRIGGER_ONCE {
+  Animate(11, 0, ANIMATION_NONE, 0.25)
+  PlaySound("shieldout.wav", ACTOR_NONE)
+  
+  on Wait(0.5) TRIGGER_ONCE {
+    SetEnemy(11, ACTOR_INVISIBLE)
+    SetTileState(111, TILE_NORMAL)
+  }
+}
+
+SetPlatform(PLATFORM_12, ACTOR_STOP)
+
+on FrogOnPlatform(MAIN_PLAYER, PLATFORM_12) TRIGGER_ONCE {
+  CameoModeOn()
+  SetPlatform(PLATFORM_12, ACTOR_MOVE)
+  PlaySound("fdoor1.wav", ACTOR_NONE)
+  PlaySound("lp_lift.wav", ACTOR_NONE)
+}
+
+on PlatformAtPathNode(PLATFORM_12, 1) TRIGGER_ONCE {
+  CameoModeOff()
+  SetPlatform(PLATFORM_12, ACTOR_STOP)
+  PlaySound("fdoor2.wav", ACTOR_NONE)
+  StopSound("lp_lift.wav")
+}
+
+on FrogOnPath(MAIN_PLAYER, 107) TRIGGER_START 
+  SetStartTilePlayer(107)

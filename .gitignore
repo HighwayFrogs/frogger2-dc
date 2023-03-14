@@ -13,3 +13,7 @@ KATANA/Tools/src/animtex2022/animtex.vcxproj.user
 KATANA/Tools/src/animtex2022/.vs/
 KATANA/Tools/src/animtex2022/Release/
 KATANA/Tools/src/animtex2022/Debug/
+KATANA/Tools/src/scripty/scripty.vcxproj.user
+KATANA/Tools/src/scripty/.vs/
+KATANA/Tools/src/scripty/Release/
+KATANA/Tools/src/scripty/Debug/

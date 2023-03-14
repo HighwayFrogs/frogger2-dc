@@ -1,0 +1,41 @@
+#define ENEMY_6 6
+
+on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_START 
+  SetStartTilePlayer(ENEMY_6)
+
+SetCounter(1, 0)
+
+on AND(FrogOnPath(MAIN_PLAYER, 1), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 2), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 3), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 4), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 5), NOT(FrogIsDead(MAIN_PLAYER))) TRIGGER_ONCE {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  
+  on FrogOnPath(MAIN_PLAYER, ENEMY_6) TRIGGER_ONCE 
+    IncCounter(1)
+}

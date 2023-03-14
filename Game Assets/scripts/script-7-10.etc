@@ -1,0 +1,32 @@
+#define ENEMY_6 6
+
+ResetToggle(0)
+ResetToggle(1)
+ResetToggle(2)
+ResetToggle(3)
+ResetToggle(4)
+
+on AND(FrogOnPath(MAIN_PLAYER, 1), NOT(IsFlagSet(0))) TRIGGER_START {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  SetToggle(0)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 2), NOT(IsFlagSet(1))) TRIGGER_START {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  SetToggle(1)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 3), NOT(IsFlagSet(2))) TRIGGER_START {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  SetToggle(2)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 4), NOT(IsFlagSet(3))) TRIGGER_START {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  SetToggle(3)
+}
+
+on AND(FrogOnPath(MAIN_PLAYER, 5), NOT(IsFlagSet(4))) TRIGGER_START {
+  TeleportPlayer(MAIN_PLAYER, ENEMY_6, 1)
+  SetToggle(4)
+}
