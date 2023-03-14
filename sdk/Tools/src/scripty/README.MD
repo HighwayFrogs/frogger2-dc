@@ -10,9 +10,9 @@ This is because it is likely more flexible, less buggy, uses modern syntax, and 
 **List supported functions:** `scripty.exe info`  
 
 ## How can I write scripts?
-The easiest way to get started is by playing around with some of the [../../../assets/scripts](scripts from the retail build).  
+The easiest way to get started is by playing around with some of the [scripts from the retail build](../../../../assets/scripts).  
 Some of the syntax may seem a little bit strange, especially with `AND(condition, condition)` instead of the more common `condition && condition`, but it's a fairly simple language.  
-The best resource for answering questions about how scripting works is the game's [../../../src/common/script.c](script.c) file.  
+The best resource for answering questions about how scripting works is the game's [script.c](../../../../src/common/script.c) file.  
 
 ### Data Types
 The data types in the scripting language are very simple, and there are no variables (excluding flags/counters).  
