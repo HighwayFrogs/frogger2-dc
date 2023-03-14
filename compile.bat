@@ -24,7 +24,7 @@ goto region_select
 
 :: Load the old region.
 set "OLD_GAME_REGION=%GAME_REGION%"
-if exist "OUTPUT\last_compiled_region" set /p OLD_GAME_REGION=<OUTPUT\last_compiled_region
+if exist "build\last_compiled_region" set /p OLD_GAME_REGION=<build\last_compiled_region
 
 :: Clean if there's a region switch.
 if NOT "%OLD_GAME_REGION%"=="%GAME_REGION%" (
@@ -33,10 +33,10 @@ if NOT "%OLD_GAME_REGION%"=="%GAME_REGION%" (
 )
 
 :: Save the new region.
-echo %GAME_REGION%> OUTPUT\last_compiled_region
+echo %GAME_REGION%> build\last_compiled_region
 
 :: Sets the KATANA (Dreamcast SDK) path to point to the KATANA folder in this repository.
-SET KATANA_ROOT=%~dp0KATANA
+SET KATANA_ROOT=%~dp0sdk\KATANA
 echo Using SDK Path: %KATANA_ROOT%
 
 echo Setting up Dreamcast SDK

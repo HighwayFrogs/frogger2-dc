@@ -51,8 +51,8 @@ IF NOT "%5"=="" SET "OUTPUT_PATH=%5"
 
 :: pvrconv.exe works, but doesn't create byte for byte match:
 :: DOSPVR is better since we have the source code to the tool, and it outputs byte for byte match.
-:: ..\katana\Utl\Gfx\Conv\PVRConv\pvrconv.exe -t -%4 -nomipmap -globalIndex %3 -p %OUTPUT_PATH% backdrops\%1.bmp %2
-..\katana\Utl\Gfx\Conv\PVRTool\DOSPVR.exe -Q -GBIX %3 -TWIDDLE -COLOURFORMAT %4 backdrops\%1.bmp -OUTPATH %OUTPUT_PATH% -OUTFILE pvr
+:: ..\SDK\KATANA\Utl\Gfx\Conv\PVRConv\pvrconv.exe -t -%4 -nomipmap -globalIndex %3 -p %OUTPUT_PATH% backdrops\%1.bmp %2
+..\SDK\KATANA\Utl\Gfx\Conv\PVRTool\DOSPVR.exe -Q -GBIX %3 -TWIDDLE -COLOURFORMAT %4 backdrops\%1.bmp -OUTPATH %OUTPUT_PATH% -OUTFILE pvr
 IF EXIST "%OUTPUT_PATH%\%1.PVR" (
   :: We've gotta move into a temp file, because "RENAME" fails on two file names which are the same except for different case. Batch really is pathetic.
   RENAME "%OUTPUT_PATH%\%1.PVR" "%1_TEMP.PVR"

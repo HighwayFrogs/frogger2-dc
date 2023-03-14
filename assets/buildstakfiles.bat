@@ -526,7 +526,7 @@ ECHO Building StakFile '%1'...
 :: There was a problem, a trailing space. Eg: CRC of "FROGGER.PIL " instead of "FROGGER.PIL".
 :: There's a flag which is supposed to delete it, but the executable had to be modified for it to work.
 CD COOKED\StakFileInput\%1\
-..\..\..\..\KATANA\Tools\flatstak.exe -s ..\..\StakFiles\%1.stk @%1.txt
+..\..\..\..\SDK\Tools\flatstak.exe -s ..\..\StakFiles\%1.stk @%1.txt
 SET "ERROR_CODE=%ERRORLEVEL%"
 CD ..\..\..\
 

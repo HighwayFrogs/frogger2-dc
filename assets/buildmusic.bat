@@ -36,7 +36,7 @@ IF NOT EXIST "%INPUT_FILE%" (
 )
 
 :: Build the .ADX file.
-..\katana\Utl\Gfx\Conv\Movie\ADX\adxencd.exe "%INPUT_FILE%" "%OUTPUT_FILE%"
+..\SDK\KATANA\Utl\Gfx\Conv\Movie\ADX\adxencd.exe "%INPUT_FILE%" "%OUTPUT_FILE%"
 IF NOT "%ERRORLEVEL%"=="0" PAUSE
 
 :: Verifies it has been created.

@@ -41,7 +41,7 @@ IF EXIST "sfx\%1\%2.oss" (
 )
 
 :: Build the .KAT file.
-..\katana\Utl\Snd\Pc\MkBank.exe %2.oss
+..\SDK\KATANA\Utl\Snd\Pc\MkBank.exe %2.oss
 IF NOT "%ERRORLEVEL%"=="0" PAUSE
 
 :: Create txt if it isn't already provided.

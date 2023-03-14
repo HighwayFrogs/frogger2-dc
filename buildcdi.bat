@@ -2,18 +2,18 @@
 
 SET TOOL_FOLDER=Frogger\cd\tools
 SET EXECUTABLE_LOCATION=Frogger\C Application\exe\1ST_READ.BIN
-SET OUTPUT_FOLDER=OUTPUT
-SET CD_FILES=OUTPUT\CDI\Files
+SET OUTPUT_FOLDER=build
+SET CD_FILES=build\CDI\Files
 SET TEMP_ISO_FILE=%OUTPUT_FOLDER%\TEMP.ISO
 
 :: Load region.
-if not exist "OUTPUT\last_compiled_region" (
+if not exist "%OUTPUT_FOLDER%\last_compiled_region" (
     echo The game region could not be identified. Try recompiling.
     PAUSE
     goto :EOF
 )
 
-set /p GAME_REGION=<OUTPUT\last_compiled_region
+set /p GAME_REGION=<%OUTPUT_FOLDER%\last_compiled_region
 if "%GAME_REGION%"=="A" set "GAME_REGION_NAME=NTSC"
 if "%GAME_REGION%"=="E" set "GAME_REGION_NAME=PAL"
 if "%GAME_REGION%"=="" goto error

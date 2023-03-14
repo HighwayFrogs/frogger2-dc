@@ -704,7 +704,7 @@ ifeq ($(COMPILER),SHC)
 ifeq ($(OUTPUT),LIB)
 	echo $* >nul:
 else
-	echo input ..\..\KATANA\lib\$* >> "$(OUTDIR)\lnk.sub"
+	echo input ..\..\sdk\KATANA\lib\$* >> "$(OUTDIR)\lnk.sub"
 endif
 endif
 ifeq ($(COMPILER),GNU)
@@ -751,9 +751,9 @@ ifdef LINK_LIST
 endif
 	for %%x in ($(LINK_FLAGS)) do echo %%x >> "$(OUTDIR)\lnk.sub"
 ifdef PROJECT_LIBS
-	for %%x in ($(PROJECT_LIBS)) do echo library ..\..\KATANA\Lib\%%x >> "$(OUTDIR)\lnk.sub"
+	for %%x in ($(PROJECT_LIBS)) do echo library ..\..\sdk\KATANA\Lib\%%x >> "$(OUTDIR)\lnk.sub"
 endif
-	for %%x in ($(SYSTEM_LIBS) $(DEF_LIBS)) do echo library ..\..\KATANA\Lib\%%x.lib >> "$(OUTDIR)\lnk.sub"
+	for %%x in ($(SYSTEM_LIBS) $(DEF_LIBS)) do echo library ..\..\sdk\KATANA\Lib\%%x.lib >> "$(OUTDIR)\lnk.sub"
 	echo output $(OUTDIR)\$(PROJECT).elf >> "$(OUTDIR)\lnk.sub"
 	echo exit >> "$(OUTDIR)\lnk.sub"
 ifeq ($(OPT_LINK),TRUE)

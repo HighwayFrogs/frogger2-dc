@@ -55,8 +55,8 @@ SET "INPUT_SCRIPT=scripts\%1"
 SET "OUTPUT_FILE=COOKED\scripts\%2"
 ECHO Compiling script file '%INPUT_SCRIPT%'...
 
-IF NOT EXIST "%INPUT_SCRIPT%" ..\KATANA\Tools\scripty.exe decompile "scripts\%2" "%INPUT_SCRIPT%"
-..\KATANA\Tools\scripty.exe compile "%INPUT_SCRIPT%" "%OUTPUT_FILE%"
+IF NOT EXIST "%INPUT_SCRIPT%" ..\sdk\Tools\scripty.exe decompile "scripts\%2" "%INPUT_SCRIPT%"
+..\sdk\Tools\scripty.exe compile "%INPUT_SCRIPT%" "%OUTPUT_FILE%"
 IF NOT "%ERRORLEVEL%"=="0" PAUSE
 
 exit /b

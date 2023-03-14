@@ -1,19 +1,19 @@
 Frogger/C Application/exe/
 Frogger/C Application/obj/
-OUTPUT
+build
 Frogger/cd/NTSC/1ST_READ.BIN
 Frogger/cd/PAL/1ST_READ.BIN
-Game Assets/COOKED/
-Game Assets/music/*.wav
-KATANA/Tools/src/sfxmap/sfxmap.vcxproj.user
-KATANA/Tools/src/sfxmap/.vs/
-KATANA/Tools/src/sfxmap/Release/
-KATANA/Tools/src/sfxmap/Debug/
-KATANA/Tools/src/animtex2022/animtex.vcxproj.user
-KATANA/Tools/src/animtex2022/.vs/
-KATANA/Tools/src/animtex2022/Release/
-KATANA/Tools/src/animtex2022/Debug/
-KATANA/Tools/src/scripty/scripty.vcxproj.user
-KATANA/Tools/src/scripty/.vs/
-KATANA/Tools/src/scripty/Release/
-KATANA/Tools/src/scripty/Debug/
+assets/COOKED/
+assets/music/*.wav
+sdk/Tools/src/sfxmap/sfxmap.vcxproj.user
+sdk/Tools/src/sfxmap/.vs/
+sdk/Tools/src/sfxmap/Release/
+sdk/Tools/src/sfxmap/Debug/
+sdk/Tools/src/animtex2022/animtex.vcxproj.user
+sdk/Tools/src/animtex2022/.vs/
+sdk/Tools/src/animtex2022/Release/
+sdk/Tools/src/animtex2022/Debug/
+sdk/Tools/src/scripty/scripty.vcxproj.user
+sdk/Tools/src/scripty/.vs/
+sdk/Tools/src/scripty/Release/
+sdk/Tools/src/scripty/Debug/

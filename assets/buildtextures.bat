@@ -61,7 +61,7 @@ SET "TIT_NAME=%2"
 for /f "tokens=2,* delims= " %%a in ("%*") do set TXT_INPUT_FILES=%%b
 ECHO Building texture animation file '%TIT_NAME%'...
 CD textures\%TEXTURE_FOLDERNAME%\animations
-..\..\..\..\KATANA\Tools\animtex2022.exe "..\..\..\COOKED\texanims\%TIT_NAME%" %TXT_INPUT_FILES%
+..\..\..\..\SDK\Tools\animtex2022.exe "..\..\..\COOKED\texanims\%TIT_NAME%" %TXT_INPUT_FILES%
 IF NOT "%ERRORLEVEL%"=="0" PAUSE
 CD ..\..\..\
 exit /b
@@ -71,8 +71,8 @@ echo Building image '%1'...
 
 :: pvrconv.exe works, but doesn't create byte for byte match:
 :: DOSPVR is better since we have the source code to the tool, and it outputs byte for byte match.
-::..\katana\Utl\Gfx\Conv\PVRConv\pvrconv.exe -t -%4 -nomipmap -globalIndex %3 -p %5 textures\%1.bmp %2
-..\katana\Utl\Gfx\Conv\PVRTool\DOSPVR.exe -Q -GBIX %3 -TWIDDLE -COLOURFORMAT %4 textures\%1.bmp -OUTPATH %5 -OUTFILE PVR
+::..\SDK\KATANA\Utl\Gfx\Conv\PVRConv\pvrconv.exe -t -%4 -nomipmap -globalIndex %3 -p %5 textures\%1.bmp %2
+..\SDK\KATANA\Utl\Gfx\Conv\PVRTool\DOSPVR.exe -Q -GBIX %3 -TWIDDLE -COLOURFORMAT %4 textures\%1.bmp -OUTPATH %5 -OUTFILE PVR
 IF EXIST "%5\%1.PVR" (
   :: We've gotta move into a temp file, because "RENAME" fails on two file names which are the same except for different case. Batch really is pathetic.
   RENAME "%5\%1.PVR" "%1_TEMP.PVR"
