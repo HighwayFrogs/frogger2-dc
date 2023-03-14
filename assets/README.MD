@@ -256,11 +256,11 @@ struct SCENIC {
 
 ### Script (.ETC -> .FEV)
 Folder: `scripts`  
-Source: Extracted from retail Dreamcast, decompiled with [../SDK/Tools/scripty/](scripty).  
+Source: Extracted from retail Dreamcast, decompiled with [scripty](../SDK/Tools/scripty/).  
 .FEV files are scripts compiled from .ETC files by a program called `etc`.  
 Unfortunately, this program has not yet been found, and the only uncompiled script backup is from May 22, 2000 on the May 22 backup ISO.  
 So, I created a program called "scripty" which acts as both a compiler and a decompiler for these scripts.  
-Documentation is available [../SDK/Tools/scripty/README.MD](here).  
+Documentation is available [here](../SDK/Tools/scripty/README.MD).  
 
 ## 3D Models
 ### .BFF (?)
