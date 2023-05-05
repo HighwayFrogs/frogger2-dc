@@ -24,6 +24,7 @@ goto region_select
 
 :: Load the old region.
 set "OLD_GAME_REGION=%GAME_REGION%"
+if not exist build mkdir build
 if exist "build\last_compiled_region" set /p OLD_GAME_REGION=<build\last_compiled_region
 
 :: Clean if there's a region switch.
