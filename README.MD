@@ -41,5 +41,11 @@ It is not known where it came from, but it does not appear legitimate.
 This is because the changes appear to be done to the compiled binary, and not to source code.  
 As such, it is likely this executable was modified by a scene group, and is not supported by this repository.  
 
+## Asset Information
+There is an unfinished setup for converting game assets to the Dreamcast version in the `assets\` folder.  
+It was created to better understand the game formats, and to create recreations.  
+However, in the time since it was started, the "End of Project" tape backup was successfully recovered.  
+This backup contains a full backup of final game assets, as well as all of the original tools used to manage game assets + their source code.  
+The attempt to finish the asset pipeline before releasing the repository was abandoned because of the availability of the original.  
 
 Preserved by [Highway Frogs](https://highwayfrogs.net/)
