@@ -23,12 +23,12 @@ if not exist "Frogger\C Application\exe\1ST_READ.BIN" (
 )
 
 :: Copy ELF to region folder.
-copy "Frogger\C Application\exe\1ST_READ.BIN" Frogger\cd\%GAME_REGION_NAME%\
+copy "Frogger\C Application\exe\1ST_READ.BIN" cd\%GAME_REGION_NAME%\
 
-subst M: Frogger\cd\
+subst M: cd\
 
 :: Build image.
-sdk\KATANA\Utl\Dev\CDCraft\CRFGDC.EXE -bld=Frogger\cd\frogger2-%GAME_REGION_NAME%.scr,dsk -benv=imf1,imgmap
+sdk\KATANA\Utl\Dev\CDCraft\CRFGDC.EXE -bld=cd\frogger2-%GAME_REGION_NAME%.scr,dsk -benv=imf1,imgmap
 
 :: Move to output folder.
 move FROGGER2.CIM build\CIM\FROGGER2_%GAME_REGION_NAME%.CIM
@@ -42,7 +42,7 @@ subst M: /D
 if exist build\GDI\%GAME_REGION_NAME% del /S build\GDI\%GAME_REGION_NAME%\* /Q
 if not exist build\GDI\%GAME_REGION_NAME% MD build\GDI\%GAME_REGION_NAME%\
 cd build\GDI\%GAME_REGION_NAME%
-..\..\..\Frogger\cd\tools\cim2gdi ..\..\CIM\FROGGER2_%GAME_REGION_NAME%.CIM
+..\..\..\cd\tools\cim2gdi ..\..\CIM\FROGGER2_%GAME_REGION_NAME%.CIM
 RENAME game.gdi "Frogger 2 - Swampy's Revenge.gdi"
 cd ..\..\..\
 

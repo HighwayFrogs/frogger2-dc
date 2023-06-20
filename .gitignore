@@ -1,8 +1,8 @@
 Frogger/C Application/exe/
 Frogger/C Application/obj/
 build
-Frogger/cd/NTSC/1ST_READ.BIN
-Frogger/cd/PAL/1ST_READ.BIN
+cd/NTSC/1ST_READ.BIN
+cd/PAL/1ST_READ.BIN
 assets/COOKED/
 assets/music/*.wav
 sdk/Tools/src/sfxmap/sfxmap.vcxproj.user
