@@ -1,7 +1,7 @@
 @echo OFF
 
 :: Setup directories.
-SET FROGGER_DIR=%~dp0Frogger\C Application\
+SET FROGGER_DIR=%~dp0src\
 SET EXEDIR=%FROGGER_DIR%exe\
 SET OBJDIR=%FROGGER_DIR%obj\
 SET DWFDIR=%OBJDIR%dwfinf\

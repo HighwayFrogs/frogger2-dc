@@ -1,5 +1,5 @@
-Frogger/C Application/exe/
-Frogger/C Application/obj/
+src/exe/
+src/obj/
 build
 cd/NTSC/1ST_READ.BIN
 cd/PAL/1ST_READ.BIN

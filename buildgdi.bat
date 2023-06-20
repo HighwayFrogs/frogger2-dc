@@ -16,14 +16,14 @@ if "%GAME_REGION%"=="A" set "GAME_REGION_NAME=NTSC"
 if "%GAME_REGION%"=="E" set "GAME_REGION_NAME=PAL"
 if "%GAME_REGION%"=="" goto error
 
-if not exist "Frogger\C Application\exe\1ST_READ.BIN" (
+if not exist "src\exe\1ST_READ.BIN" (
     echo Frogger 2 must be compiled before it can be built into a CD.
     PAUSE
     goto :EOF
 )
 
 :: Copy ELF to region folder.
-copy "Frogger\C Application\exe\1ST_READ.BIN" cd\%GAME_REGION_NAME%\
+copy "src\exe\1ST_READ.BIN" cd\%GAME_REGION_NAME%\
 
 subst M: cd\
 
